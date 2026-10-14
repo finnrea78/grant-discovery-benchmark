@@ -1,0 +1,605 @@
+{
+  "funder": "The Leverhulme Trust",
+  "model": "openrouter/amazon/nova-lite-v1",
+  "prompt_strategy": "few_shot",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 3,
+  "config_hash": "d7272849076b0ccf91379b2ec6d776cd67c334143e1941d02f1e7758ef75ff24",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 1,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Early Career Fellowships",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 2,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Early Career Fellowships",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "Leverhulme Centenary Doctoral Scholarships",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Early Career Fellowships",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text capture...residency requirements.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 89,
+      "n_claims_supported": 89,
+      "n_records_judged": 2,
+      "n_records_supported": 2,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Early Career Fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria and the purpose of the funding opportunity as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for early career researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a research record.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not have yet held a full-time permanent academic post.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose is to undertake a significant piece of publishable work.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "Leverhulme Centenary Doctoral Scholarships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "UK universities can fund up to 30 Leverhulme Centenary Doctoral Scholarships.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The scholarships must be in an interdisciplinary priority research area for the institution.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Leverhulme Centenary Doctoral Scholarships are open for submission in March 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The scheme requirements are largely the same as the 2023 round.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "This round includes additional studentships.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "This round includes funding for postdoctoral opportunities.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "This round includes funding for programme administration costs.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The Leverhulme Trust does not accept applications directly from graduates.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Ten awards of up to \u00a35 million will be made to UK universities.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Each award provides funds for 18 four-year Leverhulme Doctoral Scholarships at UK/home rates.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Each award provides funds for 6 four-year Scholarships at international/overseas rates.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "8 scholarships are to be offered in each year of the first three years of the grant.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Universities can apply for additional funding for up to six students from underrepresented groups (low income and Black students) to undertake a master\u2019s degree before progressing to a PhD.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Each grant runs over a period of 9 years.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The scheme is open to applications from any UK university that holds research degree awarding powers in its own right.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications will be accepted from a consortium of a maximum of two universities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "One university and one principal applicant must be identified to lead in a consortium application.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "A university may submit only one application as lead.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "A university may partner in multiple applications, provided they are in different disciplinary areas.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Institutions may also recruit six students to a master\u2019s plus PhD programme in addition to the 24 standard PhD scholarships.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Students wishing to pursue the master\u2019s plus PhD route must be a UK domiciled student.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students wishing to pursue the master\u2019s plus PhD route must not already have a master\u2019s degree from the host institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students wishing to pursue the master\u2019s plus PhD route must be from a low-income household background.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students wishing to pursue the master\u2019s plus PhD route can be from specific Black or Mixed ethnicity categories.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "UK students undertaking a PhD will be eligible for a fixed sum scholarship for up to 48 months of full-time doctoral study.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "UK PhD scholarships cover maintenance at UKRI base levels.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "UK PhD scholarships cover tuition fees at UKRI base levels.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "UK PhD scholarships include \u00a310,000 for research and training needs.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Up to six fixed sum scholarships can be made to international students for up to 48 months of full-time doctoral study.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "International PhD scholarships cover maintenance at UKRI base levels.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "International PhD scholarships cover tuition fees at the university\u2019s standard international fee rate, up to a maximum of \u00a325,000 per year.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "International PhD scholarships include \u00a310,000 for research and training needs.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Universities can apply for up to six further studentships for a master\u2019s plus doctoral programme.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Each master\u2019s plus PhD scholarship covers up to 60 months of full-time study.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Master\u2019s plus PhD research master\u2019s degree component covers maintenance at UKRI base level.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Master\u2019s plus PhD research master\u2019s degree component covers tuition fees up to a maximum of \u00a312,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Master\u2019s plus PhD doctoral degree component covers maintenance at UKRI base levels.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Master\u2019s plus PhD doctoral degree component covers tuition fees at UKRI base levels.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Master\u2019s plus PhD doctoral degree component includes \u00a310,000 for research and training needs.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funds for master's plus PhD students are ring-fenced for supporting students from underrepresented groups.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "\u00a375,000 of ring-fenced funding will be made available to support cohort-building activities.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Up to \u00a3400,000 of ring-fenced funding is available to support postdoctoral opportunities for LCDS programme graduates.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Universities may request up to \u00a3225,000 of funding for dedicated administrative support.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The awards are offered in a subject area or thematic area identified as a research priority by applicant universities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The chosen area should be broad enough to sustain up to 30 doctoral students over the grant period.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The chosen area should have a clear and coherent overarching thematic identity.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications are not accepted from other UK institutions or organisations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications must be submitted by a principal applicant.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "For consortium proposals, a single principal applicant should be identified.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The application procedure involves a short application form and a detailed programme description.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A supporting statement from a designated representative of the university is required.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "For consortium applications, supporting statements are required from both participating universities.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Trust expects demonstrable commitment from the host institution(s) for the proposed doctoral centre.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "There is no requirement for the university to offer matched studentships in this round.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The short application form requires brief biographical details about the principal applicant.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The short application form requires the title of the programme.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The short application form requires a 250-word summary of the rationale behind the choice of research subject area.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The short application form requires a 250-word summary of the relationship between the proposed scholarships and current doctoral training awards.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The short application form requires a 250-word summary of how the scholarships would provide added value.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The short application form requires a 250-word summary of how the doctoral scholars would be supervised and trained.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The short application form requires a 250-word summary of the legacy that will be delivered and how it will be sustained.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The short application form requires a 250-word summary of details of additional financial or other support resources provided.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The detailed programme description should address the rationale behind the choice of research subject area.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The detailed programme description should address the relationship between the proposed scholarships and current doctoral training awards.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The detailed programme description should address how the scholarships would add value.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The detailed programme description should address the proposed mode of selecting Leverhulme Doctoral Scholars.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The detailed programme description should address the proposed mode of identifying and selecting Master\u2019s Plus Doctoral Scholars.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The detailed programme description should address how scholars would be supervised and progress monitored.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The detailed programme description should describe plans for training and cohort-building activities.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The detailed programme description should include relevant information about key academic staff and research capacity.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The detailed programme description should outline how the proposed Doctoral Scholarship would utilise and administer the post-doctoral support element.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The detailed programme description should address the legacy that will be delivered and how it will be sustained.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "For consortium applications, the detailed programme description must include the basis and history of the partnership and expected benefits.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "For consortium applications, the detailed programme description must include a description of how the award would be managed across partners.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "For consortium applications, the detailed programme description must include a contingency plan if a partner university cannot continue.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The maximum length of the detailed programme description statement is 10 sides of A4.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The supporting statement should be no more than 500 words.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The supporting statement should explain why the research subject area is important to the university.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The supporting statement should provide key information about the university\u2019s research capacity in the area.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The supporting statement should demonstrate how the institution will provide an appropriate level of commitment to the programme.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Consortium applications should submit a letter of support from the partner institution.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The partner university's letter of support should address the points required for the supporting statement from the lead institution.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The partner university's letter of support should be signed, dated, and on headed paper.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Once the designated representative of the lead university has provided the statement, the application form requires online institutional approval.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "There is no additional approval stage for the partner university in consortium applications.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

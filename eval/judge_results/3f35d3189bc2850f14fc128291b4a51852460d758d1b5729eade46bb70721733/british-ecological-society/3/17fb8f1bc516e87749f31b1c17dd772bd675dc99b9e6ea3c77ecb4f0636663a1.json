@@ -1,0 +1,1722 @@
+{
+  "funder": "British Ecological Society",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "few_shot",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 3,
+  "config_hash": "3f35d3189bc2850f14fc128291b4a51852460d758d1b5729eade46bb70721733",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 50,
+      "n_claims_supported": 38,
+      "n_records_judged": 8,
+      "n_records_supported": 3,
+      "claim_rate": 0.76,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.8173295454545455,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.375,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "synthesis-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text captures the core elements of the funding amount, purpose, and eligibility criteria mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The funding is up to \u00a330,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is for forming new two-year synthesis groups.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The synthesis groups will fast-track innovative and impactful research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The synthesis groups will bring together diverse interdisciplinary groups.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The synthesis groups will focus on data analysis and synthesis.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "long-term-research-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most claims but omits the specific detail about funding the annual cost of a few days of data gathering.",
+          "claims": [
+            {
+              "text": "The grant provides a small amount of funding.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant funding lasts for 10 years.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grant is for existing short-term projects.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible projects must have at least 1-2 years of data.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose is to fund projects into the long term.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The purpose is to establish a new portfolio of long-term experiments/datasets.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The experiments/datasets should be relevant to today's issues.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant will fund the annual cost of a few days of data gathering over a long period.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "pedagogical-research-and-development-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the core purpose and amount of the grant but omits several specific project aims and eligibility criteria mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The grant aims to improve the education of future generations of ecologists.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant will fund research informing teaching and learning practices within ecology.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant will fund evidence-based learning and research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant provides up to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant supports projects that provide evidence-based examples of innovative and effective practice in learning and teaching.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The grant supports projects that systematically review existing practices to produce evidence-informed recommendations.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The grant supports projects that explore emerging areas of education research to identify future needs/practices.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The grant supports projects that disseminate best practices in teaching and learning to other practitioners.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The grant does not support outreach and engagement to the general public.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The grant is used to develop teaching ideas.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The grant is designed to explore better teaching methods, learning and assessments.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "connecting-ecologists-with-other-disciplines-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text mentions supporting interdisciplinary work with funding up to \u00a320k for placements in different disciplines and sectors, but omits the specific eligibility criteria of supporting members in education and the purpose of ensuring ecological education remains inspiring.",
+          "claims": [
+            {
+              "text": "The funding aims to support members involved in education.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding aims to ensure that ecological education continues to be inspiring.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding supports interdisciplinary work.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is up to \u00a320,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is for placements in different disciplines and sectors.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "small-research-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most claims, but omits the specific focus on 'education methods within ecology' mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The funding is for research on education methods within ecology.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The grant aims to support work of the highest international standard.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applicants must demonstrate how the work will advance ecological science.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant can be used for new and innovative ecological research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding amount is up to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "outreach-and-engagement-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures the purpose, eligibility, and funding amount mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The funding is intended to engage public audiences with the excitement, importance, and relevance of ecological science.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant will support individuals, teams, and organizations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The maximum funding amount is \u00a32,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "training-and-travel-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures the purpose of the grants and the next application deadline mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The grants help PhD students and postgraduate researchers meet the costs of specialist field training courses.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants help PhD students and postgraduate researchers to network and publicise their research by presenting their work at workshops and conferences.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The next application window is from August 24 to September 8, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "annual-meeting-grants-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most claims, but omits the maximum grant amount and does not specify that the travel is round-trip from the Global South to the UK and back.",
+          "claims": [
+            {
+              "text": "The grant supports researchers based in Global South countries.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant supports attendance at the BES Annual Meeting in the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding is intended to support travel from the applicant\u2019s country of residence in the Global South to the UK and return travel to that country after the meeting.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The maximum grant award is \u00a31000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The grant can cover registration costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant can cover transport costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant can cover food costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant can cover accommodation costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The call for applications opened on July 17, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The call for applications closed on September 8, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 76,
+      "n_claims_supported": 76,
+      "n_records_judged": 8,
+      "n_records_supported": 8,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "synthesis-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, covering aspects like funding amount, group composition, meeting formats, eligibility criteria, and application process.",
+          "claims": [
+            {
+              "text": "The funding opportunity supports the formation of new two-year synthesis groups.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding contributes up to \u00a330,000 towards these groups.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The groups should bring together diverse interdisciplinary groups.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The groups should focus on data analysis and synthesis.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The groups should consist of 8-15 individuals.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The groups must include members from a mix of career stages, genders, and backgrounds.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The groups should not be formed entirely of members from academic institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The groups should aim to include members where the data originated from.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The groups should meet using a hybrid model, with regular formal meetings.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Two in-person meetings must be held at the kick-off and conclusion of the project.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "In-person meetings should last a minimum of 3 days.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "All other meetings should be held virtually.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The main applicant must have BES membership.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The groups must have international participation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "All groups need to demonstrate principles of Equality, Diversity and Inclusion (EDI) in their composition.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The group should include members from a range of countries and regions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The group should be balanced by gender and ethnicity.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Working groups will be required to promote the FAIR principles.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "All group members must meet in person at the project\u2019s start and end.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Smaller group meetings during the duration of the two year project are a reasonable expense.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funding can be used to support Global South ecologists in purchasing equipment such as laptops.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The lead applicant will be awarded all the funding.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funding can be used to contribute towards publishing a paper as a result of this project.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funding can be used for employment to provide gap-filling data collection on the ground in Global South countries.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funding is not available to cover a working group member\u2019s time or any general overheads.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "It is a condition of all grants that the contribution is acknowledged in any publication or publicity that may arise from this study.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Each application requires two statements from host institutions indicating their support for this project and the facilities available to enable hosting.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "References will be contacted through Flexigrant using the reference emails provided.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "An application cannot be submitted until both references have been completed on Flexigrant.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Referee statements sent independently via email or by letter cannot be accepted.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "long-term-research-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The grant provides a small amount of funding each year for 10 years.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is for existing short-term projects with at least 1-2 years of data.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose is to fund projects into the long term.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The aim is to establish a new portfolio of long-term experiments/datasets relevant to today's issues.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "pedagogical-research-and-development-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the page text, which outlines the objectives, value, and purpose of the grant.",
+          "claims": [
+            {
+              "text": "The funding aims to improve the education of future generations of ecologists.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding provides up to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is for evidence-based learning and research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding informs teaching and learning practices within ecology.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "connecting-ecologists-with-other-disciplines-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the purpose, amount, and nature of the placements offered by the grant.",
+          "claims": [
+            {
+              "text": "The funding opportunity promotes interdisciplinary skills.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be up to \u00a320,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is for placements in different disciplines and sectors.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The opportunity immerses an ecologist in another professional world where ecology can make a difference.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "small-research-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the page's description of the grant's value, purpose, and quality requirements.",
+          "claims": [
+            {
+              "text": "The funding provides up to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is for new and innovative ecological research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research must have the highest international standard.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The research must have a clear ecological science focus.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "outreach-and-engagement-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, covering aspects like funding amount, eligibility criteria, project purpose, and specific conditions for application and award.",
+          "claims": [
+            {
+              "text": "The funding opportunity offers up to \u00a32,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is available to individuals, teams, and organizations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the funding is to engage public audiences with ecological science.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The lead applicant must be a member of the British Ecological Society (BES).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects should have a maximum duration of 12 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Proposals must be aimed at a non-academic audience.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must demonstrate direct interaction with the public.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Staff salaries are not eligible costs.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Training courses not related to communicating ecology to the public are not eligible.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Projects solely aimed at delivering curriculum to school children are not considered.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Projects delivered to a small number of schools where the public cannot engage are not considered.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Applications from museums and schools are welcome, provided projects involve significant outreach beyond schools.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "An applicant cannot receive more than one grant per year.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "An applicant cannot receive more than three grants in any five-year period.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Failure to submit a satisfactory report makes an applicant ineligible for future grants.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Repeat annual events may be considered if they show novel ideas and development.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award can be used as part-funding for larger projects.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "If used as part-funding, there must be a guarantee that other funding has already been secured.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Additional BES funding should add a distinctive element or activity that would not happen otherwise.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "training-and-travel-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the purpose of the grant and the specified application window as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The funding helps PhD students and postgraduate researchers cover costs for specialist field training courses.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding helps PhD students and postgraduate researchers network and publicize their research by presenting at workshops and conferences.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The next application window is from August 24 to September 8, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "annual-meeting-grants-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the purpose, eligibility, coverage, and application dates for the grant.",
+          "claims": [
+            {
+              "text": "The funding supports researchers based in Global South countries.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for attending the BES Annual Meeting 2026 in the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding covers travel costs.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding covers registration costs.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding covers food-related costs.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding covers accommodation-related costs.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The application period is from July 17 to September 8, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The maximum travel grant award is \u00a31,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 94,
+      "n_claims_supported": 45,
+      "n_records_judged": 7,
+      "n_records_supported": 0,
+      "claim_rate": 0.4787234042553192,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5074188582315518,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "synthesis-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures some, but not all, of the eligibility criteria mentioned in the reference text, omitting details about diversity in gender, ethnicity, and country, as well as the requirement for members from data origin locations and obtaining permits.",
+          "claims": [
+            {
+              "text": "The main applicant must hold BES membership.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Other working-group members need not hold BES membership.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Groups must be diverse in career stage.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Groups must be diverse in gender.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Groups must be diverse in ethnicity.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Groups must be diverse in institution type.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Groups must be diverse in country.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Groups must include international participation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Groups must NOT be formed entirely of members from academic institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Networks across universities, research institutes, NGOs, industry and government are expected.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Groups must include members from where the data originated.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must obtain all relevant permits.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Groups should consist of 8-15 individuals.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "long-term-research-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text capture...unsatisfactory reports.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "pedagogical-research-and-development-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures some, but not all, of the eligibility criteria and omits all information regarding the purpose of the grants.",
+          "claims": [
+            {
+              "text": "Applicants must have BES membership.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects should be a maximum of 12 months.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are open to anyone involved in teaching ecology at any level.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are awarded to individuals, not organisations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding is unavailable for work that will form part of a degree, masters, PhD, or fellowship.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants are responsible for obtaining all relevant permits and permissions.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "No more than one grant will be awarded to any applicant in any year.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "No more than two grants will be awarded to any applicant in any five years.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Failure to submit a satisfactory report at the end of a grant makes the grantee ineligible for future grants.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "This grant does not support outreach and engagement to the general public.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The grants are used to develop teaching ideas, explore better teaching methods, learning, and assessments.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The grants have no geographical restrictions.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applications can be from those in industry who wish to explore the impact of new teaching ideas.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "connecting-ecologists-with-other-disciplines-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures some, but not all, of the eligibility criteria mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "Applicants must have BES membership.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are awarded to individuals, not organizations.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Grants are for ecologists only to work in a distinctly different sector compared to their current one.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Placements can be full-time or part-time.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Placements can be up to 12 months long.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants are responsible for obtaining all relevant permits and permissions.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "No more than one grant will be awarded to any applicant in any year.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "No more than two grants will be awarded to any applicant in any five years.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Eligible applicants include PhD students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible applicants include postdoctoral fellows.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible applicants include early career ecologists.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible applicants include established researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible applicants include employees of other organizations (e.g., government agencies) who would like to develop interdisciplinary skills and influence other disciplines to increase ecological understanding.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have employer/supervisor approval to step out of current activities during the placement period.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must have a willing host organization/department who will collaborate on the grant application.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Undergraduates are not eligible to apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Masters students are not eligible to apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "small-research-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures some eligibility criteria but omits the requirements regarding permits, permissions, and the ecological science focus of projects.",
+          "claims": [
+            {
+              "text": "Applicants must obtain all relevant permits and permissions.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects must have a clear ecological science focus.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Other aspects like sociology or economics must be integrated into the ecology and scientific goals.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Must have BES membership.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding is available for researchers from all countries globally.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects can be conducted anywhere in the world.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "This is not a scholarship.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding cannot be used towards completing an undergraduate or master's degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "outreach-and-engagement-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures several eligibility criteria, including lead applicant membership, types of applicants, experience levels, project duration, and geographical restrictions, but omits all purpose and exclusion criteria.",
+          "claims": [
+            {
+              "text": "No more than one grant will be awarded to any applicant in a year.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "No more than two grants will be awarded to any applicant in any five years.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Grants must be for projects that communicate evidence-based messaging about ecology, how nature works, and the use of ecological science as a solution to challenges.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants must be for projects that raise awareness and public understanding of ecological careers, their relevance, importance, breadth, diversity, and show that anybody can become an ecologist.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants must be for projects that share how individuals can take action to benefit the environment, themselves, and society.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants must be for projects that increase the ability of others to deliver aims through outreach and engagement activities.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Proposals must be aimed at a non-academic audience.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "All projects must clearly demonstrate direct interaction with a non-academic audience.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects should show evidence of links to the research community at regional, national and international levels, where appropriate.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applications will not be considered for staff salaries (though one-off costs relevant to completing the event, such as sub-contracting for logo design, will be considered).",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applications will not be considered for training courses not associated with developing skills in communicating the science of ecology for a public-facing audience.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applications will not be considered for projects aimed solely at delivering curriculum to school children.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applications will not be considered for projects delivered to a small number (1-2) of schools in a school setting where other members of the public can\u2019t engage.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Lead applicant must have BES membership.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards are open to individuals, teams and organisations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards are open to applicants across all experience levels.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects have a maximum duration of 12 months.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are no restrictions on where applicants come from.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are no restrictions on where applicants carry out work.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "training-and-travel-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the eligibility criteria but omits details about graduates, limits on attendees per course/institution, the retrospective payment process, the relevance of research to ecology, and the requirement to upload abstract evidence.",
+          "claims": [
+            {
+              "text": "Applicants must be a BES member.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be a PhD student or postgraduate researcher registered on a postgraduate research degree programme.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Research staff are ineligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Research assistants are ineligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Postdoctoral researchers are ineligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Undergraduates are ineligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Master's students are ineligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Graduates who have completed their degree are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "A maximum of two places per training course may be funded.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "No more than two applicants from the same institution may attend the same meeting or conference.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Grants are paid in retrospect, so the applicant must pay the organiser at the time of booking.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Applicants must work in scientific areas within the remit of the science of ecology.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The research must be of relevance to the training course or meeting they are applying to attend.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must give a presentation if attending a meeting.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Evidence of abstract submission or acceptance must be uploaded as part of the application process.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Applicants must work or study at a university or research institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "annual-meeting-grants-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the eligibility criteria but omits the specific requirements about travelling from and returning to the country of base within the Global South.",
+          "claims": [
+            {
+              "text": "Applicant must be a BES member.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicant can be at any stage of their research career.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicant must be a citizen of the Global South.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicant must be based in the Global South.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicant must be travelling from the country they are based in the Global South.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicant must be returning to the country they are based in the Global South.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicant must have applied to present at the Annual Meeting.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicant must be at least three years since they were last awarded a BES Training and Travel Grant.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 45,
+      "n_claims_supported": 44,
+      "n_records_judged": 8,
+      "n_records_supported": 7,
+      "claim_rate": 0.9777777777777777,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.9791666666666666,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.875,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "synthesis-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text regarding eligibility criteria for the grant.",
+          "claims": [
+            {
+              "text": "The main applicant must be a member of BES.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Groups must consist of 8-15 individuals.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Groups should have a diverse mix of career stages.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Groups should have a diversity of institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Groups should include international participation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Groups should not be formed entirely of members from academic institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "long-term-research-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text regarding eligibility criteria (BES membership, types of ecologists, and awardees being individuals) are directly supported by the 'Eligibility and conditions' section of the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants must have BES membership.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is open to all types of ecologists, including conservation practitioners, reserve managers, consultants, and university academics.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are awarded to individuals, not organizations.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "pedagogical-research-and-development-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants must have BES membership.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to anyone involved in teaching ecology at any level.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards are given to individuals, not organizations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must have a maximum duration of 12 months.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "connecting-ecologists-with-other-disciplines-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants must have BES membership.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to PhD students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to postdoctoral fellows.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to early career ecologists.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to established researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to employees of other organizations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Undergraduates are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Masters students are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Placements can be up to 12 months long.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "small-research-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims that BES membership is required, but the page text does not mention this requirement. All other claims are supported by the page text.",
+          "claims": [
+            {
+              "text": "Applicants must have BES membership.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Funding is available for researchers from all countries globally.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects can be conducted anywhere in the world.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "This is not a scholarship.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding cannot be used towards completing an undergraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding cannot be used towards completing a master's degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "outreach-and-engagement-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The lead applicant must have BES membership.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards are open to individuals, teams, and organizations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards are open to applicants across all experience levels.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must have a maximum duration of 12 months.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "There are no restrictions on where applicants come from.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are no restrictions on where applicants carry out their work.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "training-and-travel-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants must be a BES member.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be a PhD student or postgraduate researcher.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Postdoctoral researchers are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Undergraduate students are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Masters students are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must work or study at a university or research institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must give a presentation if attending a meeting.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "annual-meeting-grants-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the eligibility criteria for the grant.",
+          "claims": [
+            {
+              "text": "Applicants must be a BES member at any career stage.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be a citizen of and based in the Global South.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have applied to present at the Annual Meeting.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have had at least three years pass since their last BES Training and Travel Grant award.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

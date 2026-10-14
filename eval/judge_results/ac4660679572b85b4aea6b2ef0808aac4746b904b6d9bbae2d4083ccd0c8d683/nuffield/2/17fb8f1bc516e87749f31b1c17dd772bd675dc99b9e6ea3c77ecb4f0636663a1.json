@@ -1,0 +1,361 @@
+{
+  "funder": "Nuffield Foundation",
+  "model": "openrouter/amazon/nova-lite-v1",
+  "prompt_strategy": "structured",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 2,
+  "config_hash": "ac4660679572b85b4aea6b2ef0808aac4746b904b6d9bbae2d4083ccd0c8d683",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 7,
+      "n_claims_supported": 6,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.8571428571428571,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.8571428571428571,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Main Grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose and amount of the funding, as well as the application deadlines, but omits the typical project duration.",
+          "claims": [
+            {
+              "text": "The fund supports research, development, and analysis projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects must address one or more of five strategic priority questions.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The duration of projects is usually between six months and three years.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The fund offers up to \u00a3500,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "In special cases, applications for up to \u00a3750,000 are accepted by prior agreement.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Most awarded grants are below \u00a3300,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "There are two application deadlines per year: one in Spring and one in Autumn.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 6,
+      "n_claims_supported": 6,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Main Grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The Main Grants fund offers up to \u00a3500,000 for research.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The research funded must address one or more of the priority questions outlined in the Nuffield Foundation's Strategic Review.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are two application deadlines a year for this fund: one in Spring and the other in Autumn.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Exact application dates are announced in advance.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "In special cases, and by prior agreement, applications for up to \u00a3750,000 are accepted.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Most of the grants awarded are below \u00a3300,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 8,
+      "n_claims_supported": 8,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Main Grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text captures all eligibility criteria and the impact requirement mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "Applicants must be employed by, or have a formal affiliation with, a UK-based organisation for at least the duration of the project.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Unaffiliated individuals are excluded.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects led by schools or FE colleges are excluded.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Undergraduates or master's students are excluded.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "PhD-fee projects are excluded.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Establishment of academic posts is excluded.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Non-UK-led organisations are excluded, except exceptionally.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research must have a clear path to how it might make a difference to people's lives.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 22,
+      "n_claims_supported": 22,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Main Grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which lists both the criteria for what will be funded and what will not be funded.",
+          "claims": [
+            {
+              "text": "Proposals must address one or more of the priority questions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Proposals must be relevant.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Proposals must have a clear path to impact.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Proposals must have a clear conceptual framework.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Proposals must be methodologically rigorous.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Proposals must be led by experienced teams.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Proposals must offer good value for money.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Individuals without formal employment are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects led by unaffiliated individuals are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects led by schools or further education colleges are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects led by undergraduates or master\u2019s students are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "PhD fees are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects where the main purpose is to support a PhD are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The establishment of academic posts is not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Ongoing costs are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Dissemination-only projects are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Local charities are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Replacement for statutory funding is not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Local social services are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Requests for financial help are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects led by organizations or institutions not based in the UK are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects led by overseas organizations may be eligible if UK-focused dissemination, engagement, and impact are planned.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

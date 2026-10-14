@@ -1,0 +1,1311 @@
+{
+  "funder": "The British Academy",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "chain_of_thought",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 5,
+  "config_hash": "7e9a4d24b95f743e75d8817c1faa64a0286524e3e512aeb61e0574b92892dbbb",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 35,
+      "n_claims_supported": 19,
+      "n_records_judged": 6,
+      "n_records_supported": 0,
+      "claim_rate": 0.5428571428571428,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5166666666666667,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 2,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "apex-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose of the funding, the partners involved, and the eligibility criteria, but omits the specific funding amounts.",
+          "claims": [
+            {
+              "text": "The funding is for genuinely interdisciplinary, curiosity-driven research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research should be at the boundary between science, engineering and the social sciences and humanities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity is run in partnership with the Royal Society.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity is run in partnership with the Royal Academy of Engineering.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity is supported by the Leverhulme Trust.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The maximum funding available is \u00a3200,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Up to \u00a310,000 is available for public engagement.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The opportunity is for established independent researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "shape-involve-and-engage",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports the eligibility of humanities and social sciences researchers and the purpose of supporting innovative public engagement projects with cultural or performing arts partners, but omits the maximum award amount and the inclusion of a workshop for award holders.",
+          "claims": [
+            {
+              "text": "The program offers up to \u00a38,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The program is for humanities and social sciences researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The program supports innovative public engagement projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects must involve a cultural or performing arts partner.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The program includes a 'community of practice' workshop for award holders.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "knowledge-frontiers-symposium-2027",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports the claim that it is a bilateral symposium bringing together early-career researchers from the UK and Germany, but omits the partner organization and the specific theme.",
+          "claims": [
+            {
+              "text": "The funding opportunity is a bilateral symposium.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The symposium is run in partnership with the Alexander von Humboldt Foundation.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The symposium brings together early-career researchers from the UK and Germany.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The symposium has a Knowledge Frontiers theme.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "postdoctoral-fellowships",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support... a UK host institution.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "talent-development-awards-2026-27",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports the claim about the skills areas but omits or contradicts claims about the funding amount, eligibility, and the specific ways the scheme supports research methods.",
+          "claims": [
+            {
+              "text": "The scheme offers up to \u00a310,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The scheme is for UK-based researchers.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The scheme supports skills development in quantitative skills, data science, digital humanities, and languages.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The scheme supports innovative research methods through skills development, collaboration, or dissemination.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "international-interdisciplinary-research-projects-2027",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits claims about the funder, the specific amount, the duration, and the requirement for overseas collaboration, while supporting claims about the international and interdisciplinary nature of the projects, UK leadership, and the fields of study.",
+          "claims": [
+            {
+              "text": "The funding is offered by Knowledge Frontiers.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The funding amount is up to \u00a3300,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The funding duration is up to two years.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The research projects must be international.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research projects must be interdisciplinary.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research projects must be led from the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research projects must be in the humanities and social sciences.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research projects must involve collaboration with overseas partners.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "global-innovation-fellowships-dgap-2026-27",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text omits t...licy-relevant analysis.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "additional-needs",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the purpose of the funding and the rolling deadline, but omits details about the specific amount, monthly review process, and response time.",
+          "claims": [
+            {
+              "text": "The fund offers up to \u00a34,000, with potential for more if reasonable.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The funding is additional to research expenses.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fund is intended to meet applicants' and award-holders' additional needs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications are reviewed monthly.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "There is a four-to-six-week response time for applications.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "The fund is offered on a rolling deadline.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 45,
+      "n_claims_supported": 45,
+      "n_records_judged": 8,
+      "n_records_supported": 8,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "apex-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria, the purpose of the research, and the partnering organizations mentioned in the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for established independent researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research pursued is interdisciplinary and curiosity-driven.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research crosses the boundaries of science, engineering, and the social sciences and humanities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is in partnership with the Royal Society, Royal Academy of Engineering, and Leverhulme Trust.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "shape-involve-and-engage",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The funding supports ambitious projects to engage the public with the humanities and social sciences.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects must be undertaken in partnership with a gallery, archive, library or museum or a performing arts organisation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The scheme is open for applications.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The deadline for applications is September 15, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Awards are up to \u00a38,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "knowledge-frontiers-symposium-2027",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, covering aspects like participant numbers, theme, dates, funding, eligibility criteria, and application process.",
+          "claims": [
+            {
+              "text": "Early career researchers are invited to attend a research collaboration symposium.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The symposium's theme is 'Humans and Nature: More resilient towards the future'.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The symposium will bring together approximately fifteen early career researchers from the UK and fifteen from Germany.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The symposium is scheduled to take place between April 21, 2027, and April 23, 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The application deadline is September 16, 2026, at 17:00 BST.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The symposium covers travel, accommodation, and visa costs.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Seed funding will be available for participants to apply for, to incentivize long-term collaboration and networking.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Eligible applicants must be early career researchers affiliated with research institutions in the UK or Germany.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications will be evaluated based on research interest in the theme, commitment to interdisciplinary engagement, and potential for career development.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Interested applicants are required to complete an online application form via Flexi-Grant\u00ae.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Successful applicants will be notified by the end of November.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "postdoctoral-fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The fellowship lasts for three years.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "It is for outstanding early-career researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity allows researchers to complete a significant piece of publishable research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "It helps researchers integrate into the community of established scholars in their field.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The application deadline is September 30, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "talent-development-awards-2026-27",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose of the funding opportunity as described in the page text, specifically mentioning the types of skills supported and the goal of developing current and future research, including interdisciplinary approaches.",
+          "claims": [
+            {
+              "text": "The funding supports the acquisition and advancement of skills in relevant areas.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The relevant skill areas include quantitative skills, data science, digital humanities, and languages.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding aims to develop current and future research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports interdisciplinary approaches.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "international-interdisciplinary-research-projects-2027",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, covering the nature of the projects, their thematic focus, disciplinary collaboration requirements, the application deadline, and the funding amount.",
+          "claims": [
+            {
+              "text": "The funding opportunity supports genuinely interdisciplinary international research projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research projects must be led by and grounded in the humanities and/or social sciences.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research projects must be on the theme of Mobilities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The projects involve collaboration across SHAPE and STEM disciplines.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The application deadline is October 7, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The funding is up to \u00a3300,000 over 2 years.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "global-innovation-fellowships-dgap-2026-27",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The fellowship provides up to two one-year fellowships.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The fellowships are hosted in the office of the German Council on Foreign Relations (DGAP) in Berlin.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The fellowships enable SHAPE researchers to develop skills, networks and careers in policy and other sectors.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fellowships require the production of policy-relevant analysis for German decision-makers.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "additional-needs",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the purpose of the additional needs funding and confirms its rolling deadline.",
+          "claims": [
+            {
+              "text": "The funding provides additional support for needs that applicants and award-holders may require.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Examples of needs include equipment to overcome barriers for disabled researchers.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Examples of needs include assistance for sensory impairments.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Examples of needs include caring costs for research trips.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Examples of needs include support to make an application.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is offered on a rolling deadline.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 62,
+      "n_claims_supported": 39,
+      "n_records_judged": 8,
+      "n_records_supported": 0,
+      "claim_rate": 0.6290322580645161,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6432539682539683,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "apex-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures some eligibility criteria but omits details about the expectation of interdisciplinary collaboration, the award duration, and the earliest start date.",
+          "claims": [
+            {
+              "text": "Applicants must be established independent researchers with a strong track record.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a proven ability to lead collaborative work.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Successful applicants are expected to collaborate with researchers from other disciplines.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Awards run up to 24 months.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The earliest start date for awards is 1 October 2027.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Applicants must hold a permanent or fixed-term position covering the duration of the award.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have teaching and admin duties.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be based at a UK University or UK not-for-profit research organisation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Up to two Co-applicants from a different Academy remit are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "shape-involve-and-engage",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits claims regarding specific career stages and the requirement for partnership with a GLAM or performing arts organization, and also omits the award dates.",
+          "claims": [
+            {
+              "text": "Researchers at all career stages (early-career, postdoctoral, mid-career, established, and senior) are eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Researchers must be based in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Researchers must be working in partnership with a gallery, archive, library or museum (GLAM organisation) or a performing arts organisation.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Awards run between April 1, 2027, and December 31, 2028.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "No prior British Academy funding is required.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Previous successful recipients of this award are not eligible to reapply.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "knowledge-frontiers-symposium-2027",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most claims but omits the mention of 'cognate disciplines' in the eligibility criteria.",
+          "claims": [
+            {
+              "text": "The funding is for early-career researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be affiliated with research institutions in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be affiliated with research institutions in Germany.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for researchers in the humanities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for researchers in the social sciences.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for researchers in cognate disciplines.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "postdoctoral-fellowships",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the eligibility criteria mentioned in the reference text, but omits the requirement for UK institutional approval by the deadline.",
+          "claims": [
+            {
+              "text": "The opportunity is for early-career researchers at a postdoctoral or equivalent level.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for researchers in the humanities and social sciences.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Submissions require UK institutional approval by the deadline.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must be based at an eligible UK university or research organisation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "British citizens and EEA nationals are eligible regardless of doctorate origin.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Anyone with a UK doctorate is eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The Viva Voce must have been completed between April 1, 2024, and April 1, 2027.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not have held a permanent academic post.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "talent-development-awards-2026-27",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the eligibility criteria but omits details about the career stage, award duration, and start date.",
+          "claims": [
+            {
+              "text": "The opportunity is for established researchers in the humanities and social sciences.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a current long-term appointment at a UK-based Higher Education Institution or Independent Research Organisation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The appointment must continue for the full duration of the award.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be ordinarily resident in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The career stage is postdoctoral or equivalent.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Awards last a minimum of six months.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Awards last a maximum of twelve months.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Awards can start no earlier than 1 March 2027.",
+              "claim_type": "deadline",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "international-interdisciplinary-research-projects-2027",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the eligibility criteria mentioned in the reference text, but omits the requirement for research organisations to be approved by the Academy on Flexi-Grant.",
+          "claims": [
+            {
+              "text": "Projects must be led by UK-based researchers in the humanities and social sciences.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must involve international partners.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligibility is open across career stages from postdoctoral upwards.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Research organisations must be approved as eligible by the Academy on Flexi-Grant.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Principal Investigator must be in an established role lasting the duration of the award.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Principal Investigator must spend at least 20% of their time on the award.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Co-Applicants based overseas are required.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "global-innovation-fellowships-dgap-2026-27",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures claims about the career stage and academic disciplines of eligible researchers, as well as their location, but omits details about the fellowship's location, duration, and application process.",
+          "claims": [
+            {
+              "text": "The fellowship is for early-career researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fellowship is for mid-career researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Fellows are hosted at DGAP's offices in Berlin.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The fellowship lasts for 12 months.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "A Head of Department statement must be received before the application can be formally submitted.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Applicants must be UK-based.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fellowship is open to researchers from across the humanities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fellowship is open to researchers from across the social sciences.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "additional-needs",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures that current award holders and future applicants are eligible and that support is for submitting applications, but omits details about career stage, the inability of host institutions to meet needs, and specific examples of eligible needs beyond application submission.",
+          "claims": [
+            {
+              "text": "Applicants for British Academy awards are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Holders of British Academy awards are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligibility is open to awardees at any career stage.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must have additional needs that their host university or research organisation cannot meet.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Examples of eligible needs include equipment to overcome barriers for disabled researchers.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Examples of eligible needs include support for sensory impairment.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Examples of eligible needs include caring costs while researching away from home.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Examples of eligible needs include mental health support while making an application.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants intending to apply for a British Academy award in the next six months are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Support is available for submitting applications.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 41,
+      "n_claims_supported": 41,
+      "n_records_judged": 8,
+      "n_records_supported": 8,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "apex-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text regarding eligibility criteria for the APEX Awards are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The applicant must be an established independent researcher.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must have a strong track record.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must hold a permanent or fixed-term position covering the duration of the award.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must have teaching and administrative duties.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be based at a UK University or UK not-for-profit research organisation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Up to two Co-applicants are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Co-applicants must be from a different Academy remit than the lead applicant.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "shape-involve-and-engage",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text regarding eligibility are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is open to any researcher based in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Researchers must meet the conditions of the call to be eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "No prior British Academy funding is required to apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Previous successful recipients of this award are not eligible to reapply.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "knowledge-frontiers-symposium-2027",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria mentioned in the page text, specifically regarding career stage, institutional affiliation (UK/Germany), and research fields (humanities and social sciences).",
+          "claims": [
+            {
+              "text": "The opportunity is for early career researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be affiliated with research institutions in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be affiliated with research institutions in Germany.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for researchers in the humanities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for researchers in the social sciences.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "postdoctoral-fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for early-career researchers in the humanities and social sciences.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be based at an eligible UK university or research organisation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "British citizens are eligible regardless of where their doctorate was obtained.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "EEA nationals are eligible regardless of where their doctorate was obtained.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Anyone with a UK doctorate is eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Viva Voce must have been completed between April 1, 2024, and April 1, 2027.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not have held a permanent academic post at any time in their career.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "talent-development-awards-2026-27",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text regarding eligibility criteria are directly supported by the 'Eligibility' section of the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for established researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for researchers in the humanities and social sciences.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be ordinarily resident in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must hold a current long-term appointment at a UK-based HEI or IRO.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The appointment must continue for the full duration of the award.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "international-interdisciplinary-research-projects-2027",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text regarding eligibility criteria for the Principal Investigator and Co-Applicants are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Principal Investigator must be a researcher from the humanities and social sciences.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Principal Investigator must be based at an eligible UK university or research institute.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Principal Investigator must hold an established role lasting the duration of the award.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Principal Investigator must be of postdoctoral or above status.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Principal Investigator must spend at least 20% of their time on the award.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Co-Applicants based overseas are required.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "global-innovation-fellowships-dgap-2026-27",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for UK-based early and mid-career researchers from the humanities and social sciences as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The fellowship is for UK-based early-career researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fellowship is for UK-based mid-career researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fellowship is open to researchers from across the humanities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fellowship is open to researchers from across the social sciences.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "additional-needs",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria and purpose of the funding as described in the provided page text.",
+          "claims": [
+            {
+              "text": "The funding is available for current British Academy award-holders.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is available for applicants intending to apply for a British Academy award in the next six months.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants need support with submitting their application.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

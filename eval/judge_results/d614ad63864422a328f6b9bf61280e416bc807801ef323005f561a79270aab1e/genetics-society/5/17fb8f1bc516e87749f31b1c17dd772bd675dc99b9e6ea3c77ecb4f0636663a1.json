@@ -1,0 +1,1413 @@
+{
+  "funder": "The Genetics Society",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "chain_of_thought",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 5,
+  "config_hash": "d614ad63864422a328f6b9bf61280e416bc807801ef323005f561a79270aab1e",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 40,
+      "n_claims_supported": 22,
+      "n_records_judged": 6,
+      "n_records_supported": 1,
+      "claim_rate": 0.55,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.550595238095238,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.16666666666666666,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "junior-scientist-conference-grant",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose, the existence of three streams, and the eligibility criteria, but omits the specific monetary amounts for each stream.",
+          "claims": [
+            {
+              "text": "The funding supports attendance at conferences on research in genetics.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are three streams of conference support.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Stream A provides up to \u00a3200 for Genetics Society or Special Interest Group meetings.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Stream B provides up to \u00a3500 for non-Genetics Society genetics conferences.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Stream B provides up to \u00a3750 for two Adelphi Genetics Forum co-sponsored awards a year for PhD students only.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Stream C provides up to \u00a3300 for registration for virtual conferences.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The funding is for Genetics Society junior scientist members.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "training-grant",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the eligibility and purpose of the grants but omits the specific financial details and covered expenses mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "Grants are available for members.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are for attending formal short training courses.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are for collaborative visits to another laboratory to train in specific genetic or genomic techniques.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants cover travel expenses.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Grants cover accommodation expenses.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Grants cover subsistence expenses.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Grants cover registration/tuition fees.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The maximum grant amount is \u00a31,200.",
+              "claim_type": "amount",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "carers-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the purpose and eligibility of the award, and partially supports claims about the process, but omits specific details about the amount and receipt requirements.",
+          "claims": [
+            {
+              "text": "The award is up to \u00a360 per day.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The award supports a member's attendance at a Genetics Society meeting or event.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award is for members who have caring responsibilities that would otherwise prevent attendance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The award can be claimed in arrears.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Claims require the production of electronic receipts.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "The funds can be used as the recipient thinks best supports their attendance.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "one-off-meeting-grant",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text captures the core purpose and eligibility criteria of the funding, including the types of events supported and the fact that they are external to the society. However, it omits the specific funding amounts mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The funding supports one-off genetics-themed meetings.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The meetings are organized outside the Genetics Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding is available for a Genetics Society lecture at a few hundred pounds.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funding is available up to about \u00a31,000 for a Society session.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funding is available for potentially several thousand pounds as major sponsor of an entire meeting.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The sponsorship is towards the organization of a meeting, not attendance.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "public-engagement-grant",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose, delivery methods, covered costs, and some specific conditions of the grant, but omits the maximum grant amount and several other applicant requirements.",
+          "claims": [
+            {
+              "text": "Grants are available for public engagement activities related to genetics.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Activities can be delivered in person or virtually.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Grants cover eligible travel and materials costs.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The maximum grant amount is \u00a31,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Successful applicants must acknowledge the Society.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Successful applicants must use the Society's logo.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Successful applicants must follow EDI principles.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Successful applicants must report participation numbers.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The grants are UK-based.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Travel costs must be budget/economy class.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "new-special-interest-group",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose of the funding but omits the specific amount and examples of current groups.",
+          "claims": [
+            {
+              "text": "Funding is available for sponsorship of regular series of themed genetics research meetings.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is up to \u00a32,000 per year.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Current groups that receive funding include Seed Plant, e-ACGT, the C. elegans Group, and the London Genetics Network.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 104,
+      "n_claims_supported": 104,
+      "n_records_judged": 7,
+      "n_records_supported": 7,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "junior-scientist-conference-grant",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose of the grants and the three main streams available, all of which are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The grants support attendance of Genetics Society junior scientist members at conferences on research in genetics.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are three streams for the grants: (A) Genetics Society/SIG meetings, (B) non-Genetics Society meetings, and (C) virtual conferences.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "training-grant",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Grants are available to enable members to attend formal short training courses.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available to enable members to attend a collaborative visit to another laboratory to train in specific genetic/genomic techniques.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The maximum grant amount is \u00a31,200.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Deadlines for the grant are quarterly.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Quarterly deadlines are at midnight on 15th February, May, August and November.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "All members of the Genetics Society can apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be studying or working in the UK, or the course must be held in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students can apply as soon as they become Society members.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Other applicants should be a Society member for at least one year.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The Genetics Society welcomes applications from all sections of the community regardless of sex, gender identity, sexual orientation, ethnicity, disability, caring responsibilities, age, religion, or belief.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Costs that can be applied for include travel, accommodation, subsistence, and registration/tuition fees.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Training in a collaborator's lab that is already built into and budgeted for in your degree funding cannot be funded.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Training courses taking place outside the UK if you do not work or study in the UK cannot be funded.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Fieldwork cannot be funded by this grant.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be either studying or working in the UK, or intending to carry out their training course in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "If a student, a supporting letter from their supervisor is required.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The supervisor must also be a member of The Genetics Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "An individual can only claim one travel grant in any two-year period.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Only one application from a research group can be funded in any twelve-month period.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "If the course is outside the UK, a detailed explanation is needed if a similar course is available in the UK.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A reason is needed why student funding does not cover the training costs.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A short report must be submitted within two months of completing the training.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications are made online via the Genetics Society Grants application site.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "An online GS Funding Application Form must be included in the application.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A recent CV must be included in the application.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A supporting statement from the supervisor is required for postgraduate, undergraduate, or MSc by Research students.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Genetics Society aims to notify the decision within one month of applications.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications should be submitted at least 3 months in advance of the start date of training.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "heredity-fieldwork-grant",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Awards are available to cover travel and accommodation costs associated with a field-based genetic research project.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is provided by income from the Society's journal Heredity.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Research funded by this award should produce results suitable for publication in Heredity.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Awards are available up to \u00a32,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The deadline for the next round of applications is February 1st, 2024.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "All members of the Genetics Society can apply if they are studying or working in the UK, or intend to carry out fieldwork in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students can apply as soon as they become Society members.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Other applicants should have been a Society member for at least one year.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The Genetics Society welcomes applications from all sections of the community regardless of sex, gender identity, sexual orientation, ethnicity, disability, caring responsibilities, age, religion, or belief.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Costs covered include travel, accommodation, and subsistence.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Costs for a field assistant (travel, accommodation, subsistence) are covered if essential and they are a Society member.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Equipment essential for gathering data in the field may be eligible, but should not exceed one third of the applied funds.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Fieldwork that is an essential part of a study and already budgeted for is not covered.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Costs associated with lab procedures, downstream molecular analysis, or equipment are not covered.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Salaries for fieldwork are not covered.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Fieldwork taking place outside the UK is not covered if the applicant does not work or study in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Attendance at conferences is not covered.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applicants must either live or work in the UK or intend to carry out their fieldwork in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "A supporting letter from a supervisor is required for students.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The supervisor must also be a member of The Genetics Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be completing the fieldwork themselves.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Only one application per research group is funded in a twelve-month period.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "An applicant can only claim one Heredity Fieldwork Grant in any two-year period.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants need to explain why their student funding does not cover the intended fieldwork.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A short report must be submitted within two months of completing fieldwork for potential inclusion in the Genetics Society newsletter and website.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications are made online via the Genetics Society Grants application site.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Deadlines for applications are quarterly: February 1st, May 1st, August 1st, and November 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications should include a completed online GS Funding Application Form, a recent CV, and a supporting statement from a supervisor.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Genetics Society aims to notify decisions within one month of application deadlines.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications should be submitted at least 3 months in advance of the fieldwork start date.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "carers-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The award is intended to help members with caring responsibilities attend a Society meeting or event.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award can be used by the recipient in any way they deem best supports their attendance.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award amount is up to \u00a360 per day.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Any member can apply for the award.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There is no age restriction for the person being cared for.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The number of awards is restricted based on anticipated event attendance.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Priority is given to early-career scientists and based on need.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Awards must be applied for before the meeting or event.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Awards are competitive.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Approved awards are claimable in arrears upon submission of electronic receipts.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants need to provide their career stage.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants need to describe their caregiver role.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants need to provide a brief justification (max 300 words) for the need for the award.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "one-off-meeting-grant",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose of the funding opportunity as described in the page text.",
+          "claims": [
+            {
+              "text": "The funding is for sponsoring genetic-themed meetings not directly organized by the Genetics Society.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is towards the organization of a meeting, not for attendance.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "public-engagement-grant",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Grants are available to support public engagement activities related to genetics.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Activities can be delivered in person or virtually.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Grants cover eligible travel costs.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Grants cover eligible materials costs.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Travel expenses must be UK-based.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Travel expenses must be budget/economy class.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The maximum grant amount is \u00a31,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be members of the Genetics Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant cannot be used for salaries, freelance fees, insurance or institutional overhead costs.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant cannot be used for room hire for events hosted within academic institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant cannot be used for public engagement activities conducted as part of UKRI or charity-funded research projects.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant cannot be used for data collection undertaken for research purposes.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant cannot be used for the production of for-profit media.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant cannot be used for travel and accommodation costs for event attendees.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Successful applicants must acknowledge support from the Genetics Society.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Successful applicants must include the Genetics Society logo in promotional materials.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Successful applicants must adhere to the Genetics Society\u2019s Equality, Diversity and Inclusion (EDI) principles.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Successful applicants must provide participation numbers and a brief report.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Genetics Society offers publicity materials like pop-up banners and leaflets for use.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grant has two deadlines per year: March 1st and October 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applicants are encouraged to submit at least three months before the project start date.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Decisions on applications are normally expected within four weeks of the deadline.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Queries can be directed to team@genetics.org.uk.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Society is not responsible for risk assessments or public liability issues.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The Genetics Society welcomes applications from all sections of the community regardless of sex, gender identity, sexual orientation, ethnicity, disability, caring responsibilities, age, religion or belief.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications are made through the mySociety membership portal.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "new-special-interest-group",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose and eligibility criteria for the Special Interest Group Funding as described in the provided page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity is for the sponsorship of research meetings on particular themes.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is available for genetics research communities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for communities wishing to run regular series of meetings.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 45,
+      "n_claims_supported": 20,
+      "n_records_judged": 5,
+      "n_records_supported": 0,
+      "claim_rate": 0.4444444444444444,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.47896825396825393,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "junior-scientist-conference-grant",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most eligibility criteria but omits the specific location-based requirements for Schemes B and C and the requirement for the supervisor's letter to be from a current Society member.",
+          "claims": [
+            {
+              "text": "Eligibility is limited to junior scientist members of the Genetics Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Scheme A is open to undergraduate, Master's, and PhD student members.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Scheme A is open to postdoctoral members within six years of their PhD viva.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Schemes B and C are open to PhD student members.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Schemes B and C are open to postdoctoral members within six years of their PhD viva.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "For conferences outside the UK, Scheme B and C applicants must be UK-based.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "For conferences in the UK, Scheme B and C applicants must be non-UK based.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must present a poster or give a talk at the conference.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The supervisor's supporting letter must come from a current Society member.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "training-grant",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the eligibility criteria but omits the requirements for the supervisor and the limits on the number of grants per member and per research group.",
+          "claims": [
+            {
+              "text": "Applicants must be members of the Genetics Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be studying or working in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be attending a course held in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students can apply as soon as they become members.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Other applicants must have been members for at least one year.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "A student's supervisor must also be a Society member.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "A student's supervisor must supply a supporting letter.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Only one travel grant is available per member in any two-year period.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Only one funded application is available per research group in any twelve-month period.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "carers-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures all eligibility criteria mentioned in the reference text but omits the deadline and the competitive nature of the awards.",
+          "claims": [
+            {
+              "text": "The applicant must be a member of the Genetics Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must have caring responsibilities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The age of the person being cared for does not matter.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Priority is given to early-career scientists.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Priority is given based on need.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards must be applied for before the meeting or event.",
+              "claim_type": "deadline",
+              "supported": false
+            },
+            {
+              "text": "The awards are competitive.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "one-off-meeting-grant",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text correct...included in the budget.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "public-engagement-grant",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only captured the primary eligibility criterion (membership in the Genetics Society) and omitted all other exclusions and conditions related to eligible expenses and travel.",
+          "claims": [
+            {
+              "text": "The funding is open to members of the Genetics Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Salaries are not eligible expenses.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Freelance fees are not eligible expenses.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Insurance costs are not eligible expenses.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Institutional overheads are not eligible expenses.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Room hire within academic institutions is not an eligible expense.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Engagements that should have been costed into a UKRI or charity-funded grant are excluded.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Research data collection costs are not eligible expenses.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Costs related to for-profit media are not eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Attendee travel costs are not eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Travel must be economy class.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Travel must be UK-based.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "new-special-interest-group",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose and one eligibility criterion but omits other eligibility criteria and the deadline.",
+          "claims": [
+            {
+              "text": "The funding is for genetics research communities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for running a regular series of meetings.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The meetings must be based in, or have strong links with, the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Undergraduates are eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Graduate students are eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Junior postdocs are eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "PIs/Co-Is are eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applications must be submitted at least three months before the first meeting.",
+              "claim_type": "deadline",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 25,
+      "n_claims_supported": 25,
+      "n_records_judged": 7,
+      "n_records_supported": 7,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "junior-scientist-conference-grant",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text regarding eligibility criteria for the Junior Scientist Conference Grants are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Scheme A is open to undergraduate, Master's, and PhD student members of the Genetics Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Scheme A is open to postdoctoral members within six years of their PhD viva.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Schemes B & C are open to PhD student members within six years of their PhD viva.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Schemes B & C are open to postdoctoral members within six years of their PhD viva.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must present a poster or give a talk at the conference.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "training-grant",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for the Genetics Society Training Grant as presented in the provided page text.",
+          "claims": [
+            {
+              "text": "All members of the Genetics Society studying or working in the UK are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "All members of the Genetics Society attending a course held in the UK are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students can apply for the grant as soon as they become members of the Genetics Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Members other than students should have been a member of the Genetics Society for at least one year to apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "heredity-fieldwork-grant",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for the Heredity Fieldwork Grant as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants must be members of the Genetics Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be studying or working in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must intend to carry out fieldwork in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students can apply as soon as they become members of the Genetics Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Members who are not students should have been a member of the Genetics Society for at least one year.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "carers-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria mentioned in the page text, including membership, no age restriction for the cared-for person, and priority for early-career scientists and based on need.",
+          "claims": [
+            {
+              "text": "Any member of the Genetics Society can apply for the award.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The age of the person being cared for is not a restriction for eligibility.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Priority is given to early-career scientists.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Priority is given based on need.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "one-off-meeting-grant",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria mentioned in the page text regarding membership and the geographical basis or links of the meetings.",
+          "claims": [
+            {
+              "text": "Applicants must be members of the Genetics Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Meetings should be based in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Meetings should have strong links with the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "public-engagement-grant",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text claims that members of the Genetics Society are eligible, and the page text explicitly states that grants are available to members of the Genetics Society.",
+          "claims": [
+            {
+              "text": "Applicants must be members of the Genetics Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "new-special-interest-group",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for the funding opportunity as stated in the page text.",
+          "claims": [
+            {
+              "text": "The funding is available for genetics research communities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Meetings should be based in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Meetings should have strong links with the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

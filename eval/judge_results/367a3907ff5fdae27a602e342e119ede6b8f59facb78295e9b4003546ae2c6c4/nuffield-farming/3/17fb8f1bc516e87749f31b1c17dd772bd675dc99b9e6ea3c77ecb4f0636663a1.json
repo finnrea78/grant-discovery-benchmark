@@ -1,0 +1,215 @@
+{
+  "funder": "Nuffield Farming Scholarships Trust",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "chain_of_thought",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 3,
+  "config_hash": "367a3907ff5fdae27a602e342e119ede6b8f59facb78295e9b4003546ae2c6c4",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "next-gen-2027",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text capture...plication opening date.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 6,
+      "n_claims_supported": 6,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "next-gen-2027",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the details of the Nuffield Farming Next-Gen Scholarship, including its duration, funding inclusions, and the fact that it is fully funded, all of which are explicitly stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The study programme is fully funded.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The study programme lasts for 30 days.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding includes travel.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding includes subsistence.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding includes attendance at the Nuffield Farming Conference.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding includes associate membership.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 4,
+      "n_claims_supported": 4,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "next-gen-2027",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures the age range, residency, specific interests, and the overall purpose of the funding opportunity as stated in the reference text.",
+          "claims": [
+            {
+              "text": "The opportunity is for individuals aged 18-24.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be residents of the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a demonstrable interest in dairy or regenerative agriculture.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity aims to develop young talent in farming and related sectors.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 4,
+      "n_claims_supported": 4,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "next-gen-2027",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria and the purpose of the scholarship as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants must be aged 18-24.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be resident in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a demonstrable interest in dairy or regenerative agriculture.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the scholarship is to develop young talent in farming and related sectors.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

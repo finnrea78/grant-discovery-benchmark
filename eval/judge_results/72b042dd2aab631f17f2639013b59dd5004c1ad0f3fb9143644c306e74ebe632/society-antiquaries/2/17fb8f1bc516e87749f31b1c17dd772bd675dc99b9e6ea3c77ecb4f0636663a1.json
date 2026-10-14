@@ -1,0 +1,653 @@
+{
+  "funder": "Society of Antiquaries of London",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "minimal",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 2,
+  "config_hash": "72b042dd2aab631f17f2639013b59dd5004c1ad0f3fb9143644c306e74ebe632",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 19,
+      "n_claims_supported": 12,
+      "n_records_judged": 3,
+      "n_records_supported": 0,
+      "claim_rate": 0.631578947368421,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5805555555555556,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "beatrice-de-cardi-awards",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text only su... namesake of the award.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "janet-arnold-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims related to the purpose and eligibility of the research, but omits the specific grant amount.",
+          "claims": [
+            {
+              "text": "The grant is for in-depth research on the history of dress and the materials from which it is made.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research should be based on close examination of surviving garments.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applicants must demonstrate a desire to pursue a particular piece of original research.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research should be based on items of dress or their remains.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The results of the research are intended for dissemination through publication, digital resources, display, cataloguing, teaching, practical use in conservation, or realistic reproduction.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are no geographical restrictions for the research.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are no chronological restrictions for the research.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant amount is between \u00a3350 and \u00a35,000.",
+              "claim_type": "amount",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "tessa-mortimer-wheeler-travel-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only supports the purpose of the grant, omitting details about the amount, specific eligibility criteria, and the historical context of the award.",
+          "claims": [
+            {
+              "text": "The award provides up to \u00a3500 for travel grants.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The grants are for UK-university undergraduate and first-year postgraduate archaeology students.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The grants are intended to help students gain fieldwork experience away from their home base, ideally abroad.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The awards are in memory of Tessa Verney Wheeler and Sir Mortimer Wheeler.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The awards were established through an appeal by the British Academy, the Institute of Archaeology (University College London) and the Society of Antiquaries of London.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose of the grants, the location, the adherence to SPAB principles, and the frequency of application rounds, but omits the specific date criteria for features and the grant amount range.",
+          "claims": [
+            {
+              "text": "Grants are available for the conservation of decorative or non-structural interior features.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The features to be conserved must predate 1896.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The features must be located in UK places of worship.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Work must follow SPAB principles.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are two application rounds per year.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Grant amounts range from \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 18,
+      "n_claims_supported": 18,
+      "n_records_judged": 5,
+      "n_records_supported": 5,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 2,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose and scope of the funding opportunity, including the mention of specific named awards, all of which are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity offers annual project grants.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grants support research into the human past through its material culture or material remains.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research areas include archaeology, art history, architectural and buildings history, material culture, and history of collecting.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity includes named awards: Marion Wilson, Joan Pye, and Hugh Chapman.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "beatrice-de-cardi-awards",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text states ...ddle East and Pakistan.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "janet-arnold-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately describes the funding opportunity as a named research award within the Society's Research and Travel Grants programme, specifically supporting research into dress and textiles, which is directly supported by the page text describing the Janet Arnold Awards.",
+          "claims": [
+            {
+              "text": "The funding opportunity is a named research award.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity is part of the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity supports research into dress and textiles.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "tessa-mortimer-wheeler-travel-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately describes the funding opportunity as a travel award within the Society's Research and Travel Grants programme, supporting archaeological fieldwork and travel.",
+          "claims": [
+            {
+              "text": "The funding opportunity is a travel award.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award is part of the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award supports archaeological fieldwork.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award supports archaeological travel.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-lambarde-travel-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately describes the funding opportunity as a travel award within the Society's Research and Travel Grants programme, intended for researchers whose funds are primarily for their own research travel, all of which is supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity is a travel award.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The travel award is part of the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award is for researchers whose funds are primarily for their own research travel.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the purpose and application deadlines for the William and Jane Morris Church Conservation Grants as described in the provided page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity supports the conservation of church buildings and furnishings.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are two application rounds each year for this funding.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The first application deadline is March 31st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The second application deadline is August 31st.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "linda-parry-textile-conservation-research-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ... to that specific form.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 24,
+      "n_claims_supported": 4,
+      "n_records_judged": 4,
+      "n_records_supported": 0,
+      "claim_rate": 0.16666666666666666,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.17291666666666666,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "beatrice-de-cardi-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the claim about the applicant's role and the requirement for two references, but omits the restrictions on degree work, retrospective applications, and geographical focus.",
+          "claims": [
+            {
+              "text": "The application must be from the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is not for work contributing to a UG/PG degree.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Retrospective applications are not accepted.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Research must concern the United Arab Emirates, the Sultanate of Oman, Saudi Arabia, or the Pakistan province of Balochistan.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Two references are required.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "janet-arnold-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only captures the claim that applications must be from the project director or principal investigator, omitting all other eligibility criteria.",
+          "claims": [
+            {
+              "text": "Applications must be from the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The work must be original and not already covered by publication.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding is not for work contributing to a UG/PG degree.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Retrospective applications are not accepted.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Preference is given to applicants who have not previously received a Janet Arnold Award.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "There are no geographical or chronological restrictions.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "tessa-mortimer-wheeler-travel-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only mentions applications from project director or principal investigator, which does not align with any of the eligibility or process criteria mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The award is open to undergraduates and first-year postgraduates studying archaeology at a UK university.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Travel for conference attendance is not eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The award is not for work contributing to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "One reference from a supervisor is required.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Preference is given to applicants who have not previously received a Wheeler Award.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only captures the claim about references not being required, omitting all other eligibility and purpose criteria.",
+          "claims": [
+            {
+              "text": "Applications are accepted on behalf of churches, chapels, or other places of worship in the United Kingdom.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Funds are available for the conservation of decorative or non-structural interior features.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Eligible features include stained glass, sculpture, furniture, monuments/tombs, and wall paintings.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The object to be conserved must have been made no later than 1896.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "No references are required for the application.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The work must be directed by a professional architect or an established conservator.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Turret clocks and organs are generally not grant-aided.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applications for clock or organ cases of significant contribution or antiquarian interest may be exceptionally considered.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 9,
+      "n_claims_supported": 8,
+      "n_records_judged": 5,
+      "n_records_supported": 4,
+      "claim_rate": 0.8888888888888888,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.9,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.8,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 2,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the page text, specifically regarding the applicant's role, the exclusion of degree-related work, and the rejection of retrospective applications.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards are not made for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications are not considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "beatrice-de-cardi-awards",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ...tions of the page text.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "janet-arnold-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "tessa-mortimer-wheeler-travel-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-lambarde-travel-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the page text, specifically that applications must be from the project director or principal investigator and that certain awards are suitable for those requiring funds primarily for their own research travel.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is intended for applicants who primarily require funds for their own research travel.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims no references are required, but the page text explicitly states that most awards require one or two references. The claim about uploading supporting documents is supported by the page text.",
+          "claims": [
+            {
+              "text": "No references are required for this funding opportunity.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Supporting documents such as photographs, architect/conservation reports, and budgets must be uploaded.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "linda-parry-textile-conservation-research-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ...mentioned by the agent.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1436 @@
+{
+  "funder": "Paul Mellon Centre for Studies in British Art",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "chain_of_thought",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 1,
+  "config_hash": "fde2ae6d291c33d9b88db0956906ec2d903a52fdcfb5c75ed9b2ac95a6c23339",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 36,
+      "n_claims_supported": 22,
+      "n_records_judged": 7,
+      "n_records_supported": 0,
+      "claim_rate": 0.6111111111111112,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6068027210884354,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "author-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the core purpose and eligibility criteria but omits specific details about what types of costs are covered by the funding.",
+          "claims": [
+            {
+              "text": "Support is available for individuals disseminating research on British art.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Support is available for monographs, edited collections, catalogues, and articles.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Support covers image licensing.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Support covers subventions.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Support covers contributors' fees.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Support covers translation of original materials.",
+              "claim_type": "amount",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "individual-research-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the flexibility, eligibility, purpose (research time, travel, British art), but omits details about backfill and additional costs.",
+          "claims": [
+            {
+              "text": "The funding is flexible.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding supports individuals.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for research in British art.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used for research time.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used for research travel to view collections and visit archives.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can cover backfill for those in employment.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding can cover some additional costs.",
+              "claim_type": "amount",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "study-support-grant",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports the grant amount and the general eligibility for postgraduate study in British art-related fields, but omits the specific degree levels (master's or doctoral) and the requirement of facing barriers to study.",
+          "claims": [
+            {
+              "text": "The grant amount is \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant is for students beginning or continuing a master's or doctoral degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The degree must be in British art, visual culture, or architecture.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The grant is for students who face barriers to undertaking their course.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "andrew-wyld-grant",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports the claims regarding the grant amount and its purpose, but omits the detail about the fund source.",
+          "claims": [
+            {
+              "text": "The grant amount is a fixed \u00a32,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant is intended to support travel and research on historical works on paper.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant is drawn from the Andrew Wyld Fund.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "masters-degree-scholarship",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support...spectives in the field.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "doctoral-scholarships",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the duration, annual stipend, and purpose of the funding, but omits the additional networking/mentorship amount and the name of the scheme.",
+          "claims": [
+            {
+              "text": "The funding is for a doctorate in British art.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding provides three years of full support.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The annual stipend is \u00a332,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "There is an additional \u00a3500 per year for networking and mentorship.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The funding is part of the New Narratives scheme.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "early-career-fellowships",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the purpose and amounts of the funding but omits details about the payment methods (to individual or employer).",
+          "claims": [
+            {
+              "text": "Funding is available for a major research project in British art.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding amount is \u00a335,000 for one year.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding amount is \u00a370,000 for two years.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funding can be paid to an individual as a grant.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Funding can be paid to an employer as staff replacement costs.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "rome-fellowship-bsr",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most claims but omits the detail about replacement staff costs being covered for employed individuals.",
+          "claims": [
+            {
+              "text": "The residency lasts for three months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The residency takes place at the British School at Rome.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Full board is provided.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Accommodation is provided.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "An honorarium is provided.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Replacement staff costs are covered for employed individuals.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 89,
+      "n_claims_supported": 89,
+      "n_records_judged": 8,
+      "n_records_supported": 8,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "author-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, including the types of publications supported, the eligibility of individuals, the subject matter, and the specific application deadlines for the Autumn 2026 round.",
+          "claims": [
+            {
+              "text": "The funding supports the publication of monographs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports the publication of edited collections.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports the publication of catalogues.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports the publication of articles.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for individuals.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is related to British art.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications for the Autumn 2026 round of funding are open.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications close on Monday 14 September 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "individual-research-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, covering the purpose of the funding, the amounts available, eligibility criteria, application deadlines, and the application process.",
+          "claims": [
+            {
+              "text": "The funding is flexible and can support research travel, research time, and related costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The projects supported are in the field of British art.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant can be used for research time, including backfill for those in employment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant can be used for research travel to view collections or visit archives.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant can cover some additional costs related to research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are tiered grant amounts available: up to \u00a33,000, \u00a33,001-\u00a38,000, and \u00a38,001-\u00a320,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Grants up to \u00a33,000 are available to individuals at any stage of their career.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants between \u00a33,001-\u00a38,000 are available to individuals at any stage of their career.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants between \u00a38,001-\u00a320,000 are available to individuals at a postdoctoral level, or with equivalent research experience, or above.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications are currently closed.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The next round of applications will open in Spring 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications will open on Monday 30 November 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The research activity must be completed within two years of the award being granted, unless otherwise specified.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Research trips can include costs for travel (UK or international), accommodation, and daily subsistence.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are no budget limitations for research trip costs, but they must be reasonable.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applicants are encouraged to consider the environmental impact of their travel choices.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "A draft itinerary of the trip must be included in the application.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Costs for research time can include staff replacement costs if the applicant is employed.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Costs for research time can include daily rates if the applicant is freelance or taking leave from employment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Supporting costs for research, such as research materials, copying fees, and subscriptions, can be included and should not exceed 10% of the overall budget.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Proposals can include elements of both research travel and research time.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications for part-time research are permitted.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants can claim for costs not explicitly listed by speaking to the Grants Manager before submitting.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Grant payments can be made directly to the recipient or their nominated institution/organisation.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "International applicants are welcome.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research subject must align with the funder's criteria regarding British art, visual culture, and/or architecture.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant is designed to support research towards a specific project with a distinct outcome.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant is not intended to support costs specifically towards the final outcome (e.g., publication).",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications must include a detailed project outline.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications must include a thorough timetable of research activity and/or an itinerary for the research trip.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications must include a comprehensive budget.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications must include one academic or professional reference.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications from organisations on behalf of individuals are not accepted.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects that are part of an organisation's programme are not accepted.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "An individual cannot hold another paid award or fellowship concurrently if they are in receipt of an Individual Research Grant.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Accessible formats of application forms and guidance are available upon request.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Funding is available to help with additional barriers and extra costs incurred by applicants facing accessibility challenges.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Successful applicants will be asked to agree to Terms & Conditions.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A final report detailing research activity and funding impact must be submitted within three months of completing the award.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications open on Monday 30 November 2026 at 10:00 am GMT.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications close on Monday 18 January 2027 at 11:59 pm GMT.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "References are due by Thursday 28 January 2027 at 11:59 pm GMT.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The first assessment round takes place from Friday 29 January to Monday 8 March 2027.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The second assessment round takes place from Friday 12 March to Monday 12 April 2027.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Decisions will be communicated to all applicants by Friday 16 April 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "study-support-grant",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the grant amount, purpose, and application status and dates as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The grant provides a fixed amount of \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant supports students beginning or continuing postgraduate study.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The study fields supported are British art related fields.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications are currently closed.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The next round of applications will open in Spring 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications for the next round will open on Monday 30 November 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "andrew-wyld-grant",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the grant amount, its purpose (supporting travel and research on historical works on paper, specifically prints, drawings, and watercolours), and the application deadlines, noting that applications are closed and providing details for the next round.",
+          "claims": [
+            {
+              "text": "The grant is a fixed amount of \u00a32,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant supports travel and research on historical works on paper.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant supports research on prints, drawings, and watercolours.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications are currently closed.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The next round of applications will open in Spring 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications will open on Monday 30 November.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "masters-degree-scholarship",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the scholarship amount, duration, part-time option, and field of study as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The funding offers full funding of \u00a332,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is for one-year master's study.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding can be split over two years for part-time study.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The master's study must be in British art related fields.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "doctoral-scholarships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, including details about the funding amount, duration, purpose, field of study, and application deadlines.",
+          "claims": [
+            {
+              "text": "The funding is for doctoral research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The total funding amount is \u00a396,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is \u00a332,000 per year.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding duration is three years.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding covers fees and living costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research must be in British art related fields.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications open on Monday 30 November 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications close on Monday 18 January 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "early-career-fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the funding amounts, the purpose of the fellowship, and the application opening and closing dates as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The fellowship provides \u00a335,000 for one year or \u00a370,000 for two years.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The fellowship supports an in-depth research project reshaping understanding of British art.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications open on Monday 30 November 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications close on Monday 18 January 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "rome-fellowship-bsr",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims regarding the duration, location, inclusions, research focus, and application dates are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The residency is for three months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The residency is at the British School at Rome.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The residency includes board.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The residency includes accommodation.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The residency includes an honorarium.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The research focus is on British-Italian cultural exchange.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications open on Monday 30 November 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications close on Monday 18 January 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 59,
+      "n_claims_supported": 18,
+      "n_records_judged": 7,
+      "n_records_supported": 0,
+      "claim_rate": 0.3050847457627119,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.3425324675324675,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "author-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the eligibility criteria regarding career stage, publisher confirmation, and publication date, but omits the requirement to demonstrate the contribution to the field of British art, visual culture, and/or architecture.",
+          "claims": [
+            {
+              "text": "Individuals at any stage of their career are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a publisher confirmed.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a publication date scheduled within three years of applying.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must demonstrate how their publication and research will contribute to the wider field of British art, visual culture and/or architecture.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "individual-research-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text partially captures eligibility criteria and funding amounts but omits details about the specific restrictions for higher funding tiers, the project completion timeline, and the broader purpose of the funding related to British art scholarship and community building.",
+          "claims": [
+            {
+              "text": "The funding is open to individuals at any career stage for the lower tiers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The \u00a38,001-\u00a320,000 funding tier is restricted to individuals at postdoctoral level or with equivalent research experience or above.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Activity is expected to be completed within two years of the award.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The funding supports original research that deepens understanding of British art and its histories.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Projects must be rigorous in their methodologies.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Projects must intend to contribute meaningfully to scholarship.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding aims to support a wide range of individuals and organisations.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding programme encourages connections, networks, and dissemination.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding is available for amounts up to \u00a33,000, \u00a38,000, or \u00a320,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The \u00a320,000 tier is for postdoctoral level.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding is open to international applicants.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "study-support-grant",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits several key eligibility criteria and purpose details present in the reference text, while only partially capturing the eligibility related to degree level and subject.",
+          "claims": [
+            {
+              "text": "Applicants must be starting a master's or doctoral degree between April 2027 and April 2028.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants already enrolled on a course continuing at least one further year from April 2027 are eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Part-time courses are accepted.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "There is no restriction on course title or institution.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The research focus must meet the Centre's criteria.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "International students are eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding supports original research that deepens understanding of British art and its histories.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects must be rigorous in their methodologies.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Projects must intend to contribute meaningfully to scholarship.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding aims to support a wide range of individuals and organisations.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding programme encourages connections, networks, and dissemination.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Students must be enrolled in or starting a master's or doctoral degree in British art, visual culture or architecture.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "andrew-wyld-grant",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text capture...ct access to the works.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "masters-degree-scholarship",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits several key eligibility criteria related to the application status and research subject, as well as the stated purposes of the funding.",
+          "claims": [
+            {
+              "text": "Applicants must have applied for or hold an offer of a master's degree place.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The master's degree must be at a UK-based institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The master's degree must begin between April 2027 and April 2028.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The subject of the research and thesis must fall within the field of British art, visual culture or architectural history.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding supports original research that deepens understanding of British art and its histories.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding supports projects that are rigorous in their methodologies.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding supports projects that intend to contribute meaningfully to scholarship.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding aims to support a wide range of individuals and organisations.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding programme encourages connections, networks and dissemination to help advance knowledge of British art.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "doctoral-scholarships",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures eligibility criteria related to doctorate offers, start dates, and international applicant status, but omits all details regarding the purpose and focus of the research.",
+          "claims": [
+            {
+              "text": "Applicants must have an offer for a doctorate place at a UK institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Doctorate places must begin between April 2027 and April 2028.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is open to international applicants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research must focus on British art and its histories.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Projects must be rigorous in their methodologies.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Projects must intend to contribute meaningfully to scholarship.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding aims to support a wide range of individuals and organisations.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding programme encourages connections, networks and dissemination.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "early-career-fellowships",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text correctly identifies the primary eligibility criterion but omits details about the New Narratives initiative, its purpose, and the specific considerations the Advisory Council will take into account regarding the applicant's background and research intent.",
+          "claims": [
+            {
+              "text": "Eligibility is for individuals at the postdoctoral level or with equivalent experience or above.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity is part of the New Narratives initiative.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The funding aims to increase the diversity of perspectives among researchers and students in British art.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The Advisory Council will consider the applicant's academic background.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The Advisory Council will consider the applicant's intent to pursue research, activities, or a career pathway that contributes to reframing British art.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The Advisory Council will consider the applicant's intent to challenge the received histories of British art.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "rome-fellowship-bsr",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures some eligibility criteria but omits others, such as the requirement for a track record in British art, international openness, language proficiency, and the specific project focus.",
+          "claims": [
+            {
+              "text": "Applicants must be scholars, researchers, curators, archivists, or GLAM professionals.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have at least a first degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants can be pre-doctoral PhD candidates.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants can be senior level professionals.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a track record of research in British art.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity is open to applicants from any country.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Fluency in English is required.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Competence in or willingness to engage with Italian is required.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The project must relate to cultural contact, exchange, and influence between Britain (including its historical Empire and Commonwealth) and Italy.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 24,
+      "n_claims_supported": 24,
+      "n_records_judged": 8,
+      "n_records_supported": 8,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "author-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the page text regarding career stage, confirmed publisher, and publication date.",
+          "claims": [
+            {
+              "text": "Individuals at any career stage are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a confirmed publisher.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a publication date scheduled within three years of applying.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "individual-research-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria and funding tiers described in the provided page text.",
+          "claims": [
+            {
+              "text": "The funding is available to individuals at any career stage.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are tiered funding amounts available: up to \u00a33,000, \u00a33,001-\u00a38,000, or \u00a38,001-\u00a320,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The highest funding tier (\u00a38,001-\u00a320,000) is available to individuals at a postdoctoral level or with equivalent research experience or above.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are open to international applicants.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "study-support-grant",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for students pursuing master's or doctoral degrees in British art, visual culture, or architecture as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "Students must be enrolled in or starting a master's degree in British art, visual culture, or architecture.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students must be enrolled in or starting a doctoral degree in British art, visual culture, or architecture.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "andrew-wyld-grant",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria and research focus as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for registered students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for undergraduate level students and above.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for students from any country.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research must focus on 18th-19th century British works on paper.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "masters-degree-scholarship",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria and start date range specified in the provided page text.",
+          "claims": [
+            {
+              "text": "Individuals must have an offer for a master's degree (MA, MPhil, MSc or equivalent) at a UK institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The master's degree course must start between April 2027 and April 2028.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "doctoral-scholarships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria mentioned in the page text, including the requirement for a UK university doctorate offer, the specified start dates, and openness to international applicants with a note on potential fee differences.",
+          "claims": [
+            {
+              "text": "The opportunity is for individuals with an offer for a doctorate at a UK university.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Doctoral studies must start between April 2027 and April 2028.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to international applicants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "International applicants may have different fee structures.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "early-career-fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria and the purpose of the fellowship as described in the provided page text.",
+          "claims": [
+            {
+              "text": "Individuals must be at the postdoctoral level or have equivalent experience.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Individuals must be seeking to undertake a major research project in British art.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "rome-fellowship-bsr",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for scholars, researchers, curators, archivists, and GLAM professionals with at least a first degree, from pre-doctoral to senior level, as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The fellowship is open to scholars, researchers, curators, archivists, and GLAM professionals.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have at least a first degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligibility ranges from pre-doctoral candidates to senior-level professionals.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

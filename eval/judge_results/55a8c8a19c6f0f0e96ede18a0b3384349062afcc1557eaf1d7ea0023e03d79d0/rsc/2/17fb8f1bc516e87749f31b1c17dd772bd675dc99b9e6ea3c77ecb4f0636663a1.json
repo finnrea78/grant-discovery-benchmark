@@ -1,0 +1,959 @@
+{
+  "funder": "Royal Society of Chemistry",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "structured",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 2,
+  "config_hash": "55a8c8a19c6f0f0e96ede18a0b3384349062afcc1557eaf1d7ea0023e03d79d0",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 31,
+      "n_claims_supported": 27,
+      "n_records_judged": 4,
+      "n_records_supported": 1,
+      "claim_rate": 0.8709677419354839,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.8601190476190477,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.25,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "outreach-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text captures the purpose of the fund, its rolling deadline nature, the specific final deadline, and eligibility criteria, all of which are present in the reference text.",
+          "claims": [
+            {
+              "text": "The fund supports chemistry-based public engagement and outreach activities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fund has a rolling deadline.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The fund is open throughout 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "There are three application rounds.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The final deadline for applications is October 2, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The fund supports individuals and organizations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fund supports activities connecting communities with the chemical sciences.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the claims from the reference text, but omits the maximum grant amount and the grant duration, and does not explicitly state the grant is for 'up to \u00a35,000'.",
+          "claims": [
+            {
+              "text": "The grant is for RSC members.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is for members with limited access to research funding.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is to start new projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant covers eligible chemicals and consumables.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant covers software licenses.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant covers equipment repairs or access.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant duration is 12 months.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The grant is up to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The grant particularly supports those in less well-funded institutes.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant particularly supports those in developing countries.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant particularly supports early career researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Round 1 of the grant has closed.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 opens on 12 October 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 closes on 30 November 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "researcher-collaborations-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text omits t...nformation for Round 2.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "grants-for-carers",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the amount, purpose, and funder, but omits the claim about the application assessment process.",
+          "claims": [
+            {
+              "text": "The grant provides up to \u00a31,200 per year.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant covers additional caring costs incurred while attending chemistry-related professional events.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant is supported by the Chemists' Community Fund.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Applications are assessed individually on a rolling basis.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "accessibility-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most claims regarding eligibility, purpose, amount, and the supporting fund, but omits the claim about applications being assessed individually on a rolling basis.",
+          "claims": [
+            {
+              "text": "The grant is for individuals with disabilities and ongoing health conditions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is intended to reduce accessibility challenges when attending chemistry-related meetings, conferences, workshops or professional development events.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant covers equipment, services or other personal expenses associated with access needs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The maximum grant amount is \u00a31,200 per year.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant is supported by the Chemists' Community Fund.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Applications are assessed individually on a rolling basis.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 31,
+      "n_claims_supported": 31,
+      "n_records_judged": 5,
+      "n_records_supported": 5,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "outreach-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the purpose, eligibility, and deadlines of the Outreach Fund.",
+          "claims": [
+            {
+              "text": "The funding supports members, individuals, and organizations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding supports chemistry-based public engagement and outreach activities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding connects communities with the chemical sciences.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is open throughout 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The funding has rolling deadlines.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The final application deadline is October 2, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, including the purpose of the fund, specific eligibility criteria, covered expenses, and application deadlines for both rounds.",
+          "claims": [
+            {
+              "text": "The fund supports members with limited access to research funds to start new projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fund particularly supports those in less well-funded institutes.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fund particularly supports those in developing countries.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fund particularly supports early career researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fund covers chemicals/equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fund covers consumables.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fund covers software licences.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fund covers equipment repairs/access.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Round 1 closed.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 opens 12 October 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 closes 30 November 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "researcher-collaborations-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, including the purpose of the grant and the specific dates for Round 2.",
+          "claims": [
+            {
+              "text": "The grant supports researchers in establishing and developing national, international, interdisciplinary, and cross-sector collaborations and networks.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant can be used for research visits to collaborators.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant can be used for organizing meetings/workshops.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Round 2 of the grant opened on August 3, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 of the grant closed on September 21, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "grants-for-carers",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The funding supports carers to attend chemistry-related meetings, conferences, workshops, or professional development events.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding covers additional costs of care that the applicant usually provides.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The maximum funding available is \u00a31,200 per year.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is supported by the Chemists' Community Fund.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "accessibility-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The grant supports individuals with disabilities and ongoing health conditions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant aims to reduce accessibility challenges when attending chemistry-related meetings, conferences, workshops, or professional development events.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant covers equipment, services, or other personal expenses associated with access needs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The maximum grant amount is \u00a31,200 per year.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant is supported by the Chemists' Community Fund.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 44,
+      "n_claims_supported": 25,
+      "n_records_judged": 5,
+      "n_records_supported": 1,
+      "claim_rate": 0.5681818181818182,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5920634920634921,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.2,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "outreach-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures several eligibility criteria and the requirement for a significant aspect related to chemical sciences, but omits the broader categories of eligible applicants and the specific priorities for project selection mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "Applicants must be aged 18 and over.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be a UK or Republic of Ireland resident with a UK/ROI address and bank account.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants can apply on behalf of an organisation registered in the UK or ROI.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not resubmit an unsuccessful application unless invited.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications must be submitted within specified deadlines.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications must have a significant aspect related to the chemical sciences.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for members, individuals, and organisations running chemistry-based public engagement and outreach activities.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects should connect communities with the chemical sciences.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Priority is given to work reaching under-represented audiences.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Priority is given to work giving RSC members engagement opportunities.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Priority is given to work supporting positive social outcomes.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Priority is given to work engaging families, intergenerational and adult audiences.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures some eligibility criteria but omits others, such as specific ineligible membership categories and the target audience for the funding.",
+          "claims": [
+            {
+              "text": "Applicants must hold RSC membership as Associate Member (AMRSC), Member (MRSC) or Fellow (FRSC) before submitting.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Undergraduate Student Members (AFU), Affiliate (AFF) and Partner Scientists are not eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must hold an independent research post.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not hold another active Research Fund grant.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants are limited to one application per department with Head of Department support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is aimed at members with limited access to research funds.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity is aimed at members in less well-funded institutes.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity is aimed at members in developing countries.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity is aimed at early career researchers.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "researcher-collaborations-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately captures the core eligibility criteria regarding applicant status and RSC membership level, but omits details about ineligible categories and the timeline for membership confirmation.",
+          "claims": [
+            {
+              "text": "Eligible applicants are PhD students or researchers at any career stage.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible applicants can be from any sector or location.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible applicants must be Associate Members (AMRSC), Members (MRSC), or Fellows (FRSC) of the RSC.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "RSC membership must be held before submission and for the duration of the grant.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Undergraduate Student Members (AFU) are not eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Affiliate (AFF) members are not eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Partner Scientists are not eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Membership applications or upgrades can take up to two months.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "An application cannot be submitted until membership is confirmed.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "grants-for-carers",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most eligibility criteria but omits the requirement for caring responsibilities and details about the application deadline.",
+          "claims": [
+            {
+              "text": "Applicants must be chemists based in the UK or Ireland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants based outside the UK or Ireland must be RSC members of at least three consecutive years.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have caring responsibilities.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must incur additional caring expenses while attending a chemistry-related meeting, conference, workshop or professional-development event.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have an active role in the event.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications are not accepted retrospectively.",
+              "claim_type": "deadline",
+              "supported": false
+            },
+            {
+              "text": "Applications should be submitted at least six weeks before the event.",
+              "claim_type": "deadline",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "accessibility-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text captures all eligibility and purpose claims present in the reference text, with a slight clarification on the active role requirement for training/CPD.",
+          "claims": [
+            {
+              "text": "Applicants must be chemists based in the UK or Ireland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants based outside the UK or Ireland must be RSC members of at least three consecutive years.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a disability, impairment, or health condition.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funds must be used to cover costs of support/assistance personally required relating to a disability, impairment, or health condition.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The support is for attending or participating in a chemistry-related meeting, conference, workshop, or professional-development event.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have an active role in the event.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "An active role is not required for structured training or continuing professional development (CPD).",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 28,
+      "n_claims_supported": 28,
+      "n_records_judged": 5,
+      "n_records_supported": 5,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "outreach-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the 'Eligibility' section of the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants must be aged 18 and over.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be a UK or Republic of Ireland resident (with UK/ROI address and bank account).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be applying on behalf of an organisation registered in the UK or ROI.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not resubmit an unsuccessful application unless invited.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications must be submitted within specified deadlines.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications must have a significant aspect related to the chemical sciences.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text regarding eligibility criteria are directly supported by the 'Eligibility' section of the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants must hold RSC membership as Associate Member (AMRSC), Member (MRSC) or Fellow (FRSC) before submitting.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must hold an independent research post.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not currently hold another active Research Fund grant.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There is a limit of one application per department.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications require support from the Head of Department.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "researcher-collaborations-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims regarding eligibility criteria (applicant status, career stage, sector, location, and required RSC membership levels) are directly supported by the 'Eligibility' section of the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is open to PhD students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to researchers at any career stage.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to individuals in any sector.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to individuals in any location.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must hold RSC membership as Associate Member (AMRSC) before submitting.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must hold RSC membership as Member (MRSC) before submitting.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must hold RSC membership as Fellow (FRSC) before submitting.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must maintain RSC membership for the duration of the grant.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "grants-for-carers",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the 'Eligibility' section of the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is open to chemists based in the UK or Ireland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to chemists based outside the UK or Ireland if they hold valid RSC membership for a minimum of three consecutive years.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must incur additional caring expenses while attending a chemistry-related meeting, conference, workshop or professional development event.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have an active role in the event, except for structured training/CPD programmes where attending is considered an active role.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "accessibility-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the eligibility criteria and purpose of the Accessibility Grants.",
+          "claims": [
+            {
+              "text": "The grant is open to chemists based in the UK or Ireland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "If based outside the UK or Ireland, applicants must hold valid RSC membership for a minimum of three consecutive years.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funds must be used to cover costs of support/assistance personally required relating to a disability, impairment or health condition.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funds must be used to attend or participate in a chemistry-related event.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have an active role in the event, except for structured training or professional development programmes.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

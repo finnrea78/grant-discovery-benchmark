@@ -1,0 +1,225 @@
+{
+  "funder": "Henry Moore Foundation",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "few_shot",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 5,
+  "config_hash": "3edb12bdfbcba6b801f430ce3141a4fa18dacf99805a6ab50517a9baed524a42",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 7,
+      "n_claims_supported": 4,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.5714285714285714,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5714285714285714,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "https://henry-moore.org/discover-and-research/sculpture-research-programme/visiting-research-fellowships/",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits the duration for Senior Fellowships and the specific names of the three fellowship variants, while accurately capturing the other details.",
+          "claims": [
+            {
+              "text": "Fellowships last for one month.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Senior Fellowships last for six weeks.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Fellowships involve using the Foundation's research facilities.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The research facilities are located in Leeds or Hertfordshire.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Accommodation is provided as part of the fellowship.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "A travel and subsistence allowance is provided.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "There are three variants of the fellowship: Visiting Research Fellowships, Artist Research Fellowships, and Senior Fellowships.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 5,
+      "n_claims_supported": 5,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "https://henry-moore.org/discover-and-research/sculpture-research-programme/visiting-research-fellowships/",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose and benefits of the fellowships as described on the provided webpage.",
+          "claims": [
+            {
+              "text": "Fellowships enable researchers to spend a month using Henry Moore Institute facilities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The facilities are located in Leeds or Hertfordshire.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Accommodation expenses are provided for fellows.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Travel expenses are provided for fellows.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Subsistence expenses are provided for fellows.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "https://henry-moore.org/discover-and-research/sculpture-research-programme/visiting-research-fellowships/",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text correct... & Gardens fellowships.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 4,
+      "n_claims_supported": 4,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "https://henry-moore.org/discover-and-research/sculpture-research-programme/visiting-research-fellowships/",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria and the subject matter of the fellowships as described in the page text.",
+          "claims": [
+            {
+              "text": "Researchers who are academics or curators are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research must be on historic and contemporary sculpture.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Researchers from the UK are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Researchers from internationally are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

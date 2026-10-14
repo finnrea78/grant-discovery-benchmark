@@ -1,0 +1,251 @@
+{
+  "funder": "Wolfson Foundation",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "minimal",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 2,
+  "config_hash": "1bc66c963509bc53e9e459d1c23ac01758db066bfd18602a5302a56e9f3f192b",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 4,
+      "n_claims_supported": 4,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "charities-working-with-disability",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures the eligibility criteria and the purpose of the funding as described in the reference text.",
+          "claims": [
+            {
+              "text": "The funding is for charities working with disability.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for capital projects, including new buildings, refurbishment, and equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding aims to improve training, employment, and supported housing.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding particularly aids young people transitioning from children's services to adult services.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 5,
+      "n_claims_supported": 5,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "charities-working-with-disability",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the eligibility criteria and the aims of the funding program.",
+          "claims": [
+            {
+              "text": "The funding supports organizations working with disability.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding supports capital projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The capital projects can include new builds, refurbishment, or equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The projects should improve training, employment, and supported housing.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding particularly aids young people transitioning from children\u2019s services to adult services.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 9,
+      "n_claims_supported": 2,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.2222222222222222,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.2222222222222222,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "charities-working-with-disability",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the eligible organization types and the required rating from regulators, but omits details about geographic restrictions, minimum project costs, funding shortfalls, specific project purposes, and organizational fundraising challenges.",
+          "claims": [
+            {
+              "text": "The funding is for registered or exempt charities (or equivalent) and local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations must have at least a 'Good' rating from a regulator such as CQC or Ofsted where applicable.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is restricted to the UK.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding is for capital projects (new building, refurbishment work or equipment) costing at least \u00a350,000.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects must have a funding shortfall.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects should help people to live more independently.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "There is particular interest in projects related to training, employment, and supported housing.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "There is particular interest in projects related to transitions from children's to adults' services.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "There is particular interest in organizations that struggle to raise funds from the public.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 3,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "charities-working-with-disability",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the 'Eligibility' and 'Who can apply' sections of the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is open to registered or exempt charities (or equivalent).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations must have at least a \u2018Good\u2019 rating from a regulator such as CQC or Ofsted, if applicable.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

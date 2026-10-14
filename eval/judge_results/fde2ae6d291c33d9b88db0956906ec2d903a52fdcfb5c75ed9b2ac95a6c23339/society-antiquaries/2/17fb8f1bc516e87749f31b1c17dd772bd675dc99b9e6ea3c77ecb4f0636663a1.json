@@ -1,0 +1,205 @@
+{
+  "funder": "Society of Antiquaries of London",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "chain_of_thought",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 2,
+  "config_hash": "fde2ae6d291c33d9b88db0956906ec2d903a52fdcfb5c75ed9b2ac95a6c23339",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants-2026-08-31",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text omits c...in two rounds annually.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 2,
+      "n_claims_supported": 2,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants-2026-08-31",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately states that grants support church conservation and are awarded in two rounds annually, as confirmed by the page text.",
+          "claims": [
+            {
+              "text": "Grants are awarded to support the conservation of churches.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are awarded in two rounds each year.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 8,
+      "n_claims_supported": 1,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.125,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.125,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants-2026-08-31",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only supports the claim that no references are required, omitting all other eligibility and purpose criteria.",
+          "claims": [
+            {
+              "text": "Applications must be on behalf of a church, chapel, or other place of worship in the United Kingdom.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Funds are available for the conservation of decorative or non-structural interior features.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Eligible features include stained glass, sculpture, furniture, monuments/tombs, and wall paintings.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The object to be conserved must have been made no later than 1896.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "No references are required for applications.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A professional architect or established conservator must direct the work.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Turret clocks and organs are generally not grant-aided.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applications for clock or organ cases of significant contribution or antiquarian interest may exceptionally be considered.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 2,
+      "n_claims_supported": 1,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.5,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants-2026-08-31",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims no references are required for Morris applications, but the page text states that references are required for most awards and does not specify an exception for Morris applications.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "No references are required for Morris applications.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,502 @@
+{
+  "funder": "Society of Antiquaries of London",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "few_shot",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 4,
+  "config_hash": "d6711331aff35ba46ee1e6f22764a07cd86aedc9d21791e5ea52352b753ee2fd",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 9,
+      "n_claims_supported": 6,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.6666666666666666,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6666666666666666,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose of the grants and the frequency of application rounds, but omits details about the age and location of features, the specific grant amounts, and the source of the funding.",
+          "claims": [
+            {
+              "text": "Grants are available for the conservation of decorative or non-structural interior features.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The features to be conserved must predate 1896.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The features must be located in UK places of worship.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Work must follow SPAB principles.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grant amounts range from \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "There are two application rounds per year.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The application deadlines are March 31 and August 31.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The grants are for the conservation of church monuments.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are for related church conservation work.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 26,
+      "n_claims_supported": 26,
+      "n_records_judged": 8,
+      "n_records_supported": 8,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 3,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the details provided on the webpage regarding the annual project grants, their amounts, purposes, and specific named awards.",
+          "claims": [
+            {
+              "text": "The grants are for annual projects.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grant amounts range from \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants support research into the human past through its material culture or material remains.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research areas include archaeology, art history, architectural and buildings history, material culture studies, history of collecting, and intellectual enquiry into the human past.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants include named awards: Marion Wilson, Joan Pye, and Hugh Chapman Memorial.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hugh-phillips-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately describes the funding opportunity as a named research award within the Society's Research and Travel Grants programme, supporting research into the material past, all of which is directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity is a named research award.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity is part of the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity supports research into the material past.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "margaret-tom-jones-memorial-award",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text correct... reference is required.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "wainwright-research-archaeology-in-wales",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately describes the funding opportunity as a named research award within the Society's Research and Travel Grants programme, specifically supporting research archaeology in Wales, all of which is directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity is a named research award.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity is part of the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity supports research archaeology in Wales.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "open-research-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately describes the funding opportunity as a named research award within the Society's Research and Travel Grants programme, supporting open research into the material past, all of which is directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity is a named research award.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity is part of the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity supports open research into the material past.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "beatrice-de-cardi-award",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text correct... reference is required.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "janet-arnold-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately describes the funding opportunity as a named research award within the Society's Research and Travel Grants programme, specifically supporting research into dress and textiles, which is directly supported by the page text describing the Janet Arnold Awards.",
+          "claims": [
+            {
+              "text": "The funding opportunity is a named research award.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity is part of the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity supports research into dress and textiles.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "tessa-mortimer-wheeler-travel-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately identifies the funding opportunity as a named travel award within the Society's Research and Travel Grants programme and states its purpose is to support research travel, both of which are directly supported by the page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity is a named travel award within the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award supports research travel.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-lambarde-memorial-travel-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately describes the funding opportunity as a named travel award within the Research and Travel Grants programme, specifically for applicants needing funds for their own research travel.",
+          "claims": [
+            {
+              "text": "The funding opportunity is a named travel award within the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award supports research travel for applicants who require funds primarily for their own research travel.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the information found in the page text regarding the purpose and application deadlines for the William and Jane Morris Church Conservation Grants.",
+          "claims": [
+            {
+              "text": "Grants are available for the conservation of church monuments.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for related church conservation work.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are two application rounds each year for these grants.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The application deadline for the first round is 31 March.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The application deadline for the second round is 31 August.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "linda-parry-textile-conservation-and-research-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ...m and Jane Morris form.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 1,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 3,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 10,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the page text, specifically regarding the applicant's role, the exclusion of work contributing to degrees, and the rejection of retrospective applications.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be made for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hugh-phillips-award",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "margaret-tom-jones-memorial-award",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "wainwright-research-archaeology-in-wales",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "open-research-award",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "beatrice-de-cardi-award",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "janet-arnold-award",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "tessa-mortimer-wheeler-travel-award",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "william-lambarde-memorial-travel-award",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "linda-parry-textile-conservation-and-research-grants",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        }
+      ]
+    }
+  }
+}

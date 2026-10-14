@@ -1,0 +1,1884 @@
+{
+  "funder": "The Leverhulme Trust",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "few_shot",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 5,
+  "config_hash": "3f35d3189bc2850f14fc128291b4a51852460d758d1b5729eade46bb70721733",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 45,
+      "n_claims_supported": 38,
+      "n_records_judged": 7,
+      "n_records_supported": 2,
+      "claim_rate": 0.8444444444444444,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.8591836734693877,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.2857142857142857,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "early-career-fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text captures all the factual claims present in the reference text regarding eligibility, duration, and purpose of the fellowships.",
+          "claims": [
+            {
+              "text": "The fellowships are for early career researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fellowships are for a duration of three years.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The fellowships support undertaking a significant piece of publishable research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fellowships are intended to lead to a more permanent position.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-project-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most claims, but omits the maximum funding amount of \u00a3500,000.",
+          "claims": [
+            {
+              "text": "The funding scheme is a two-stage process, starting with an outline and followed by a detailed proposal.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The funding is for innovative research projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The maximum funding available is \u00a3500,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The funding duration is up to 5 years.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The detailed stage of the application process is currently open only to invited applicants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The outline stage of the application process reopens in autumn 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline for detailed applications from invited applicants is September 1, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "visiting-professorships",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most claims, but omits the specific funding amount range mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The funding is for UK institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is to invite an eminent overseas professor.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The professor should have novel expertise.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The expertise should be in an underrepresented research area.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The visit duration should be between 3 to 12 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding amount is between \u00a310,000 and \u00a3150,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The purpose is to enhance skills and knowledge in an underrepresented area of research.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "emeritus-fellowships",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about eligibility, purpose, and duration, but omits the funding amount and does not mention a deadline.",
+          "claims": [
+            {
+              "text": "The funding supports retired or semi-retired senior researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the funding is to complete a research project and prepare results for publication.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding duration is between 3 and 24 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding amount is between \u00a33,000 and \u00a324,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Application materials will be available from September 2026.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text captures the fellowship duration, eligibility criteria (experienced researchers in any discipline), purpose (to complete research), covered costs (replacement and research expenses), and the availability of application materials from September 2026.",
+          "claims": [
+            {
+              "text": "The fellowship duration is between 3 and 24 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The fellowship is for experienced researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fellowship is for researchers in any discipline.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fellowship is to complete a piece of research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fellowship covers replacement costs and research expenses.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Application materials are available from September 2026.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "leverhulme-research-centres",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about eligibility, purpose, and deadlines, but omits details regarding the funding amount and the full two-stage application process.",
+          "claims": [
+            {
+              "text": "The funding is for UK universities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for establishing a Leverhulme Research Centre.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research should be original and multidisciplinary.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is up to \u00a310m.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The funding is for 10 years.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The application process is two-stage (outline then detailed).",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "The funding round is expected to open in February 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Outline applications are due in June 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-leadership-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most claims, but omits the award amount and misinterprets the duration as a team size requirement.",
+          "claims": [
+            {
+              "text": "The award is for early career scholars.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The award supports scholars to build and lead a research team.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research team should be built to tackle a distinctive research problem.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award duration is 4-5 years.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award is for the Centenary round.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award amount is up to \u00a31m.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The next submission deadline is May 2028.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The award opens in January 2028.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 190,
+      "n_claims_supported": 190,
+      "n_records_judged": 8,
+      "n_records_supported": 8,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "early-career-fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Fellowships are for early career researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fellowships are for researchers who have a research record but have not yet held a full-time permanent academic post.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fellowships are for undertaking a significant piece of publishable work.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The aim of the fellowships is to lead to a more permanent position for the researcher.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fellowships last for 3 years.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-project-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity uses a two-stage application process: an outline stage followed by a detailed stage.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The funding is for innovative and original research projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects can be funded for up to 5 years.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The outline stage of the application process is currently paused.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The outline stage is expected to reopen in autumn 2026.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Detailed applications from invited applicants close on 1 September 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The maximum grant value is \u00a3500,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Eligible institutions include UK universities and other institutions of higher education in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "UK independent research institutes/organisations are eligible to apply on a trial basis.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The Principal Investigator must be employed by an eligible institution or be an academic with close links to one following retirement.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Contract research post holders are eligible if their appointment duration matches the award span.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Up to three co-applicants from the same or different institutions are allowed, including overseas co-applicants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Not all subject areas are eligible, specifically excluding medical and clinical research, research influencing policy, research with immediate commercial application, database assembly, advocacy, capacity building, networking, or skills development.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "At least 75% of requested resources must fund research staff.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "There must be at least one research assistant, overseas research assistant, or PhD student working at least 50% of the time throughout the grant.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Research assistants should have a research degree or equivalent experience.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Overseas research assistants can be employed if the research takes place outside the UK and local personnel are more suitable.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Consultant costs can be included up to a maximum of \u00a35,000 per year, provided they offer specialist expertise not available from co-applicants.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funding for research technicians who contribute directly to project outputs is allowed.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Tuition fees and maintenance costs for PhD studentships are allowed, set at the UK research council base rate.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "PhD students registered overseas are not permitted.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Support for an overseas student registered in the UK is allowable with explicit justification of their skills.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The Trust does not fund partial continuation or completion of independently initiated theses.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Principal Investigators and UK-based co-applicants at UK universities may apply for teaching replacement costs.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "A maximum of one year's (33%) teaching replacement per grant is allowed, pro-rata for different grant lengths or part-time contracts.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The replacement for teaching should not be a current research degree student.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Staff replacement costs should normally start at the most junior point of the lecturer scale.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Awards do not cover the salary costs of the applicant or co-applicants based at any university.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "During the trial period, applicants/co-applicants at UK independent research institutions with salary-securing contracts may exceptionally apply for a salary contribution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "A maximum of one year's (33%) salary contribution is allowed over a three-year grant, pro-rata for different lengths or part-time contracts.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Associated research costs can be included up to a maximum of 25% of the total budget.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Associated research costs include travel, subsistence, consumables, pool technical services, and computing costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications for continuation of funding for existing research are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Requests for continuation of funding for a research assistant on an existing grant are not normally considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Proposals must reflect the applicant's personal vision and demonstrate competence in research design.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Trust favors applications that cross traditional disciplinary boundaries and involve risk-taking.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applicants must justify why the Trust is the most appropriate agency for their project.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Research Project Grants are assessed via a two-stage process: Outline Applications and Detailed Applications.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Detailed applications are only accessible to invited applicants.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Detailed applications are an elaboration of the outline application.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Significant changes to the stated intention, aims, or objectives between stages are not permitted.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The total budget and personnel requested in the detailed application should match the outline, with allowable changes only for salary adjustments to conform to current pay scales.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The earliest possible start date for projects closing on 1 September 2026 is 1 December 2026.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Extensions to the nine-month detailed application deadline can be requested in exceptional circumstances (sudden, unforeseen, outside applicant's control, preventing academic duties for the majority of the period).",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Examples of exceptional circumstances for extensions include illness, maternity/paternity/adoption leave, or bereavement.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Workload, fieldwork, teaching duties, or sabbaticals are not considered exceptional circumstances for extensions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Extensions are usually limited to 3 months and/or the next deadline date.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "visiting-professorships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Funds UK institutions to invite an eminent senior professor from overseas.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The professor invited must be eminent and senior.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The professor invited must be from overseas.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The visit duration must be between 3 and 12 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The purpose is to bring novel expertise to an underrepresented area of research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The purpose is to enhance skills and knowledge in an underrepresented area of research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications are invited for a minimum of \u00a310,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applications are invited for a maximum of \u00a3150,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applications for less than \u00a310,000 are not eligible.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applications for more than \u00a3150,000 are not eligible.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "A Visiting Professorship must last at least 3 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Grants between 3 and 6 months must be completed in one visit.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Grants between 6 and 12 months can be spread over two or more visits.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "12 months is the maximum duration for a visit.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Applications must be made by a member of academic staff based in a UK university with research degree awarding powers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Some specialist arts institutions are permitted to apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The host academic\u2019s employing institution must agree to administer the grant.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The host institution must provide appropriate facilities for the Visiting Professor.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Visitors who have previously held a Leverhulme Visiting Professorship can only apply if at least 7 years have elapsed since the last one.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The Trust will consider candidates who do not hold a university post in special circumstances.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Collaborative research alone will not be a sufficient justification for a grant.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Priority will be given to new or recent collaborative ventures.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The visitor will provide expertise not otherwise available within the UK research base.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Visiting Professors will be expected to offer a short course of \"Leverhulme Lectures\".",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The Trust will not fund applications for research of which advocacy forms an explicit component.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The Trust does not support research which is aimed principally at an immediate commercial application.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The Trust will not fund applications in which the balance between assembling a data bank or database and the related subsequent research is heavily inclined to the former.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Applications will be considered in all subject areas except studies of disease, illness and disabilities in humans and animals.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications will be considered in all subject areas except research intended to inform clinical practice or the development of medical applications.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Visits should be for no less than 3 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Visits should be for no more than 12 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "A Professorship may be spread over a number of visits and over a period of up to 2 years if justified.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Tenures of 6 months or more total duration are eligible to be spread over 2 or more visits.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Tenures of less than 6 months must be completed within one visit.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award should commence within 15 months of receipt of the offer letter.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The Trust will award a maintenance grant up to a level commensurate with the salary of a professor in the comparable field in the UK.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The maintenance grant is only payable for the period of the visit to the UK.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The Trust will consider funding replacement salary costs for the visitor in their home institution as an alternative to a maintenance grant/salary.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Replacement salary costs should only be requested if more cost-effective than a maintenance grant/salary.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Replacement salary costs are only payable for the period of the visit to the UK.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Visitors may apply for funds for accommodation and utilities in the UK in certain cases.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Travel costs to and from the UK will be met for the visitor and dependant partner.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Travel costs should be based on the lowest reasonable tariff for economy travel.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "If two or more visits are made, the Trust will pay for a maximum of two return fares for the visitor and accompanying partner.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Associated costs, if justified by the programme, will also be considered.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Associated costs may include travel within the UK (for the visitor only).",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Associated costs may include laboratory consumables.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Associated costs may include technical assistance.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant does not cover the costs of items of equipment.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant does not cover the costs of non-UK conference attendance and travel.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant does not cover departmental costs.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant does not cover overheads.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant does not cover bench fees.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Personal expenditures on items such as car hire and health insurance are also ineligible.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The Trust does not make awards on a full economic costing basis.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The host institution should provide general support costs such as photocopying.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The host institution should provide general support costs such as inter-library loans.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The host institution should provide general support costs such as routine administrative assistance.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The host institution must meet all overhead and departmental costs.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The host institution must meet costs such as college and bench fees.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The host institution must provide facilities commensurate with existing staff.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The host institution must meet any visa or related costs, such as the NHS Surcharge.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "In exceptional circumstances, the Trust may consider funding up to 50% of visa or related costs.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The host institution must manage all necessary arrangements relating to the visitor\u2019s visa and tax requirements.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The host institution must administer the funding in accordance with the approved budget.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The host institution is required to submit a final statement of expenditure within one month of the end of the Professorship.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The visitor and UK host academic are required to submit a brief report within one month of the end of each visit.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Trust\u2019s support should be acknowledged in any publications arising directly from the visit.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Publications arising from the visit should be listed in the reports.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "To make an application, access the Leverhulme Trust Grants Management System.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications must be completed by the responsible academic in the UK host institution.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The visiting academic cannot make an application.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The UK host applicant is expected to organise, direct and take academic and organisational responsibility of the Professorship.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Both the proposed Visiting Professor and the UK host institution must give approval by the closing date.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Trust will report results to applicants within 5 to 6 months of each closing date.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "major-research-fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Fellowships are for distinguished researchers in the humanities and social sciences.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Fellowships are for 2-3 years.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The purpose is to complete a piece of original research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding covers replacement salary costs.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "emeritus-fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Fellowships are available for a duration of 3 to 24 months.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The fellowships are for retired or partially retired senior researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the fellowship is to complete a research project and prepare results for publication.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Application materials will be available starting in September 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Fellowships are available for durations of 3 to 24 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The fellowships are for experienced researchers in any discipline.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the fellowship is to complete a piece of research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fellowships provide replacement costs and research expenses.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Application materials will be available starting in September 2026.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "leverhulme-research-centres",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The Leverhulme Centenary Research Centre round funds large-scale, outstanding original research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research funded by the Leverhulme Centenary Research Centre round aspires to achieve a step-change in scholarship.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Leverhulme Centenary Research Centre round is expected to open in February 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Outline applications for the Leverhulme Centenary Research Centre round are expected in June 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Previously excluded institutions (Universities of Oxford and Cambridge and Imperial College London) will be eligible to apply in this round.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Up to \u00a310 million is available for this funding round.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funding is available for up to 10 years.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The Trust aims to encourage new approaches that may establish or reshape a field of study.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Trust aims to transform our understanding of a significant contemporary topic.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Eligible institutions are universities in the UK registered by the Office for Students and holding their own research degree awarding powers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "A Leverhulme Research Centre may be based at a single university or be a collaboration between multiple institutions.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Collaborative research centres are encouraged.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Each UK university is permitted to submit one application as a principal applicant.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "A UK university may act as a partner in multiple proposals led by other universities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The participation of international institutions is encouraged where relevant.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The Trust has a reputation for encouraging higher-risk research, often fundamental or curiosity-driven ('blue skies').",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research funded is expected to be multi-disciplinary.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The choice of research topic is open, but medical and clinical research are ineligible.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The chosen topic should be sufficiently large-scale to support an ambitious research agenda for up to ten years.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Leverhulme Research Centres should not duplicate existing activity at a comparable scale.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "At least 75% of resources must be used for research staff (research assistants, postgraduate students, and replacement teaching).",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Replacement teaching is capped at a maximum of 33% for up to three years for key academic staff.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Associated research costs (technical, computing, administrative staff, travel, subsistence, dissemination, consumables) can be included up to a maximum of 25% of the total budget.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Institutions hosting a centre must provide office and workspace and other university support.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The Trust does not make awards on a full economic costing basis.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Increases in costs over the lifetime of the centres must be managed within the awarded funding.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The Trust will not award follow-on funding.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Prospective applicants should follow their university's internal selection process first.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Universities should contact Emily Nisbet at [email protected] with the name and email address of their chosen applicant to gain access to the Grants Management System.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The June 2027 closing date is for the receipt of outline applications.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Invitations for full-stage applications are expected in September.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline for full-stage applications is at the end of the year (December 2027).",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications must be submitted by a principal applicant based in a UK university who will act as Director.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Details of the proposed wider leadership team should be provided.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications are considered via a two-stage process: an outline bid and a detailed proposal.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The outline bid consists of a short form and a five-page description of the proposed centre\u2019s structure and research activity.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The description should include details of the research area, key research questions, and how the centre will contribute.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The description should include the structure of the centre, details of institutions involved, and key staff.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The description should include the justification for the choice of the principal applicant and senior staff.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The description should include an indication of how resources might be used over the centre\u2019s duration.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Those whose outline bids are shortlisted will be invited to submit a detailed proposal and a statement of support from the institution.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Those whose full applications are shortlisted will be invited to interview.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Final decisions are anticipated to be made by the Trust Board at its subsequent board meeting.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Trust is unable to provide feedback on applications.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-leadership-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The Centenary Research Leadership Awards support talented early career scholars.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The awards are intended to help scholars build a research team.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research team should be of sufficient scale to tackle a distinctive research problem.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The awards will open for applications in January 2028.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The submission deadline for applications is May 2028.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The awards are for 4-5 years.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 39,
+      "n_claims_supported": 21,
+      "n_records_judged": 6,
+      "n_records_supported": 0,
+      "claim_rate": 0.5384615384615384,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5499999999999999,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "early-career-fellowships",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the researcher's career stage, doctorate status, and the location of the university, but omits details about the timeframe since the doctorate and the applicant's residency.",
+          "claims": [
+            {
+              "text": "The fellowship is for early career researchers who do not hold a full-time permanent academic post.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a doctorate by the fellowship's take-up date.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have submitted their thesis for viva no more than 4 years prior to the closing date, with exceptions for career breaks.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The fellowship is tenable at UK universities with research degree awarding powers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be a UK resident.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-project-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the core eligibility criteria regarding UK institutions and employment status but omits details about the invite-only application stage, co-applicant limits, and overseas co-applicant eligibility.",
+          "claims": [
+            {
+              "text": "Researchers must be based at UK universities or institutions of higher education.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "UK independent research institutes are eligible on a trial basis.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be employed by the eligible institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The Detailed Application stage is invite-only.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants are invited from the Outline stage.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Up to three co-applicants are allowed.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Overseas co-applicants are allowed.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "visiting-professorships",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the eligibility criteria related to the applicant's institution and the type of institution, but omits details about grant administration, the ineligibility of the visiting academic, and the waiting period for prior holders.",
+          "claims": [
+            {
+              "text": "Applications must be made by academic staff at a UK university with research degree awarding powers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Some specialist arts institutions are permitted to host.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The host institution must administer the grant.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The visiting academic cannot apply.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Prior holders must wait 7 years before reapplying.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "emeritus-fellowships",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most eligibility criteria but omits the requirement for institutional approval from 2026.",
+          "claims": [
+            {
+              "text": "Applicants must be senior researchers who are retired or working part-time (\u22640.5 FTE) by the commencement date.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be residents in the UK for at least 26 weeks per year.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must hold or have held a post at a UK university or an eligible independent research organisation (IRO) at the time of retirement.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have an established research record.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Institutional approval is required from 2026.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-fellowships",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most eligibility criteria but omits the exclusions for independent scholars, those registered for degrees, and wholly research-focused posts.",
+          "claims": [
+            {
+              "text": "Applicants must be experienced researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must hold a post at a UK university with research degree awarding powers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be resident in the UK at the time of application.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have an established track record.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Independent scholars are excluded.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Those registered for degrees are excluded.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Wholly research-focused posts are excluded.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "leverhulme-research-centres",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text capture...cations per university.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "research-leadership-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures several eligibility criteria but omits others related to residency, previous awards, grant limits, institutional bid limits, and the specific requirement for UK residency during tenure.",
+          "claims": [
+            {
+              "text": "The applicant must be an early career academic.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be based in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must have at least two years of post-PhD experience.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must hold or be nominated for a permanent lecturer-level appointment at a UK university.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must have the right to work in the UK.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The applicant must be UK-resident during the tenure of the award.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The applicant must not have held an equivalent group-establishing award.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The applicant must not have held a single grant greater than \u00a3100,000.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "There is a limit of one bid per institution.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The applicant's institution must have research degree awarding powers.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 27,
+      "n_claims_supported": 27,
+      "n_records_judged": 8,
+      "n_records_supported": 8,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "early-career-fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria, the number of fellowships available, and the year in which they are offered as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "Early career researchers with a doctorate are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not have yet held a full-time permanent academic post.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Fellowships can be held at UK universities with research degree awarding powers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Approximately 145 fellowships are available in 2027.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-project-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for researchers based at UK universities, institutions of higher education, and eligible UK independent research institutes, as well as the requirement for applicants to be employed by the eligible institution.",
+          "claims": [
+            {
+              "text": "Researchers must be based at UK universities or institutions of higher education.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Researchers can be based at eligible UK independent research institutes on a trial basis.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be employed by the eligible institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "visiting-professorships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria mentioned in the page text regarding UK institutions inviting overseas professors, applications being made by UK academic staff with research degree awarding powers, and the eligibility of specialist arts institutions.",
+          "claims": [
+            {
+              "text": "UK institutions can invite an eminent senior professor from overseas.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications must be made by a member of academic staff at a UK university with research degree awarding powers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Some specialist arts institutions are eligible to apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "major-research-fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria mentioned in the page text regarding the researcher's standing, field, and institutional affiliation.",
+          "claims": [
+            {
+              "text": "The opportunity is for well-established, distinguished researchers in the humanities and social sciences.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be employed at an eligible UK university.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible UK universities must have research degree awarding powers.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "emeritus-fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text regarding eligibility criteria are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for senior researchers who have retired or partially retired from an academic post.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must live in the UK for a minimum of 26 weeks per year.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must hold or have held a teaching and/or research post at a UK university or eligible independent research organisation.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for experienced researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must hold a post in a UK university with research degree awarding powers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be resident in the UK at the time of application.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have an established track record in their chosen area of research.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "leverhulme-research-centres",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for UK universities, including those previously excluded, as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "Eligible institutions are UK universities registered by the Office for Students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible institutions hold their own research degree awarding powers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Previously excluded institutions (Oxford, Cambridge, Imperial) are eligible in this round.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-leadership-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for early career academics at UK universities with at least two years' post-PhD experience and a permanent academic appointment at lecturer level or equivalent, all of which are explicitly stated in the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants must be early career academics.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be at UK universities with research degree awarding powers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have at least two years' post-PhD experience in a research/teaching post.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must hold (or be nominated for) a permanent academic appointment at lecturer level or equivalent.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

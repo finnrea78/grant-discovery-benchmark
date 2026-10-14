@@ -1,0 +1,1688 @@
+{
+  "abstention": [
+    {
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_abstained": 0,
+      "n_runs": 80,
+      "rate": 0.0
+    }
+  ],
+  "bootstrap": {
+    "n_clusters": 8,
+    "n_resamples": 2000,
+    "seed": 20260908
+  },
+  "complexity": [
+    {
+      "band": "one_per_page",
+      "display_name": "PRS Foundation",
+      "mean_f1": 0.9631578947368421,
+      "rows_per_url": 1.08,
+      "slug": "prs-foundation"
+    },
+    {
+      "band": "one_per_page",
+      "display_name": "US-UK Fulbright Commission",
+      "mean_f1": 0.4874847374847374,
+      "rows_per_url": 1.0,
+      "slug": "fulbright"
+    },
+    {
+      "band": "one_per_page",
+      "display_name": "Hakluyt Society",
+      "mean_f1": 0.9666666666666666,
+      "rows_per_url": 1.0,
+      "slug": "hakluyt"
+    },
+    {
+      "band": "one_per_page",
+      "display_name": "National Lottery Heritage Fund",
+      "mean_f1": 0.22222222222222224,
+      "rows_per_url": 1.0,
+      "slug": "heritage-fund"
+    },
+    {
+      "band": "one_per_page",
+      "display_name": "The Pathological Society of Great Britain and Ireland",
+      "mean_f1": 0.9808389538689205,
+      "rows_per_url": 1.0,
+      "slug": "pathological-society"
+    },
+    {
+      "band": "one_per_page",
+      "display_name": "The Pilgrim Trust",
+      "mean_f1": 0.8403535353535354,
+      "rows_per_url": 1.0,
+      "slug": "pilgrim-trust"
+    },
+    {
+      "band": "one_per_page",
+      "display_name": "Royal Historical Society",
+      "mean_f1": 0.7499300699300699,
+      "rows_per_url": 1.0,
+      "slug": "royal-hist-soc"
+    },
+    {
+      "band": "one_per_page",
+      "display_name": "Society of Authors",
+      "mean_f1": 1.0,
+      "rows_per_url": 1.0,
+      "slug": "society-of-authors"
+    }
+  ],
+  "contrasts": [
+    {
+      "adjusted_p": 0.3125,
+      "difference_ci": {
+        "level": 0.95,
+        "lower": -0.038995982088087355,
+        "n_clusters": 8,
+        "n_resamples": 10000,
+        "point": 0.01881546161680804,
+        "reason": "",
+        "seed": 20260908,
+        "standard_error": 0.028478218691164566,
+        "undefined": false,
+        "upper": 0.07418404847095185
+      },
+      "excluded": [],
+      "factor": "prompt",
+      "level_a": "few_shot",
+      "level_b": "minimal",
+      "mean_difference": 0.01881546161680804,
+      "median_difference": 0.013103449308835058,
+      "n_funders": 8,
+      "p_value": 0.3125,
+      "rejected": false,
+      "sign": {
+        "n_negative": 1,
+        "n_positive": 5,
+        "n_ties": 2,
+        "n_used": 6,
+        "p_value": 0.21875,
+        "proportion_positive": 0.8333333333333334,
+        "undefined": false
+      },
+      "wilcoxon": {
+        "median_difference": 0.013103449308835058,
+        "n_ties": 2,
+        "n_used": 6,
+        "p_value": 0.3125,
+        "rank_biserial": 0.5238095238095238,
+        "reason": "",
+        "statistic": 5.0,
+        "undefined": false,
+        "w_minus": 5.0,
+        "w_plus": 16.0
+      }
+    }
+  ],
+  "cost_per_true_positive": [
+    {
+      "cost_per_tp": 0.0007291888231046931,
+      "cost_usd": 0.20198530399999998,
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "n_cost_excluded": 0,
+      "n_true_positives": 277
+    },
+    {
+      "cost_per_tp": 0.0006567753408239699,
+      "cost_usd": 0.17535901599999998,
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "n_cost_excluded": 0,
+      "n_true_positives": 267
+    }
+  ],
+  "counts": {
+    "n_configs": 2,
+    "n_funders": 8,
+    "n_runs": 80
+  },
+  "edge_case_contrasts": [
+    {
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 2,
+        "n_resamples": 10000,
+        "point": 0.5016666666666667,
+        "reason": "bootstrap_ci: n_clusters=2 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "excluded_funders": [
+        [
+          "National Lottery Heritage Fund",
+          "every in-scope row carries some tag; no baseline"
+        ],
+        [
+          "Society of Authors",
+          "every in-scope row carries some tag; no baseline"
+        ],
+        [
+          "The Pathological Society of Great Britain and Ireland",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "The Pilgrim Trust",
+          "every in-scope row carries some tag; no baseline"
+        ],
+        [
+          "US-UK Fulbright Commission",
+          "every in-scope row carries some tag; no baseline"
+        ]
+      ],
+      "inferential": false,
+      "mean_tagged": 0.9416666666666667,
+      "mean_untagged": 0.44000000000000006,
+      "n_paired_clusters": 2,
+      "n_rows": 28,
+      "n_rows_alone": 18,
+      "n_tag_clusters": 6,
+      "reason": "D-C policy: 6 funder-clusters (< 8); 2 paired funder-cluster(s) (< 8)",
+      "tag": "restricted"
+    },
+    {
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 2,
+        "n_resamples": 10000,
+        "point": 0.05999999999999994,
+        "reason": "bootstrap_ci: n_clusters=2 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "excluded_funders": [
+        [
+          "National Lottery Heritage Fund",
+          "every in-scope row carries some tag; no baseline"
+        ],
+        [
+          "Royal Historical Society",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "The Pilgrim Trust",
+          "every in-scope row carries some tag; no baseline"
+        ]
+      ],
+      "inferential": false,
+      "mean_tagged": 1.0,
+      "mean_untagged": 0.9400000000000001,
+      "n_paired_clusters": 2,
+      "n_rows": 25,
+      "n_rows_alone": 18,
+      "n_tag_clusters": 4,
+      "reason": "D-C policy: 4 funder-clusters (< 8); 2 paired funder-cluster(s) (< 8)",
+      "tag": "multi_deadline"
+    },
+    {
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 2,
+        "n_resamples": 10000,
+        "point": -0.006666666666666765,
+        "reason": "bootstrap_ci: n_clusters=2 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "excluded_funders": [
+        [
+          "Hakluyt Society",
+          "every in-scope row carries some tag; no baseline"
+        ],
+        [
+          "National Lottery Heritage Fund",
+          "every in-scope row carries some tag; no baseline"
+        ],
+        [
+          "Royal Historical Society",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "Society of Authors",
+          "every in-scope row carries some tag; no baseline"
+        ],
+        [
+          "The Pilgrim Trust",
+          "every in-scope row carries some tag; no baseline"
+        ]
+      ],
+      "inferential": false,
+      "mean_tagged": 0.9333333333333333,
+      "mean_untagged": 0.9400000000000001,
+      "n_paired_clusters": 2,
+      "n_rows": 9,
+      "n_rows_alone": 7,
+      "n_tag_clusters": 6,
+      "reason": "D-C policy: 9 rows (< 20) and 6 funder-clusters (< 8); 2 paired funder-cluster(s) (< 8)",
+      "tag": "rolling"
+    },
+    {
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 1,
+        "n_resamples": 10000,
+        "point": 0.019999999999999907,
+        "reason": "bootstrap_ci: n_clusters=1 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "excluded_funders": [
+        [
+          "Royal Historical Society",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "Society of Authors",
+          "every in-scope row carries some tag; no baseline"
+        ],
+        [
+          "The Pathological Society of Great Britain and Ireland",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "The Pilgrim Trust",
+          "every in-scope row carries some tag; no baseline"
+        ],
+        [
+          "US-UK Fulbright Commission",
+          "every in-scope row carries some tag; no baseline"
+        ]
+      ],
+      "inferential": false,
+      "mean_tagged": 0.9,
+      "mean_untagged": 0.8800000000000001,
+      "n_paired_clusters": 1,
+      "n_rows": 5,
+      "n_rows_alone": 2,
+      "n_tag_clusters": 4,
+      "reason": "D-C policy: 5 rows (< 20) and 4 funder-clusters (< 8); 1 paired funder-cluster(s) (< 8)",
+      "tag": "ambiguous_eligibility"
+    },
+    {
+      "difference": null,
+      "excluded_funders": [
+        [
+          "PRS Foundation",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "Royal Historical Society",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "Society of Authors",
+          "every in-scope row carries some tag; no baseline"
+        ],
+        [
+          "The Pathological Society of Great Britain and Ireland",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "The Pilgrim Trust",
+          "every in-scope row carries some tag; no baseline"
+        ]
+      ],
+      "inferential": false,
+      "mean_tagged": null,
+      "mean_untagged": null,
+      "n_paired_clusters": 0,
+      "n_rows": 2,
+      "n_rows_alone": 0,
+      "n_tag_clusters": 2,
+      "reason": "2 in-scope row(s) carry this tag, but no funder has both tagged and untagged rows: the paired contrast cannot be formed",
+      "tag": "pdf_only"
+    },
+    {
+      "difference": null,
+      "excluded_funders": [
+        [
+          "PRS Foundation",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "Royal Historical Society",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "The Pathological Society of Great Britain and Ireland",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "The Pilgrim Trust",
+          "every in-scope row carries some tag; no baseline"
+        ]
+      ],
+      "inferential": false,
+      "mean_tagged": null,
+      "mean_untagged": null,
+      "n_paired_clusters": 0,
+      "n_rows": 1,
+      "n_rows_alone": 0,
+      "n_tag_clusters": 1,
+      "reason": "1 in-scope row(s) carry this tag, but no funder has both tagged and untagged rows: the paired contrast cannot be formed",
+      "tag": "js_portal"
+    }
+  ],
+  "edge_case_contrasts_alone": [
+    {
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 2,
+        "n_resamples": 10000,
+        "point": 0.5016666666666667,
+        "reason": "bootstrap_ci: n_clusters=2 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "excluded_funders": [
+        [
+          "National Lottery Heritage Fund",
+          "every in-scope row carries some tag; no baseline"
+        ],
+        [
+          "Society of Authors",
+          "every in-scope row carries some tag; no baseline"
+        ],
+        [
+          "The Pathological Society of Great Britain and Ireland",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "US-UK Fulbright Commission",
+          "every in-scope row carries some tag; no baseline"
+        ]
+      ],
+      "inferential": false,
+      "mean_tagged": 0.9416666666666667,
+      "mean_untagged": 0.44000000000000006,
+      "n_paired_clusters": 2,
+      "n_rows": 28,
+      "n_rows_alone": 18,
+      "n_tag_clusters": 6,
+      "reason": "D-C policy: 6 funder-clusters (< 8); 2 paired funder-cluster(s) (< 8)",
+      "tag": "restricted"
+    },
+    {
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 2,
+        "n_resamples": 10000,
+        "point": 0.05999999999999994,
+        "reason": "bootstrap_ci: n_clusters=2 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "excluded_funders": [
+        [
+          "Royal Historical Society",
+          "no in-scope row carries this tag"
+        ]
+      ],
+      "inferential": false,
+      "mean_tagged": 1.0,
+      "mean_untagged": 0.9400000000000001,
+      "n_paired_clusters": 2,
+      "n_rows": 25,
+      "n_rows_alone": 18,
+      "n_tag_clusters": 4,
+      "reason": "D-C policy: 4 funder-clusters (< 8); 2 paired funder-cluster(s) (< 8)",
+      "tag": "multi_deadline"
+    },
+    {
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 2,
+        "n_resamples": 10000,
+        "point": -0.006666666666666765,
+        "reason": "bootstrap_ci: n_clusters=2 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "excluded_funders": [
+        [
+          "Hakluyt Society",
+          "every in-scope row carries some tag; no baseline"
+        ],
+        [
+          "National Lottery Heritage Fund",
+          "every in-scope row carries some tag; no baseline"
+        ],
+        [
+          "Royal Historical Society",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "Society of Authors",
+          "every in-scope row carries some tag; no baseline"
+        ]
+      ],
+      "inferential": false,
+      "mean_tagged": 0.9333333333333333,
+      "mean_untagged": 0.9400000000000001,
+      "n_paired_clusters": 2,
+      "n_rows": 9,
+      "n_rows_alone": 7,
+      "n_tag_clusters": 6,
+      "reason": "D-C policy: 9 rows (< 20) and 6 funder-clusters (< 8); 2 paired funder-cluster(s) (< 8)",
+      "tag": "rolling"
+    },
+    {
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 1,
+        "n_resamples": 10000,
+        "point": 0.019999999999999907,
+        "reason": "bootstrap_ci: n_clusters=1 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "excluded_funders": [
+        [
+          "Royal Historical Society",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "Society of Authors",
+          "every in-scope row carries some tag; no baseline"
+        ],
+        [
+          "The Pathological Society of Great Britain and Ireland",
+          "no in-scope row carries this tag"
+        ]
+      ],
+      "inferential": false,
+      "mean_tagged": 0.9,
+      "mean_untagged": 0.8800000000000001,
+      "n_paired_clusters": 1,
+      "n_rows": 5,
+      "n_rows_alone": 2,
+      "n_tag_clusters": 4,
+      "reason": "D-C policy: 5 rows (< 20) and 4 funder-clusters (< 8); 1 paired funder-cluster(s) (< 8)",
+      "tag": "ambiguous_eligibility"
+    },
+    {
+      "difference": null,
+      "excluded_funders": [
+        [
+          "PRS Foundation",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "Royal Historical Society",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "The Pathological Society of Great Britain and Ireland",
+          "no in-scope row carries this tag"
+        ]
+      ],
+      "inferential": false,
+      "mean_tagged": null,
+      "mean_untagged": null,
+      "n_paired_clusters": 0,
+      "n_rows": 2,
+      "n_rows_alone": 0,
+      "n_tag_clusters": 2,
+      "reason": "2 in-scope row(s) carry this tag, but no funder has both tagged and untagged rows: the paired contrast cannot be formed",
+      "tag": "pdf_only"
+    },
+    {
+      "difference": null,
+      "excluded_funders": [
+        [
+          "PRS Foundation",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "Royal Historical Society",
+          "no in-scope row carries this tag"
+        ],
+        [
+          "The Pathological Society of Great Britain and Ireland",
+          "no in-scope row carries this tag"
+        ]
+      ],
+      "inferential": false,
+      "mean_tagged": null,
+      "mean_untagged": null,
+      "n_paired_clusters": 0,
+      "n_rows": 1,
+      "n_rows_alone": 0,
+      "n_tag_clusters": 1,
+      "reason": "1 in-scope row(s) carry this tag, but no funder has both tagged and untagged rows: the paired contrast cannot be formed",
+      "tag": "js_portal"
+    }
+  ],
+  "edge_case_counts": [
+    {
+      "ci": {
+        "level": 0.95,
+        "lower": 0.0,
+        "n_clusters": 3,
+        "n_resamples": 10000,
+        "point": 0.6266666666666667,
+        "reason": "",
+        "seed": 20260908,
+        "standard_error": 0.25648949770658797,
+        "undefined": false,
+        "upper": 1.0
+      },
+      "mean_recall": 0.6266666666666667,
+      "n_clusters": 3,
+      "n_rows": 13,
+      "n_tags": 0
+    },
+    {
+      "ci": {
+        "level": 0.95,
+        "lower": 0.48047619047619045,
+        "n_clusters": 7,
+        "n_resamples": 10000,
+        "point": 0.7633333333333334,
+        "reason": "",
+        "seed": 20260908,
+        "standard_error": 0.1335594159164841,
+        "undefined": false,
+        "upper": 0.9804761904761905
+      },
+      "mean_recall": 0.7633333333333334,
+      "n_clusters": 7,
+      "n_rows": 45,
+      "n_tags": 1
+    },
+    {
+      "ci": {
+        "level": 0.95,
+        "lower": 0.275,
+        "n_clusters": 4,
+        "n_resamples": 10000,
+        "point": 0.6375,
+        "reason": "",
+        "seed": 20260908,
+        "standard_error": 0.18100604271681095,
+        "undefined": false,
+        "upper": 1.0
+      },
+      "mean_recall": 0.6375,
+      "n_clusters": 4,
+      "n_rows": 8,
+      "n_tags": 2
+    },
+    {
+      "ci": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 1,
+        "n_resamples": 10000,
+        "point": 0.6333333333333333,
+        "reason": "bootstrap_ci: n_clusters=1 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "mean_recall": 0.6333333333333333,
+      "n_clusters": 1,
+      "n_rows": 3,
+      "n_tags": 3
+    }
+  ],
+  "edge_case_overlap": {
+    "ambiguous_eligibility": {
+      "ambiguous_eligibility": 5,
+      "js_portal": 0,
+      "multi_deadline": 1,
+      "pdf_only": 0,
+      "restricted": 3,
+      "rolling": 1
+    },
+    "js_portal": {
+      "ambiguous_eligibility": 0,
+      "js_portal": 1,
+      "multi_deadline": 0,
+      "pdf_only": 1,
+      "restricted": 1,
+      "rolling": 0
+    },
+    "multi_deadline": {
+      "ambiguous_eligibility": 1,
+      "js_portal": 0,
+      "multi_deadline": 25,
+      "pdf_only": 0,
+      "restricted": 7,
+      "rolling": 0
+    },
+    "pdf_only": {
+      "ambiguous_eligibility": 0,
+      "js_portal": 1,
+      "multi_deadline": 0,
+      "pdf_only": 2,
+      "restricted": 1,
+      "rolling": 1
+    },
+    "restricted": {
+      "ambiguous_eligibility": 3,
+      "js_portal": 1,
+      "multi_deadline": 7,
+      "pdf_only": 1,
+      "restricted": 28,
+      "rolling": 1
+    },
+    "rolling": {
+      "ambiguous_eligibility": 1,
+      "js_portal": 0,
+      "multi_deadline": 0,
+      "pdf_only": 1,
+      "restricted": 1,
+      "rolling": 9
+    }
+  },
+  "end_to_end_all_fields": [
+    {
+      "cost_per_usable": 0.011118457100917429,
+      "cost_usd": 0.20198530399999998,
+      "detection_rate": 0.875,
+      "dominated_by": [
+        "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7"
+      ],
+      "end_to_end_rate": 0.45416666666666666,
+      "field": "all",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "n_excluded_uncertain": 29,
+      "n_funders": 6,
+      "n_opportunities": 40,
+      "on_frontier": false
+    },
+    {
+      "cost_per_usable": 0.00946181741007194,
+      "cost_usd": 0.17535901599999998,
+      "detection_rate": 0.8683333333333333,
+      "dominated_by": [],
+      "end_to_end_rate": 0.4633333333333334,
+      "field": "all",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "n_excluded_uncertain": 29,
+      "n_funders": 6,
+      "n_opportunities": 40,
+      "on_frontier": true
+    }
+  ],
+  "end_to_end_deadlines": [
+    {
+      "cost_per_usable": 0.0059008268770084716,
+      "cost_usd": 0.20198530399999998,
+      "detection_rate": 0.815,
+      "dominated_by": [
+        "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7"
+      ],
+      "end_to_end_rate": 0.61125,
+      "field": "deadlines",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "n_excluded_uncertain": 13,
+      "n_funders": 8,
+      "n_opportunities": 56,
+      "on_frontier": false
+    },
+    {
+      "cost_per_usable": 0.004919734485467399,
+      "cost_usd": 0.17535901599999998,
+      "detection_rate": 0.80475,
+      "dominated_by": [],
+      "end_to_end_rate": 0.6365,
+      "field": "deadlines",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "n_excluded_uncertain": 13,
+      "n_funders": 8,
+      "n_opportunities": 56,
+      "on_frontier": true
+    }
+  ],
+  "fabrication": [
+    {
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "mean_hallucination_rate": 0.10964285714285715,
+      "n_rate_defined": 80,
+      "n_runs": 80,
+      "n_runs_fabricating": 16,
+      "total_fabricated": 23
+    }
+  ],
+  "failures": {
+    "by_config": {},
+    "by_model": {},
+    "n_abstained": 0,
+    "n_context_overflow": 0,
+    "n_failed": 0,
+    "n_runs": 80,
+    "n_timed_out": 0
+  },
+  "field_accuracy": [
+    {
+      "accuracy": 0.5628865979381443,
+      "field": "deadlines",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_correct": 273,
+      "n_evaluated": 485,
+      "n_excluded_uncertain": 59,
+      "n_incorrect": 212
+    },
+    {
+      "accuracy": 0.9389671361502347,
+      "field": "amount_max_gbp",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_correct": 400,
+      "n_evaluated": 426,
+      "n_excluded_uncertain": 118,
+      "n_incorrect": 26
+    },
+    {
+      "accuracy": 0.926605504587156,
+      "field": "amount_min_gbp",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_correct": 404,
+      "n_evaluated": 436,
+      "n_excluded_uncertain": 108,
+      "n_incorrect": 32
+    },
+    {
+      "accuracy": 0.9322709163346613,
+      "field": "status",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_correct": 468,
+      "n_evaluated": 502,
+      "n_excluded_uncertain": 42,
+      "n_incorrect": 34
+    }
+  ],
+  "field_accuracy_by_config": [
+    {
+      "accuracy": 0.5609756097560976,
+      "field": "deadlines",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "n_correct": 138,
+      "n_evaluated": 246,
+      "n_excluded_uncertain": 31,
+      "n_incorrect": 108
+    },
+    {
+      "accuracy": 0.9220183486238532,
+      "field": "amount_max_gbp",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "n_correct": 201,
+      "n_evaluated": 218,
+      "n_excluded_uncertain": 59,
+      "n_incorrect": 17
+    },
+    {
+      "accuracy": 0.9372197309417041,
+      "field": "amount_min_gbp",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "n_correct": 209,
+      "n_evaluated": 223,
+      "n_excluded_uncertain": 54,
+      "n_incorrect": 14
+    },
+    {
+      "accuracy": 0.9377431906614786,
+      "field": "status",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "n_correct": 241,
+      "n_evaluated": 257,
+      "n_excluded_uncertain": 20,
+      "n_incorrect": 16
+    },
+    {
+      "accuracy": 0.5648535564853556,
+      "field": "deadlines",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "n_correct": 135,
+      "n_evaluated": 239,
+      "n_excluded_uncertain": 28,
+      "n_incorrect": 104
+    },
+    {
+      "accuracy": 0.9567307692307693,
+      "field": "amount_max_gbp",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "n_correct": 199,
+      "n_evaluated": 208,
+      "n_excluded_uncertain": 59,
+      "n_incorrect": 9
+    },
+    {
+      "accuracy": 0.9154929577464789,
+      "field": "amount_min_gbp",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "n_correct": 195,
+      "n_evaluated": 213,
+      "n_excluded_uncertain": 54,
+      "n_incorrect": 18
+    },
+    {
+      "accuracy": 0.926530612244898,
+      "field": "status",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "n_correct": 227,
+      "n_evaluated": 245,
+      "n_excluded_uncertain": 22,
+      "n_incorrect": 18
+    }
+  ],
+  "field_accuracy_by_prompt": [
+    {
+      "accuracy": 0.5609756097560976,
+      "factor": "prompt",
+      "field": "deadlines",
+      "level": "few_shot",
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_correct": 138,
+      "n_evaluated": 246
+    },
+    {
+      "accuracy": 0.9220183486238532,
+      "factor": "prompt",
+      "field": "amount_max_gbp",
+      "level": "few_shot",
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_correct": 201,
+      "n_evaluated": 218
+    },
+    {
+      "accuracy": 0.9372197309417041,
+      "factor": "prompt",
+      "field": "amount_min_gbp",
+      "level": "few_shot",
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_correct": 209,
+      "n_evaluated": 223
+    },
+    {
+      "accuracy": 0.9377431906614786,
+      "factor": "prompt",
+      "field": "status",
+      "level": "few_shot",
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_correct": 241,
+      "n_evaluated": 257
+    },
+    {
+      "accuracy": 0.5648535564853556,
+      "factor": "prompt",
+      "field": "deadlines",
+      "level": "minimal",
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_correct": 135,
+      "n_evaluated": 239
+    },
+    {
+      "accuracy": 0.9567307692307693,
+      "factor": "prompt",
+      "field": "amount_max_gbp",
+      "level": "minimal",
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_correct": 199,
+      "n_evaluated": 208
+    },
+    {
+      "accuracy": 0.9154929577464789,
+      "factor": "prompt",
+      "field": "amount_min_gbp",
+      "level": "minimal",
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_correct": 195,
+      "n_evaluated": 213
+    },
+    {
+      "accuracy": 0.926530612244898,
+      "factor": "prompt",
+      "field": "status",
+      "level": "minimal",
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_correct": 227,
+      "n_evaluated": 245
+    }
+  ],
+  "field_accuracy_by_tag": [
+    {
+      "accuracy_tagged": 0.1,
+      "accuracy_untagged": 0.9625,
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 2,
+        "n_resamples": 10000,
+        "point": -0.8625,
+        "reason": "bootstrap_ci: n_clusters=2 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "field": "deadlines",
+      "n_paired_clusters": 2,
+      "n_rows": 25,
+      "reason": "2 paired funder-cluster(s) (< 8)",
+      "tag": "multi_deadline"
+    },
+    {
+      "accuracy_tagged": 0.9366666666666666,
+      "accuracy_untagged": 1.0,
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 2,
+        "n_resamples": 10000,
+        "point": -0.06333333333333335,
+        "reason": "bootstrap_ci: n_clusters=2 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "field": "amount_max_gbp",
+      "n_paired_clusters": 2,
+      "n_rows": 25,
+      "reason": "2 paired funder-cluster(s) (< 8)",
+      "tag": "multi_deadline"
+    },
+    {
+      "accuracy_tagged": 0.9125000000000001,
+      "accuracy_untagged": 0.9647727272727273,
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 2,
+        "n_resamples": 10000,
+        "point": -0.05227272727272725,
+        "reason": "bootstrap_ci: n_clusters=2 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "field": "amount_min_gbp",
+      "n_paired_clusters": 2,
+      "n_rows": 25,
+      "reason": "2 paired funder-cluster(s) (< 8)",
+      "tag": "multi_deadline"
+    },
+    {
+      "accuracy_tagged": 1.0,
+      "accuracy_untagged": 1.0,
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 2,
+        "n_resamples": 10000,
+        "point": 0.0,
+        "reason": "bootstrap_ci: n_clusters=2 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "field": "status",
+      "n_paired_clusters": 2,
+      "n_rows": 25,
+      "reason": "2 paired funder-cluster(s) (< 8)",
+      "tag": "multi_deadline"
+    },
+    {
+      "accuracy_tagged": 0.9,
+      "accuracy_untagged": 0.925,
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 1,
+        "n_resamples": 10000,
+        "point": -0.025000000000000022,
+        "reason": "bootstrap_ci: n_clusters=1 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "field": "deadlines",
+      "n_paired_clusters": 1,
+      "n_rows": 28,
+      "reason": "1 paired funder-cluster(s) (< 8)",
+      "tag": "restricted"
+    },
+    {
+      "accuracy_tagged": 1.0,
+      "accuracy_untagged": 1.0,
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 1,
+        "n_resamples": 10000,
+        "point": 0.0,
+        "reason": "bootstrap_ci: n_clusters=1 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "field": "amount_max_gbp",
+      "n_paired_clusters": 1,
+      "n_rows": 28,
+      "reason": "1 paired funder-cluster(s) (< 8)",
+      "tag": "restricted"
+    },
+    {
+      "accuracy_tagged": 0.9,
+      "accuracy_untagged": 0.9545454545454546,
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 1,
+        "n_resamples": 10000,
+        "point": -0.054545454545454564,
+        "reason": "bootstrap_ci: n_clusters=1 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "field": "amount_min_gbp",
+      "n_paired_clusters": 1,
+      "n_rows": 28,
+      "reason": "1 paired funder-cluster(s) (< 8)",
+      "tag": "restricted"
+    },
+    {
+      "accuracy_tagged": 1.0,
+      "accuracy_untagged": 1.0,
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 1,
+        "n_resamples": 10000,
+        "point": 0.0,
+        "reason": "bootstrap_ci: n_clusters=1 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "field": "status",
+      "n_paired_clusters": 1,
+      "n_rows": 28,
+      "reason": "1 paired funder-cluster(s) (< 8)",
+      "tag": "restricted"
+    },
+    {
+      "accuracy_tagged": 0.8115384615384615,
+      "accuracy_untagged": 0.9625,
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 2,
+        "n_resamples": 10000,
+        "point": -0.15096153846153848,
+        "reason": "bootstrap_ci: n_clusters=2 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "field": "deadlines",
+      "n_paired_clusters": 2,
+      "n_rows": 9,
+      "reason": "2 paired funder-cluster(s) (< 8)",
+      "tag": "rolling"
+    },
+    {
+      "accuracy_tagged": 0.9615384615384616,
+      "accuracy_untagged": 1.0,
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 2,
+        "n_resamples": 10000,
+        "point": -0.038461538461538436,
+        "reason": "bootstrap_ci: n_clusters=2 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "field": "amount_max_gbp",
+      "n_paired_clusters": 2,
+      "n_rows": 9,
+      "reason": "2 paired funder-cluster(s) (< 8)",
+      "tag": "rolling"
+    },
+    {
+      "accuracy_tagged": 0.7576923076923077,
+      "accuracy_untagged": 0.9647727272727273,
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 2,
+        "n_resamples": 10000,
+        "point": -0.20708041958041956,
+        "reason": "bootstrap_ci: n_clusters=2 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "field": "amount_min_gbp",
+      "n_paired_clusters": 2,
+      "n_rows": 9,
+      "reason": "2 paired funder-cluster(s) (< 8)",
+      "tag": "rolling"
+    },
+    {
+      "accuracy_tagged": 0.9807692307692308,
+      "accuracy_untagged": 1.0,
+      "difference": {
+        "level": 0.95,
+        "lower": null,
+        "n_clusters": 2,
+        "n_resamples": 10000,
+        "point": -0.019230769230769218,
+        "reason": "bootstrap_ci: n_clusters=2 < MIN_BOOTSTRAP_CLUSTERS=3; a resample distribution over this few clusters is degenerate, and an interval computed from it would be theatre rather than inference",
+        "seed": 20260908,
+        "standard_error": null,
+        "undefined": true,
+        "upper": null
+      },
+      "field": "status",
+      "n_paired_clusters": 2,
+      "n_rows": 9,
+      "reason": "2 paired funder-cluster(s) (< 8)",
+      "tag": "rolling"
+    }
+  ],
+  "field_accuracy_by_temperature": [
+    {
+      "accuracy": 0.5628865979381443,
+      "factor": "temperature",
+      "field": "deadlines",
+      "level": "t0.7",
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_correct": 273,
+      "n_evaluated": 485
+    },
+    {
+      "accuracy": 0.9389671361502347,
+      "factor": "temperature",
+      "field": "amount_max_gbp",
+      "level": "t0.7",
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_correct": 400,
+      "n_evaluated": 426
+    },
+    {
+      "accuracy": 0.926605504587156,
+      "factor": "temperature",
+      "field": "amount_min_gbp",
+      "level": "t0.7",
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_correct": 404,
+      "n_evaluated": 436
+    },
+    {
+      "accuracy": 0.9322709163346613,
+      "factor": "temperature",
+      "field": "status",
+      "level": "t0.7",
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_correct": 468,
+      "n_evaluated": 502
+    }
+  ],
+  "field_directions": [
+    {
+      "asserted_where_blank": 5,
+      "blank_where_value": 8,
+      "field": "deadlines",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731"
+    },
+    {
+      "asserted_where_blank": 0,
+      "blank_where_value": 26,
+      "field": "amount_max_gbp",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731"
+    },
+    {
+      "asserted_where_blank": 19,
+      "blank_where_value": 13,
+      "field": "amount_min_gbp",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731"
+    },
+    {
+      "asserted_where_blank": 0,
+      "blank_where_value": 0,
+      "field": "status",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731"
+    }
+  ],
+  "fp_reasons": [
+    {
+      "by_reason": {
+        "distractor": 13,
+        "duplicate": 1,
+        "fabricated_url": 23,
+        "unlabelled_page": 6
+      },
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_false_positives": 43,
+      "n_runs": 80,
+      "share": {
+        "distractor": 0.3023255813953488,
+        "duplicate": 0.023255813953488372,
+        "fabricated_url": 0.5348837209302325,
+        "unlabelled_page": 0.13953488372093023
+      }
+    }
+  ],
+  "frontier": [
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "cost_usd": 0.20198530399999998,
+      "dominated_by": [],
+      "frontier_probability": 0.741,
+      "macro_f1": 0.7857394908412784,
+      "n_cost_excluded": 0,
+      "n_resample_funder_gaps": 0,
+      "on_frontier": true
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "cost_usd": 0.17535901599999998,
+      "dominated_by": [],
+      "frontier_probability": 1.0,
+      "macro_f1": 0.7669240292244702,
+      "n_cost_excluded": 0,
+      "n_resample_funder_gaps": 0,
+      "on_frontier": true
+    }
+  ],
+  "funder_type": {},
+  "generalisation": {
+    "gaps": [
+      {
+        "gap": -0.007097091688230472,
+        "label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+        "tune_macro_f1": 0.7928365825295088,
+        "tune_macro_precision": 0.847129329004329,
+        "tune_macro_recall": 0.7765674603174603,
+        "tune_n_funders": 16,
+        "tune_rank": 1,
+        "validation_macro_f1": 0.7857394908412784,
+        "validation_macro_precision": 0.8649007936507936,
+        "validation_macro_recall": 0.7542857142857142,
+        "validation_n_funders": 8,
+        "validation_rank": 1
+      },
+      {
+        "gap": -0.01933955093462081,
+        "label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+        "tune_macro_f1": 0.786263580159091,
+        "tune_macro_precision": 0.8345487845487846,
+        "tune_macro_recall": 0.7821081349206349,
+        "tune_n_funders": 16,
+        "tune_rank": 2,
+        "validation_macro_f1": 0.7669240292244702,
+        "validation_macro_precision": 0.8408414733414733,
+        "validation_macro_recall": 0.7385645604395604,
+        "validation_n_funders": 8,
+        "validation_rank": 2
+      }
+    ],
+    "lock_path": "eval/locked-config.json",
+    "locked_at": "2026-09-19T21:37:24.143292+00:00",
+    "ranking_preserved": true,
+    "source_hash": "67c1b6e752f63eef61c6c7e0dde9d20838d230d8ecf146f65880b0962cc1b809",
+    "tune_scored_dir": "eval/scored/grid",
+    "unlocked_validation_configs": [],
+    "validation_scored_dir": "eval/scored/validation"
+  },
+  "generated_utc": "2026-09-20T15:34:33+00:00",
+  "interaction": null,
+  "latency": [
+    {
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "max_s": 477.30405589495786,
+      "mean_s": 154.88989290102762,
+      "n_defined": 80,
+      "n_runs": 80,
+      "p50_s": 134.7577799319988,
+      "p95_s": 330.69664872635036
+    }
+  ],
+  "leaderboard": [
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "cost_total_usd": 0.201985304,
+      "macro_f1": 0.7857394908412784,
+      "macro_f1_undefined": false,
+      "macro_precision": 0.8649007936507936,
+      "macro_precision_undefined": false,
+      "macro_recall": 0.7542857142857142,
+      "mean_fleiss_kappa": 0.47492892901841605,
+      "mean_stable_rate": 0.83125,
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_funders": 8,
+      "prompt_strategy": "few_shot",
+      "temperature": 0.7
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "cost_total_usd": 0.175359016,
+      "macro_f1": 0.7669240292244702,
+      "macro_f1_undefined": false,
+      "macro_precision": 0.8408414733414733,
+      "macro_precision_undefined": false,
+      "macro_recall": 0.7385645604395604,
+      "mean_fleiss_kappa": 0.4877075179249095,
+      "mean_stable_rate": 0.8118589743589744,
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "n_funders": 8,
+      "prompt_strategy": "minimal",
+      "temperature": 0.7
+    }
+  ],
+  "not_estimable": {
+    "interaction": [
+      "factor 'model' has no level 'openrouter/amazon/nova-lite-v1' (present: openrouter/deepseek/deepseek-v4-flash-0731)",
+      "factor 'prompt' has no level 'chain_of_thought' (present: few_shot, minimal)"
+    ],
+    "single_level_factors": {
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "temperature": "0.7"
+    }
+  },
+  "per_funder": [
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "f1": 1.0,
+      "fleiss_kappa": null,
+      "fleiss_kappa_undefined": true,
+      "funder": "Hakluyt Society",
+      "precision": 1.0,
+      "precision_undefined": false,
+      "recall": 1.0,
+      "stable_rate": 1.0,
+      "stable_rate_undefined": false
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "f1": 0.22222222222222224,
+      "fleiss_kappa": 1.0,
+      "fleiss_kappa_undefined": false,
+      "funder": "National Lottery Heritage Fund",
+      "precision": 0.5,
+      "precision_undefined": false,
+      "recall": 0.14285714285714285,
+      "stable_rate": 1.0,
+      "stable_rate_undefined": false
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "f1": 0.968421052631579,
+      "fleiss_kappa": 0.11347517730496483,
+      "fleiss_kappa_undefined": false,
+      "funder": "PRS Foundation",
+      "precision": 1.0,
+      "precision_undefined": false,
+      "recall": 0.9400000000000001,
+      "stable_rate": 0.9,
+      "stable_rate_undefined": false
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "f1": 0.763076923076923,
+      "fleiss_kappa": 0.761904761904762,
+      "fleiss_kappa_undefined": false,
+      "funder": "Royal Historical Society",
+      "precision": 0.8457142857142858,
+      "precision_undefined": false,
+      "recall": 0.7,
+      "stable_rate": 1.0,
+      "stable_rate_undefined": false
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "f1": 1.0,
+      "fleiss_kappa": null,
+      "fleiss_kappa_undefined": true,
+      "funder": "Society of Authors",
+      "precision": 1.0,
+      "precision_undefined": false,
+      "recall": 1.0,
+      "stable_rate": 1.0,
+      "stable_rate_undefined": false
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "f1": 0.9886792452830189,
+      "fleiss_kappa": null,
+      "fleiss_kappa_undefined": true,
+      "funder": "The Pathological Society of Great Britain and Ireland",
+      "precision": 0.9777777777777776,
+      "precision_undefined": false,
+      "recall": 1.0,
+      "stable_rate": 1.0,
+      "stable_rate_undefined": false
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "f1": 0.7711111111111111,
+      "fleiss_kappa": 0.7242647058823531,
+      "fleiss_kappa_undefined": false,
+      "funder": "The Pilgrim Trust",
+      "precision": 0.9099999999999999,
+      "precision_undefined": false,
+      "recall": 0.6799999999999999,
+      "stable_rate": 0.75,
+      "stable_rate_undefined": false
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "f1": 0.5724053724053724,
+      "fleiss_kappa": -0.2249999999999998,
+      "fleiss_kappa_undefined": false,
+      "funder": "US-UK Fulbright Commission",
+      "precision": 0.6857142857142857,
+      "precision_undefined": false,
+      "recall": 0.5714285714285714,
+      "stable_rate": 0.0,
+      "stable_rate_undefined": false
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "f1": 0.9333333333333333,
+      "fleiss_kappa": null,
+      "fleiss_kappa_undefined": true,
+      "funder": "Hakluyt Society",
+      "precision": 0.9,
+      "precision_undefined": false,
+      "recall": 1.0,
+      "stable_rate": 1.0,
+      "stable_rate_undefined": false
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "f1": 0.22222222222222224,
+      "fleiss_kappa": 1.0,
+      "fleiss_kappa_undefined": false,
+      "funder": "National Lottery Heritage Fund",
+      "precision": 0.5,
+      "precision_undefined": false,
+      "recall": 0.14285714285714285,
+      "stable_rate": 1.0,
+      "stable_rate_undefined": false
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "f1": 0.9578947368421054,
+      "fleiss_kappa": 0.7282608695652172,
+      "fleiss_kappa_undefined": false,
+      "funder": "PRS Foundation",
+      "precision": 1.0,
+      "precision_undefined": false,
+      "recall": 0.9199999999999999,
+      "stable_rate": 0.9,
+      "stable_rate_undefined": false
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "f1": 0.7367832167832168,
+      "fleiss_kappa": 0.6266666666666666,
+      "fleiss_kappa_undefined": false,
+      "funder": "Royal Historical Society",
+      "precision": 0.9428571428571428,
+      "precision_undefined": false,
+      "recall": 0.625,
+      "stable_rate": 0.8333333333333334,
+      "stable_rate_undefined": false
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "f1": 1.0,
+      "fleiss_kappa": null,
+      "fleiss_kappa_undefined": true,
+      "funder": "Society of Authors",
+      "precision": 1.0,
+      "precision_undefined": false,
+      "recall": 1.0,
+      "stable_rate": 1.0,
+      "stable_rate_undefined": false
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "f1": 0.9729986624548224,
+      "fleiss_kappa": 0.7420634920634933,
+      "fleiss_kappa_undefined": false,
+      "funder": "The Pathological Society of Great Britain and Ireland",
+      "precision": 0.9772079772079773,
+      "precision_undefined": false,
+      "recall": 0.9692307692307693,
+      "stable_rate": 0.9615384615384616,
+      "stable_rate_undefined": false
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "f1": 0.9095959595959595,
+      "fleiss_kappa": 0.05303030303030348,
+      "fleiss_kappa_undefined": false,
+      "funder": "The Pilgrim Trust",
+      "precision": 0.9666666666666666,
+      "precision_undefined": false,
+      "recall": 0.8800000000000001,
+      "stable_rate": 0.8,
+      "stable_rate_undefined": false
+    },
+    {
+      "config_label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "f1": 0.4025641025641026,
+      "fleiss_kappa": -0.2237762237762237,
+      "fleiss_kappa_undefined": false,
+      "funder": "US-UK Fulbright Commission",
+      "precision": 0.44000000000000006,
+      "precision_undefined": false,
+      "recall": 0.3714285714285714,
+      "stable_rate": 0.0,
+      "stable_rate_undefined": false
+    }
+  ],
+  "provenance": {
+    "manifest_created_utc": "2026-09-20T13:56:24+00:00",
+    "scorer_source_hash": "67c1b6e752f63eef61c6c7e0dde9d20838d230d8ecf146f65880b0962cc1b809"
+  },
+  "runtime_health": {
+    "by_model_schema_invalid": {},
+    "max_attempts": 2,
+    "n_fp_unattributable": 29,
+    "n_retried": 5,
+    "n_runs": 80,
+    "n_schema_invalid": 0,
+    "n_step_budget_exhausted": 0,
+    "n_submit_failed": 0,
+    "total_input_tokens": 9707754,
+    "total_output_tokens": 1116960
+  },
+  "sensitivity": [
+    {
+      "delta": 0.0,
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7",
+      "n_excluded": 0,
+      "primary": 0.7857394908412784,
+      "sensitivity": 0.7857394908412784
+    },
+    {
+      "delta": 0.0,
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7",
+      "n_excluded": 0,
+      "primary": 0.7669240292244702,
+      "sensitivity": 0.7669240292244702
+    }
+  ],
+  "strata": {
+    "ambiguous_eligibility": {
+      "inferential": false,
+      "n_clusters": 4,
+      "n_rows": 5,
+      "reason": "5 rows (< 20) and 4 funder-clusters (< 8)"
+    },
+    "js_portal": {
+      "inferential": false,
+      "n_clusters": 1,
+      "n_rows": 1,
+      "reason": "1 rows (< 20) and 1 funder-clusters (< 8)"
+    },
+    "multi_deadline": {
+      "inferential": false,
+      "n_clusters": 4,
+      "n_rows": 25,
+      "reason": "4 funder-clusters (< 8)"
+    },
+    "pdf_only": {
+      "inferential": false,
+      "n_clusters": 2,
+      "n_rows": 2,
+      "reason": "2 rows (< 20) and 2 funder-clusters (< 8)"
+    },
+    "restricted": {
+      "inferential": false,
+      "n_clusters": 6,
+      "n_rows": 28,
+      "reason": "6 funder-clusters (< 8)"
+    },
+    "rolling": {
+      "inferential": false,
+      "n_clusters": 6,
+      "n_rows": 9,
+      "reason": "9 rows (< 20) and 6 funder-clusters (< 8)"
+    }
+  }
+}

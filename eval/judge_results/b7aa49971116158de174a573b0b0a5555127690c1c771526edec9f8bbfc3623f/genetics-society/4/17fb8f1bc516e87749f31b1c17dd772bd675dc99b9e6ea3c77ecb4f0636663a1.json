@@ -1,0 +1,248 @@
+{
+  "funder": "The Genetics Society",
+  "model": "openrouter/amazon/nova-lite-v1",
+  "prompt_strategy": "chain_of_thought",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 4,
+  "config_hash": "b7aa49971116158de174a573b0b0a5555127690c1c771526edec9f8bbfc3623f",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 4,
+      "n_claims_supported": 4,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "junior-scientist-conference-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text captures the types of conferences supported and implies financial support, but omits the specific monetary amounts for each category.",
+          "claims": [
+            {
+              "text": "Travel and accommodation support is available for Genetics Society or Special Interest Group meetings, up to \u00a3200.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Support is available for non-Society genetics conferences, up to \u00a3500.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "There are up to two Adelphi Genetics Forum co-sponsored awards per year for PhD students attending non-Society genetics conferences, with support up to \u00a3750.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Registration support is available for virtual conferences, up to \u00a3300.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 6,
+      "n_claims_supported": 6,
+      "n_records_judged": 2,
+      "n_records_supported": 2,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "junior-scientist-conference-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the purposes of the grants as described in the page text, specifically mentioning support for Genetics Society/SIG meetings and virtual conferences.",
+          "claims": [
+            {
+              "text": "The grants support attendance at meetings organized by the Genetics Society.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants support attendance at meetings organized by Special Interest Groups (SIGs) of the Genetics Society.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants support attendance at virtual conferences.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "summer-studentship",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes that the funding is for an 8-week research project during the summer holiday and includes a place at the Summer School Workshop, all of which are explicitly stated in the page text.",
+          "claims": [
+            {
+              "text": "Funding is available for an 8-week research project.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The research project takes place during the summer holiday.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding includes a place at the Summer School Workshop.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "junior-scientist-conference-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "12 validation errors for _RawJudgeResponse\nclaims.0.supported\n  Field required [type=missing, input_value={'text': 'The opportunity...im_type': 'eligibility'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nclaims.1.supported\n  Field required [type=missing, input_value={'text': \"The opportunity...im_type': 'eligibility'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nclaims.2.supported\n  Field required"
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 7,
+      "n_claims_supported": 7,
+      "n_records_judged": 2,
+      "n_records_supported": 2,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "junior-scientist-conference-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for undergraduate, Master's, PhD student members, and postdoctoral scientist members within six years of their PhD viva, as stated in the page text.",
+          "claims": [
+            {
+              "text": "The opportunity is eligible for undergraduate student members of The Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is eligible for Master\u2019s student members of The Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is eligible for PhD student members of The Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is eligible for postdoctoral scientist members of The Society within six years of their PhD viva.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "summer-studentship",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the page text, which specifies that the scheme is open to all undergraduate students except those in their first or final year.",
+          "claims": [
+            {
+              "text": "The opportunity is open to undergraduate students in their penultimate year of study.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity excludes first-year undergraduate students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity excludes final-year undergraduate students.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

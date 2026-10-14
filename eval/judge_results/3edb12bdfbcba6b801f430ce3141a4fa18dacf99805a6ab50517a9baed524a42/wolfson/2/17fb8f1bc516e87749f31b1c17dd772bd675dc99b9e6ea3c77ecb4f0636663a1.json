@@ -1,0 +1,506 @@
+{
+  "funder": "Wolfson Foundation",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "few_shot",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 2,
+  "config_hash": "3edb12bdfbcba6b801f430ce3141a4fa18dacf99805a6ab50517a9baed524a42",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 5,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.6,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "wolfson-funding-charities-working-with-disability",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose and eligibility criteria related to capital projects for disability services but omits details about the specific programme name ('funding for places') and the funding stream ('Health & Disability').",
+          "claims": [
+            {
+              "text": "The funding is for capital projects, including new buildings, refurbishment, and equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for charities working with disability.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is part of Wolfson's 'funding for places' programme.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The funding is within the Health & Disability stream.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The funding supports disability services focusing on training, employment, and supported housing.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 49,
+      "n_claims_supported": 49,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "wolfson-funding-charities-working-with-disability",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, covering the purpose of the grants, eligibility criteria, application process, funding amounts, deadlines, and exclusions.",
+          "claims": [
+            {
+              "text": "The funding is for capital projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The capital projects can include new build, refurbishment, or equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The projects should support disability services.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The focus of the projects is on training, employment, and supported housing.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The minimum capital cost for a project is \u00a350,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "There must be a shortfall in capital funding of at least \u00a325,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The minimum grant amount is \u00a325,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The usual grant range is \u00a340,000 \u2013 \u00a375,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Match funding may be required if the project cost is between \u00a350,000 to \u00a380,000.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Projects costing above \u00a380,000 must have at least 25% match funding when submitting a Stage 2 application.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The application process has two stages.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications are submitted online.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications require a brief project description, total cost, funding shortfall, and proposed timetable.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications require confirmation of support from the Chief Executive or equivalent.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications require audited accounts for the past two years.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 2 applications are by invitation only.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 2 applications are submitted via the online system.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "At least 25% of capital costs must be raised before submitting a Stage 2 application, unless the project cost is under \u00a380,000.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Necessary planning permission should be in place for Stage 2 applications.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Expert reviewers read Stage 2 applications.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants may have the opportunity to respond to reviewer questions.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Expert panels consider applications and make recommendations to trustees.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Organizations that have previously received a grant must wait five years before submitting another application for a different project.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Universities and large charities with multiple sites may reapply more frequently after contacting the funder.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants turned down at Stage 1 can submit a new application for a different project at any time.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants turned down at Stage 2 must wait at least one year before submitting a new application for a different project.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The same project is not normally considered twice.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "There are two funding rounds each year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 1 Stage 1 applications open on November 20th and close on January 5th.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 1 Stage 2 applications close on March 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 1 funding decisions are made in June.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 Stage 1 applications open on May 14th and close on July 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 Stage 2 applications close on September 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 funding decisions are made in December.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "If a deadline falls on a weekend, applications are accepted by 9 am the following Monday.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Projects must be ongoing at the time of a funding decision and are not funded retrospectively.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "An invitation to Stage 2 remains open for three funding rounds unless otherwise agreed.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The invitation to Stage 2 will specify the latest submission date.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Eligible applicants are registered charities, local authorities, or equivalent organizations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Organizations should have at least a 'Good' rating from a regulator if applicable.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects should help people live more independently.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funder is interested in projects that help young people transition from children's to adult services.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funder is keen to support organizations that may struggle to raise funds from the public.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects should address increased access to services, improved quality/range of services, or improved future sustainability.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding is not available for support and therapy centers, playgrounds, equipment lending charities, facilities/equipment in hospitals, carers' organizations, respite accommodation, ex-armed forces charities (unless specific criteria met), charities where disability support is minor, or projects seeking funding for sports, leisure, arts, or music facilities.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Funding is not available for the purchase of land or existing buildings.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Funding is not available for grants direct to individuals or through conduit organizations.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Funding is not available for overheads, maintenance costs, VAT, non-specific appeals, endowment funds, costs of meetings/exhibitions/concerts/expeditions/conferences/lectures, salary costs, running costs (including vehicle fuel and maintenance), film, websites, promotional materials, repayment of loans, or projects already completed or to be completed by the award date.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Applicants and projects must be located in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 14,
+      "n_claims_supported": 4,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.2857142857142857,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.2857142857142857,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "wolfson-funding-charities-working-with-disability",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures some eligibility criteria but omits several key details regarding the type of projects, minimum cost, funding shortfall, specific areas of interest, and the target beneficiary group.",
+          "claims": [
+            {
+              "text": "The funding is for registered or exempt charities (or equivalent).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization must work with disability.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The organization must have at least a 'Good' rating from a regulator such as CQC or Ofsted where applicable.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for UK only.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for capital projects (new building, refurbishment work or equipment).",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects must cost at least \u00a350,000.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects must have a funding shortfall.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects should help people to live more independently.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "There is particular interest in projects related to training.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "There is particular interest in projects related to employment.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "There is particular interest in projects related to supported housing.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "There is particular interest in transitions from children's to adults' services.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "There is particular interest in organizations that struggle to raise funds from the public.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 4,
+      "n_claims_supported": 4,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "wolfson-funding-charities-working-with-disability",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for registered/exempt charities, local authorities, UK-only location, and the requirement for a 'Good' rating from a regulator.",
+          "claims": [
+            {
+              "text": "The opportunity is open to registered or exempt charities (or equivalent).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is restricted to applicants located in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations must have at least a \u2018Good\u2019 rating from a regulator such as CQC or Ofsted, if applicable.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+
+# Large raw page mirrors — stored locally, paired to GT by snapshot_date.
+# Storage strategy TBD (git-lfs or external); commit a manifest/hashes, not the blobs.
+eval/snapshots/**
+!eval/snapshots/.gitkeep
+
+# Frozen funder page mirrors live under data/snapshots/<funder>/<snapshot_date>/.
+# The blobs are large (~115 MB/funder after pruning) and are tracked via Git LFS
+# (see .gitattributes) so full datasets can be pushed with the repo. manifest.json,
+# INDEX.md and meta/ are committed as normal git objects (hashes, provenance, coverage).
+
+# Snapshot page assets — stylesheets, scripts, fonts, images, media.
+#
+# The agent never reads these: it fetches HTML and PDFs and cleans them through
+# trafilatura, so assets are not study input. They exist only so a mirror renders
+# standalone while labelling, and they are expensive — the asset top-up added
+# ~11,900 files and 2.14 GB of Git LFS on its own, against a 3.31 GB repo.
+# Keep them on disk; do not version them.
+#
+# Deny-listed by type rather than allow-listed, because a lot of real content has
+# no extension at all: heritage-fund serves 459 PDFs as `print-book/pdf/node/<id>`
+# and Leverhulme saves 65 pages with no suffix. An allow-list would silently drop
+# those on the next capture.
+#
+# Already-tracked files are unaffected by these rules. To keep one deliberately,
+# `git add -f <path>`.
+data/snapshots/**/site/**/*.css
+data/snapshots/**/site/**/*.js
+data/snapshots/**/site/**/*.mjs
+data/snapshots/**/site/**/*.map
+data/snapshots/**/site/**/*.jpg
+data/snapshots/**/site/**/*.jpeg
+data/snapshots/**/site/**/*.png
+data/snapshots/**/site/**/*.gif
+data/snapshots/**/site/**/*.webp
+data/snapshots/**/site/**/*.svg
+data/snapshots/**/site/**/*.ico
+data/snapshots/**/site/**/*.bmp
+data/snapshots/**/site/**/*.avif
+data/snapshots/**/site/**/*.woff
+data/snapshots/**/site/**/*.woff2
+data/snapshots/**/site/**/*.eot
+data/snapshots/**/site/**/*.ttf
+data/snapshots/**/site/**/*.otf
+data/snapshots/**/site/**/*.mp4
+data/snapshots/**/site/**/*.webm
+data/snapshots/**/site/**/*.mp3
+# wget keeps the query string in the filename, so an asset can land as
+# `frontend.min.js?ver=4.2.1` with no usable extension. Anything with a literal
+# `?` is a versioned asset URL: the capture tool's reject filter already keeps
+# query strings out of the content corpus.
+data/snapshots/**/site/**/*\?*
+
+# Ground-truth backups. `gt_export` copies each CSV before overwriting it and
+# `gt_workbook` does the same for the workbook; git already holds the prior version
+# of anything tracked, so the copies are local undo, not history.
+data/ground-truth/*.csv.bak-*
+data/ground-truth/*.bak-*.xlsx
+
+# ralph loop runtime files (logs, lock, driver stdout)
+ralph/*.log
+ralph/.gitlock
+ralph/driver.out
+
+# Uncompressed grid traces are an intermediate state — the dispatcher gzips each
+# iteration on cell completion, and only the .gz form is tracked (LFS, see
+# .gitattributes). Result JSONs under eval/results/phase1/grid/ stay tracked in git
+# as normal: they are the evidence (spec GRID-DISPATCHER-SPEC.md SS15).
+eval/run-traces/grid/**/*.jsonl
+
+# Same rule for the single-shot validation run, which dispatches with
+# --traces-root eval/validation_traces to keep the held-out split physically apart
+# from the tune tree. Only the .gz form is tracked (LFS, see .gitattributes).
+eval/validation_traces/grid/**/*.jsonl
+
+# The judge's content-addressed verdict cache (scoring/judge.py, VerdictCache). Derived
+# entirely from the per-run verdict files beside it and reconstructible by re-running,
+# and a real pass would add roughly 23,000 files. The VERDICTS THEMSELVES stay tracked:
+# they cost money and are the audit trail.
+eval/results/phase1/judge/cache/
+# Same rule for the root the tune-grid judge pass actually ran under (`--results-root
+# eval/judge_results`, 2026-09-09): 16,720 cache entries, derived, reconstructible.
+# The 1,920 verdict files and the roll-up beside them stay tracked, as above.
+eval/judge_results/cache/
+# And for the held-out validation pass (`--results-root eval/judge_results_validation`,
+# 2026-09-20): 80 runs is ~4% of the corpus pass above, but the cache is derived from the
+# verdict files beside it by exactly the same rule, so the same rule applies. The verdicts
+# and the roll-up stay tracked: they cost money and they are the audit trail for the one
+# split that cannot be re-run.
+eval/judge_results_validation/cache/
+
+# FakeJudgeBackend demo artefacts from the judge notebook, regenerated on every run.
+# Not real judged output, so not worth versioning.
+eval/results/phase1/judge_fake_demo/

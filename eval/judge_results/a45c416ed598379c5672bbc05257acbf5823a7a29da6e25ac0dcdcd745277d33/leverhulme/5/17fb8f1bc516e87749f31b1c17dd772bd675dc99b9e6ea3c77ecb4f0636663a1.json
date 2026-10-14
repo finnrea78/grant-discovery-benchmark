@@ -1,0 +1,286 @@
+{
+  "funder": "The Leverhulme Trust",
+  "model": "openrouter/amazon/nova-lite-v1",
+  "prompt_strategy": "structured",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 5,
+  "config_hash": "a45c416ed598379c5672bbc05257acbf5823a7a29da6e25ac0dcdcd745277d33",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 9,
+      "n_claims_supported": 7,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.7777777777777778,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.7777777777777778,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "visiting-professorships",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about eligibility and purpose, but omits specific details regarding the visit duration and funding amount.",
+          "claims": [
+            {
+              "text": "The funding is for UK institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is to invite an eminent overseas professor.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The professor must bring novel expertise.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The expertise must be in an underrepresented research area.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The visit duration should be between 3 and 12 months.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The funding amount is between \u00a310,000 and \u00a3150,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The visit aims to enhance the skills and knowledge of academic staff and students.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Priority will be given to new or recent collaborations.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Priority will be given to visits with a variety of activities beyond research.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 6,
+      "n_claims_supported": 6,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "visiting-professorships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text is a direct quote from the provided page text, therefore all claims are supported.",
+          "claims": [
+            {
+              "text": "The funding is for UK institutions to invite an eminent senior professor from overseas.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose is to bring genuinely novel expertise to the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding aims to enhance the skills and knowledge of academic staff and students.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The focus is on an underrepresented area of research within the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Priority will be given to new or recent collaborations.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Priority will be given to visits with a variety of activities beyond research.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 9,
+      "n_claims_supported": 6,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.6666666666666666,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6666666666666666,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "visiting-professorships",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the eligibility criteria, but omits specific details about specialist arts institutions, the ineligibility of the visiting academic, and the 7-year waiting period for prior holders.",
+          "claims": [
+            {
+              "text": "Applications must be made by academic staff at a UK university with research degree awarding powers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Some specialist arts institutions are permitted to host.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The application must host an eminent overseas professor.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The host institution administers the grant.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The visiting academic cannot apply.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Prior holders must wait 7 years before reapplying.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The professor must bring genuinely novel expertise.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The visit must enhance the skills and knowledge of academic staff and students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research area must be underrepresented within the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 4,
+      "n_claims_supported": 4,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "visiting-professorships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the first sentence of the provided page text.",
+          "claims": [
+            {
+              "text": "UK institutions must invite an eminent senior professor from overseas.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The visiting professor must bring genuinely novel expertise.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The visit aims to enhance the skills and knowledge of academic staff and students.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The visit must focus on an underrepresented area of research within the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

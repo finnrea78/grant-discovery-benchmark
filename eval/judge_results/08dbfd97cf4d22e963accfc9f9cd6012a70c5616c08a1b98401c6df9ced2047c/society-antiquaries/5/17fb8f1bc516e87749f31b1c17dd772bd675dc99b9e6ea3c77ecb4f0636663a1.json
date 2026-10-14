@@ -1,0 +1,366 @@
+{
+  "funder": "Society of Antiquaries of London",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 5,
+  "config_hash": "08dbfd97cf4d22e963accfc9f9cd6012a70c5616c08a1b98401c6df9ced2047c",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 6,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.5,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the annual nature of the grants, the research purpose, and the eligible fields, but omits the specific grant amounts, renewal terms, and named awards.",
+          "claims": [
+            {
+              "text": "The funding is for annual project grants.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Grants range from \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The research focus is on the human past through its material culture or material remains.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Eligible research areas include archaeology, art history, architectural/buildings history, material culture, and history of collecting.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are renewable annually up to three years.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Named awards within the scheme include Marion Wilson, Joan Pye and Hugh Chapman Memorial Awards.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 8,
+      "n_claims_supported": 8,
+      "n_records_judged": 2,
+      "n_records_supported": 2,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose, eligible fields, amount, and deadline of the 'Research Awards' grant program as described in the provided page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity offers annual project grants.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grants support research into the human past through its material culture or material remains.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The eligible fields include archaeology, art history, architectural history, material culture studies, history of collecting, and related fields.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant amount is between \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The deadline for applications is January 15th annually.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "beatrice-di-cardi-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose of the funding opportunity by stating it supports projects in archaeology, art history, and related fields, and encourages innovative, interdisciplinary research, all of which are explicitly mentioned in the page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity supports projects in archaeology, art history, and related fields.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applicants are encouraged to submit innovative research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applicants are encouraged to submit interdisciplinary research.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "church-conservation-grant-aug2026",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ...the August 31 deadline.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 5,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.6,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims regarding the applicant's role, the exclusion of degree-related work, and the rejection of retrospective applications, but omits information about welcoming early career researchers and the open applicant base without a residency clause.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding is not available for work contributing to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Early career researchers are welcomed.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The applicant base is open, with no UK-residency clause.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 18,
+      "n_claims_supported": 18,
+      "n_records_judged": 3,
+      "n_records_supported": 3,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which lists specific eligibility criteria and eligible project costs for various grant programs.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be made for work contributing to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible costs include travel and subsistence.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible costs include specialist investigation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible costs include hire of plant/site accommodation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible costs include materials and consumables.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible costs include hire of specialist equipment.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "beatrice-di-cardi-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which lists specific eligibility criteria and eligible project costs for various grant programs.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be made for work contributing to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible costs include travel and subsistence.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible costs include specialist investigation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible costs include hire of plant/site accommodation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible costs include materials and consumables.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible costs include hire of specialist equipment.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "church-conservation-grant-aug2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that the opportunity is open to eligible applicants and that specific details are in the grant scheme documentation, both of which are supported by the page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity is open to eligible applicants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Specific eligibility details are provided in the grant scheme documentation.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

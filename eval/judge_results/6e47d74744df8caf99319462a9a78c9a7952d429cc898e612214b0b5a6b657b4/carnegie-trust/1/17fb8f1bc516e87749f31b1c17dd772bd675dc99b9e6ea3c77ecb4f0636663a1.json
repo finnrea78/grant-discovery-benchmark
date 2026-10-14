@@ -1,0 +1,652 @@
+{
+  "funder": "Carnegie Trust for the Universities of Scotland",
+  "model": "openrouter/amazon/nova-lite-v1",
+  "prompt_strategy": "minimal",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 1,
+  "config_hash": "6e47d74744df8caf99319462a9a78c9a7952d429cc898e612214b0b5a6b657b4",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 6,
+      "n_claims_supported": 4,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.6666666666666666,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6666666666666666,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Undergraduate Tuition Fee Grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures that the funding is for low-income individuals pursuing a first or second degree, but omits details about the geographic location (Scotland) and the specific condition of not receiving government fee support.",
+          "claims": [
+            {
+              "text": "The grant covers undergraduate tuition fees.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant is for low-income students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is for students in Scotland.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The grant is for students who cannot get government fee support.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The grant is for a first degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is for a second degree in limited subject areas.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 65,
+      "n_claims_supported": 65,
+      "n_records_judged": 3,
+      "n_records_supported": 3,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Undergraduate Tuition Fee Grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the core eligibility criteria for the funding opportunity as described in the provided page text.",
+          "claims": [
+            {
+              "text": "Funding is available for individuals from low-income households.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding is for individuals who want to study for a first degree at university.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding is available for a second degree in limited subject areas.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "Vacation Scholarships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, covering the purpose, eligibility criteria, application process, and funding details of the Carnegie Vacation Scholarships.",
+          "claims": [
+            {
+              "text": "The opportunity supports undergraduate students to develop research skills.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The opportunity involves undertaking a short research project during the summer vacation.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The scholarships are open to students from low-income households.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The scholarships are open to students who are ordinarily resident in Scotland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The scholarships are open to students enrolled on an undergraduate degree course at an eligible Scottish institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Scholarships are intended to cover recipients' living costs while they undertake research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Scholarships provide experience and skills in preparation for postgraduate study or the workplace.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Students may see their research results published in academic journals or reported in conference presentations.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Eligibility is determined by an online checker, but the final decision is based on the application form, supporting evidence, and supervisor's statement.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be ordinarily resident in Scotland and have been so before beginning their degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have spent 2 years in full-time secondary schooling or college education in Scotland, OR have a substantive connection with Scotland on the basis of residency, education (excluding university), family, or working life.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must reside in a low-income household, with specific income thresholds provided.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be undergraduate students at one of the 18 listed eligible Scottish institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be enrolled at their institution for the full duration of their degree, or have transferred after completing an HNC/HND from a Scottish college.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be in the 3rd year of a 4-year degree, or in the 3rd or 4th year of a 5-year degree, or in the 2nd year of a 3-year degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Part-time students must be at an equivalent stage in their course.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be entitled to live and work in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have never previously held a Carnegie Vacation Scholarship.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants are not eligible if their permanent home address is outside Scotland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants are not eligible if they are not an enrolled undergraduate at one of the 18 eligible Scottish institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants are not eligible if they are in the final year of their course and scheduled to graduate in summer 2026.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants are not eligible if they have held a Carnegie Vacation Scholarship in the past.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants are not eligible if their migration status does not entitle them to work in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must be between 4 and 12 weeks in duration.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Projects must take place between May 12th and August 31st.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Projects must address a clearly specified research question(s) or hypothesis.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects must engage the student in personal research over the specified period.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects must provide scope to develop ideas, use initiative, and build research and analytical skills.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects can be based at the student's home university or another research organization.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Projects that form part of assessed coursework are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects that are a direct continuation or expansion of an existing/larger project or study are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects involving participation in group expeditions are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects consisting solely of a literature review are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Work placements (paid or unpaid) or volunteering activities are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Attendance of summer schools, language study, or other training courses are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must be supervised by an academic member of staff at the student's university.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Supervisors may only nominate a single student per academic year.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Supervisors must confirm their availability and willingness to supervise.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "It is the supervisor\u2019s responsibility to ensure the project is completed within the agreed timescale.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Supervisors are expected to liaise with their department for timely distribution of the scholarship.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Supervisors must ensure the student receives adequate training and all statutory requirements are satisfied.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "If the project is conducted at a different organization, the home institution supervisor must ensure a suitably qualified host supervisor is available.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Reviewers will assess academic standing, motivation, project quality, and supervision/environment.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants are expected to be on course to achieve a 2:2 or higher classification and Honours where applicable.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The scholarship is intended as a stipend to cover living expenses and accommodation costs.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The stipend is calculated using the Scottish Living Wage rate.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "There is no additional funding for consumables, equipment, or overheads.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Host organizations are responsible for ensuring students have access to necessary equipment and consumables.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Applicants state the amount of support in full-time working weeks.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Projects can be completed on a part-time basis, but support is still indicated in full-time weeks.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The online application portal opens approximately 11 weeks before the closing date.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "After the student submits their part, an email is sent to the supervisor to complete the application.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The supervisor submits the complete application to the Trust.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Students receive confirmatory emails upon submission and when the supervisor submits their part.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "It is recommended to allow at least 5 working days for the supervisor to complete their part of the application.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The scholarships support students from low-income households who are typically unable to take advantage of extra-curricular development opportunities due to financial constraints.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Total household income thresholds are used as a guide for assessing applications.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "Carnegie Masters Grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the purpose of the grants, the target demographic, and the funding limits as described in the provided page text.",
+          "claims": [
+            {
+              "text": "The grants are intended to help graduates in Scotland meet the costs of postgraduate study.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are for talented students from low-income Scottish households.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are intended to equip graduates with skills and expertise to fulfill ambitions and contribute to Scotland.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding is capped at a maximum of \u00a35,000 per year.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Students undertaking a two-year full-time Master\u2019s programme may receive support for both years.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 12,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.25,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.25,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Undergraduate Tuition Fee Grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures that applicants must be from low-income households and studying for a first degree or a second degree in limited subject areas, but omits many other specific eligibility criteria.",
+          "claims": [
+            {
+              "text": "Applicants must be from low-income households.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be ineligible for Scottish Government tuition fee support.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must have an unconditional offer to study an undergraduate degree.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must study at an eligible Scottish institution.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must have attended a secondary school or college in Scotland for at least two full years or have a substantial and recent connection to Scotland.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Household income thresholds apply, banded by number of dependants.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Most recipients previously withdrew from study.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Asylum seekers are supported.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must be entitled to remain indefinitely in the UK.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must have Limited Leave to Remain under a visa that is valid for the entire duration of the course.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must be studying for a first degree at university.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants may be studying for a second degree in limited subject areas.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 11,
+      "n_claims_supported": 11,
+      "n_records_judged": 3,
+      "n_records_supported": 3,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Undergraduate Tuition Fee Grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for individuals from low-income households seeking to study for a first or second degree in specific subject areas.",
+          "claims": [
+            {
+              "text": "Individuals from low-income households are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Individuals who want to study for a first degree at university are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Individuals who want to study for a second degree in limited subject areas are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "Vacation Scholarships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for undergraduate students from low-income Scottish households enrolled at eligible Scottish institutions as stated in the page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for undergraduate students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for students from low-income Scottish households.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for students enrolled on an undergraduate degree course at an eligible Scottish institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "Carnegie Masters Grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria and purpose of the Carnegie Masters Grants as described in the provided page text.",
+          "claims": [
+            {
+              "text": "The grants are for talented students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are for students from low-income Scottish households.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are for students aiming to meet the costs of postgraduate study.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are for graduates in Scotland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are for those who otherwise couldn\u2019t afford postgraduate study.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "funder": "Garfield Weston Foundation",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "chain_of_thought",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 1,
+  "config_hash": "7e9a4d24b95f743e75d8817c1faa64a0286524e3e512aeb61e0574b92892dbbb",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 6,
+      "n_claims_supported": 6,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "major-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures all the factual claims present in the reference text regarding the grant amount, submission process, guidance, suitability calls, and specific project advice.",
+          "claims": [
+            {
+              "text": "The funding is for major grants of \u00a3100,000 and over.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The process involves submitting a Major Grant Expression of Interest Form.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Expression of Interest Form is submitted through the Grants Management Portal.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants receive bespoke guidance within 10 working days.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants may be invited for a call if their request is potentially suitable.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Local community capital projects are advised to apply for a regular grant instead.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 9,
+      "n_claims_supported": 8,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.8888888888888888,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.8888888888888888,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "regular-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value='The provided page text d...s for capital projects.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "major-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text incorrectly states the minimum grant amount for major grants, claiming it is \u00a3100,000 and over, while the source text clearly states it is \u00a31 million and over. All other claims are supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The program offers major grants of \u00a3100,000 and over.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Applicants submit a Major Grant Expression of Interest Form via the Grants Management Portal.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants receive bespoke guidance within 10 working days.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants may be invited for a call if potentially suitable.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Local community capital projects (e.g. churches, village halls) are advised to apply for a regular grant instead.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The total cost of what is being applied for must be at least \u00a31 million for a major grant.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "For core costs, an organization's annual income must be \u00a31 million or over to be eligible for a major grant.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "For capital or project costs, the total cost of the project must be at least \u00a31 million to be eligible for a major grant, regardless of the organization's income.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants for local community capital projects are typically up to a maximum of \u00a330,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "major-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support...nd an eligibility quiz.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 5,
+      "n_claims_supported": 4,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.8,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.8,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "regular-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text makes s...or reapplication rules.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "major-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately reflects the financial requirements for Major Grants and the need to pass an eligibility quiz. However, it includes an unsupported claim regarding the specific types of UK organisations that can apply.",
+          "claims": [
+            {
+              "text": "For Major Grants, the total cost of the application must be at least \u00a31 million.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "For core costs within a Major Grant application, the organisation's annual income must be \u00a31 million or over.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "For capital or project costs within a Major Grant application, the organisation's income need not exceed \u00a31 million, but the total project cost must be at least \u00a31 million.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be a UK registered charity, CIO, or exempt/excepted organisation.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must pass the eligibility quiz.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

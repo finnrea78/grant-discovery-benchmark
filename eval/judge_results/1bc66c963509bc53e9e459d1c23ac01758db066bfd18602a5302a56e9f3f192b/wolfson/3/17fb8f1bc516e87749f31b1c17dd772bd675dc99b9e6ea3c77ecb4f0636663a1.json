@@ -1,0 +1,503 @@
+{
+  "funder": "Wolfson Foundation",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "minimal",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 3,
+  "config_hash": "1bc66c963509bc53e9e459d1c23ac01758db066bfd18602a5302a56e9f3f192b",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 12,
+      "n_claims_supported": 7,
+      "n_records_judged": 3,
+      "n_records_supported": 0,
+      "claim_rate": 0.5833333333333334,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5833333333333334,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "wolfson-charities-disability",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text mentions funding for new build, refurbishment, and equipment, but omits the eligibility criterion that the charities must work with disability.",
+          "claims": [
+            {
+              "text": "The funding is for charities working with disability.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding is for new buildings.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for refurbishment work.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-charities-mental-health",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text mentions grants for new build, refurbishment, and equipment projects, which supports the claim about the purpose of the funding. However, the agent's text does not mention that the funding is for charities working in mental health, making that claim unsupported.",
+          "claims": [
+            {
+              "text": "The funding is for charities working in mental health.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding is for capital projects, specifically new buildings, refurbishment work, and equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-charities-older-people",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text mentions funding for new build, refurbishment, and equipment projects, which is supported by the reference text. However, the agent's text omits details about the eligibility criteria (charities working with older people) and the specific programme stream (Health & Disability).",
+          "claims": [
+            {
+              "text": "The funding is for charities working with older people.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding is part of the 'funding for places' programme.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The funding is within the Health & Disability stream.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Funds can be used for new buildings.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funds can be used for refurbishment work.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funds can be used for equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 9,
+      "n_claims_supported": 9,
+      "n_records_judged": 3,
+      "n_records_supported": 3,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "wolfson-charities-disability",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the types of projects that can receive funding as stated in the page text.",
+          "claims": [
+            {
+              "text": "Grants are available for new build projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for refurbishment projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for equipment projects.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-charities-mental-health",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the types of projects that can receive funding as listed in the page text.",
+          "claims": [
+            {
+              "text": "Grants are available for new build projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for refurbishment projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for equipment projects.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-charities-older-people",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the types of projects that can receive funding as stated in the page text.",
+          "claims": [
+            {
+              "text": "Grants are available for new build projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for refurbishment projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for equipment projects.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 27,
+      "n_claims_supported": 7,
+      "n_records_judged": 3,
+      "n_records_supported": 0,
+      "claim_rate": 0.25925925925925924,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.268939393939394,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "wolfson-charities-disability",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text correctly identifies that the funding is for registered or exempt charities (or equivalent) and local authorities in the UK, but omits all other eligibility criteria and purpose details.",
+          "claims": [
+            {
+              "text": "The funding is for registered or exempt charities (or equivalent) and local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for organizations working with disability.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Eligible organizations must have at least a 'Good' rating from a regulator such as CQC or Ofsted where applicable.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding is restricted to the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for capital projects (new building, refurbishment work or equipment).",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects must cost at least \u00a350,000.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects must have a funding shortfall.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding aims to help people live more independently.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "There is particular interest in projects related to training, employment, and supported housing.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "There is particular interest in projects supporting transitions from children's to adults' services.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "There is particular interest in organizations that struggle to raise funds from the public.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-charities-mental-health",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the eligibility criteria related to the type of organization and geographic location, but omits details about the sector, regulatory rating, project type, minimum cost, funding shortfall, and project emphasis.",
+          "claims": [
+            {
+              "text": "The funding is for registered or exempt charities (or equivalent) and local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for organizations working in mental health.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Eligible organizations must have at least a 'Good' rating from a regulator such as CQC or Ofsted where applicable.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding is restricted to the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must be capital in nature (new building, refurbishment work or equipment).",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Capital costs must be at least \u00a350,000.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects must have a shortfall in capital funding.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "There is an emphasis on projects related to training, employment, and supported housing.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-charities-older-people",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the eligibility criteria related to the type of organization and geographic location, but omits details about the target beneficiaries, required ratings, project type, minimum cost, and funding shortfall.",
+          "claims": [
+            {
+              "text": "The organization must be a registered or exempt charity (or equivalent).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization must be a local authority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization must provide care and services for older people, particularly those with a neurodegenerative condition or who are isolated.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The organization must have at least a 'Good' rating from a regulator such as CQC where applicable.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding is for UK organizations only.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The project must be a capital project (new building, refurbishment work or equipment).",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The project must cost at least \u00a350,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The project must have a funding shortfall.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 9,
+      "n_claims_supported": 9,
+      "n_records_judged": 3,
+      "n_records_supported": 3,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "wolfson-charities-disability",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria and geographic restrictions mentioned in the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is open to registered or exempt charities (or equivalent).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is restricted to applicants in the UK only.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-charities-mental-health",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for registered or exempt charities, local authorities, and the UK-only location specified in the source text.",
+          "claims": [
+            {
+              "text": "The opportunity is for registered or exempt charities (or equivalent).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is restricted to applicants in the UK only.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-charities-older-people",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for registered/exempt charities, local authorities, and the UK-only location specified in the source text.",
+          "claims": [
+            {
+              "text": "The opportunity is for registered or exempt charities (or equivalent).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is restricted to applicants in the UK only.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

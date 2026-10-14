@@ -1,0 +1,437 @@
+{
+  "funder": "Paul Mellon Centre for Studies in British Art",
+  "model": "openrouter/amazon/nova-lite-v1",
+  "prompt_strategy": "structured",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 2,
+  "config_hash": "ac4660679572b85b4aea6b2ef0808aac4746b904b6d9bbae2d4083ccd0c8d683",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 9,
+      "n_claims_supported": 7,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.7777777777777778,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.7777777777777778,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "erba-research-travel-bursaries",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose and eligibility of the bursaries, including the types of expenses covered and the target demographic, but omits details about the application requirements such as the word count for the statement and the need for an indicative budget.",
+          "claims": [
+            {
+              "text": "The funding is for small travel bursaries.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The maximum bursary amount is \u00a3250.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The bursaries cover transport.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The bursaries cover accommodation.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The bursaries cover reasonable expenses.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The bursaries are for emerging researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The bursaries are for researchers making a research trip.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications require a 300-500 word statement.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Applications require an indicative budget.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 29,
+      "n_claims_supported": 29,
+      "n_records_judged": 3,
+      "n_records_supported": 3,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "individual-research-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the grant amount and purposes as stated in the 'Individual Research Grants' section of the provided page text.",
+          "claims": [
+            {
+              "text": "Grants are available for up to \u00a320,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for individuals undertaking research travel.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are for individuals taking time to address specific research questions.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "erba-research-travel-bursaries",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The bursaries are intended to help cover transport, accommodation, and reasonable expenses for a specific research-related trip.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The bursary provides up to \u00a3250.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applications are open now.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications close on Monday 14 September at midday BST.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applicants need to be a Member of ERBA.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The bursary must be used to support a specific trip, such as visiting a gallery, museum, collection, site, or meeting someone important to research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The bursary can be used to attend an event directly related to research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The bursary cannot be used to cover attendance fees or membership costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Eligible costs include standard class travel, mileage at 45p per mile, local travel, accommodation (typically not more than \u00a3120 per night), and reasonable expenses (not more than \u00a360 per full day).",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding must be used between November 2026 and April 2027 (inclusive).",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The bursary can be used as part-funding towards a trip.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Funds are available to support access requirements, which do not need to be included in the application.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Applicants need to outline likely costs in their application, which can include estimates.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications will be reviewed and scored by members of the Paul Mellon Centre (PMC) team and the ERBA Convenor.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Bursary holders must provide a brief report (up to five hundred words) after their trip detailing how they used the funding and sharing any learning or observations.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Receipts or detailed accounts are not required for the report, but may be requested to justify spending.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Bursary holders may be asked to contribute to future ERBA mailing or web content based on their report.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Applications are to be submitted via a form.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "autumn-round-of-funding-opportunities",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the types of grants available and the fields they cover as described in the page text.",
+          "claims": [
+            {
+              "text": "Grants are available for research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for publication.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for digitisation.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for events.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for conservation.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are in the field of British art.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are in the field of visual culture.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are in the field of architectural history.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 5,
+      "n_claims_supported": 2,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.4,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.4,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "erba-research-travel-bursaries",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text correctly captures the eligibility criteria regarding ERBA membership and pending membership status, but omits details about the purpose of the bursary and the specific dates for fund usage.",
+          "claims": [
+            {
+              "text": "Eligibility is restricted to Members of Emerging Researchers in British Art (ERBA).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Membership in ERBA may be pending at the time of application.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The bursary must support a specific trip, such as a gallery, museum, collection or site visit, a meeting with a key contact, or an event directly relevant to the research.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The bursary cannot cover attendance fees or membership costs.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Funds must be used between November 2026 and April 2027.",
+              "claim_type": "deadline",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 8,
+      "n_claims_supported": 8,
+      "n_records_judged": 3,
+      "n_records_supported": 3,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "individual-research-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the page text's statement that the opportunities are available to individuals at different stages of their careers.",
+          "claims": [
+            {
+              "text": "The funding opportunities are available to individuals at different stages of their careers.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "erba-research-travel-bursaries",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the page text, which specifies that applicants must be ERBA members but also welcomes applications from non-members with pending membership.",
+          "claims": [
+            {
+              "text": "The opportunity is open to ERBA Members.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Non-members are welcome to apply, and their membership can be pending.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "autumn-round-of-funding-opportunities",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria mentioned in the page text, which states the funding is for research in British art, visual culture, and architectural history and is open to both individuals and organisations.",
+          "claims": [
+            {
+              "text": "The funding opportunity is open to individuals.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity is open to organisations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be conducting research in British art.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be conducting research in visual culture.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be conducting research in architectural history.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

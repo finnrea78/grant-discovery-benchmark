@@ -1,0 +1,235 @@
+{
+  "funder": "Garfield Weston Foundation",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "structured",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 2,
+  "config_hash": "fe12edb77ca4f2c1a76985a99a0308c78ca8e09d1333a145ee2cac734e6026cb",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "major-grant",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support...and the follow-up call.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 2,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "regular-grant",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text makes s...mentioned by the agent.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "major-grant",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ...submit a full proposal.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 6,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.5,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "major-grant",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits claims regarding the minimum total cost for all applications, the exclusion of local community capital projects, and the comparison of eligibility to the regular programme, while accurately capturing other eligibility and cost-related criteria.",
+          "claims": [
+            {
+              "text": "The total cost of what is being applied for must be at least \u00a31 million.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "For core costs, the organisation's annual income must be \u00a31 million or over.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "For capital or project costs, the organisation's income need not exceed \u00a31 million but the total project cost must be at least \u00a31 million.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Local community capital projects (churches, village halls) are directed to the regular grants route instead, where the typical maximum is \u00a330,000.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Same charity eligibility as the regular programme.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Must be an eligible UK registered charity, CIO, or exempt/excepted organisation.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 9,
+      "n_claims_supported": 1,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.1111111111111111,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.1111111111111111,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "regular-grant",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The page text mentions the need for annual accounts/returns but does not specify eligible organization types or explicitly exclude ineligible ones.",
+          "claims": [
+            {
+              "text": "UK registered charities are eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Charitable Incorporated Organisations (CIOs) are eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Exempt/excepted organisations under Charity Commission guidance are eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Organizations must have at least one year's worth of annual accounts (independently audited/examined or Charity Commission annual return).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity cannot fund individuals.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity cannot fund CICs.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity cannot fund community benefit societies.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity cannot fund social enterprises.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity cannot fund local authorities.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "major-grant",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text accurat.../excepted organization.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "funder": "Garfield Weston Foundation",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "chain_of_thought",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 4,
+  "config_hash": "7e9a4d24b95f743e75d8817c1faa64a0286524e3e512aeb61e0574b92892dbbb",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 9,
+      "n_claims_supported": 6,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.6666666666666666,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6666666666666666,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "major-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the minimum funding amount and the rolling application process, but omits details about the submission portal, response time, and follow-up steps mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The funding route is for requests of \u00a3100,000 and above.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "An Expression of Interest form is submitted through the Grants Management Portal.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Bespoke guidance is provided within 10 working days of submitting the Expression of Interest form.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "A call follows if the request is potentially suitable.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "The funding is for capital or project costs, with a project total of at least \u00a31 million.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is for core costs, with an organisation annual income of at least \u00a31 million.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applications can be submitted all year round with no deadlines.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications are reviewed on a rolling basis.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications are considered at one of eight Board meetings per year.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 15,
+      "n_claims_supported": 0,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "regular-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The provided page text details the application process, including eligibility checks, application guidelines, and the use of an online grants portal, but it does not contain information about grant amounts, specific purposes for grants, application deadlines, or the sectors covered by the funding.",
+          "claims": [
+            {
+              "text": "Grants are available for amounts under \u00a3100,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Grants can be used for operating/core costs.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants can be used for capital projects.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants can be used for projects/specific activities.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Applications are open all year round.",
+              "claim_type": "deadline",
+              "supported": false
+            },
+            {
+              "text": "There are no deadlines for applications.",
+              "claim_type": "deadline",
+              "supported": false
+            },
+            {
+              "text": "The funding covers the arts sector.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding covers the community sector.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding covers the education sector.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding covers the environment sector.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding covers the faith sector.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding covers the health sector.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding covers museums and heritage sectors.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding covers the welfare sector.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding covers the youth sector.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "major-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ...not stated on the page.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 5,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.6,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "major-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims regarding the minimum total cost and income requirements for core, capital, and project costs, but omits specific exclusions for local community capital projects and the general statement about charity eligibility matching the regular programme.",
+          "claims": [
+            {
+              "text": "The total cost of what is being applied for must be at least \u00a31 million.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "For core costs, the organisation's annual income must be \u00a31 million or over.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "For capital or project costs, the organisation's income need not exceed \u00a31 million but the total project cost must be at least \u00a31 million.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Local community capital projects (churches, village halls) are directed to the regular grants route instead, where the typical maximum is \u00a330,000.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Same charity eligibility as the regular programme.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 16,
+      "n_claims_supported": 3,
+      "n_records_judged": 2,
+      "n_records_supported": 0,
+      "claim_rate": 0.1875,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.24545454545454548,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "regular-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The page text mentions the requirement for annual accounts and the eligibility quiz but does not specify which types of organizations are eligible or ineligible, nor does it mention any restrictions on the number of applications or waiting periods after a decision.",
+          "claims": [
+            {
+              "text": "UK registered charities are eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Charitable Incorporated Organisations (CIOs) are eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Organisations exempt/excepted under Charity Commission guidance are eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must have at least one year's worth of annual accounts (audited/examined or Charity Commission annual return).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Individuals are not eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Community Interest Companies (CICs) are not eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Community benefit societies are not eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Social enterprises are not eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Local authorities are not eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Only one application can be submitted at a time.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must wait a year after a previous decision before applying again.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "major-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text makes claims about the type of organisation and its sector, which are not mentioned in the provided page text. The page text does, however, support the claims regarding the financial thresholds for core cost grants and capital/project costs.",
+          "claims": [
+            {
+              "text": "For core cost grants, the organisation must have an annual income of over \u00a31 million.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "For capital or project costs, the total project costs must be at least \u00a31 million.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organisation must be a UK registered charity, CIO, or exempt/excepted organisation.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The organisation must have at least one year's accounts.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Eligible organisations are in the arts, community, education, environment, faith, health, museums and heritage, welfare, and youth sectors.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

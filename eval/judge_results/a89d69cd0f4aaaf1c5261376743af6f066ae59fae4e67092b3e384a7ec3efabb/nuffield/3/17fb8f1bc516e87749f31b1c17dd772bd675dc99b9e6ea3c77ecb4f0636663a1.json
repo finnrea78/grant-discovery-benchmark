@@ -1,0 +1,397 @@
+{
+  "funder": "Nuffield Foundation",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "few_shot",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 3,
+  "config_hash": "a89d69cd0f4aaaf1c5261376743af6f066ae59fae4e67092b3e384a7ec3efabb",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 13,
+      "n_claims_supported": 9,
+      "n_records_judged": 2,
+      "n_records_supported": 0,
+      "claim_rate": 0.6923076923076923,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.7083333333333333,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "main-grants-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the general purpose of research projects, the maximum funding amounts, and the existence and timing of application deadlines, but omits details about the specific strategic priority questions and the typical project duration.",
+          "claims": [
+            {
+              "text": "The fund supports research, development, and analysis projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects must address one or more of five strategic priority questions.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The priority questions relate to a prosperous and fair society, inclusive society, science and technology, climate policy, and effective institutions.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Project durations are usually between six months and three years.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The fund offers up to \u00a3500,000 for projects.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "In special cases, the fund offers up to \u00a3750,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Projects must address priority questions from the Foundation's Strategic Review.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are two application deadlines per year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Application deadlines occur in Spring and Autumn.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "racial-diversity-uk-fund-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose of the funding and the deadline, but omits information about the typical duration of the funding.",
+          "claims": [
+            {
+              "text": "The funding supports research on racial diversity within the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research should focus on inter-generational changes, continuities and challenges in a racially diverse UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding duration is usually between six months and three years.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "There is one annual deadline in Autumn.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 9,
+      "n_claims_supported": 9,
+      "n_records_judged": 2,
+      "n_records_supported": 2,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "main-grants-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims regarding the funding amount, purpose, and deadlines are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The fund offers up to \u00a3500,000 for projects.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "In special cases, the fund can offer up to \u00a3750,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Projects must address priority questions from the Foundation's Strategic Review.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are two application deadlines per year, in Spring and Autumn.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The outline application deadline is 5 October 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "racial-diversity-uk-fund-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the purpose of the funding (research on racial diversity in the UK, focusing on inter-generational aspects) and the deadline information (one annual deadline in Autumn) as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The funding supports research on racial diversity within the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research should focus on inter-generational changes, continuities and challenges.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is one annual deadline for applications.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline is in the Autumn.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 15,
+      "n_claims_supported": 4,
+      "n_records_judged": 2,
+      "n_records_supported": 0,
+      "claim_rate": 0.26666666666666666,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.2777777777777778,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "main-grants-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures some eligibility criteria but omits others, such as the duration of affiliation, exclusions for specific individuals or project types, and the impact requirement.",
+          "claims": [
+            {
+              "text": "Applicants must be employed by or have a formal affiliation with a UK-based organisation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The affiliation with the UK-based organisation must last for at least the duration of the project.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Unaffiliated individuals are excluded.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects led by schools or FE colleges are excluded.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Undergraduates or master's students are excluded.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "PhD-fee projects are excluded.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Establishment of academic posts is excluded.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects led by non-UK-based organisations are excluded, except in exceptional cases.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research and related activities must have a clear path to making a difference to people's lives.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "racial-diversity-uk-fund-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about UK-based organisations and encouragement for applicants from racially minoritised communities, but omits claims about partnership applications, the specific historical focus of the endowment, and the desired outcomes of the research.",
+          "claims": [
+            {
+              "text": "Applicants must be employed by or formally affiliated with a UK-based organisation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants from racially minoritised communities are explicitly encouraged.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Partnership applications between researchers and racially minoritised communities are explicitly encouraged.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The endowment is restricted to work relating to the Commonwealth and the UK's colonial-migration history.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Research funded should contribute to understanding, public debate, policy and/or practice on tackling racial inequalities, discrimination and disadvantage.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Research funded should map pathways towards a UK that is comfortable with and reaping the benefits of its growing racial diversity.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 6,
+      "n_claims_supported": 5,
+      "n_records_judged": 2,
+      "n_records_supported": 1,
+      "claim_rate": 0.8333333333333334,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.8333333333333333,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.5,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "main-grants-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims the opportunity is open to UK-based organisations, but the page text states that projects led by organisations not based in the UK will not be funded, except in exceptional cases, implying that UK-based organisations are the primary focus.",
+          "claims": [
+            {
+              "text": "The opportunity is open to UK-based organisations.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Individuals must have a formal employment or contractual relationship with the host institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects led by organisations not based in the UK are not funded except in exceptional cases.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "racial-diversity-uk-fund-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the page's encouragement of diverse applicants, particularly from racially minoritized communities, and confirms the eligibility of UK-based organizations.",
+          "claims": [
+            {
+              "text": "Applicants from diverse backgrounds are encouraged.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Individuals and organizations from racially minoritized communities are particularly encouraged to apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "UK-based organizations are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,970 @@
+{
+  "funder": "The Pilgrim Trust",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "few_shot",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 1,
+  "config_hash": "3f35d3189bc2850f14fc128291b4a51852460d758d1b5729eade46bb70721733",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 20,
+      "n_claims_supported": 13,
+      "n_records_judged": 3,
+      "n_records_supported": 1,
+      "claim_rate": 0.65,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.7444444444444445,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.3333333333333333,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "historic-buildings-and-structures",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the claims from the reference text, but omits the specific months for the quarterly trustee meetings.",
+          "claims": [
+            {
+              "text": "Grants are available for the preservation and repair of listed historic buildings, structures, and architectural features.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Special consideration is given to the sustainable re-use of at-risk buildings of outstanding importance.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant program operates in two stages.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage one applications for grants of \u00a35,000 or less are considered on a rolling basis.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage two applications for grants over \u00a35,000 are decided at quarterly Trustee meetings.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Trustee meetings for stage two applications are held in March, June, September, and November.",
+              "claim_type": "deadline",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "places-of-worship",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support...or quarterly decisions.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "conservation-of-cultural-heritage",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose and some eligibility criteria but omits details about the two-stage rolling process, grant amounts, decision timelines, and specific routing for certain applications.",
+          "claims": [
+            {
+              "text": "The grants are for the conservation of culturally and historically significant collections and objects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants cover works of art, books, ephemera, artefacts, and archives.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Conservation must be performed by an accredited conservator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Conservation must be informed by a conservation report.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are awarded through a two-stage rolling process.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Stage one grants are for GBP5,000 or less and are awarded on a rolling basis.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Stage two grants are for over GBP5,000 and are decided quarterly.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Quarterly decisions for stage two grants occur in March, June, September, and November.",
+              "claim_type": "deadline",
+              "supported": false
+            },
+            {
+              "text": "Museums/manuscripts applications are routed to AIM/NMCT partners first.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Conservation should enable greater public access.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "archives-revealed",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures the partnership details, the unique purpose of the grant programme, its accessibility goals, and the application process mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The funding programme is a partnership between The National Archives, National Lottery Heritage Fund, Pilgrim Trust, and Wolfson Foundation.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "This is the only UK grant programme dedicated to cataloguing and unlocking archival collections.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The programme aims to ensure significant archive collections representing the lives and perspectives of all people across the UK are made accessible to the public.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications are made via the National Archives website.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 57,
+      "n_claims_supported": 57,
+      "n_records_judged": 5,
+      "n_records_supported": 5,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "young-womens-mental-health-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the funding programme's partners, financial commitment, purpose, target demographic, geographical scope, and key dates.",
+          "claims": [
+            {
+              "text": "The funding programme is a collaboration between the Prudence Trust and the Julia Rausing Trust, along with the Pilgrim Trust.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The programme will invest \u00a35 million over three years.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is intended to support charities providing gender-specific therapeutic mental health support.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The target beneficiaries are girls and young women aged 14-25.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The services supported are located in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The programme aims to help charities grow, strengthen, or adapt existing services.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The programme ran from 2026 to 2028.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The deadline for stage one applications was June 22, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline for stage two applications was August 24, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Notification of decisions was expected at the end of November 2026.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The programme is no longer accepting applications for this year.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "historic-buildings-and-structures",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the purpose of the grants, the application process, and specific deadlines for different application stages.",
+          "claims": [
+            {
+              "text": "Grants are available for the preservation and repair of listed historic buildings, structures, and architectural features.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Special consideration is given to sustainable conservation and re-use of historic buildings that are at risk and of outstanding importance.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications can be submitted at any time on a rolling basis for stage one.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage two applications for amounts over \u00a35,000 are considered quarterly.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The cut-off dates for stage two applications above \u00a35,000 in 2026 are January 9, April 10, July 31, and October 2.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "places-of-worship",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, covering the types of grants, eligibility criteria, application processes, and deadlines.",
+          "claims": [
+            {
+              "text": "Grants are available for the conservation of historic interiors.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for the conservation of historic objects, including bells, books and manuscripts, clocks, decorative plasterwork, metalwork, monuments, organs, paintings, stained glass, textiles, timberwork, wall paintings and churchyard structures.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "These grants apply to listed historic places of worship.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are also available for commissioning conservation reports.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Anglican churches must apply via the ChurchCare conservation grants scheme.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "All other denominations, faiths, and cathedrals may apply directly to The Pilgrim Trust.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications must be made through an online grants system called Flexigrant.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 of the application involves submitting key project details for suitability checks, with a response expected within four weeks.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 2 of the application requires a full submission, and applicants have 12 months after a successful Stage 1 to apply.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications for \u00a35,000 or less receive a response within 4 weeks.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "For applications over \u00a35,000, decisions are made by Trustees at quarterly meetings in March, June, September, and November.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The cut-off dates for applications over \u00a35,000 in 2026 are January 9, April 10, July 31, and October 2.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The Pilgrim Trust no longer funds places of worship open for regular worship, except for the conservation of historic interiors and historic objects.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The Pilgrim Trust does not provide repair grants to places of worship open for active worship.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications aiming to find sustainable uses for redundant/closed places of worship are considered under the Historic Buildings and Structures section.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Anglican church interiors applicants must check eligibility on ChurchCare webpages.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "conservation-of-cultural-heritage",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Grants support the conservation of culturally and historically significant collections and objects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The types of collections and objects include works of art, books, significant ephemera, artefacts, and archives.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Conservation work must be carried out by an accredited conservator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Conservation work must be informed by a conservation report.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects encouraging paid internships are welcomed.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects encouraging knowledge sharing are welcomed.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grant amounts are generally between \u00a31,000 to \u00a330,000, with an average of approximately \u00a315,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funding covers project costs including staff costs, fees, paid internships, initial exploratory work, and conservation costs.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funding does not cover general refurbishment works, acquisition costs, renewal of services, interpretation, exhibition or display costs, options appraisals, or feasibility studies.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Grants of \u00a35,000 or less are considered on a rolling basis with a response expected within 4 weeks.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications can be made at any time, with Stage one applications considered on a rolling basis.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Stage two applications above \u00a35,000 are considered quarterly at Board meetings in March, June, September, and November.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Cut-off dates for Stage two applications above \u00a35,000 in 2026 are 9 January, 10 April, 31 July, and 2 October.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Grants are normally expected to be claimed within a year and projects completed within two years.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The conservation work should enable greater public access.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not be eligible for grant programs run by AIM and NMCT.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must be UK based.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are not provided retrospectively.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications must be made on the online grants system, Flexigrant.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications involve submitting key project details for suitability checks, with a response within four weeks.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 2 applications involve setting out the application in full and can be submitted within 12 months of a successful Stage 1 application.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "archives-revealed",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The funding programme is a partnership between The National Archives, The National Lottery Heritage Fund, the Pilgrim Trust, and the Wolfson Foundation.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "This is the only grant programme in the UK dedicated to cataloguing and unlocking archival collections.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The programme aims to make significant archive collections, representing the lives and perspectives of all people across the UK, accessible to the public.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications are made via the National Archives website.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 34,
+      "n_claims_supported": 29,
+      "n_records_judged": 4,
+      "n_records_supported": 0,
+      "claim_rate": 0.8529411764705882,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.8445436507936508,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "historic-buildings-and-structures",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately captures most eligibility criteria but omits the exclusion of individuals from applying.",
+          "claims": [
+            {
+              "text": "The applicant must be a UK registered charity.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be an organisation with exempt charitable status.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be a recognised public body.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be a Community Benefit Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be a CIC limited by guarantee.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The project must be UK based.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The project must focus on a listed building or structure.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The project must not be complete (no retrospective grants).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Individuals may not apply.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "places-of-worship",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits the claim that individuals may not apply.",
+          "claims": [
+            {
+              "text": "Eligible applicants include UK registered charities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible applicants include organisations with exempt charitable status.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible applicants include recognised public bodies.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Anglican churches must apply via the ChurchCare conservation grants scheme.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Other denominations, faiths, and cathedrals may apply directly.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding is available for the conservation of historic interiors in places of worship open for regular worship.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding is available for the conservation of historic objects in places of worship open for regular worship.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Individuals may not apply.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "conservation-of-cultural-heritage",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately captures most eligibility criteria but omits the exclusion of individual applicants.",
+          "claims": [
+            {
+              "text": "Eligible organizations include UK registered charities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations include organizations with exempt charitable status.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations include recognised public bodies.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations include Community Benefit Societies.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations include CICs limited by guarantee.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Organizations must not be eligible for the AIM partner grant scheme.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Organizations must not be eligible for the NMCT partner grant scheme.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must be UK based.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must not be complete.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Individuals may not apply.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "archives-revealed",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about eligible organization types and project location/completion status, but omits information about the application process and individual ineligibility.",
+          "claims": [
+            {
+              "text": "Eligible organizations include UK registered charities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations include those with exempt charitable status.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations include recognised public bodies.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The work must be UK based.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The work must not be complete.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications are made via The National Archives.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Individuals may not apply.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 29,
+      "n_claims_supported": 29,
+      "n_records_judged": 4,
+      "n_records_supported": 4,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "young-womens-mental-health-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text regarding eligibility criteria are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants must be UK registered charities that have been operating for at least three years.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must already be delivering therapeutic mental health services.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Mental health charities must have an annual income of \u00a3750,000 or more.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Specialist charities led by and for women/girls must have experience delivering services to under 18s.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Specialist charities led by and for women/girls must have an annual income of \u00a3350,000 or more.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Organizations must operate in Northern Ireland, Scotland, or the English regions North East, North West, Yorkshire and Humber, or the Midlands.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "UK-wide or England-wide organizations are also welcome to apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "historic-buildings-and-structures",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text regarding eligibility criteria are directly supported by the 'Who can apply?' and 'Your work or project must:' sections of the provided page text.",
+          "claims": [
+            {
+              "text": "Eligible organizations include UK registered charities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations include those with exempt charitable status.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations include recognised public bodies.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations include Community Benefit Societies.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations include Community Interest Companies (CICs) limited by guarantee.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must be UK based.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must not be complete (i.e., not retrospective grants).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must focus on a listed building or structure.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "places-of-worship",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text lists s...en for regular worship.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "conservation-of-cultural-heritage",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which lists the eligibility criteria for applicants and projects.",
+          "claims": [
+            {
+              "text": "The organization accepts applications from UK registered charities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization accepts applications from organizations with exempt charitable status.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization accepts applications from recognized public bodies.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization accepts applications from Community Benefit Societies.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization accepts applications from CICs limited by guarantee.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not be eligible for the grant programmes run by AIM.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not be eligible for the grant programmes run by NMCT.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must be UK based.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must not be complete.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "archives-revealed",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All eligibility criteria mentioned in the agent's text are directly supported by the page text.",
+          "claims": [
+            {
+              "text": "Applicants must be UK registered charities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be organisations with exempt charitable status.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be recognised public bodies.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The project must be UK based.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The project must not be complete.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

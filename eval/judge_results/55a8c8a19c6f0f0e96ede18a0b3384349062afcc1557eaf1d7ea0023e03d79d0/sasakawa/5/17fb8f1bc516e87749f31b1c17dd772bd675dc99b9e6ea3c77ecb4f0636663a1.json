@@ -1,0 +1,487 @@
+{
+  "funder": "Great Britain Sasakawa Foundation",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "structured",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 5,
+  "config_hash": "55a8c8a19c6f0f0e96ede18a0b3384349062afcc1557eaf1d7ea0023e03d79d0",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 13,
+      "n_claims_supported": 9,
+      "n_records_judged": 2,
+      "n_records_supported": 0,
+      "claim_rate": 0.6923076923076923,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6785714285714286,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "small-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most claims, but omits the detail that the funding is open to any field and adds information about the Japan office's award meetings which was not in the reference text.",
+          "claims": [
+            {
+              "text": "The funding is for seed-funding small grants.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for projects that bring the UK and Japan together.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The projects aim to deepen mutual understanding.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The projects aim to exchange ideas or expertise.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The projects aim to build collaboration.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is open to any field.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The UK office runs three award rounds a year.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "butterfield-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the purpose of the funding and the availability of annual awards, but omits specific details regarding award amounts and the duration/funding limits for continuing projects.",
+          "claims": [
+            {
+              "text": "The funding supports exchanges and collaborations between health and medical professionals in Japan and the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports the study of scientific, clinical, social, and economic issues in healthcare.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Annual awards are available.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Awards can be up to \u00a310,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Continuing projects can be funded for up to 3 years.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Continuing projects can be funded up to a total of \u00a330,000.",
+              "claim_type": "amount",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 21,
+      "n_claims_supported": 21,
+      "n_records_judged": 2,
+      "n_records_supported": 2,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "small-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Seed funding is available for UK-Japan projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects should bring people together to deepen mutual understanding.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects should bring people together to exchange ideas or expertise.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects should bring people together to develop lasting collaboration.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding supports festivals.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding supports workshops.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding supports performances.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding supports exchanges.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding supports collaborative projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding supports Japanese language teaching.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding supports cultural studies teaching.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding supports academic research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding supports academic visits.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding supports academic exchange.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The UK office holds three annual awards meetings.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Japan office holds two annual awards meetings.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "butterfield-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the purpose and eligible expenses for the Butterfield Awards.",
+          "claims": [
+            {
+              "text": "The awards support exchanges and collaborations between health and medical professionals in Japan and the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The awards support the study of scientific, clinical, social and economic issues in healthcare.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The awards create opportunities for researchers, practitioners, policy makers, managers and voluntary sector workers in both countries to share knowledge and develop new approaches.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants may be used for travel expenses.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants may be used for other costs including conference and publication costs.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 13,
+      "n_claims_supported": 12,
+      "n_records_judged": 2,
+      "n_records_supported": 1,
+      "claim_rate": 0.9230769230769231,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.9285714285714286,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.5,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "small-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text captures all eligibility criteria mentioned in the reference text, including organizational support, exclusion of personal projects and specific student types, and restrictions on payment methods.",
+          "claims": [
+            {
+              "text": "Applicants must belong to, or provide evidence of support from, an organisation or institution willing to receive grant funds.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications are not accepted from individuals seeking support for personal projects.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The UK office may consider individuals with proof of organisational support for personal projects.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grant payments cannot be made to personal bank accounts.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Undergraduate and master's students are not supported.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Travel in connection with study for a qualification is not supported, except for PhD students.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "butterfield-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most claims, but it omits the specific requirement for referees to be from different institutions to the project partners, instead stating they should not be based at the same institution as either partner.",
+          "claims": [
+            {
+              "text": "Applicants should normally have an existing research record.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Consideration is given to practitioners, managers, carers, or others in health-related fields.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "These individuals should be establishing working links between organizations or producing a publishable comparative study.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must involve partners in both the UK and Japan.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must be supported by two referees from different institutions to the project partners.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Preference is given to those new to UK-Japan collaboration.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Preference is given to early-career applicants.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 14,
+      "n_claims_supported": 14,
+      "n_records_judged": 2,
+      "n_records_supported": 2,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "small-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text regarding eligibility criteria are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants must belong to, or provide evidence of support from, an organisation or institution willing to receive grant funds.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications are not accepted from individuals seeking support for personal projects.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The UK office may consider individuals with proof of organisational support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grant payments cannot be made to personal bank accounts.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "No support is available for undergraduate students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "No support is available for master's students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "No support is available for travel in connection with study for a qualification, excluding PhD students.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "butterfield-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants should normally demonstrate an existing research record.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Consideration will also be given to practitioners, managers, carers or others in health-related fields.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "These practitioners, managers, carers or others should intend to establish working links between organisations or produce a publishable comparative study.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must involve partners in both the UK and Japan.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "All proposals must be supported by reputable referees not based at the same institution as either project partner.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Preference will be given to those not previously involved in UK-Japan collaboration.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications from those in the early stages of their career are particularly welcomed.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,564 @@
+################################################################################
+LEADERBOARD
+################################################################################
+LEADERBOARD — macro F1 across all 24 configurations, best first
+    #  config                                                                  macroF1   macroP   macroR  funders
+    1  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7              0.793    0.847    0.777       16
+    2  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7               0.786    0.835    0.782       16
+    3  openrouter/deepseek/deepseek-v4-flash-0731 | structured | t0.7            0.784    0.853    0.764       16
+    4  openrouter/deepseek/deepseek-v4-flash-0731 | chain_of_thought | t0.7      0.768    0.822    0.762       16
+    5  openrouter/deepseek/deepseek-v4-flash-0731 | chain_of_thought | t0.0      0.752    0.847    0.748       16
+    6  openrouter/deepseek/deepseek-v4-flash-0731 | structured | t0.0            0.749    0.866    0.728       16
+    7  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.0              0.722    0.838    0.709       16
+    8  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.0               0.710    0.852    0.706       16
+    9  openrouter/openai/gpt-oss-120b | chain_of_thought | t0.7                  0.566    0.795    0.524       16
+   10  openrouter/openai/gpt-oss-120b | structured | t0.0                        0.552    0.744    0.528       16
+   11  openrouter/openai/gpt-oss-120b | structured | t0.7                        0.538    0.767    0.503       16
+   12  openrouter/openai/gpt-oss-120b | minimal | t0.0                           0.536    0.688    0.526       16
+   13  openrouter/openai/gpt-oss-120b | few_shot | t0.0                          0.530    0.714    0.511       16
+   14  openrouter/openai/gpt-oss-120b | few_shot | t0.7                          0.516    0.726    0.486       16
+   15  openrouter/openai/gpt-oss-120b | chain_of_thought | t0.0                  0.514    0.775    0.479       16
+   16  openrouter/openai/gpt-oss-120b | minimal | t0.7                           0.512    0.705    0.490       16
+   17  openrouter/amazon/nova-lite-v1 | minimal | t0.7                           0.303    0.589    0.294       16
+   18  openrouter/amazon/nova-lite-v1 | few_shot | t0.0                          0.293    0.579    0.299       16
+   19  openrouter/amazon/nova-lite-v1 | minimal | t0.0                           0.292    0.553    0.295       16
+   20  openrouter/amazon/nova-lite-v1 | structured | t0.7                        0.261    0.606    0.252       16
+   21  openrouter/amazon/nova-lite-v1 | few_shot | t0.7                          0.253    0.651    0.249       16
+   22  openrouter/amazon/nova-lite-v1 | structured | t0.0                        0.209    0.603    0.192       16
+   23  openrouter/amazon/nova-lite-v1 | chain_of_thought | t0.7                  0.153    0.527    0.130       16
+   24  openrouter/amazon/nova-lite-v1 | chain_of_thought | t0.0                  0.138    0.729    0.117       16
+
+################################################################################
+STRUCTURED FIELD ACCURACY
+################################################################################
+STRUCTURED FIELD ACCURACY — exact match, pooled over opportunities; CONDITIONAL ON DETECTION (see 'n eval.')
+  group                            deadlines   n eval.    amount_max_gbp   n eval.    amount_min_gbp   n eval.            status   n eval.
+  nova-lite-v1                         0.523       530             0.397       572             0.467       589             0.606       620
+  deepseek-v4-flash-0731               0.716      2162             0.827      2477             0.874      2595             0.911      2674
+  gpt-oss-120b                         0.669      1361             0.502      1684             0.736      1717             0.891      1757
+
+A field is only scorable on an opportunity the run actually found, so these accuracies sit over different populations and are NOT a like-for-like ranking: the weakest model's figures rest on the easiest opportunities it reached. END-TO-END below puts detection and extraction on one denominator, where that selection effect cannot hide. Opportunities whose field the labeller could not establish (uncertain_fields) are excluded from both numerator and denominator.
+
+################################################################################
+FIELD ACCURACY BY CONFIG
+################################################################################
+STRUCTURED FIELD ACCURACY BY CONFIG — exact match; ordered by deadline accuracy; CONDITIONAL ON DETECTION
+  config                                                                        deadlines   amount_max_gbp   amount_min_gbp           status
+  openrouter/openai/gpt-oss-120b | minimal | t0.7                                   0.742            0.550            0.756            0.886
+  openrouter/deepseek/deepseek-v4-flash-0731 | chain_of_thought | t0.7              0.739            0.858            0.914            0.879
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.0                      0.734            0.754            0.830            0.978
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7                      0.731            0.791            0.871            0.948
+  openrouter/openai/gpt-oss-120b | minimal | t0.0                                   0.731            0.568            0.738            0.908
+  openrouter/deepseek/deepseek-v4-flash-0731 | chain_of_thought | t0.0              0.728            0.824            0.862            0.923
+  openrouter/deepseek/deepseek-v4-flash-0731 | structured | t0.0                    0.722            0.861            0.849            0.862
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7                       0.720            0.830            0.893            0.823
+  openrouter/openai/gpt-oss-120b | chain_of_thought | t0.7                          0.689            0.488            0.685            0.922
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.0                       0.679            0.858            0.885            0.968
+  openrouter/openai/gpt-oss-120b | chain_of_thought | t0.0                          0.675            0.587            0.720            0.949
+  openrouter/openai/gpt-oss-120b | structured | t0.0                                0.672            0.637            0.768            0.865
+  openrouter/deepseek/deepseek-v4-flash-0731 | structured | t0.7                    0.668            0.835            0.881            0.918
+  openrouter/openai/gpt-oss-120b | structured | t0.7                                0.636            0.606            0.864            0.873
+  openrouter/amazon/nova-lite-v1 | chain_of_thought | t0.7                          0.632            0.263            0.564            0.689
+  openrouter/amazon/nova-lite-v1 | chain_of_thought | t0.0                          0.622            0.475            0.375            0.511
+  openrouter/openai/gpt-oss-120b | few_shot | t0.7                                  0.615            0.358            0.776            0.871
+  openrouter/openai/gpt-oss-120b | few_shot | t0.0                                  0.607            0.200            0.587            0.852
+  openrouter/amazon/nova-lite-v1 | few_shot | t0.7                                  0.562            0.000            0.658            0.709
+  openrouter/amazon/nova-lite-v1 | structured | t0.0                                0.538            0.635            0.222            0.647
+  openrouter/amazon/nova-lite-v1 | minimal | t0.0                                   0.489            0.633            0.255            0.606
+  openrouter/amazon/nova-lite-v1 | structured | t0.7                                0.485            0.696            0.321            0.456
+  openrouter/amazon/nova-lite-v1 | few_shot | t0.0                                  0.484            0.000            0.838            0.621
+  openrouter/amazon/nova-lite-v1 | minimal | t0.7                                   0.478            0.500            0.430            0.611
+
+Denominators differ by config as well as by model — a config that found little is scored on the little it found — so read this beside the END-TO-END table, which puts detection and extraction on one denominator.
+
+################################################################################
+FIELD ACCURACY BY PROMPT
+################################################################################
+STRUCTURED FIELD ACCURACY BY PROMPT, WITHIN MODEL — EXPLORATORY: no field-level contrast is pre-registered
+  nova-lite-v1
+    prompt                    deadlines       n   amount_max_gbp       n   amount_min_gbp       n           status       n
+    chain_of_thought              0.627      83            0.372      78            0.468      79            0.598      92
+    few_shot                      0.518     164            0.000     172            0.758     178            0.659     182
+    minimal                       0.485     163            0.572     180            0.335     188            0.608     199
+    structured                    0.508     120            0.669     142            0.278     144            0.544     147
+
+  deepseek-v4-flash-0731
+    prompt                    deadlines       n   amount_max_gbp       n   amount_min_gbp       n           status       n
+    chain_of_thought              0.734     548            0.841     637            0.889     666            0.900     670
+    few_shot                      0.732     542            0.774     605            0.852     634            0.962     660
+    minimal                       0.701     532            0.843     611            0.889     641            0.892     667
+    structured                    0.694     540            0.848     624            0.865     654            0.891     677
+
+  gpt-oss-120b
+    prompt                    deadlines       n   amount_max_gbp       n   amount_min_gbp       n           status       n
+    chain_of_thought              0.682     321            0.537     419            0.703     427            0.935     446
+    few_shot                      0.611     357            0.274     405            0.676     414            0.861     424
+    minimal                       0.737     319            0.560     418            0.746     422            0.898     430
+    structured                    0.654     364            0.622     442            0.813     454            0.869     457
+
+The pre-registered contrasts (D-A) found no prompt effect on DETECTION F1. They say nothing about extraction, which is a different endpoint measured on a different population, and nothing here is a test — these are descriptive cells with unequal denominators, offered because the model-level table pools them away entirely.
+
+################################################################################
+FIELD ACCURACY BY TEMPERATURE
+################################################################################
+STRUCTURED FIELD ACCURACY BY TEMPERATURE, WITHIN MODEL — EXPLORATORY: no field-level contrast is pre-registered
+  nova-lite-v1
+    temperature          deadlines       n   amount_max_gbp       n   amount_min_gbp       n           status       n
+    t0.0                     0.518     282            0.409     296            0.454     304            0.606     322
+    t0.7                     0.528     248            0.384     276            0.481     285            0.607     298
+
+  deepseek-v4-flash-0731
+    temperature          deadlines       n   amount_max_gbp       n   amount_min_gbp       n           status       n
+    t0.0                     0.716    1026            0.825    1176            0.857    1235            0.932    1290
+    t0.7                     0.715    1136            0.829    1301            0.890    1360            0.892    1384
+
+  gpt-oss-120b
+    temperature          deadlines       n   amount_max_gbp       n   amount_min_gbp       n           status       n
+    t0.0                     0.669     671            0.501     882            0.705     899            0.893     912
+    t0.7                     0.668     690            0.502     802            0.770     818            0.889     845
+
+The pre-registered contrasts (D-A) found no prompt effect on DETECTION F1. They say nothing about extraction, which is a different endpoint measured on a different population, and nothing here is a test — these are descriptive cells with unequal denominators, offered because the model-level table pools them away entirely.
+
+################################################################################
+FIELD ERROR DIRECTION
+################################################################################
+FIELD ERROR DIRECTION — 'asserted' = agent supplied a value the truth does not have; 'omitted' = agent left blank a value the truth has
+  group                          deadlines asrt/omit  amount_max_gbp asrt/omit  amount_min_gbp asrt/omit          status asrt/omit
+  nova-lite-v1                               22 / 95                   0 / 304                  214 / 68                     0 / 0
+  deepseek-v4-flash-0731                    337 / 39                   0 / 400                  67 / 143                     0 / 0
+  gpt-oss-120b                              225 / 37                   0 / 767                  54 / 290                     0 / 0
+
+The two are different product failures and one accuracy figure pools them: an asserted value is an invention a user may act on, an omission is a gap they can see. A field whose errors are overwhelmingly omissions is failing conservatively; one whose errors are assertions is not.
+
+################################################################################
+END-TO-END (DEADLINES)
+################################################################################
+END-TO-END RESULT (field = deadlines) — share of ALL in-scope opportunities both found AND correctly extracted; 75 opportunities, 23 excluded as uncertain
+  config                                                                  detected  end-to-end     gap   cost $   $/usable  frontier
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7               0.693       0.540  -0.153    1.016     0.0251       yes
+  openrouter/deepseek/deepseek-v4-flash-0731 | chain_of_thought | t0.7       0.683       0.534  -0.149    1.006     0.0251       yes
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7                0.692       0.524  -0.168    0.807     0.0206       yes
+  openrouter/deepseek/deepseek-v4-flash-0731 | chain_of_thought | t0.0       0.638       0.500  -0.138    1.693     0.0451        no
+  openrouter/deepseek/deepseek-v4-flash-0731 | structured | t0.7             0.663       0.484  -0.179    0.956     0.0263        no
+  openrouter/deepseek/deepseek-v4-flash-0731 | structured | t0.0             0.614       0.474  -0.139    2.122     0.0597        no
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.0               0.608       0.471  -0.137    1.816     0.0514        no
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.0                0.578       0.436  -0.142    1.890     0.0578        no
+  openrouter/openai/gpt-oss-120b | structured | t0.0                         0.441       0.318  -0.122    1.798     0.0753        no
+  openrouter/openai/gpt-oss-120b | minimal | t0.0                            0.413       0.317  -0.096    1.556     0.0655        no
+  openrouter/openai/gpt-oss-120b | structured | t0.7                         0.448       0.314  -0.133    1.468     0.0623        no
+  openrouter/openai/gpt-oss-120b | minimal | t0.7                            0.403       0.310  -0.093    1.444     0.0622        no
+  openrouter/openai/gpt-oss-120b | chain_of_thought | t0.7                   0.416       0.308  -0.108    1.361     0.0589        no
+  openrouter/openai/gpt-oss-120b | few_shot | t0.7                           0.437       0.307  -0.130    1.418     0.0615        no
+  openrouter/openai/gpt-oss-120b | few_shot | t0.0                           0.438       0.302  -0.136    1.827     0.0807        no
+  openrouter/openai/gpt-oss-120b | chain_of_thought | t0.0                   0.392       0.288  -0.105    1.342     0.0622        no
+  openrouter/amazon/nova-lite-v1 | minimal | t0.0                            0.263       0.155  -0.109    0.244     0.0210       yes
+  openrouter/amazon/nova-lite-v1 | few_shot | t0.7                           0.220       0.117  -0.103    0.186     0.0213       yes
+  openrouter/amazon/nova-lite-v1 | few_shot | t0.0                           0.231       0.111  -0.120    0.238     0.0286        no
+  openrouter/amazon/nova-lite-v1 | minimal | t0.7                            0.199       0.101  -0.098    0.160     0.0211       yes
+  openrouter/amazon/nova-lite-v1 | structured | t0.7                         0.196       0.082  -0.114    0.214     0.0347        no
+  openrouter/amazon/nova-lite-v1 | chain_of_thought | t0.7                   0.101       0.068  -0.033    0.216     0.0427        no
+  openrouter/amazon/nova-lite-v1 | structured | t0.0                         0.152       0.063  -0.089    0.210     0.0446        no
+  openrouter/amazon/nova-lite-v1 | chain_of_thought | t0.0                   0.128       0.057  -0.071    0.224     0.0526        no
+
+An opportunity that was never found counts as a failure here, which is the point: you cannot extract a correct deadline from a grant you did not find. 'frontier' is the Pareto frontier over (realised cost, end-to-end rate), computed by the same domain-free `frontier.pareto_frontier` the F1 frontier uses — a config on the F1 frontier need not be on this one.
+
+################################################################################
+END-TO-END (ALL FIELDS)
+################################################################################
+END-TO-END RESULT (field = all) — share of ALL in-scope opportunities both found AND correctly extracted; 53 opportunities, 45 excluded as uncertain
+  config                                                                  detected  end-to-end     gap   cost $   $/usable  frontier
+  openrouter/deepseek/deepseek-v4-flash-0731 | chain_of_thought | t0.7       0.735       0.379  -0.356    1.006     0.0501       yes
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7                0.717       0.376  -0.341    0.807     0.0405       yes
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7               0.726       0.373  -0.352    1.016     0.0514        no
+  openrouter/deepseek/deepseek-v4-flash-0731 | structured | t0.7             0.690       0.339  -0.351    0.956     0.0532        no
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.0               0.671       0.332  -0.339    1.816     0.1031        no
+  openrouter/deepseek/deepseek-v4-flash-0731 | structured | t0.0             0.647       0.326  -0.320    2.122     0.1227        no
+  openrouter/deepseek/deepseek-v4-flash-0731 | chain_of_thought | t0.0       0.659       0.322  -0.337    1.693     0.0991        no
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.0                0.587       0.308  -0.278    1.890     0.1156        no
+  openrouter/openai/gpt-oss-120b | minimal | t0.7                            0.444       0.197  -0.248    1.444     0.1385        no
+  openrouter/openai/gpt-oss-120b | structured | t0.0                         0.491       0.194  -0.297    1.798     0.1749        no
+  openrouter/openai/gpt-oss-120b | structured | t0.7                         0.506       0.193  -0.313    1.468     0.1435        no
+  openrouter/openai/gpt-oss-120b | minimal | t0.0                            0.488       0.190  -0.298    1.556     0.1544        no
+  openrouter/openai/gpt-oss-120b | chain_of_thought | t0.0                   0.493       0.190  -0.303    1.342     0.1334        no
+  openrouter/openai/gpt-oss-120b | few_shot | t0.7                           0.523       0.145  -0.378    1.418     0.1846        no
+  openrouter/openai/gpt-oss-120b | chain_of_thought | t0.7                   0.505       0.143  -0.362    1.361     0.1801        no
+  openrouter/openai/gpt-oss-120b | few_shot | t0.0                           0.491       0.086  -0.406    1.827     0.4022        no
+  openrouter/amazon/nova-lite-v1 | chain_of_thought | t0.0                   0.199       0.000  -0.199    0.224          —        no
+  openrouter/amazon/nova-lite-v1 | chain_of_thought | t0.7                   0.107       0.000  -0.107    0.216          —        no
+  openrouter/amazon/nova-lite-v1 | few_shot | t0.0                           0.265       0.000  -0.265    0.238          —        no
+  openrouter/amazon/nova-lite-v1 | few_shot | t0.7                           0.240       0.000  -0.240    0.186          —        no
+  openrouter/amazon/nova-lite-v1 | minimal | t0.0                            0.314       0.000  -0.314    0.244          —        no
+  openrouter/amazon/nova-lite-v1 | minimal | t0.7                            0.255       0.000  -0.255    0.160          —       yes
+  openrouter/amazon/nova-lite-v1 | structured | t0.0                         0.188       0.000  -0.188    0.210          —        no
+  openrouter/amazon/nova-lite-v1 | structured | t0.7                         0.239       0.000  -0.239    0.214          —        no
+
+An opportunity that was never found counts as a failure here, which is the point: you cannot extract a correct deadline from a grant you did not find. 'frontier' is the Pareto frontier over (realised cost, end-to-end rate), computed by the same domain-free `frontier.pareto_frontier` the F1 frontier uses — a config on the F1 frontier need not be on this one.
+
+################################################################################
+CONFIRMATORY CONTRASTS
+################################################################################
+CONFIRMATORY CONTRASTS (D-A) — pre-registered within-factor family, Holm-corrected together
+  factor       level_a                 level_b                    mean d  median d  rank-biserial        p   Holm p    95% CI (n=16 clusters)  reject
+  model        nova-lite-v1            deepseek-v4-flash-0731     -0.520    -0.497         -1.000    0.000    0.000          [-0.622, -0.421]     yes
+  model        nova-lite-v1            gpt-oss-120b               -0.295    -0.340         -0.900    0.001    0.008          [-0.411, -0.169]     yes
+  model        deepseek-v4-flash-0731  gpt-oss-120b                0.225     0.148          0.779    0.004    0.033            [0.090, 0.375]     yes
+  prompt       chain_of_thought        few_shot                   -0.036    -0.040         -0.574    0.044    0.310           [-0.075, 0.005]      no
+  prompt       chain_of_thought        minimal                    -0.041    -0.026         -0.467    0.121    0.603          [-0.085, -0.002]      no
+  prompt       chain_of_thought        structured                 -0.034    -0.035         -0.500    0.083    0.500          [-0.066, -0.001]      no
+  prompt       few_shot                minimal                    -0.005     0.008          0.059    0.860    1.000           [-0.034, 0.019]      no
+  prompt       few_shot                structured                  0.002     0.005          0.133    0.679    1.000           [-0.029, 0.031]      no
+  prompt       minimal                 structured                  0.007     0.003          0.167    0.599    1.000           [-0.017, 0.033]      no
+  temperature  0.0                     0.7                        -0.020    -0.007         -0.279    0.348    1.000           [-0.051, 0.009]      no
+
+model identifiers (shortened above; full identifier for provenance):
+  deepseek-v4-flash-0731 = openrouter/deepseek/deepseek-v4-flash-0731
+  gpt-oss-120b = openrouter/openai/gpt-oss-120b
+  nova-lite-v1 = openrouter/amazon/nova-lite-v1
+
+################################################################################
+INTERACTION
+################################################################################
+PRE-REGISTERED INTERACTION (D-B)
+Predicted: largest on nova-lite. Observed: largest on openrouter/amazon/nova-lite-v1, negative.
+(chain_of_thought - minimal) on nova-lite-v1 minus the same gap on deepseek-v4-flash-0731 = -0.164 (negative), 95% CI [-0.285, -0.052] (n=16 clusters).
+The interaction is negative: the scaffold pre-registration predicted would help most on nova-lite — it has no reasoning mode of its own — instead hurts most there, the opposite of the predicted direction.
+
+################################################################################
+TEMPERATURE
+################################################################################
+TEMPERATURE: MAIN EFFECT AND INTERACTION WITH MODEL
+No temperature main effect (Holm p 1.000; see CONFIRMATORY CONTRASTS above).
+Temperature x model interaction (t0.7 - t0.0 difference-in-differences), funder-clustered bootstrap CI:
+  nova-lite-v1 vs deepseek-v4-flash-0731: -0.0402 [-0.109, +0.026] (n=16 clusters) — crosses zero
+  nova-lite-v1 vs gpt-oss-120b: +0.0096 [-0.046, +0.076] (n=16 clusters) — crosses zero
+  deepseek-v4-flash-0731 vs gpt-oss-120b: +0.0498 [-0.029, +0.140] (n=16 clusters) — crosses zero
+Every computed interval crosses zero: there is no evidence of a temperature x model interaction in F1. Combined with the main effect above, there is no detectable effect of temperature on F1, overall or for any model. Two caveats on that: these three interaction contrasts are POST HOC (examined only after the main-effect result was seen) and UNCORRECTED for multiplicity, unlike the ten-contrast confirmatory family above, so 'no detectable effect' is as far as this goes — it is not evidence of no effect. And this conclusion is scoped to F1 only: it says nothing about temperature's effect on run-to-run RELIABILITY, which is reported separately below and is clearly affected by temperature for some configs.
+
+################################################################################
+STRATA
+################################################################################
+STRATA (D-C) — edge-case tags, tune-only row/cluster counts
+  tag                       rows  clusters        status  reason
+  rolling                     10         6   descriptive  10 rows (< 20) and 6 funder-clusters (< 8)
+  multi_deadline              32        10   inferential  clears both D-C thresholds
+  pdf_only                     1         1   descriptive  1 rows (< 20) and 1 funder-clusters (< 8)
+  js_portal                    0         0        absent  no tune rows carry this tag
+  ambiguous_eligibility        5         4   descriptive  5 rows (< 20) and 4 funder-clusters (< 8)
+  restricted                  50        11   inferential  clears both D-C thresholds
+
+################################################################################
+EDGE-CASE CONTRAST
+################################################################################
+EDGE-CASE CONTRAST (D-C, extended) — mean recall on tagged rows MINUS mean recall on UNTAGGED rows, paired within funder; negative means the tag costs recall
+  tag                           rows  tag clu.  paired clu.   tagged  untagged     diff              95% CI        status
+  restricted                      50        11            4    0.465     0.435    0.030    [-0.096, +0.140]   descriptive
+  multi_deadline                  32        10            6    0.429     0.481   -0.052    [-0.315, +0.134]   descriptive
+  rolling                         10         6            3    0.564     0.552    0.012    [-0.126, +0.119]   descriptive
+  ambiguous_eligibility            5         4            3    0.408     0.390    0.018    [-0.071, +0.078]   descriptive
+  pdf_only                         1         1            1    0.617     0.586    0.031                   —   descriptive
+
+  restricted: 4 paired funder-cluster(s) (< 8)
+  multi_deadline: 6 paired funder-cluster(s) (< 8)
+  rolling: D-C policy: 10 rows (< 20) and 6 funder-clusters (< 8); 3 paired funder-cluster(s) (< 8)
+  ambiguous_eligibility: D-C policy: 5 rows (< 20) and 4 funder-clusters (< 8); 3 paired funder-cluster(s) (< 8)
+  pdf_only: D-C policy: 1 rows (< 20) and 1 funder-clusters (< 8); 1 paired funder-cluster(s) (< 8)
+
+The baseline is rows carrying NO tag at all, not 'rows without this tag': the tags overlap heavily (see the overlap table), so 'not multi_deadline' would be substantially made of other edge cases and the contrast would compare one edge case against a mixture of others. A funder whose in-scope rows are ALL tagged has no baseline and drops out of the pairing entirely, which is why 'paired clu.' is well below 'tag clu.' for every tag.
+
+################################################################################
+EDGE-CASE CONTRAST (ALONE)
+################################################################################
+EDGE-CASE CONTRAST (D-C, extended) — mean recall on tagged rows MINUS mean recall on UNTAGGED rows, paired within funder; negative means the tag costs recall
+  ALONE reading: the tagged side is restricted to rows carrying ONLY this tag, removing the co-occurrence confound at the cost of a much smaller denominator.
+  tag                     rows alone  tag clu.  paired clu.   tagged  untagged     diff              95% CI        status
+  restricted                      25        11            4    0.452     0.435    0.017    [-0.228, +0.235]   descriptive
+  multi_deadline                  11        10            3    0.298     0.304   -0.005    [-0.668, +0.496]   descriptive
+  rolling                          5         6            2    0.417     0.420   -0.003                   —   descriptive
+  ambiguous_eligibility            3         4            1    0.633     0.586    0.047                   —   descriptive
+  pdf_only                         0         1            0        —         —        —                   —   descriptive
+
+  restricted: 4 paired funder-cluster(s) (< 8)
+  multi_deadline: 3 paired funder-cluster(s) (< 8)
+  rolling: D-C policy: 10 rows (< 20) and 6 funder-clusters (< 8); 2 paired funder-cluster(s) (< 8)
+  ambiguous_eligibility: D-C policy: 5 rows (< 20) and 4 funder-clusters (< 8); 1 paired funder-cluster(s) (< 8)
+  pdf_only: 1 in-scope row(s) carry this tag, but no funder has both tagged and untagged rows: the paired contrast cannot be formed
+
+The baseline is rows carrying NO tag at all, not 'rows without this tag': the tags overlap heavily (see the overlap table), so 'not multi_deadline' would be substantially made of other edge cases and the contrast would compare one edge case against a mixture of others. A funder whose in-scope rows are ALL tagged has no baseline and drops out of the pairing entirely, which is why 'paired clu.' is well below 'tag clu.' for every tag.
+
+################################################################################
+FIELD ACCURACY BY EDGE-CASE TAG
+################################################################################
+FIELD ACCURACY BY EDGE-CASE TAG — accuracy on tagged rows MINUS accuracy on UNTAGGED rows, paired within funder; negative means the tag costs accuracy
+  tag             field              rows  paired clu.   tagged  untagged     diff              95% CI
+  multi_deadline  deadlines            32            5    0.191     0.790   -0.599    [-0.806, -0.399]
+  multi_deadline  amount_max_gbp       32            5    0.497     0.561   -0.064    [-0.181, +0.006]
+  multi_deadline  amount_min_gbp       32            5    0.577     0.851   -0.274    [-0.711, +0.131]
+  multi_deadline  status               32            4    0.914     0.742    0.172    [-0.002, +0.467]
+  restricted      deadlines            50            4    0.462     0.678   -0.217    [-0.408, -0.007]
+  restricted      amount_max_gbp       50            4    0.330     0.439   -0.110    [-0.220, -0.008]
+  restricted      amount_min_gbp       50            4    0.745     0.823   -0.077    [-0.188, +0.033]
+  restricted      status               50            3    0.956     0.731    0.225    [-0.002, +0.621]
+  rolling         deadlines            10            2    0.988     0.995   -0.007                   —
+  rolling         amount_max_gbp       10            2    0.975     0.959    0.016                   —
+  rolling         amount_min_gbp       10            2    0.944     0.894    0.050                   —
+  rolling         status               10            3    0.860     0.907   -0.047    [-0.101, +0.010]
+
+Every row here is DESCRIPTIVE by the D-C threshold applied to paired clusters (edgecases.py): no tag has 8 funders carrying both tagged and untagged scorable rows. An interval far from zero on a large effect is still worth reporting as the strongest available signal, but it is not a pre-registered test and must not be written up as one.
+
+################################################################################
+EDGE-CASE COUNT
+################################################################################
+RECALL BY EDGE-CASE COUNT — does stacking edge cases compound? EXPLORATORY: the bands were defined after seeing the tag distribution
+  tags on row        rows  clusters  mean recall                95% CI
+  0                    27         7        0.485      [+0.267, +0.681]
+  1                    44        12        0.516      [+0.382, +0.649]
+  2                    27        10        0.407      [+0.244, +0.564]
+
+Intervals here are on each band's own mean, not on a difference between bands, and they overlap: this table shows the shape, it does not test it.
+
+################################################################################
+EDGE-CASE OVERLAP
+################################################################################
+EDGE-CASE TAG OVERLAP — in-scope tune rows carrying BOTH tags; the diagonal is the tag's own row count
+  tag                      ambiguous_el  multi_deadli      pdf_only    restricted       rolling
+  ambiguous_eligibility               5             1             0             1             0
+  multi_deadline                      1            32             0            19             1
+  pdf_only                            0             0             1             1             0
+  restricted                          1            19             1            50             4
+  rolling                             0             1             0             4            10
+
+Where two tags share most of their rows, their marginal contrasts are substantially the same rows measured twice and cannot be read as independent effects.
+
+################################################################################
+FUNDER TYPE
+################################################################################
+FUNDER TYPE (D-F) — EXPLORATORY, defined after seeing the tune data; never statistically tested
+  type_group         n_funders   mean F1 (all runs)
+  charity                    5                0.494
+  membership_body            6                0.508
+  niche_trust                5                0.527
+
+################################################################################
+STRUCTURAL COMPLEXITY
+################################################################################
+STRUCTURAL COMPLEXITY (D-E) — rows_per_url; EXPLORATORY and partly a measurement artefact (see funders.py: the match key consults titles only on shared URLs, so a packed funder is exactly where paraphrase produces the largest false-positive class, ambiguous_title)
+  funder                                            rows/url          band   mean F1 (all runs)
+  Society of Antiquaries of London                      3.67        packed                0.157
+  Henry Moore Foundation                                3.50        packed                0.133
+  Wolfson Foundation                                    1.29  one_per_page                0.499
+  Cara (Council for At-Risk Academics)                  1.14  one_per_page                0.400
+  The British Academy                                   1.00  one_per_page                0.773
+  British Ecological Society                            1.00  one_per_page                0.569
+  Carnegie Trust for the Universities of Scotland       1.00  one_per_page                0.646
+  Garfield Weston Foundation                            1.00  one_per_page                0.174
+  The Genetics Society                                  1.00  one_per_page                0.647
+  The Leverhulme Trust                                  1.00  one_per_page                0.547
+  Nuffield Foundation                                   1.00  one_per_page                0.848
+  Nuffield Farming Scholarships Trust                   1.00  one_per_page                0.471
+  Paul Mellon Centre for Studies in British Art         1.00  one_per_page                0.589
+  The Physiological Society                             1.00  one_per_page                0.734
+  Royal Society of Chemistry                            1.00  one_per_page                0.170
+  Great Britain Sasakawa Foundation                     1.00  one_per_page                0.795
+
+################################################################################
+COST-EFFECTIVENESS
+################################################################################
+COST-EFFECTIVENESS FRONTIER — realised spend; P(frontier) is a funder-clustered bootstrap membership probability
+  config                                                                   cost $  macroF1 frontier  P(frontier) cost excl.
+  openrouter/amazon/nova-lite-v1 | minimal | t0.7                          0.1604    0.303      yes         1.00          8
+  openrouter/amazon/nova-lite-v1 | few_shot | t0.7                         0.1864    0.253       no         0.12          8
+  openrouter/amazon/nova-lite-v1 | structured | t0.0                       0.2101    0.209       no         0.03          2
+  openrouter/amazon/nova-lite-v1 | structured | t0.7                       0.2144    0.261       no         0.09          2
+  openrouter/amazon/nova-lite-v1 | chain_of_thought | t0.7                 0.2161    0.153       no         0.00         11
+  openrouter/amazon/nova-lite-v1 | chain_of_thought | t0.0                 0.2238    0.138       no         0.00         20
+  openrouter/amazon/nova-lite-v1 | few_shot | t0.0                         0.2381    0.293       no         0.38         16
+  openrouter/amazon/nova-lite-v1 | minimal | t0.0                          0.2439    0.292       no         0.30          9
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7              0.8071    0.786      yes         1.00          0
+  openrouter/deepseek/deepseek-v4-flash-0731 | structured | t0.7           0.9562    0.784       no         0.41          1
+  openrouter/deepseek/deepseek-v4-flash-0731 | chain_of_thought | t0.7     1.0057    0.768       no         0.04          0
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7             1.0160    0.793      yes         0.49          0
+  openrouter/openai/gpt-oss-120b | chain_of_thought | t0.0                 1.3419    0.514       no         0.00          0
+  openrouter/openai/gpt-oss-120b | chain_of_thought | t0.7                 1.3614    0.566       no         0.00          0
+  openrouter/openai/gpt-oss-120b | few_shot | t0.7                         1.4182    0.516       no         0.00          0
+  openrouter/openai/gpt-oss-120b | minimal | t0.7                          1.4443    0.512       no         0.00          0
+  openrouter/openai/gpt-oss-120b | structured | t0.7                       1.4676    0.538       no         0.00          0
+  openrouter/openai/gpt-oss-120b | minimal | t0.0                          1.5560    0.536       no         0.00          0
+  openrouter/deepseek/deepseek-v4-flash-0731 | chain_of_thought | t0.0     1.6932    0.752       no         0.11          5
+  openrouter/openai/gpt-oss-120b | structured | t0.0                       1.7985    0.552       no         0.00          0
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.0             1.8161    0.722       no         0.00          4
+  openrouter/openai/gpt-oss-120b | few_shot | t0.0                         1.8272    0.530       no         0.00          0
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.0              1.8903    0.710       no         0.00          7
+  openrouter/deepseek/deepseek-v4-flash-0731 | structured | t0.0           2.1217    0.749       no         0.00          5
+
+'cost excl.' is how many of a config's runs died before billing (D-D) and so contributed nothing to its cost total above: costs are realised totals over unequal denominators, not directly comparable run-for-run. On the frontier: openrouter/amazon/nova-lite-v1 | minimal | t0.7 excludes 8 run(s) from its total; openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7 excludes 0 run(s) from its total; openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7 excludes 0 run(s) from its total.
+
+################################################################################
+RELIABILITY
+################################################################################
+RELIABILITY (RQ3) — mean stable-rate and mean Fleiss' kappa across funders, per config
+  config                                                                  stable-rate    kappa
+  openrouter/amazon/nova-lite-v1 | chain_of_thought | t0.0                      0.117    0.243
+  openrouter/amazon/nova-lite-v1 | chain_of_thought | t0.7                      0.148    0.063
+  openrouter/amazon/nova-lite-v1 | few_shot | t0.0                              0.301   -0.045
+  openrouter/amazon/nova-lite-v1 | few_shot | t0.7                              0.189   -0.024
+  openrouter/amazon/nova-lite-v1 | minimal | t0.0                               0.536    0.131
+  openrouter/amazon/nova-lite-v1 | minimal | t0.7                               0.232   -0.049
+  openrouter/amazon/nova-lite-v1 | structured | t0.0                            0.106    0.027
+  openrouter/amazon/nova-lite-v1 | structured | t0.7                            0.146    0.034
+  openrouter/deepseek/deepseek-v4-flash-0731 | chain_of_thought | t0.0          0.895    0.681
+  openrouter/deepseek/deepseek-v4-flash-0731 | chain_of_thought | t0.7          0.839    0.544
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.0                  0.862    0.536
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7                  0.928    0.615
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.0                   0.806    0.649
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7                   0.924    0.786
+  openrouter/deepseek/deepseek-v4-flash-0731 | structured | t0.0                0.858    0.612
+  openrouter/deepseek/deepseek-v4-flash-0731 | structured | t0.7                0.915    0.786
+  openrouter/openai/gpt-oss-120b | chain_of_thought | t0.0                      0.853    0.606
+  openrouter/openai/gpt-oss-120b | chain_of_thought | t0.7                      0.611    0.402
+  openrouter/openai/gpt-oss-120b | few_shot | t0.0                              0.723    0.540
+  openrouter/openai/gpt-oss-120b | few_shot | t0.7                              0.742    0.618
+  openrouter/openai/gpt-oss-120b | minimal | t0.0                               0.670    0.507
+  openrouter/openai/gpt-oss-120b | minimal | t0.7                               0.610    0.402
+  openrouter/openai/gpt-oss-120b | structured | t0.0                            0.727    0.445
+  openrouter/openai/gpt-oss-120b | structured | t0.7                            0.668    0.221
+
+################################################################################
+COST PER TRUE POSITIVE
+################################################################################
+COST PER TRUE POSITIVE — realised spend per recovered opportunity; the unit cost that survives a change of denominator
+  config                                                                    cost $    n TP    $ / TP  cost excl.
+  openrouter/amazon/nova-lite-v1 | minimal | t0.7                           0.1604     102    0.0016           8
+  openrouter/amazon/nova-lite-v1 | few_shot | t0.7                          0.1864      93    0.0020           8
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7               0.8071     384    0.0021           0
+  openrouter/amazon/nova-lite-v1 | minimal | t0.0                           0.2439     115    0.0021           9
+  openrouter/amazon/nova-lite-v1 | few_shot | t0.0                          0.2381     111    0.0021          16
+  openrouter/amazon/nova-lite-v1 | structured | t0.7                        0.2144      92    0.0023           2
+  openrouter/deepseek/deepseek-v4-flash-0731 | structured | t0.7            0.9562     372    0.0026           1
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7              1.0160     380    0.0027           0
+  openrouter/deepseek/deepseek-v4-flash-0731 | chain_of_thought | t0.7      1.0057     376    0.0027           0
+  openrouter/amazon/nova-lite-v1 | structured | t0.0                        0.2101      74    0.0028           2
+  openrouter/amazon/nova-lite-v1 | chain_of_thought | t0.0                  0.2238      49    0.0046          20
+  openrouter/amazon/nova-lite-v1 | chain_of_thought | t0.7                  0.2161      47    0.0046          11
+  openrouter/deepseek/deepseek-v4-flash-0731 | chain_of_thought | t0.0      1.6932     362    0.0047           5
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.0              1.8161     330    0.0055           4
+  openrouter/openai/gpt-oss-120b | chain_of_thought | t0.7                  1.3614     245    0.0056           0
+  openrouter/openai/gpt-oss-120b | chain_of_thought | t0.0                  1.3419     236    0.0057           0
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.0               1.8903     330    0.0057           7
+  openrouter/deepseek/deepseek-v4-flash-0731 | structured | t0.0            2.1217     354    0.0060           5
+  openrouter/openai/gpt-oss-120b | minimal | t0.0                           1.5560     255    0.0061           0
+  openrouter/openai/gpt-oss-120b | structured | t0.7                        1.4676     240    0.0061           0
+  openrouter/openai/gpt-oss-120b | few_shot | t0.7                          1.4182     222    0.0064           0
+  openrouter/openai/gpt-oss-120b | minimal | t0.7                           1.4443     220    0.0066           0
+  openrouter/openai/gpt-oss-120b | structured | t0.0                        1.7985     267    0.0067           0
+  openrouter/openai/gpt-oss-120b | few_shot | t0.0                          1.8272     248    0.0074           0
+
+A config that recovered nothing has an UNDEFINED unit cost ('—'), never 0 and never an infinity: inventing a number there would rank a config that found nothing as the cheapest on the page. 'cost excl.' carries frontier.py's caveat forward — runs that died before billing contribute nothing to the cost total, so these totals sit over unequal denominators.
+
+################################################################################
+LATENCY
+################################################################################
+LATENCY (seconds) — realised wall-clock per run
+  group                      n runs  n defined      mean       p50        p95        max
+  nova-lite-v1                  640        564      19.2       9.4       34.8      739.0
+  gpt-oss-120b                  640        640      84.9      56.7      179.7     3455.8
+  deepseek-v4-flash-0731        640        640     656.2     196.0     3715.7     5400.0
+
+A run that died of context overflow has no defined latency (there is no completion time for a run that never completed) and is excluded from every statistic here; a timed-out run's latency IS defined but is the cap, not a measurement of the work, so it should be read as censored. A mean far above the p50 means the group is usually fast and occasionally catastrophic — the shape a mean alone would hide. Percentiles use numpy's default linear interpolation.
+
+################################################################################
+ABSTENTION
+################################################################################
+ABSTENTION — runs that correctly reported nothing; never counted as failures (D-D), but recall is 0 for that funder either way
+  group                      n runs  n abstained     rate
+  nova-lite-v1                  640          149    0.233
+  gpt-oss-120b                  640           62    0.097
+  deepseek-v4-flash-0731        640            5    0.008
+
+'Found nothing' and 'found the wrong thing' are different product failures with different fixes; F1 alone pools them. A group with a high abstention rate has part of its F1 deficit explained by refusal rather than by error.
+
+################################################################################
+FALSE-POSITIVE COMPOSITION
+################################################################################
+FALSE-POSITIVE COMPOSITION — counts, and each reason's share of that group's own false positives
+  group                      n FP     ambiguous_title          distractor     unlabelled_page           duplicate      fabricated_url
+  gpt-oss-120b                440           173 (39%)           145 (33%)            74 (17%)             39 (9%)              9 (2%)
+  nova-lite-v1                420           110 (26%)           106 (25%)           182 (43%)              6 (1%)             16 (4%)
+  deepseek-v4-flash-0731      419           206 (49%)           127 (30%)            84 (20%)              2 (0%)                   —
+
+`ambiguous_title` is charged when a candidate's URL is shared by more than one ground-truth row and its title does not match — which is exactly the 'packed' funders of D-E (funders.py). Its size here is therefore the measure of how much of the structural-complexity result is scoring strictness rather than page difficulty; this table reports the composition and does not resolve that question.
+
+################################################################################
+FABRICATION
+################################################################################
+FABRICATION — invented items; a fabricated funding URL is the worst output class for this product, worse than a miss
+  group                      n runs  n fabricated  runs fabricating  mean halluc.  n rate def.
+  nova-lite-v1                  640            16                 6        0.0104          353
+  gpt-oss-120b                  640             9                 5        0.0057          577
+  deepseek-v4-flash-0731        640             0                 0        0.0000          613
+
+'mean halluc.' averages only over runs with a DEFINED hallucination rate: a run that extracted nothing has no rate, and coercing that to 0 would read as scrupulous rather than silent. '—' means no run in the group had a defined rate.
+
+################################################################################
+SENSITIVITY
+################################################################################
+1920 runs total: 98 failed, 216 abstained (abstention is model behaviour, not a failure, and is not counted among the 98).
+  76 context overflows, 22 timeouts (76 + 22 = 98).
+  openrouter/amazon/nova-lite-v1: 76 failed run(s)
+  openrouter/deepseek/deepseek-v4-flash-0731: 22 failed run(s)
+context_overflow is genuinely ambiguous — inefficient search burning the context window (model behaviour) versus a site too large for a 128k window regardless of search quality (infrastructure); a sample of one model per failure type cannot separate the two readings, and this report does not resolve it.
+
+SENSITIVITY (D-D) — macro F1 with vs without failed (timed-out / context-overflow) runs
+  config                                                                  primary survivors    delta  n excl.
+  openrouter/amazon/nova-lite-v1 | chain_of_thought | t0.0                  0.138     0.203    0.065       20
+  openrouter/amazon/nova-lite-v1 | chain_of_thought | t0.7                  0.153     0.171    0.018       11
+  openrouter/amazon/nova-lite-v1 | few_shot | t0.0                          0.293     0.347    0.055       16
+  openrouter/amazon/nova-lite-v1 | few_shot | t0.7                          0.253     0.300    0.047        8
+  openrouter/amazon/nova-lite-v1 | minimal | t0.0                           0.292     0.320    0.028        9
+  openrouter/amazon/nova-lite-v1 | minimal | t0.7                           0.303     0.338    0.036        8
+  openrouter/amazon/nova-lite-v1 | structured | t0.0                        0.209     0.209    0.000        2
+  openrouter/amazon/nova-lite-v1 | structured | t0.7                        0.261     0.263    0.002        2
+  openrouter/deepseek/deepseek-v4-flash-0731 | chain_of_thought | t0.0      0.752     0.782    0.030        5
+  openrouter/deepseek/deepseek-v4-flash-0731 | chain_of_thought | t0.7      0.768     0.768    0.000        0
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.0              0.722     0.757    0.035        4
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7              0.793     0.793    0.000        0
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.0               0.710     0.766    0.056        7
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7               0.786     0.786    0.000        0
+  openrouter/deepseek/deepseek-v4-flash-0731 | structured | t0.0            0.749     0.791    0.042        5
+  openrouter/deepseek/deepseek-v4-flash-0731 | structured | t0.7            0.784     0.788    0.004        1
+  openrouter/openai/gpt-oss-120b | chain_of_thought | t0.0                  0.514     0.514    0.000        0
+  openrouter/openai/gpt-oss-120b | chain_of_thought | t0.7                  0.566     0.566    0.000        0
+  openrouter/openai/gpt-oss-120b | few_shot | t0.0                          0.530     0.530    0.000        0
+  openrouter/openai/gpt-oss-120b | few_shot | t0.7                          0.516     0.516    0.000        0
+  openrouter/openai/gpt-oss-120b | minimal | t0.0                           0.536     0.536    0.000        0
+  openrouter/openai/gpt-oss-120b | minimal | t0.7                           0.512     0.512    0.000        0
+  openrouter/openai/gpt-oss-120b | structured | t0.0                        0.552     0.552    0.000        0
+  openrouter/openai/gpt-oss-120b | structured | t0.7                        0.538     0.538    0.000        0
+
+################################################################################
+RUNTIME HEALTH
+################################################################################
+RUNTIME HEALTH — conformance, retries and token totals
+  runs                       1920
+  schema-invalid output      161 (8.4% of runs)
+      nova-lite-v1              138
+      deepseek-v4-flash-0731    22
+      gpt-oss-120b              1
+  runs retried               91 (max attempts 5)
+  step budget exhausted      26
+  submit failed              37
+  input tokens               177,448,210
+  output tokens              20,572,889
+  unattributable false pos.  854
+
+Token totals are what make cost transferable: dollars are a function of this grid's prices on the day, tokens are not. 'unattributable false positives' are extractions matching no ground-truth row at all; score.py already fixes how precision treats them, and that decision is not restated here — the count is surfaced so the size of the affected population is visible.
+
+################################################################################
+SCOPE
+################################################################################
+SCOPE
+This report covers the 16 tune funders and their 98 in-scope ground-truth rows only.
+RQ6 (the tune-to-validation gap) and the comparison against Pivot-RP are OUT OF SCOPE here: the validation run has not happened yet, and no Pivot-RP data exists to compare against. A silent gap is worse than a stated one, so this is stated rather than left implicit.
+Funder type (D-F) and structural complexity (D-E) were both defined after seeing the tune data and are exploratory, not confirmatory: neither is ever statistically tested. Structural complexity is additionally partly a measurement artefact: the match key (identity.match_key) consults a candidate's title only when its normalised URL is shared by more than one of a funder's ground-truth rows, so a 'packed' funder is exactly where an agent's paraphrase of a title is most likely to be scored ambiguous_title, the grid's largest false-positive class — not necessarily where the page is genuinely harder to parse.
+js_portal has no tune rows and cannot be assessed on this split.
+Every bootstrap interval in this report is clustered on 16 funders; at that cluster count the interval is likely optimistic (Davison & Hinkley 1997; Field & Welsh 2007), which is why the cluster count is printed beside every interval rather than a bare confidence level.
+Provenance: scorer source_hash 67c1b6e752f6 over 1920 scored runs (eval/scored/grid/manifest.json).

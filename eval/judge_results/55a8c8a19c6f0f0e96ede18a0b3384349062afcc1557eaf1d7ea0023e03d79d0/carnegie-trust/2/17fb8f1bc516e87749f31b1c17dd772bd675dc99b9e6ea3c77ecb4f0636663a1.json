@@ -1,0 +1,561 @@
+{
+  "funder": "Carnegie Trust for the Universities of Scotland",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "structured",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 2,
+  "config_hash": "55a8c8a19c6f0f0e96ede18a0b3384349062afcc1557eaf1d7ea0023e03d79d0",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 7,
+      "n_claims_supported": 7,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "undergraduate-tuition-fee-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text captures all the factual claims present in the reference text regarding the purpose, eligibility criteria, and amount of the grant.",
+          "claims": [
+            {
+              "text": "The grant covers undergraduate tuition fees.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant is for low-income students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is for students in Scotland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is for students who cannot get government fee support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is for first undergraduate degrees.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant can cover second degrees in limited circumstances for skills-shortage subject areas.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is up to \u00a31,820 per year.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 7,
+      "n_claims_supported": 7,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "undergraduate-tuition-fee-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Funding is available to cover tuition fees.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The maximum tuition fee coverage is \u00a31,820 per year.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is for students from low-income households.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for students studying for a first undergraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "In limited circumstances, funding is available for a second undergraduate degree in skills-shortage subject areas.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The student must be studying at an eligible Scottish higher education institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The student must not be eligible for government tuition fee funding.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 7,
+      "n_claims_supported": 7,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "undergraduate-tuition-fee-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures all eligibility criteria mentioned in the reference text, including income, residency, immigration status, tuition fee eligibility, course enrollment, and the application of income thresholds.",
+          "claims": [
+            {
+              "text": "Applicants must be from low-income households.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be ineligible for tuition fee support from the Scottish Government.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be ordinarily resident in Scotland or have a substantial recent connection to Scotland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be entitled to remain indefinitely in the UK, or hold Limited Leave to Remain valid for the entire duration of the course, or be an asylum seeker.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not be eligible for public funds toward tuition fees.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be enrolled on or hold an unconditional offer for an eligible undergraduate degree course at a Scottish Higher Education Institution (HEI).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Household income thresholds apply, banded by number of dependants.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 62,
+      "n_claims_supported": 62,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "undergraduate-tuition-fee-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the eligibility criteria, application process, and funding amounts for the Carnegie Education Fund's Undergraduate Tuition Fee Grants.",
+          "claims": [
+            {
+              "text": "The opportunity is open to individuals from low-income households.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be ineligible for tuition fee support from the Scottish Government.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be ordinarily resident in Scotland or have a substantial recent connection to Scotland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be entitled to remain indefinitely in the UK, hold Limited Leave to Remain valid for the course, or be an asylum seeker.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not be eligible for public funds toward tuition fees.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be enrolled on or hold an unconditional offer for an eligible undergraduate degree course at a Scottish Higher Education Institution (HEI).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Household income thresholds apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants cover the cost of tuition fees, up to \u00a31,820 per year for a full-time degree course.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applicants must demonstrate that their financial circumstances do not allow them to cover the cost of their tuition fees.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be accepted.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications will not be accepted if the student has incurred tuition fee debts in a previous year of study and is unable to move to the next level of their course as a result.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have completed at least two full years of secondary schooling or college education in Scotland, OR be able to demonstrate a substantial and recent connection to Scotland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants eligible for a SAAS/Student Loans Company maintenance loan are expected to take full advantage of the loans available to them.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "CEF will not consider an application if the applicant is eligible for support (including loans) from Student Finance England, Wales or Northern Ireland, or any loan or grant from an overseas government or agency.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "In general, CEF will not fund more than one repeat year for the same course and student.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications from students who previously received funding from the Carnegie Education Fund for an undergraduate degree and now wish to start a different course may not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Part-time students in receipt of tuition fee support from SAAS may apply if the amount awarded by SAAS is less than the total amount of fees payable.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students who came to Scotland to study at university or college but have no experience of education in Scotland before that, and no other ties to Scotland, will not be considered eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications from students who already have a university degree level qualification may be considered exceptionally at the discretion of CEF.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have an unconditional offer for, or be a continuing student on, a full-time, part-time or distance learning undergraduate degree course in academic year 2026-27 at a specified Scottish institution or a course validated by a specified university but delivered elsewhere in Scotland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "HNC and HND diploma courses are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Access courses are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Accelerated degree courses with a graduate entry are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Courses delivered by, or at, a university outside Scotland are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Courses at a Scottish Higher Education Institute delivered and validated by a university outside Scotland are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Open University courses are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Continuing Professional Development (CPD) courses are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "University courses below degree level, e.g. Diploma or Certificate courses, are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Postgraduate degrees are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The Carnegie Education Fund has set aside a budget to fund students who completed an undergraduate degree in the past and wish to start an undergraduate degree in a different field of study in academic year 2026-27.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Students seeking funding for a second undergraduate degree must have completed their first degree at least two years before the start of their new course.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students seeking funding for a second undergraduate degree must enter the first year of their course in academic year 2026-27.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students seeking funding for a second undergraduate degree must have been unable to gain employment in the subject area of their previous degree, be unemployed, have been made redundant or be facing redundancy.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students seeking funding for a second undergraduate degree must wish to reskill in a different field of study, unrelated to their previous qualifications and recognised as being in a skills shortage area for the Scottish economy.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications are processed on a first come first served basis.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Eligible courses are restricted to the subject areas listed.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "No exceptions or exemptions will be made to any of the eligibility criteria.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students who have already started a 2nd degree before academic year 2026-27 are not eligible to apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The awards cover tuition fees only, up to a maximum of \u00a31,820.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Undergraduate tuition fee grants are designed to help students who do not have the financial resources to attend university.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Household income thresholds are used as guides, not hard cut-offs, and applications are reviewed holistically.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "If employed, gross pay is used for income assessment.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Student living cost loans or social benefits are not regarded as part of an applicant\u2019s total household income.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications are considered on a case-by-case basis, taking into account household income and other extenuating circumstances.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The median household income of award-holders in 2025-26 was \u00a310,000 per year.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The application portal will be open from June 1, 2026, to 5 pm on December 1, 2026, for grants covering academic year 2026-27.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "An eligibility checker must be completed before applying.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The application form is only accessible during the application window.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "An automatic reply confirms receipt of a complete application.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "CEF does not accept applications for previous years of study for which the student still owes tuition fees.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Late applications after the closing date will not be accepted, unless the student can demonstrate that they were first informed that SAAS would not be covering their fees after CEF\u2019s online portal has closed.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applicants will be notified of the outcome of their applications within two to three weeks, provided all requested information is submitted and the referee responds promptly.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A decision notification will be sent via email.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Supporting documents should be uploaded with the application form.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "CEF reserves the right to request further information and documentation from applicants.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Evidence of applicant eligibility, including passport or driver's license and SQA transcript/attendance record/certificates or a letter from school/college, is required if applying on the basis of 2 years of secondary schooling in Scotland.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A letter of acceptance for the university course or evidence of enrollment as a returning student is required.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A SAAS Award Notice letter showing ineligibility for tuition fee support and the amount of maintenance loan awarded is required.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A P60 for the tax year ending April 2026, or pay slips or Universal Credit statements covering the last 3 months, is required for the applicant (if 25 or over) and spouse/partner, or for the applicant and parents/guardians (if under 25).",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Students receiving a SAAS bursary must provide a copy of their SAAS award letter.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Supporting evidence can be submitted as scanned copies or mobile images.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "There is a 5MB size limit on each file submitted online.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

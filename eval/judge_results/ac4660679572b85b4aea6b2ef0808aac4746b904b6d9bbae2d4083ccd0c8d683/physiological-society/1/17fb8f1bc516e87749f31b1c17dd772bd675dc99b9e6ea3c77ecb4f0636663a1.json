@@ -1,0 +1,226 @@
+{
+  "funder": "The Physiological Society",
+  "model": "openrouter/amazon/nova-lite-v1",
+  "prompt_strategy": "structured",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 1,
+  "config_hash": "ac4660679572b85b4aea6b2ef0808aac4746b904b6d9bbae2d4083ccd0c8d683",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 4,
+      "n_claims_supported": 0,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "conference-attendance-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only mentions supporting member engagement at their own meetings and attendance at Society-sponsored events, omitting details about what is reimbursed, the specific eligibility criteria for presenting, the exact award values, and the application limit per member.",
+          "claims": [
+            {
+              "text": "The award reimburses conference registration, meeting dinner, and standard-class travel/accommodation.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The award is for members to attend and present at a Physiological Society or Society-sponsored research/teaching conference.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Award value varies by membership category, ranging from \u00a3100 to \u00a3375.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Members may apply for up to three meetings per application.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 2,
+      "n_claims_supported": 2,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "conference-attendance-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the stated purpose of the Conference Attendance Awards as described in the provided page text.",
+          "claims": [
+            {
+              "text": "Conference Attendance Awards primarily support member engagement at the organization's own meetings.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Conference Attendance Awards will also support attendance at Society-sponsored events if funding permits.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 8,
+      "n_claims_supported": 4,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.5,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "conference-attendance-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits several key eligibility criteria, including the requirement for undergraduate/Masters students, the second year of membership, and the ineligibility of associate members.",
+          "claims": [
+            {
+              "text": "Undergraduate and Masters students are eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Postgraduate members are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Full members are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Fellow members are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Members must be in their second year of membership.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Qualifying membership transitions are included in the second year of membership requirement.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Associate members are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Postgraduate, Full, and Fellow applicants must be submitting or presenting an abstract at the meeting.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 2,
+      "n_claims_supported": 2,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "conference-attendance-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for the Conference Attendance Award as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The value of the Conference Attendance Award and the frequency of application changes based on membership category.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Postgraduate, Full, and Fellow members applying for the Conference Attendance Award must be submitting or presenting an abstract at the meeting they wish to attend.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

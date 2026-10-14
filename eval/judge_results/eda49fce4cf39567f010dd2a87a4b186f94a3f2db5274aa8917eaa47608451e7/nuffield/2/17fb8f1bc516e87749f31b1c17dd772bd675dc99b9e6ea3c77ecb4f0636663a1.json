@@ -1,0 +1,345 @@
+{
+  "funder": "Nuffield Foundation",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 2,
+  "config_hash": "eda49fce4cf39567f010dd2a87a4b186f94a3f2db5274aa8917eaa47608451e7",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 4,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.75,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.75,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "RDUK-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose of the funding but omits the duration of the funding.",
+          "claims": [
+            {
+              "text": "The funding supports research on racial diversity within the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research should focus on inter-generational changes, continuities and challenges in a racially diverse UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding aims to contribute to understanding, public debate, policy, and practice on tackling racial inequalities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding duration is usually between six months and three years.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "MainGrants-2026",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text omits c... in the reference text.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 9,
+      "n_claims_supported": 9,
+      "n_records_judged": 2,
+      "n_records_supported": 2,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "RDUK-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the purpose of the fund as described in the page text, including its focus on racial diversity, inter-generational aspects, and contribution to understanding and policy. The deadline mentioned is also explicitly stated in the page text.",
+          "claims": [
+            {
+              "text": "The fund supports research on racial diversity within the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research should focus on inter-generational changes, continuities and challenges.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research aims to contribute to understanding, public debate, policy, and practice on tackling racial inequalities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The next deadline for applications is October 5, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "MainGrants-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the maximum funding amount, the purpose of the research, the existence of two annual deadlines, and the typical and exceptional grant amounts as stated in the page text.",
+          "claims": [
+            {
+              "text": "The fund offers up to \u00a3500,000 for research.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The research should address priority questions from the Strategic Review.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are two annual application deadlines: Spring and Autumn.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Most grants awarded are below \u00a3300,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "In special cases, grants can be up to \u00a3750,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 17,
+      "n_claims_supported": 9,
+      "n_records_judged": 2,
+      "n_records_supported": 0,
+      "claim_rate": 0.5294117647058824,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.48484848484848486,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "RDUK-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only captures the encouragement of applicants from diverse backgrounds, especially racially minoritised communities and partnership applications involving them, omitting other key eligibility criteria and all purpose-related claims.",
+          "claims": [
+            {
+              "text": "Applicants must be employed by or formally affiliated with a UK-based organisation.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants from racially minoritised communities are explicitly encouraged.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Partnership applications between researchers and racially minoritised communities are explicitly encouraged.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The endowment is restricted to work relating to the Commonwealth and the UK's colonial-migration history.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Research funded should contribute to understanding, public debate, policy and/or practice on tackling racial inequalities, discrimination and disadvantage.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Research funded should map pathways towards a UK that is comfortable with and reaping the benefits of its growing racial diversity.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "MainGrants-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the eligibility criteria but omits details about the duration of employment/affiliation, exclusions for schools/FE colleges, and the exclusion of non-UK-led organisations. It also fails to capture the 'Impact' criterion.",
+          "claims": [
+            {
+              "text": "Projects must be led by UK-based organisations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Individuals must have a formal employment or contractual relationship with the host institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Individuals without a host are excluded.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Undergraduates are excluded.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Master's students are excluded.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "PhD-fee projects are excluded.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Establishment of academic posts is excluded.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be employed by, or have a formal affiliation with, a UK-based organisation for at least the duration of the project.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects led by schools or FE colleges are excluded.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Non-UK-led organisations are excluded, except in exceptional circumstances.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "There must be a clear path to how the research and related activities might make a difference to people\u2019s lives.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 3,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "RDUK-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the page's encouragement of applications from diverse backgrounds, with a particular emphasis on individuals and organizations from racially minoritized communities, and a strong preference for partnership applications involving these communities.",
+          "claims": [
+            {
+              "text": "Applicants from diverse backgrounds are encouraged.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There is a strong preference for applications from individuals and organizations from racially minoritized communities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There is a strong preference for partnership applications involving racially minoritized communities.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "MainGrants-2026",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ...d' section of the page.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    }
+  }
+}

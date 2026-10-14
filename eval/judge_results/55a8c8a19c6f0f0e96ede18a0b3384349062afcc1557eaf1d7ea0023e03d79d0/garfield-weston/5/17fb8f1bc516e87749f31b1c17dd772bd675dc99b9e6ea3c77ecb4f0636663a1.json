@@ -1,0 +1,335 @@
+{
+  "funder": "Garfield Weston Foundation",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "structured",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 5,
+  "config_hash": "55a8c8a19c6f0f0e96ede18a0b3384349062afcc1557eaf1d7ea0023e03d79d0",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "major-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support...ll from the Foundation.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 3,
+      "n_claims_supported": 1,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.3333333333333333,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.3333333333333333,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 3,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "operating-core-costs",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text accurat...rough an online portal.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "projects-activity",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately describes grants for specific projects with defined scope and timescale, but it makes unsupported claims about the application process (rolling basis and online portal).",
+          "claims": [
+            {
+              "text": "Grants are for a specific project or area of work with a defined scope and timescale.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications are accepted on a rolling basis.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Applications are accepted via the Foundation's online grants portal.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "capital-projects",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ...n online grants portal.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "major-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ...iving bespoke guidance.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 8,
+      "n_claims_supported": 6,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.75,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.75,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "major-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most claims regarding financial thresholds and organizational requirements, but omits specific exclusions for local community capital projects and the general statement about matching the regular programme's eligibility.",
+          "claims": [
+            {
+              "text": "The total cost of what is being applied for must be at least \u00a31 million.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "For core costs, the organisation's annual income must be \u00a31 million or over.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "For capital or project costs, the organisation's income need not exceed \u00a31 million but the total project cost must be at least \u00a31 million.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Local community capital projects (churches, village halls) are directed to the regular grants route instead, where the typical maximum is \u00a330,000.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Same charity eligibility as the regular programme.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Must be a UK registered charity, CIO, or exempt/excepted organisation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Must have at least one year's accounts.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Must work within the UK or UK Overseas Territories.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 17,
+      "n_claims_supported": 6,
+      "n_records_judged": 3,
+      "n_records_supported": 0,
+      "claim_rate": 0.35294117647058826,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.3333333333333333,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "operating-core-costs",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text makes s... of the work delivered.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "projects-activity",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The provided page text only defines what constitutes a 'project' and gives examples, offering no information regarding eligibility criteria, financial requirements, geographic scope, funding ratios, or application processes.",
+          "claims": [
+            {
+              "text": "Eligible organizations include UK registered charities, CIOs, or exempt/excepted organizations.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must have at least one year's worth of annual accounts.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Work must be within the UK or UK Overseas Territories (UKOTs).",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The Foundation is unlikely to be the sole funder of a project.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "It is recommended that around half of the project's funding is secured before applying.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "capital-projects",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text makes several claims about eligibility criteria, some of which are directly supported by the page text, while others are not mentioned.",
+          "claims": [
+            {
+              "text": "The organization must be a UK registered charity, CIO, or exempt/excepted organization.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The organization must have at least one year's worth of annual accounts.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The organization must work within the UK or UK Overseas Territories.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Relevant planning permissions should be secured before applying.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "If the building is not owned, there must be at least 20 years remaining on the lease.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "It is recommended that approximately half of the total project costs have been raised before applying.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "major-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately reflects the income and project cost requirements for major grants and the need to pass an eligibility quiz. However, it includes specific details about the types of organisations and the requirement for accounts that are not present in the provided page text.",
+          "claims": [
+            {
+              "text": "For core costs, an organisation's annual income must be \u00a31 million or over.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "For capital or project costs, the total cost of the project must be at least \u00a31 million.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must pass the Foundation's eligibility quiz.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be a UK registered charity, CIO, or exempt/excepted organisation.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must have at least one year's accounts.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must work within the UK or UK Overseas Territories.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

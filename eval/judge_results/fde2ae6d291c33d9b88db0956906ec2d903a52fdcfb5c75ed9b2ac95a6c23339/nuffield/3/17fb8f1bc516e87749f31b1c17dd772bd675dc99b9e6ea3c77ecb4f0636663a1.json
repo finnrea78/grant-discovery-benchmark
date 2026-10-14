@@ -1,0 +1,319 @@
+{
+  "funder": "Nuffield Foundation",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "chain_of_thought",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 3,
+  "config_hash": "fde2ae6d291c33d9b88db0956906ec2d903a52fdcfb5c75ed9b2ac95a6c23339",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 11,
+      "n_claims_supported": 8,
+      "n_records_judged": 2,
+      "n_records_supported": 0,
+      "claim_rate": 0.7272727272727273,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.7166666666666667,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "main-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the purpose of the funding, the grant amounts, and the application deadlines, but omits information about the typical project duration.",
+          "claims": [
+            {
+              "text": "The fund supports research, development, and analysis projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects must address one or more of five strategic priority questions.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The duration of projects is usually between six months and three years.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Grants are available up to \u00a3500,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Grants can be up to \u00a3750,000 in special cases.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "There are two application deadlines per year, in Spring and Autumn.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "racial-diversity-uk-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the purpose of the funding and the grant amounts, but omits details about the duration of the funding and the specific focus on barriers and pathways to a racially just society.",
+          "claims": [
+            {
+              "text": "The funding supports research on racial diversity within the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research should focus on barriers and pathways to a racially just and inclusive society.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The 2026 priority theme is inter-generational changes, continuities and challenges in a racially diverse UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding duration is usually between six months and three years.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Grant amounts range from \u00a315,000 to \u00a3500,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 11,
+      "n_claims_supported": 11,
+      "n_records_judged": 2,
+      "n_records_supported": 2,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "main-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the funding amount, purpose, and application deadlines as described in the provided page text.",
+          "claims": [
+            {
+              "text": "Funding is available for research projects that address one or more of the Nuffield Foundation\u2019s priority questions.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available up to \u00a3500,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "In special cases, grants can be up to \u00a3750,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "There are two application deadlines per year, in Spring and Autumn.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "racial-diversity-uk-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The funding supports research on racial diversity within the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research should focus on inter-generational changes.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research should focus on identities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research should focus on belonging.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research should focus on civic participation.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research should focus on life chances.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants range from \u00a315,000 to \u00a3500,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 6,
+      "n_claims_supported": 2,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.3333333333333333,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.3333333333333333,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "main-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text omits s...impact of the research.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "racial-diversity-uk-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits several key eligibility criteria and purpose requirements mentioned in the reference text, only partially capturing the encouraged applicant groups and the UK-based requirement.",
+          "claims": [
+            {
+              "text": "Applicants must be employed by or formally affiliated with a UK-based organisation.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants from racially minoritised communities are explicitly encouraged.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Partnership applications between researchers and racially minoritised communities are explicitly encouraged.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The endowment is restricted to work relating to the Commonwealth and the UK's colonial-migration history.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Research funded should contribute to understanding, public debate, policy and/or practice on tackling racial inequalities, discrimination and disadvantage.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Research funded should map pathways towards a UK that is comfortable with and reaping the benefits of its growing racial diversity.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 2,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "main-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ...UK host are ineligible.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "racial-diversity-uk-fund",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text accurat...lving such communities.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,743 @@
+{
+  "funder": "US-UK Fulbright Commission",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "few_shot",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 4,
+  "config_hash": "3f35d3189bc2850f14fc128291b4a51852460d758d1b5729eade46bb70721733",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 35,
+      "n_claims_supported": 25,
+      "n_records_judged": 6,
+      "n_records_supported": 1,
+      "claim_rate": 0.7142857142857143,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.7111111111111111,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.16666666666666666,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "fulbright-all-disciplines-scholar-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the eligibility of UK academics and professionals, the purpose of research and lecturing, and the typical duration of projects. However, it omits the specific mention of postdoctoral appointments being accepted.",
+          "claims": [
+            {
+              "text": "The award is for UK academics and professionals.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The award allows recipients to research at a US institution.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award allows recipients to lecture at a US institution.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects last 3 to 6 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Postdoctoral appointments of up to 6 months are accepted.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-elon-university-scholar-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the duration, location, purpose, and subject area of the award, but omits details about specific research locations and library access.",
+          "claims": [
+            {
+              "text": "The award is for one semester.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award is at Elon University, North Carolina.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award combines teaching with research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Research can be conducted at Elon University or nearby universities such as UNC Chapel Hill and Duke.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Access to a library loan program is provided.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The award is for any subject area offered by Elon University.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-royal-college-of-surgeons-of-england-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose, location, and duration of the award but omits details about salary coverage and recharge mechanisms.",
+          "claims": [
+            {
+              "text": "The award is for surgical research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research can be conducted at any accredited US higher education institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The scholarship period is up to 6 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award covers basic NHS salary costs up to the resident doctor pay scale.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The Royal College of Surgeons of England covers the salary costs.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Salary costs are recharged quarterly to the employing NHS Trust.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-rutgers-university-newark-scholar-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the duration, focus, location, and community involvement of the award, but omits the detail about the travel grant amount.",
+          "claims": [
+            {
+              "text": "The award is for one semester, lasting 4 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award is focused on the contemporary urban environment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award involves residence in the Honors Living Learning Community.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award is at Rutgers University-Newark.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "There is a travel grant of up to \u00a31,500.",
+              "claim_type": "amount",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-royal-society-of-edinburgh-scholar-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text mentions lecture/research at any US university in any discipline, but omits the award duration, the Fulbright Scholar designation, and the requirement to align with the Royal Society of Edinburgh's research themes.",
+          "claims": [
+            {
+              "text": "The award is for a duration of three months.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The award is for a Fulbright Scholar project.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The project must align with one of the Royal Society of Edinburgh's chosen research themes.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The award is for lecture and/or research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award can be used at any accredited US university.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The award is open to any discipline.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-national-archives-heritage-science-fellowship",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures all factual claims present in the reference text regarding the fellowship's duration, start date, purpose, and location.",
+          "claims": [
+            {
+              "text": "The fellowship is in heritage science.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fellowship runs for a minimum of 5 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The fellowship runs for a maximum of 12 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The fellowship begins in September 2027.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The fellowship involves hands-on scientific research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research supports the conservation and preservation of cultural and historic artifacts.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research takes place at the National Archives in Maryland.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 23,
+      "n_claims_supported": 21,
+      "n_records_judged": 5,
+      "n_records_supported": 3,
+      "claim_rate": 0.9130434782608695,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.8933333333333333,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.6,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "fulbright-all-disciplines-scholar-award",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ... of scholars supported.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "fulbright-elon-university-scholar-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for the Fulbright Elon University Award as described in the provided page text.",
+          "claims": [
+            {
+              "text": "The award allows academics and professionals to teach at Elon University.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The award allows academics and professionals to pursue independent research at Elon University.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The teaching and research can be in any subject area offered by Elon University.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-royal-college-of-surgeons-of-england-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The award is for research into a number of surgical areas.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research can be conducted at any accredited US higher education institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The scholarship period can be up to 6 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award is for UK trainee RCS England members.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant amount is \u00a32,275 per month, converted to dollars at the prevailing rate.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant is intended as a contribution towards institutional fees and accommodation & maintenance costs in the USA.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Royal College of Surgeons of England will award a further grant to cover basic NHS Salary costs of the awardee.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The salary grant covers costs up to the maximum of the resident doctor pay scale.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applicants should check that their employer can accommodate the financial arrangement before applying.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-rutgers-university-newark-scholar-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is to teach and pursue research on issues of the contemporary urban environment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is part of the Honors Living Learning Community at Rutgers University-Newark.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award covers one semester of 4 months.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-royal-society-of-edinburgh-scholar-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims the opportunity is for any accredited US university, but the source text specifies it is for Rutgers University-Newark.",
+          "claims": [
+            {
+              "text": "The award supports lectures and/or research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The lectures and/or research can be in any discipline.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The lectures and/or research can be at any accredited US university.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-national-archives-heritage-science-fellowship",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately describes the purpose and duration of the fellowship, and the start date, but incorrectly states the location of the research.",
+          "claims": [
+            {
+              "text": "The fellowship involves hands-on scientific research supporting the conservation and preservation of cultural and historic artifacts.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research takes place at the National Archives in Maryland.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The fellowship runs for a minimum of 5 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The fellowship runs for a maximum of 12 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The fellowship begins in September 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 17,
+      "n_claims_supported": 4,
+      "n_records_judged": 4,
+      "n_records_supported": 0,
+      "claim_rate": 0.23529411764705882,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.21071428571428572,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 2,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "fulbright-all-disciplines-scholar-award",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text omits s... a US host affiliation.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "fulbright-elon-university-scholar-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only captures that the award is for UK-based academics and professionals, omitting several key eligibility criteria mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The award is open to British citizens.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a PhD or equivalent.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "US residents are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Dual nationals are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The award is tied to Elon University in North Carolina.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The award is tied to Elon's list of disciplines.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Grantees typically teach two relevant courses per semester.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-royal-college-of-surgeons-of-england-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures that the award is for surgeons and that applicants must be UK trainee Royal College of Surgeons of England members, but omits the restrictions on clinical practice in the US and direct patient contact.",
+          "claims": [
+            {
+              "text": "The award is aimed at surgeons.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grantees are not permitted to practice clinically in the US.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Research projects must not involve direct clinical contact with patients.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must be UK trainee Royal College of Surgeons of England members.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-rutgers-university-newark-scholar-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only captures the eligibility criterion that the award is open to UK-based academics and professionals, omitting all other eligibility requirements mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The scholar joins the Honors Living Learning Community with residence provided.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The scholar teaches and researches in any Rutgers-Newark department or school with a focus on the contemporary urban environment.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The scholar engages in outreach with students and faculty about international education.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The scholar designs and delivers at least one week-long 'flash course'.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The award is open to UK-based academics and professionals.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-royal-society-of-edinburgh-scholar-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only mentions eligibility criteria for individuals (UK-based academics and professionals) and omits the claim regarding project themes.",
+          "claims": [
+            {
+              "text": "Projects must be confined to the Royal Society of Edinburgh's chosen research themes.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-national-archives-heritage-science-fellowship",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text only st... in the reference text.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 9,
+      "n_claims_supported": 3,
+      "n_records_judged": 6,
+      "n_records_supported": 2,
+      "claim_rate": 0.3333333333333333,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.3333333333333333,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.3333333333333333,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "fulbright-all-disciplines-scholar-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text makes claims about eligibility criteria (UK-based academics and professionals, UK citizens, non-UK citizens committed to a UK career) that are not mentioned in the provided page text. The page text only describes the award's purpose and focus.",
+          "claims": [
+            {
+              "text": "The award is for UK-based academics and other professionals.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The award is for UK citizens.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The award is for non-UK citizens based in and committed to a life and career in the UK who cannot apply through their country of citizenship.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-elon-university-scholar-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims the opportunity is for UK-based academics and professionals, but the provided page text does not mention any geographical restrictions or nationality requirements for applicants.",
+          "claims": [
+            {
+              "text": "The opportunity is for UK-based academics and professionals.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-royal-college-of-surgeons-of-england-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the page text.",
+          "claims": [
+            {
+              "text": "The award is for UK trainee members of the Royal College of Surgeons of England.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-rutgers-university-newark-scholar-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims the opportunity is for UK-based academics and professionals, but the provided page text does not mention any geographical restrictions for eligibility, only that the award is at Rutgers University-Newark.",
+          "claims": [
+            {
+              "text": "The opportunity is for UK-based academics and professionals.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-royal-society-of-edinburgh-scholar-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The provided page text does not mention any eligibility requirements regarding the applicant's country of origin.",
+          "claims": [
+            {
+              "text": "The opportunity is for UK-based academics and professionals.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "fulbright-national-archives-heritage-science-fellowship",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text claims the fellowship is for researchers and professionals, which is directly supported by the first sentence of the page text.",
+          "claims": [
+            {
+              "text": "The fellowship is open to researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fellowship is open to professionals.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

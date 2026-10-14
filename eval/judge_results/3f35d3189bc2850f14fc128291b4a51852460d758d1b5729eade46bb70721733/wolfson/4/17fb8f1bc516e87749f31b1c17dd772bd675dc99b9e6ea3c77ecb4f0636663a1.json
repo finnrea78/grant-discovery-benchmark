@@ -1,0 +1,707 @@
+{
+  "funder": "Wolfson Foundation",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "few_shot",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 4,
+  "config_hash": "3f35d3189bc2850f14fc128291b4a51852460d758d1b5729eade46bb70721733",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 18,
+      "n_claims_supported": 16,
+      "n_records_judged": 2,
+      "n_records_supported": 1,
+      "claim_rate": 0.8888888888888888,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.9166666666666667,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.5,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 2,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "wolfson-universities-research-institutions",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text captures the purpose of the funding, the types of projects supported, and details about the application process and funding rounds, all of which are present in the reference text.",
+          "claims": [
+            {
+              "text": "The funding is for capital projects such as new buildings, refurbishment, and major equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding aims to enable high-quality research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding may also be used to improve access and research libraries.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding may also be used for public engagement with science.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The application process is two-stage.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "There are two funding rounds per year.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-public-engagement-science",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the claims from the reference text, but omits the claim that funds can be used for equipment and the claim that the funding is within the Science & Medicine stream.",
+          "claims": [
+            {
+              "text": "The funding is for capital projects related to public engagement with science organizations.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is within the Science & Medicine stream.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Funds can be used for new buildings.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funds can be used for refurbishment work.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funds can be used for equipment.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The program targets organizations with significant scientific or natural history collections.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects should aim to improve public engagement with science.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects can relate to the history of science.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects generally involve refurbishing or creating new galleries.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects generally involve refurbishing or creating new education/learning spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is a two-stage application process.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "There are two funding rounds per year.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-museums-galleries",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support...unding rounds per year.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "wolfson-libraries-archives",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support... in the reference text.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 23,
+      "n_claims_supported": 23,
+      "n_records_judged": 4,
+      "n_records_supported": 4,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "wolfson-universities-research-institutions",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the types of grants, their purposes, the application process, and the frequency of funding rounds.",
+          "claims": [
+            {
+              "text": "Capital grants are available for new buildings.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Capital grants are available for refurbishment work.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Capital grants are available for major equipment.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Grants can be used to enable high-quality research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants can occasionally be used to improve access and research libraries.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants can occasionally be used to improve public engagement with science.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The application process is two-stage.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "There are two funding rounds per year.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-public-engagement-science",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the eligibility criteria, purpose of the grants, and the application process including the number of funding rounds.",
+          "claims": [
+            {
+              "text": "Capital grants are available for organizations with significant scientific or natural history collections.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants aim to improve public engagement with science through projects related to the history of science.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are generally for refurbishing or creating new galleries and education/learning spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is a two-stage application process.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "There are two funding rounds per year.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-museums-galleries",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose of the grants, the types of projects funded, the application process, and the frequency of funding rounds as described in the provided page text.",
+          "claims": [
+            {
+              "text": "Capital grants are available to improve the display and interpretation of nationally significant collections for the public.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are generally towards refurbishing or creating new galleries.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are occasionally available for education and learning spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is a two-stage application process.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "There are two funding rounds per year.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-libraries-archives",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria, typical purposes of the grants, the two-stage application process, and the frequency of funding rounds as described in the provided page text.",
+          "claims": [
+            {
+              "text": "Capital grants are available to libraries and archives that care for nationally significant collections.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are typically for collection storage facilities and research, education, or interpretation spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is a clear emphasis on public access and engagement for funded projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The application process is two-stage.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "There are two funding rounds per year.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 33,
+      "n_claims_supported": 22,
+      "n_records_judged": 4,
+      "n_records_supported": 0,
+      "claim_rate": 0.6666666666666666,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6869047619047619,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "wolfson-universities-research-institutions",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most claims regarding eligibility and purpose, but omits the requirement for match funding.",
+          "claims": [
+            {
+              "text": "Eligible applicants are research-intensive universities and research institutions in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for new buildings, refurbishment work, or major equipment to improve research infrastructure.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding may also be available for improving access and research libraries or public engagement with science.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications must be coordinated by the university Development Office.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The project must be the institution's strategic priority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Match funding is required.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-public-engagement-science",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures several eligibility criteria but omits key details about the purpose of the grants and a specific operational requirement for eligible organizations.",
+          "claims": [
+            {
+              "text": "Eligible organizations include registered or exempt charities (or equivalent).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations include local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations include universities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations must display scientific or natural history collections of national significance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations must be operated by a registered charity or a local authority.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity is open to organizations in the UK only.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are generally for refurbishing or creating new galleries.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants are occasionally for education and learning spaces.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants are for improving public engagement with science through the history of science.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Organizations must be fully accredited under the Museum Accreditation Scheme if applicable.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-museums-galleries",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures all eligibility criteria mentioned in the reference text but omits the purpose of the grants.",
+          "claims": [
+            {
+              "text": "The applicant must be a registered or exempt charity (or equivalent).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be a local authority operating museums and galleries.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be fully accredited under the Museum Accreditation Scheme.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must hold a permanent collection of national significance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be located in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are generally towards refurbishing or creating new galleries.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants are occasionally for education and learning spaces.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-libraries-archives",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures all eligibility criteria mentioned in the reference text but omits the purposes for which grants are typically awarded.",
+          "claims": [
+            {
+              "text": "Eligible organizations include registered or exempt charities (or equivalent).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations include local authorities operating libraries and archives.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations must care for nationally significant collections.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations must be fully accredited under the Archive Service Accreditation Scheme.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations must be open and accessible to the public for most of the year.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to organizations in the UK only.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are usually towards collection storage facilities.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants are usually towards research spaces.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants are usually towards education spaces.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants are usually towards interpretation spaces.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 17,
+      "n_claims_supported": 17,
+      "n_records_judged": 4,
+      "n_records_supported": 4,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "wolfson-universities-research-institutions",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for research-intensive universities and research institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for institutions in the UK only.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The project must be a strategic institutional priority coordinated by the university Development Office.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must undertake internationally competitive research.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-public-engagement-science",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text regarding eligibility are directly supported by the 'Eligibility' section of the provided page text.",
+          "claims": [
+            {
+              "text": "The applicant must be a registered or exempt charity (or equivalent).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be a local authority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be a university.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be located in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be operating significant scientific or natural history collections of national significance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be fully accredited under the Museum Accreditation Scheme, if applicable.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-museums-galleries",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for applicants, including their status as a charity or local authority, accreditation under the Museum Accreditation Scheme, and the requirement to hold a permanent collection of national significance.",
+          "claims": [
+            {
+              "text": "The applicant must be a registered or exempt charity (or equivalent) or a local authority in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be fully accredited under the Museum Accreditation Scheme.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must hold a permanent collection of national significance, such as a Designated Outstanding Collection or a Recognised Collection.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-libraries-archives",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The applicant must be a registered or exempt charity (or equivalent) or a local authority in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be caring for nationally significant collections.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be fully accredited under the Archive Service Accreditation Scheme.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be open and accessible to the public for most of the year.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

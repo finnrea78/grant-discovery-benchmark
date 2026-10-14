@@ -1,0 +1,2588 @@
+{
+  "funder": "Wolfson Foundation",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "chain_of_thought",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 1,
+  "config_hash": "7e9a4d24b95f743e75d8817c1faa64a0286524e3e512aeb61e0574b92892dbbb",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 77,
+      "n_claims_supported": 58,
+      "n_records_judged": 10,
+      "n_records_supported": 3,
+      "claim_rate": 0.7532467532467533,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.7449458874458874,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.3,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "universities-research-institutions",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures the purpose of the funding and the application process described in the reference text.",
+          "claims": [
+            {
+              "text": "The funding is for capital projects such as new buildings, refurbishment, and major equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding aims to enable high-quality research infrastructure.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding may occasionally support access/research libraries.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding may occasionally support public engagement with science.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The application process is two-stage.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "special-schools-colleges",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures claims about the purpose, eligibility, and process of the funding, but omits details about the specific types of institutions eligible (special schools and colleges) and the funding stream.",
+          "claims": [
+            {
+              "text": "This funding is for capital grants for new buildings, refurbishment, and equipment.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding supports pupils at the secondary level.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding aims to help pupils develop employment and independent living skills.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is a two-stage application process.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "This funding is for special schools and colleges.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "This funding is part of the Health & Disability stream.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "This funding is distinct from a one-stage call for secondary schools and sixth form colleges.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hospices-palliative-care",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support... (Health & Disability).\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "charities-working-with-disability",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text captures all the key details about the funding's purpose and eligibility, as well as the application process, from the reference text.",
+          "claims": [
+            {
+              "text": "The funding is for charities working with disability.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for capital projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used for new buildings.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used for refurbishment work.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used for equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding has an interest in training.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding has an interest in employment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding has an interest in supported housing.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding has a particular interest in transitions from children's to adults' services.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is a two-stage application process.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "charities-working-in-mental-health",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the sector, the nature of the projects (capital, mental health, training, employment, supported housing), and the application process, but omits details about specific uses of capital funds (buildings, refurbishment, equipment).",
+          "claims": [
+            {
+              "text": "The funding is for charities working in mental health.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for capital projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used for new buildings.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding can be used for refurbishment work.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding can be used for equipment.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding has an emphasis on training.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding has an emphasis on employment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding has an emphasis on supported housing.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is a two-stage application process.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "charities-working-with-older-people",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the purpose of the funding, the target demographic, and the application process, but omits details about the specific programme name and funding stream.",
+          "claims": [
+            {
+              "text": "The funding is for capital projects, specifically new buildings, refurbishment work, and equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for charities working with older people.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is part of Wolfson's 'funding for places' programme.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The funding is within the Health & Disability stream.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The application process is a two-stage process.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "historic-buildings-landscapes",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text captures all the discrete factual claims present in the reference text regarding the purpose, eligibility, and application process of the funding opportunity.",
+          "claims": [
+            {
+              "text": "The funding is for capital grants.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is for conservation and restoration work.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for interpretation spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for education spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for historic sites.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for historic landscapes.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for places of worship of other faiths.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Cathedrals can apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The application process has two stages.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "libraries-archives",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about eligibility and some purposes, as well as the application process, but omits details about new build, refurbishment, equipment, and improving access from the reference text.",
+          "claims": [
+            {
+              "text": "The funding is for libraries and archives.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for nationally significant collections.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used for new build.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding can be used for refurbishment.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding can be used for equipment.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding is for improving access to nationally significant collections.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding is for collection storage facilities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for research spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for education spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for interpretation spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is a two-stage application process.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "museums-galleries",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the purpose of the funding (refurbishment, improving display and interpretation of collections) and the application process (two-stage), but omits claims related to the specific funding stream and the use of funds for new build or equipment.",
+          "claims": [
+            {
+              "text": "The funding is for capital projects related to places for museums and galleries.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is part of the Heritage, Humanities & the Arts stream.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Funds can be used for new build.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Funds can be used for refurbishment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funds can be used for equipment.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding aims to improve the display of nationally significant collections.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding aims to improve the interpretation of nationally significant collections.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The application process is two-stage.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "performing-arts-organisations",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the type of organization eligible, the general purpose of the funding (capital projects for training/education facilities), and the application process, but omits details about new builds and the specific funding stream.",
+          "claims": [
+            {
+              "text": "The funding is for performing arts organizations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for capital projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used for new builds.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding can be used for refurbishment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used for major equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the funding is to improve training and education facilities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is part of the Heritage, Humanities & the Arts stream.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The application process has two stages.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "public-engagement-with-science",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose related to capital grants for public engagement and the two-stage application process, but omits details about new buildings and equipment, and narrows the scope of the purpose to the history of science.",
+          "claims": [
+            {
+              "text": "The funding is for capital projects related to public engagement with science organizations.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is specifically for public engagement through the history of science.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding can be used for refurbishing or creating galleries and education spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for new buildings, refurbishment work, and equipment.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "There is a two-stage application process.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 196,
+      "n_claims_supported": 196,
+      "n_records_judged": 12,
+      "n_records_supported": 12,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "universities-research-institutions",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, covering the types of grants, their purpose, the application process, eligibility criteria, funding amounts, deadlines, and other relevant conditions.",
+          "claims": [
+            {
+              "text": "Capital grants are available for new buildings.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Capital grants are available for refurbishment work.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Capital grants are available for major equipment.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the grants is to enable high-quality research infrastructure.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is occasional support for access/research libraries.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is occasional support for public engagement with science.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The application process is two-stage.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Eligibility is for research-intensive universities and research institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The minimum grant amount is \u00a3100,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The usual grant range is \u00a3250,000 \u2013 \u00a31 million.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Match funding is required.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Funding decisions are made in June and December annually.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Projects must not be completed before a funding decision is made.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The application process involves submitting a Stage 1 application online.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications require a brief description of the project, total cost, funding shortfall, and proposed timetable.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications require confirmation of institutional backing and support from the Chief Executive or equivalent.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications require audited accounts for the past two years.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 2 applications are by invitation only.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "At least 25% of capital costs must be raised before submitting a Stage 2 application, unless the project cost is under \u00a350,000.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Planning permission should be in place for Stage 2 applications.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 2 applications are reviewed by expert reviewers and panels.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "If an organization has previously been awarded a grant, they must wait two years before submitting another application for a different project.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "If an organization has been turned down at Stage 1, they can submit a new application for a different project at any time.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "If an organization has been turned down at Stage 2, they must wait at least one year before submitting a new application for a different project.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding is for UK applicants only.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Round 1 Stage 1 application deadline is January 5th.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 1 Stage 2 application deadline is March 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 Stage 1 application deadline is July 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 Stage 2 application deadline is September 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "If a deadline falls on a weekend, applications are accepted by 9 am the following Monday.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "secondary-schools-sixth-form-colleges",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the purpose of the grants, the subjects covered, and the status and decision timeline of the 2026 funding round as stated on the provided page.",
+          "claims": [
+            {
+              "text": "Capital grants are available for new build, refurbishment, and technical equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants aim to improve GCSE and A-Level teaching of science, computer science, design & technology, art, languages, music, and performing arts.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The 2026 funding round is closed.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Decisions for the 2026 funding round will be made in November 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "special-schools-colleges",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose of the grants, the target group, the types of projects funded, and the application process as described in the page text.",
+          "claims": [
+            {
+              "text": "Capital grants are available for new buildings.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Capital grants are available for refurbishment.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Capital grants are available for equipment.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "These grants support pupils at secondary level.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants help pupils develop employment skills.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants help pupils develop independent living skills.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is a two-stage application process.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hospices-palliative-care",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the types of capital grants available (new buildings, refurbishment, equipment), the purpose of the funding (excellent care for patients and families), and the application process (two-stage).",
+          "claims": [
+            {
+              "text": "Capital grants are available for new buildings.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Capital grants are available for refurbishment work.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Capital grants are available for equipment.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for places providing excellent care to patients and families.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is a two-stage application process.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "charities-working-with-disability",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, covering the purpose of the grants, the application process, eligibility criteria, funding amounts, and deadlines.",
+          "claims": [
+            {
+              "text": "Capital grants are available to help people with disabilities live more independently.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is interest in projects focusing on training, employment, and supported housing.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is particular interest in projects that facilitate transitions from children's to adults' services.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The application process is conducted in two stages.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The minimum grant amount is \u00a325,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The usual grant range is \u00a340,000 to \u00a375,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be registered charities or local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "If applicable, organizations should have at least a \u2018Good\u2019 rating from a regulator like CQC or Ofsted.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must involve new buildings, refurbishment, or equipment.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must have capital costs of at least \u00a350,000.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must have a shortfall in capital funding of at least \u00a325,000.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must address increased access to services, improved quality/range of services, or improved future sustainability.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding is not available for support and therapy centers, playgrounds, charities lending equipment, facilities/equipment in hospitals, carers' organizations, respite accommodation, ex-armed forces charities (unless serving people with disabilities), charities where disability support is minor, or projects seeking funding for sports, leisure, arts, or music facilities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding is not available for the purchase of land or existing buildings, grants direct to individuals, grants through conduit organizations, overheads, maintenance costs, VAT, non-specific appeals, endowment funds, costs of meetings/exhibitions/concerts/expeditions/conferences/lectures, salary costs, running costs, film/websites/promotional materials, repayment of loans, or projects already completed.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications are submitted online.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications require a brief project description, total cost, current funding shortfall, and proposed timetable.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications require confirmation of support from the Chief Executive or equivalent.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications require audited accounts for the past two years.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 2 applications are by invitation only and submitted online.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Unless otherwise agreed, at least 25% of capital costs must be raised before submitting a Stage 2 application (if project cost is over \u00a380,000).",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Necessary planning permission should be in place for Stage 2 applications.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Organizations that have previously received a grant must wait five years before applying for a different project.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Universities and large charities with multiple sites may reapply more frequently after contacting the funder.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Organizations turned down at Stage 1 can submit a new application for a different project at any time.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Organizations turned down at Stage 2 must wait at least one year before submitting a new application for a different project.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The same project is not normally considered twice.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are two funding rounds each year.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Round 1 Stage 1 applications open on November 20th and close on January 5th.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 1 Stage 2 applications close on March 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 1 funding decisions are made in June.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Round 2 Stage 1 applications open on May 14th and close on July 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 Stage 2 applications close on September 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 funding decisions are made in December.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "If a deadline falls on a weekend, applications are accepted by 9 am the following Monday.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Grants are not made retrospectively; projects must be ongoing at the time of a funding decision.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "An invitation to Stage 2 remains open for three funding rounds unless otherwise agreed.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The applicant's location must be the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Match funding may be required if the project cost is between \u00a350,000 and \u00a380,000.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "charities-working-in-mental-health",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose of the grants (capital grants for mental health projects with an emphasis on training, employment, and supported housing) and the application process (two-stage).",
+          "claims": [
+            {
+              "text": "Capital grants are available for projects focused on mental health.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants emphasize training, employment, and supported housing.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The application process involves two stages.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "charities-working-with-older-people",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the types of grants available (new buildings, refurbishment, equipment), the target demographic (services for older people), and the application process (two-stage).",
+          "claims": [
+            {
+              "text": "Capital grants are available for new buildings.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Capital grants are available for refurbishment work.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Capital grants are available for equipment.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for services for older people.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is a two-stage application process.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "historic-buildings-landscapes",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, covering the purpose of the grants, eligibility criteria, application process, deadlines, and funding amounts.",
+          "claims": [
+            {
+              "text": "Capital grants are available for conservation and restoration of historic sites, landscapes, and places of worship.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Capital grants are available for interpretation spaces at historic sites, landscapes, and places of worship.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Capital grants are available for education spaces at historic sites, landscapes, and places of worship.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Cathedrals can apply for these grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The application process is conducted in two stages.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The grants are for historic buildings and landscapes.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations must manage sites of outstanding historic, architectural, and cultural significance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations must have a clear emphasis on public access and engagement.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Sites must be operated by a registered charity or a local authority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Sites must be open and accessible to the public for the majority of the year.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Sites must have a reasonable number of visitors.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible sites in England and Wales must be listed as Grade I, II*, or a Scheduled Monument.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible sites in Scotland must be listed as Category A, B, or a Scheduled Monument.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible sites in Northern Ireland must be listed as Grade A, B+, or a Scheduled Monument.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects can involve restoration or conservation work to the historic fabric of the building.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects can involve excellent interpretation of historic buildings, landscapes, and collections.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects should aim to increase numbers of visitors to historic sites.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects should aim for better public engagement with and understanding of sites of historical and cultural significance.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects should aim for improved future sustainability of the organization.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications from sites listed as Grade I, Category A, Grade A or a Scheduled Monument are prioritized when interest is high.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Projects focused primarily on increasing public engagement with and understanding of the historic, architectural, and cultural significance of the site are prioritized when interest is high.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "For landscapes, parks, and gardens, applicants must demonstrate national significance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "For landscapes, parks, and gardens, projects should involve conservation or restoration works to built heritage on the site.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "For landscapes, parks, and gardens, projects should involve the interpretation of built heritage or past human existence.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects relating primarily to the conservation and interpretation of natural heritage are unlikely to be eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Purchase of land or existing buildings is not funded.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Grants are not made direct to individuals.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are not made through conduit organizations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Heritage assets in private ownership are not funded.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Overheads, maintenance costs, and VAT are not funded.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Non-specific appeals and endowment funds are not funded.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Costs of meetings, exhibitions, concerts, expeditions, conferences, and lectures are not funded.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Salary costs are not funded.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Running costs, including vehicle fuel and maintenance, are not funded.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Film, websites, or promotional materials are not funded.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Repayment of loans is not funded.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Projects that have already been completed or will be by the time of award are not funded.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications are submitted via an online system.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications require a brief project description, total cost, funding shortfall, and proposed timetable.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications require confirmation of institutional backing and support from the Chief Executive or equivalent.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications for clinical research connected to a university and an NHS Trust require formal approval from the relevant university.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications require audited accounts for the past two years.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 2 applications are by invitation only.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 2 applications are submitted via an online system.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "At least 25% of capital costs must be raised before submitting a Stage 2 application, unless the project cost is under \u00a350,000.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Necessary planning permission should be in place for Stage 2 applications.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Expert reviewers read Stage 2 applications.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants may have the opportunity to respond to questions from expert reviewers.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Expert panels consider applications and make recommendations to trustees.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Organizations that have previously received a grant must wait five years before submitting another application for a different project.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Universities and large charities with more than one site may reapply more frequently after contacting the funder.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants turned down at Stage 1 can submit a new application for a different project at any time.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants turned down at Stage 2 must wait at least one year before submitting a new application for a different project.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The same project is not normally considered twice.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "There are two funding rounds each year.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Round 1 Stage 1 applications open on November 20th.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 1 Stage 1 application deadline is January 5th.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 1 Stage 2 application deadline is March 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 1 funding decisions are made in June.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Round 2 Stage 1 applications open on May 14th.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 Stage 1 application deadline is July 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 Stage 2 application deadline is September 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 funding decisions are made in December.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "If a deadline falls on a weekend, applications received by 9 am the following Monday are accepted.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Grants are not made retrospectively; projects must be ongoing at the time of a funding decision.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "An invitation to Stage 2 remains open for three funding rounds unless otherwise agreed.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The minimum grant amount is \u00a315,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The usual grant range is \u00a315,000 \u2013 \u00a3100,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Match funding is required if the project cost is over \u00a350,000.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding programme is for Heritage, Humanities & the Arts.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "libraries-archives",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose of the grants (capital grants for storage, research, education, or interpretation spaces for libraries and archives with nationally significant collections) and the application process (two-stage).",
+          "claims": [
+            {
+              "text": "Capital grants are available for collection storage facilities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Capital grants are available for research spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Capital grants are available for education spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Capital grants are available for interpretation spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are for libraries and archives with nationally significant collections.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There is a two-stage application process.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "museums-galleries",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, covering the purpose of the grants, the application process, grant amounts, eligibility criteria, and deadlines.",
+          "claims": [
+            {
+              "text": "Capital grants are available to improve the display and interpretation of nationally significant collections for the public.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are generally for refurbishing or creating galleries.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The application process is two-stage.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The minimum grant amount is \u00a315,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The usual grant range is \u00a350,000 \u2013 \u00a3500,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Match funding is required if the project cost is over \u00a350,000.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Funding decisions are made in June and December annually.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Projects must not be completed before a funding decision is made.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding is for museums and galleries.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be a registered charity or a local authority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be fully accredited under the Museum Accreditation Scheme.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must hold a permanent collection of national significance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects should aim for excellent interpretation of permanent collections of national significance.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects should aim for better public engagement with and understanding of collections.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects should aim for increased numbers of visitors to museums and galleries.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects should aim for improved future sustainability of the organisation.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects should aim for conservation of architectural heritage.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The deadline for Stage 1 applications in Round 1 is January 5th.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline for Stage 2 applications in Round 1 is March 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline for Stage 1 applications in Round 2 is July 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline for Stage 2 applications in Round 2 is September 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "performing-arts-organisations",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose of the grants (building/refurbishing facilities and specialist equipment) and the two-stage application process as described in the page text.",
+          "claims": [
+            {
+              "text": "Capital grants are available for building or refurbishing training and education facilities for performing arts organisations.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Occasionally, grants are available for specialist equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The application process involves two stages.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "public-engagement-with-science",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose of the grants and the application process as described in the provided page text.",
+          "claims": [
+            {
+              "text": "Capital grants are available for refurbishing or creating galleries.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Capital grants are available for refurbishing or creating education spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the grants is to improve public engagement with science through the history of science.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is a two-stage application process.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 91,
+      "n_claims_supported": 56,
+      "n_records_judged": 11,
+      "n_records_supported": 1,
+      "claim_rate": 0.6153846153846154,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6171126852945035,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.09090909090909091,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "universities-research-institutions",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures some eligibility criteria and purpose, but omits key process details and the match funding requirement.",
+          "claims": [
+            {
+              "text": "Eligible applicants are research-intensive universities and research institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible applicants are located in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are for new buildings, refurbishment work, or major equipment to improve research infrastructure.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants may sometimes be used for improving access and research libraries.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants may sometimes be used for public engagement with science.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications should be coordinated by the university Development Office.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Applications must confirm the project is the institution's strategic priority.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Match funding is required.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must be undertaking internationally competitive research.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "special-schools-colleges",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the eligibility criteria related to the type of organization, regulator rating, geographical location, and the target pupil level, but omits details about the project type, minimum cost, and funding shortfall.",
+          "claims": [
+            {
+              "text": "The applicant must be a registered or exempt charity.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be a local authority running special schools and colleges for children and young people with special educational needs.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must have at least a 'Good' rating from a regulator such as CQC or Ofsted where applicable.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is UK only.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The project must be a capital project (new building, refurbishment work or equipment).",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The project must cost at least \u00a350,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The project must have a funding shortfall.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The project must support secondary-level pupils to develop skills for employment or independent living.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hospices-palliative-care",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the eligibility criteria related to the applicant's status, location, and regulatory rating, but omits details about the project's nature, minimum cost, and funding shortfall.",
+          "claims": [
+            {
+              "text": "The applicant must be a registered charity or hospice.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must operate within the NHS.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must have a 'Good' rating from a regulator such as CQC or equivalent where applicable.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be located in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for capital projects (new building, refurbishment work or equipment).",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The capital project must cost at least \u00a350,000.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The capital project must have a shortfall in capital funding.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "charities-working-with-disability",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures eligibility criteria related to the applicant's status, work area, regulatory rating, and location, but omits crucial details about the project's nature, cost, funding shortfall, and specific areas of interest.",
+          "claims": [
+            {
+              "text": "The applicant must be a registered or exempt charity or a local authority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must work with disability.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must have a 'Good' rating from a regulator such as CQC or Ofsted where applicable.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be based in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The project must be a capital project (new building, refurbishment work or equipment).",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The project must cost at least \u00a350,000.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The project must have a funding shortfall.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The project must help people to live more independently.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funder has particular interest in projects related to training, employment, and supported housing.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funder has particular interest in projects related to transitions from children's to adults' services.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funder has particular interest in organisations that struggle to raise funds from the public.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "charities-working-in-mental-health",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures eligibility criteria related to the type of organization, their area of work, regulatory rating, and geographic location, but omits details about project type, minimum capital costs, funding shortfall, and specific areas of emphasis.",
+          "claims": [
+            {
+              "text": "The applicant must be a registered or exempt charity or a local authority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be working in the field of mental health.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must have a 'Good' rating from a regulator such as CQC or Ofsted, where applicable.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to applicants in the UK only.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must be capital in nature, such as new building, refurbishment, or equipment.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Capital costs must be at least \u00a350,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "There must be a shortfall in capital funding.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding has an emphasis on training, employment, and supported housing.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "charities-working-with-older-people",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the eligibility criteria related to the type of organization, the beneficiaries, regulatory ratings, and geographic restrictions, but omits details about the project's nature, minimum cost, and the requirement for a funding shortfall.",
+          "claims": [
+            {
+              "text": "The applicant must be a registered or exempt charity or a local authority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must provide care and services for older people.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Priority is given to organizations serving older people with neurodegenerative conditions or who are isolated.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must have at least a 'Good' rating from a regulator such as CQC, where applicable.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is restricted to the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The project must be a capital project (new building, refurbishment, or equipment).",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The project must cost at least \u00a350,000.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The project must have a funding shortfall.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "historic-buildings-landscapes",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the core eligibility criteria regarding the type of organization and the nature of the site, as well as the geographic restriction, but omits specific listing requirements and project aims.",
+          "claims": [
+            {
+              "text": "The applicant must be a registered or exempt charity or a local authority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must manage sites of outstanding historic, architectural, and cultural significance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The sites managed must be open to the public.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to UK applicants only.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The site must be listed Grade I, II* or a Scheduled Monument (England and Wales), Category A, B or a Scheduled Monument (Scotland), or Grade A, B+ or a Scheduled Monument (Northern Ireland).",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects must involve restoration or conservation of historic fabric and/or excellent interpretation.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Projects must aim at increased visitors, better public engagement or improved organisational sustainability.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Heritage assets in private ownership are excluded.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "libraries-archives",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text captures all eligibility criteria and the stated purposes for the grants mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The funding is for registered or exempt charities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for local authorities operating libraries and archives.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible libraries and archives must care for nationally significant collections.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible libraries and archives must be fully accredited under the Archive Service Accreditation Scheme.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations must be open and accessible to the public for most of the year.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is restricted to organizations in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are usually towards collection storage facilities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are usually towards research spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are usually towards education spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are usually towards interpretation spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "museums-galleries",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures all eligibility criteria but omits the purpose of the grants.",
+          "claims": [
+            {
+              "text": "The applicant must be a registered or exempt charity.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be a local authority operating a museum or gallery.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The museum or gallery must be fully accredited under the Museum Accreditation Scheme.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The museum or gallery must hold a permanent collection of national significance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to applicants in the UK only.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are generally for refurbishing or creating new galleries.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants are occasionally for education and learning spaces.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "performing-arts-organisations",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the eligibility criteria regarding the type of organization, its focus, and location, but omits the details about the purpose of the grants.",
+          "claims": [
+            {
+              "text": "The applicant must be a registered or exempt charity or a local authority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be focused on professional performance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must have significant education work.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be based in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are generally for building or refurbishing training and education facilities.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants occasionally cover related specialist equipment.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "public-engagement-with-science",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures eligibility criteria related to organization type, collection significance, and geographic location, but omits details about the operational structure of eligible organizations and the specific purposes for which grants are awarded.",
+          "claims": [
+            {
+              "text": "Eligible organizations include registered or exempt charities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations include local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations include universities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations must display scientific or natural history collections of national significance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations must be operated by a registered charity or a local authority.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity is open to UK applicants only.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are generally for refurbishing or creating new galleries.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants are occasionally for education and learning spaces.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants are for improving public engagement with science through the history of science.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 49,
+      "n_claims_supported": 49,
+      "n_records_judged": 12,
+      "n_records_supported": 12,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "universities-research-institutions",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for research-intensive universities and research institutions undertaking internationally competitive research, and specifies that the opportunity is UK-only, all of which are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for research-intensive universities and research institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations must undertake internationally competitive research.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is restricted to applicants located in the UK only.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "secondary-schools-sixth-form-colleges",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, covering eligibility criteria and deadlines for the funding round.",
+          "claims": [
+            {
+              "text": "The opportunity is for high-achieving state-funded secondary schools and sixth form colleges in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicant schools and colleges must have at least two years of exam results available.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicant schools and colleges must have been inspected by Ofsted/Estyn/HMIE/ETI and have an overall outcome, or majority of ratings, of \u2018Good\u2019 or above.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The 2026 funding round is closed.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Funding decisions for the 2026 round will be made in November 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Details for the next funding round are expected in spring 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "special-schools-colleges",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for organizations, including their status as a charity or local authority, the level of education provided, the required regulator rating, and the geographical location.",
+          "claims": [
+            {
+              "text": "The organization must be a registered or exempt charity or a local authority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization must provide special educational needs education at the secondary level.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "If applicable, the organization must have at least a 'Good' rating from a regulator such as CQC or Ofsted.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be based in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hospices-palliative-care",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for registered charity or hospice status, regulator rating, and UK-only operation as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The organization must be a registered charity or hospice operating within the NHS.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization must have a 'Good' regulator rating if applicable.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization must be UK-based.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "charities-working-with-disability",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria mentioned in the page text, specifically regarding the type of organization, regulatory rating, and geographical limitation.",
+          "claims": [
+            {
+              "text": "The organization must be a registered or exempt charity working with disability.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization must be a local authority working with disability.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "If applicable, the organization must have at least a 'Good' rating from a regulator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to applicants in the UK only.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "charities-working-in-mental-health",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for registered/exempt charities or local authorities working in mental health, requiring a good regulator rating if applicable, and restricting applications to the UK only.",
+          "claims": [
+            {
+              "text": "The organization must be a registered or exempt charity.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization must be a local authority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization must be working in mental health.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "If applicable, the organization must have at least a \u2018Good\u2019 rating from a regulator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for UK applicants only.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "charities-working-with-older-people",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text regarding eligibility criteria (organization type, target demographic, CQC rating, and geographic location) are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The organization must be a registered or exempt charity, or a local authority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization must provide care or services for older people, with a focus on neurodegenerative conditions or isolation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "If applicable, the organization must have at least a 'Good' rating from a regulator like CQC.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is only open to UK-based applicants.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "historic-buildings-landscapes",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria regarding the type of organization, the significance of the sites they manage, and the geographical location of the applicant.",
+          "claims": [
+            {
+              "text": "The applicant must be a registered or exempt charity or a local authority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be managing sites of outstanding historic, architectural and cultural significance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be located in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "libraries-archives",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the eligibility criteria for libraries and archives, including their operational status, collection significance, public access, and geographical location.",
+          "claims": [
+            {
+              "text": "The opportunity is for registered or exempt charities or local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization must operate fully accredited libraries or archives.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The libraries/archives must care for nationally significant collections.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The libraries/archives must be open to the public.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for UK applicants only.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "museums-galleries",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for applicants, including their status as a charity or local authority, the accreditation of their museum/gallery, the national significance of their collections, and their UK location.",
+          "claims": [
+            {
+              "text": "The applicant must be a registered or exempt charity or a local authority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must operate fully accredited museums or galleries.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The museum or gallery must hold permanent collections of national significance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be located in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "performing-arts-organisations",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the eligibility criteria for performing arts organizations seeking funding.",
+          "claims": [
+            {
+              "text": "The organization must be a registered or exempt charity.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization must be a local authority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization must be focused on professional performance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization must have significant education work.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The organization must be located in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "public-engagement-with-science",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for organizations, their collections, and the geographical location of applicants as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for registered/exempt charities, local authorities, or universities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organizations must display scientific or natural history collections of national significance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is only open to applicants in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

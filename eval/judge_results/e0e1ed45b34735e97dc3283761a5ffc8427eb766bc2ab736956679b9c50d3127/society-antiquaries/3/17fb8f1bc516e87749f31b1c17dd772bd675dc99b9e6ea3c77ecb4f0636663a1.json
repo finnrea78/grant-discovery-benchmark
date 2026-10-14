@@ -1,0 +1,280 @@
+{
+  "funder": "Society of Antiquaries of London",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "minimal",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 3,
+  "config_hash": "e0e1ed45b34735e97dc3283761a5ffc8427eb766bc2ab736956679b9c50d3127",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 8,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.375,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.375,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "sal-church-conservation-aug31",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the general purpose of the grants, the type of building eligible, and the frequency of application rounds, but omits specific details about the grant amount, the nature of the features to be conserved, the geographical location, and the guiding principles.",
+          "claims": [
+            {
+              "text": "Grants are available for conservation projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are awarded for churches.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are two application rounds per year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Grants are between \u00a3500 and \u00a35,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Grants are for the conservation of decorative or non-structural interior features.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The features to be conserved must be from before 1896.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The places of worship must be in the UK.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Work must follow SPAB principles.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 8,
+      "n_claims_supported": 8,
+      "n_records_judged": 3,
+      "n_records_supported": 3,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "sal-research-travel-jan15",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose and scope of the funding opportunity as described in the provided page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity offers annual project grants.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grants support research into the human past through its material culture or material remains.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research areas covered include archaeology, art history, architectural history, and related fields.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "sal-research-travel-apr7",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose and scope of the funding opportunity as described in the provided page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity offers annual project grants.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grants support research into the human past through its material culture or material remains.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research areas covered include archaeology, art history, architectural history, and related fields.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "sal-church-conservation-aug31",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately states that grants support conservation projects for churches and that there are two application rounds per year for the William and Jane Morris Church Conservation grants, both of which are directly supported by the page text.",
+          "claims": [
+            {
+              "text": "Grants are available to support conservation projects for churches.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are two application rounds per year for the William and Jane Morris Church Conservation grants.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 1,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "sal-church-conservation-aug31",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 4,
+      "n_claims_supported": 4,
+      "n_records_judged": 2,
+      "n_records_supported": 2,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 1,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "sal-research-travel-jan15",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the page text, specifically that applications must be from the project director or principal investigator and that early career researchers are encouraged to apply.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Early career researchers are welcome to apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "sal-research-travel-apr7",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the page text, specifically that applications must be from the project director or principal investigator and that early career researchers are encouraged to apply.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Early career researchers are welcome to apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "sal-church-conservation-aug31",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        }
+      ]
+    }
+  }
+}

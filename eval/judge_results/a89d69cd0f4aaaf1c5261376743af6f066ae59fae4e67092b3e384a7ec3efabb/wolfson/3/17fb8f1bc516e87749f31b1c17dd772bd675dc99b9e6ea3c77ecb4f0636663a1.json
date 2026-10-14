@@ -1,0 +1,650 @@
+{
+  "funder": "Wolfson Foundation",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "few_shot",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 3,
+  "config_hash": "a89d69cd0f4aaaf1c5261376743af6f066ae59fae4e67092b3e384a7ec3efabb",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 12,
+      "n_claims_supported": 9,
+      "n_records_judged": 2,
+      "n_records_supported": 1,
+      "claim_rate": 0.75,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.7857142857142857,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.5,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "wolfson-disability-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the core purpose of the funding (capital projects for disability independence) and the target beneficiaries (charities working with disability), but omits specific examples of what the capital projects can fund (buildings, refurbishment, equipment).",
+          "claims": [
+            {
+              "text": "The funding is for capital projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding aims to improve independence for people with disability.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding focuses on training, employment, and supported housing.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for charities working with disability.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for new buildings.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding is for refurbishment work.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding is for equipment.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-historic-buildings-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text captures the purposes of the funding (conservation, restoration, interpretation, and education spaces) and an eligibility criterion (historic sites of outstanding significance) mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The funding supports conservation work for historic sites.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports restoration work for historic sites.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports interpretation spaces for historic sites.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports education spaces for historic sites.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The historic sites must be of outstanding significance.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 49,
+      "n_claims_supported": 47,
+      "n_records_judged": 3,
+      "n_records_supported": 1,
+      "claim_rate": 0.9591836734693877,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.9684873949579832,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.3333333333333333,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "wolfson-disability-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The claim regarding the minimum grant amount is not supported as the page text states the minimum capital cost is \u00a350,000 and the minimum shortfall is \u00a325,000, but does not specify a minimum grant amount, only a usual grant range.",
+          "claims": [
+            {
+              "text": "Grants are available for capital projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The projects should improve independence for people with disability.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The projects focus on training, employment, and supported housing.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The minimum capital cost for a project is \u00a350,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The minimum shortfall in capital funding is \u00a325,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The usual grant range is \u00a340,000 \u2013 \u00a375,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be registered charities or local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "If applicable, organizations should have at least a \u2018Good\u2019 rating from a regulator such as CQC or Ofsted.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects can be for new buildings, refurbishment work, or equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The application process has two stages.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 applications are submitted via an online system.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 2 applications are by invitation only.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 application deadline for Round 1 is January 5th.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Stage 2 application deadline for Round 1 is March 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Funding decisions for Round 1 are made in June.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Stage 1 application deadline for Round 2 is July 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Stage 2 application deadline for Round 2 is September 1st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Funding decisions for Round 2 are made in December.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "If a deadline falls on a weekend, applications are accepted by 9 am the following Monday.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Grants are not made retrospectively.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Projects must be ongoing at the time of a funding decision.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "An invitation to Stage 2 remains open for three funding rounds unless otherwise agreed.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Organizations that have previously received a grant must wait five years before reapplying for a different project.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Universities and large charities with multiple sites may reapply more frequently after contacting the funder.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants turned down at Stage 1 can submit a new application for a different project at any time.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants turned down at Stage 2 must wait at least one year before submitting a new application for a different project.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The same project is not normally considered twice.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The minimum grant amount is \u00a325,000.",
+              "claim_type": "amount",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-historic-buildings-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purposes of the funding as described in the page text, which explicitly mentions support for conservation and restoration work, interpretation, and education spaces for historic sites of outstanding significance.",
+          "claims": [
+            {
+              "text": "The funding supports conservation work for historic sites of outstanding significance.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports restoration work for historic sites of outstanding significance.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports interpretation spaces for historic sites of outstanding significance.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports education spaces for historic sites of outstanding significance.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-secondary-schools-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately reflects the purpose, eligibility criteria, funding amounts, application process, and deadlines as described on the provided page, with the exception of the minimum project cost claim which is not supported.",
+          "claims": [
+            {
+              "text": "Grants are available for new build, refurbishment, or technical equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are intended to improve specialist teaching spaces.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The subjects covered by the grants include science, design, art, languages, music, and performing arts.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The 2026 funding round is closed.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Funding decisions for the 2026 round will be made in November 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Details for the next funding round are expected in spring 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Eligibility is for state-funded secondary schools and sixth form colleges.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must cost at least \u00a325,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The minimum grant amount is \u00a315,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The maximum grant amount is \u00a3100,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The usual grant range for equipment is \u00a315,000 \u2013 \u00a350,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The usual grant range for new build and refurbishment is \u00a315,000 \u2013 \u00a3100,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applications are submitted online via an online application system.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Multi-academy trusts (MATs) can submit only one application per funding round.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "If a school is part of a MAT, the MAT must submit the application.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "If not part of a MAT, the school or college submits the application.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Projects must not be completed before a funding decision is made.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 19,
+      "n_claims_supported": 6,
+      "n_records_judged": 2,
+      "n_records_supported": 0,
+      "claim_rate": 0.3157894736842105,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.32386363636363635,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "wolfson-disability-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits several key eligibility criteria, including the focus on disability, the required regulator rating, the minimum project cost, the need for a funding shortfall, and specific areas of interest for the funder.",
+          "claims": [
+            {
+              "text": "The applicant must be a registered or exempt charity (or equivalent) or a local authority.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant must be working with disability.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The applicant must have at least a 'Good' rating from a regulator such as CQC or Ofsted where applicable.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The applicant must be UK-based.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The project must be a capital project, specifically new build, refurbishment, or equipment.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The project must cost at least \u00a350,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The project must have a funding shortfall.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The project must help people to live more independently.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funder has particular interest in projects related to training, employment, and supported housing.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funder has particular interest in projects related to transitions from children's to adults' services.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funder has particular interest in organisations that struggle to raise funds from the public.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-historic-buildings-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text correctly identifies eligible organization types, the significance of the sites, and the geographic limitation, but omits specific listing requirements, public accessibility, project aims, and exclusions.",
+          "claims": [
+            {
+              "text": "Eligible organizations include registered charities or local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The historic, architectural, or cultural sites must be of national significance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to organizations in the UK only.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The site must be listed Grade I, II* or a Scheduled Monument (England and Wales), Category A, B or a Scheduled Monument (Scotland), or Grade A, B+ or a Scheduled Monument (Northern Ireland).",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The site must be open and accessible to the public for the majority of the year.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects must involve restoration or conservation of historic fabric and/or excellent interpretation.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Projects must aim at increased visitors, better public engagement or improved organisational sustainability.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Heritage assets in private ownership are excluded.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 10,
+      "n_claims_supported": 10,
+      "n_records_judged": 3,
+      "n_records_supported": 3,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "wolfson-disability-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria, project types, and minimum grant amount as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "Eligible organizations include registered or exempt charities (or equivalent) and local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is only available for projects within the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must be for new build, refurbishment, or equipment.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The minimum grant amount is \u00a325,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-historic-buildings-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for registered charities or local authorities managing nationally significant historic, architectural, or cultural sites in the UK.",
+          "claims": [
+            {
+              "text": "Applicants must be registered charities or local authorities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must manage nationally significant historic, architectural or cultural sites.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to UK applicants only.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wolfson-secondary-schools-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for state-funded secondary schools and sixth form colleges in the UK, including the requirement for a good Ofsted/Estyn rating and the need to demonstrate excellence or progress.",
+          "claims": [
+            {
+              "text": "The opportunity is for state-funded secondary schools and sixth form colleges in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible institutions must have a good Ofsted/Estyn rating.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible institutions must demonstrate excellence or progress.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "funder": "Paul Mellon Centre for Studies in British Art",
+  "model": "openrouter/amazon/nova-lite-v1",
+  "prompt_strategy": "minimal",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 1,
+  "config_hash": "5cbe298651cad2b0d76657a8daa81f6f15d3aedb1876ab6f385fad484ad44c49",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "ERBA Research Travel Bursaries",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support...r emerging researchers.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 14,
+      "n_claims_supported": 14,
+      "n_records_judged": 2,
+      "n_records_supported": 2,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Autumn 2026 Funding Round",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the opening and closing dates for the Autumn 2026 funding round and lists the types of projects and entities eligible for support.",
+          "claims": [
+            {
+              "text": "Grant applications for the Autumn 2026 round of funding are open.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Grant applications for the Autumn 2026 round of funding will close on Monday 14 September at 11:59pm BST.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "This round includes grants for individuals.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "This round includes grants for organizations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "This round supports research projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "This round supports publications.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "This round supports exhibitions.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "This round supports events.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "This round supports conservation.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "ERBA Research Travel Bursaries",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "ERBA Members can apply for Research Travel Bursaries.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The bursary is to support trips for research purposes.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The bursary provides up to \u00a3250.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The bursary can be used for travel, accommodation, and reasonable expenses.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications close on Monday 14 September, midday BST.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 8,
+      "n_claims_supported": 4,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.5,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "ERBA Research Travel Bursaries",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text correctly identifies that the opportunity is open to ERBA members conducting research in British art, but it omits several key eligibility criteria, purpose details, and the funding period.",
+          "claims": [
+            {
+              "text": "Eligibility is restricted to Members of Emerging Researchers in British Art (ERBA).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Membership in ERBA may be pending at the time of application.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The bursary must support a specific trip, such as a gallery, museum, collection, or site visit.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The bursary must support a meeting with a key contact.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The bursary must support an event directly relevant to the research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The bursary cannot cover attendance fees.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The bursary cannot cover membership costs.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Funds must be used between November 2026 and April 2027.",
+              "claim_type": "deadline",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 2,
+      "n_claims_supported": 2,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Autumn 2026 Funding Round",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria mentioned in the page text, which states the opportunity is open to individuals and organizations conducting research in British art, visual culture, and architectural history.",
+          "claims": [
+            {
+              "text": "The funding opportunity is open to individuals and organizations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research must be in the field of British art, visual culture, and architectural history.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "ERBA Research Travel Bursaries",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ...arch Travel Bursaries'.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,520 @@
+{
+  "funder": "Society of Antiquaries of London",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "chain_of_thought",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 3,
+  "config_hash": "367a3907ff5fdae27a602e342e119ede6b8f59facb78295e9b4003546ae2c6c4",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 10,
+      "n_claims_supported": 6,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.6,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the number of annual application rounds and their specific dates, but omits details about the grant amount, the specific purpose of the grants, the eligibility criteria regarding the age and type of features, and the requirement to follow SPAB principles.",
+          "claims": [
+            {
+              "text": "Grants are available from the Morris Fund.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Grants are for conservation of decorative or non-structural interior features.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Eligible features must be in places of worship.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible features must be in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible features must pre-date 1896.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Work must follow SPAB principles.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "There are two application rounds per year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The application deadline is March 31st each year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The application deadline is August 31st each year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Grant amounts range from \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 23,
+      "n_claims_supported": 23,
+      "n_records_judged": 9,
+      "n_records_supported": 9,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-grants-general",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose, scope, and funding amount of the 'Research Awards' section of the provided page.",
+          "claims": [
+            {
+              "text": "The funding opportunity offers annual project grants.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grants support research into the human past.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research should focus on material culture or material remains.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are no period restrictions for the research.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are no geographic restrictions for the research.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are no disciplinary restrictions for the research.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant amount is between \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "marion-wilson-award",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ...ion of the opportunity.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "joan-pye-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for the Joan Pye Awards, which are specifically for early-career researchers in prehistoric and Roman archaeology in the United Kingdom.",
+          "claims": [
+            {
+              "text": "The award is for early-career researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The award is for researchers in prehistoric and Roman archaeology.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The award is for researchers in the United Kingdom.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hugh-chapman-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately describes the purpose of the Hugh Chapman Memorial Awards, which are for research projects on the Western Roman Empire or antiquarian matters in London and its environs, as stated in the page text.",
+          "claims": [
+            {
+              "text": "The award is for research projects on the Western Roman Empire.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award is for research projects on antiquarian matters in London and its environs.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "beatrice-di-cardi-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text correctly identifies that there is a named award with an annual deadline of 7 April, and that the specific focus of this award is not detailed in the provided text.",
+          "claims": [
+            {
+              "text": "There is a named award.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The focus of the named award is not specified.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The annual deadline for this award is 7 April.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "janet-arnold-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text correctly identifies that there is a named award with an annual deadline of 7 April, which is explicitly stated in the page text under the 'Janet Arnold Awards' section.",
+          "claims": [
+            {
+              "text": "There is a named award with an annual deadline of 7 April.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "tessa-mortimer-wheeler-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text correctly identifies that there is a named award with an annual deadline of 7 April, which is explicitly stated in the page text under the 'Janet Arnold Awards' section.",
+          "claims": [
+            {
+              "text": "There is a named award with an annual deadline of 7 April.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-lambarde-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text correctly identifies that there is a named award with an annual deadline of 7 April, which is explicitly stated in the page text under the 'Janet Arnold Awards' section.",
+          "claims": [
+            {
+              "text": "There is a named award with an annual deadline of 7 April.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hugh-phillips-wainwright-research-archaeology-wales-open-research",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately states that there are research grant categories with an annual deadline of January 15, and that the purpose of these grants is for research, as supported by the provided page text.",
+          "claims": [
+            {
+              "text": "There are research grant categories with an annual deadline of January 15.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the grants is for research.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately states that there are two annual application rounds for church conservation grants with deadlines on March 31st and August 31st, which is directly supported by the page text.",
+          "claims": [
+            {
+              "text": "There are two annual application rounds for church conservation grants.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The deadline for the first application round for church conservation grants is March 31st each year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline for the second application round for church conservation grants is August 31st each year.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 1,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 10,
+      "n_claims_supported": 10,
+      "n_records_judged": 9,
+      "n_records_supported": 9,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 1,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-grants-general",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "marion-wilson-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "joan-pye-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text claims that the opportunity is for early-career researchers within five years of completing their PhD. The page text explicitly states under the 'Joan Pye Awards' section that these awards are for 'early-career researchers (within five-years of completing their PhD)'.",
+          "claims": [
+            {
+              "text": "The opportunity is for early-career researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Researchers must be within five years of completing their PhD.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hugh-chapman-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "beatrice-di-cardi-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "janet-arnold-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "tessa-mortimer-wheeler-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-lambarde-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hugh-phillips-wainwright-research-archaeology-wales-open-research",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        }
+      ]
+    }
+  }
+}

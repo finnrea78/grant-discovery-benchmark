@@ -1,0 +1,240 @@
+{
+  "funder": "Nuffield Farming Scholarships Trust",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "minimal",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 3,
+  "config_hash": "e0e1ed45b34735e97dc3283761a5ffc8427eb766bc2ab736956679b9c50d3127",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "next-gen-2027",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text omits s...s not in the reference.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 11,
+      "n_claims_supported": 10,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.9090909090909091,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.9090909090909091,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "next-gen-2027",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately reflects the duration, target audience, funding details, and award amount of the scholarship. However, it incorrectly states the deadline for the 2026 scholarship, while correctly identifying the opening and closing dates for the 2027 applications.",
+          "claims": [
+            {
+              "text": "The program is a 30-day study program.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The program is for young people.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The program is fully funded.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The program includes travel.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The program includes subsistence.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The program includes conference attendance.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The program includes a \u00a36,000 award.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the award is to support the development of industry understanding.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The 2026 Next-Gen Scholarship applications closed on January 31, 2026.",
+              "claim_type": "deadline",
+              "supported": false
+            },
+            {
+              "text": "The 2027 Next-Gen applications will open in November 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline for applications is January 31, 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 4,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.75,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.75,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "next-gen-2027",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about age, residency, and specific interests, but omits the detail about the Nuffield Scholar network.",
+          "claims": [
+            {
+              "text": "The opportunity is for young people aged 18-24.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be UK residents.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a demonstrable interest in dairy or regenerative agriculture.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity links successful applicants to farmers via the Nuffield Scholar network.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 4,
+      "n_claims_supported": 4,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "next-gen-2027",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria mentioned in the page text, specifically regarding residency, age, and interest in dairy or regenerative agriculture.",
+          "claims": [
+            {
+              "text": "Applicants must be UK residents.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be aged 18-24.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a demonstrable interest in dairy agriculture.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a demonstrable interest in regenerative agriculture.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

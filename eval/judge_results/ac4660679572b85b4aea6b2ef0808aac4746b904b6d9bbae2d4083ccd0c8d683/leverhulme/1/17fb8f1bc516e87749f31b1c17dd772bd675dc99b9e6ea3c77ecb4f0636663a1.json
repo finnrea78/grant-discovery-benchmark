@@ -1,0 +1,281 @@
+{
+  "funder": "The Leverhulme Trust",
+  "model": "openrouter/amazon/nova-lite-v1",
+  "prompt_strategy": "structured",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 1,
+  "config_hash": "ac4660679572b85b4aea6b2ef0808aac4746b904b6d9bbae2d4083ccd0c8d683",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 10,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.3,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.3,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Research Project Grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only captures claims related to the eligibility of researchers and the innovative/original nature of the research project, omitting details about the two-stage process, funding amount, duration, application status, and reopening dates.",
+          "claims": [
+            {
+              "text": "The funding is for a two-stage scheme.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "The first stage is an outline proposal.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "The second stage is a detailed proposal.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "The funding is for an innovative research project.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The maximum funding amount is \u00a3500,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The funding duration is up to 5 years.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The detailed stage is currently accepting applications from invited applicants.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "The outline stage reopens in autumn 2026.",
+              "claim_type": "deadline",
+              "supported": false
+            },
+            {
+              "text": "Applicants must be based at universities or institutions of higher education.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research project must be original.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 2,
+      "n_claims_supported": 2,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Research Project Grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria and the purpose of the funding opportunity as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "Researchers based at universities or institutions of higher education are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose is to undertake an innovative and original research project.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 10,
+      "n_claims_supported": 6,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.6,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Research Project Grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports some eligibility and process claims but omits or contradicts several key eligibility and process details from the reference text.",
+          "claims": [
+            {
+              "text": "Applicants must be based at UK universities or higher education institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "UK independent research institutes are eligible on a trial basis.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The Detailed Application stage is invite-only, with invitations coming from the Outline stage.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Up to three co-applicants are permitted.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Overseas co-applicants are allowed.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must be employed at an eligible UK university with research degree awarding powers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants should demonstrate scholarship at the highest level.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants do not need to be of professorial standing.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Candidates must explicitly state the proposed outcomes of their research.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Previous holders of a Major Research Fellowship are not eligible to apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 5,
+      "n_claims_supported": 1,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.2,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.2,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Research Project Grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text makes claims about applicant scholarship level, professorial standing, stating research outcomes, and previous fellowship status that are not present in the provided page text. The page text does confirm that applicants must be employed at eligible UK universities.",
+          "claims": [
+            {
+              "text": "Applicants must be employed at an eligible UK university (i.e. with research degree awarding powers).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants should be able to demonstrate scholarship at the highest level.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants need not already be of professorial standing.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Candidates should state explicitly what the proposed outcomes of their research will be.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Previous holders of a Major Research Fellowship are not eligible to apply.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

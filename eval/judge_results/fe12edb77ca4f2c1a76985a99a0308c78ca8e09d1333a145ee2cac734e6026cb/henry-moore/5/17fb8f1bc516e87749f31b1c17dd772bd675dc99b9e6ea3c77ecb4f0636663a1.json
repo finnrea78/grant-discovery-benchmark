@@ -1,0 +1,361 @@
+{
+  "funder": "Henry Moore Foundation",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "structured",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 5,
+  "config_hash": "fe12edb77ca4f2c1a76985a99a0308c78ca8e09d1333a145ee2cac734e6026cb",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 5,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.6,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "visiting-research-fellowships",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits the specific duration for Senior Fellowships and the explicit mention of the three fellowship variants, while accurately capturing the general duration, location, and included benefits.",
+          "claims": [
+            {
+              "text": "The fellowship duration is one month, or six weeks for Senior Fellowships.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The fellowship involves using the Foundation's research facilities in Leeds or Hertfordshire.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The fellowship includes accommodation.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The fellowship includes a travel and subsistence allowance.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "There are three variants: Visiting Research Fellowships, Artist Research Fellowships, and Senior Fellowships.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 8,
+      "n_claims_supported": 7,
+      "n_records_judged": 2,
+      "n_records_supported": 1,
+      "claim_rate": 0.875,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.875,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.5,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "henry-moore-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"All claims made in the a...s for the Autumn round.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "visiting-research-fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the information provided on the page regarding the purpose of the fellowships, what is included, the application deadline for the current cycle, and when the next application round will open.",
+          "claims": [
+            {
+              "text": "Fellowships enable researchers to spend a month using the Henry Moore Institute's facilities in Leeds or Henry Moore Studios & Gardens in Hertfordshire.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Fellowships include accommodation, travel, and subsistence.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applications for 2026/27 are closed.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The next round of applications opens in spring 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "dissertation-prize",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims that submissions for the next prize open in autumn, but the page text states that applications are open for the 2025 prize and the deadline is December 12, 2025, with winners notified in the new year. There is no mention of submissions opening in autumn.",
+          "claims": [
+            {
+              "text": "Two annual prizes are awarded for outstanding extended writing on contemporary, modern or historical sculpture.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The prizes are open to BA and MA students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The 2025 prize deadline has passed.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Submissions for the next prize open in autumn.",
+              "claim_type": "deadline",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 7,
+      "n_claims_supported": 5,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.7142857142857143,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.7142857142857143,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "visiting-research-fellowships",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most eligibility criteria but omits the requirement to make particular use of specific collections and the information about the lack of studio facilities for artist fellows.",
+          "claims": [
+            {
+              "text": "The fellowship is open to academics, curators, and artists working on historic and contemporary sculpture.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be able to make particular use of the Research Library, Archive of Sculptors' Papers, and Leeds Sculpture Collections.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Fellowships at Henry Moore Studios & Gardens are restricted to projects relating specifically to Henry Moore.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "No studio facilities are available to artist fellows.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "There are Research Fellowships for academics/curators.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are Artist Research Fellowships for artists.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are Senior Fellowships for established scholars.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 16,
+      "n_claims_supported": 15,
+      "n_records_judged": 3,
+      "n_records_supported": 2,
+      "claim_rate": 0.9375,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.9166666666666666,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.6666666666666666,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "henry-moore-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims that non-profit organisations must have been established and operating for at least 12 months, but this specific duration requirement is not mentioned in the provided page text.",
+          "claims": [
+            {
+              "text": "UK and international non-profit organisations are eligible for most categories.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Non-profit organisations must have been established and operating for at least 12 months to be eligible for most categories.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Individual sculpture historians, academics, and conservators are eligible for the Research and Travel category.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Individuals independently developing their own artistic practice are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "visiting-research-fellowships",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text regarding eligibility criteria and fellowship types are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Academics, curators, artists, and researchers are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be working on historic and contemporary sculpture.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Research Fellowships at the Institute are for academics/curators.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Artist Research Fellowships are for artists.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Senior Fellowships are for established scholars.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Fellowships at Studios & Gardens are only for projects related to Henry Moore.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "dissertation-prize",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for the dissertation prize as stated in the page text, including student level, academic year of submission, university location, subject matter, and publication status.",
+          "claims": [
+            {
+              "text": "The opportunity is open to BA and MA students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to students of all disciplines.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Dissertations must have been submitted within the past academic year.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Dissertations must have been submitted at a UK university.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Dissertations must relate directly to sculpture.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Dissertations must not have been previously published.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

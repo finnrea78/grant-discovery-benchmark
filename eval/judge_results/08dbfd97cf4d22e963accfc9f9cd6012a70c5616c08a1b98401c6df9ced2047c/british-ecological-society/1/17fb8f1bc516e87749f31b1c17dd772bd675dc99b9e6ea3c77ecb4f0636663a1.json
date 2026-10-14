@@ -1,0 +1,271 @@
+{
+  "funder": "British Ecological Society",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 1,
+  "config_hash": "08dbfd97cf4d22e963accfc9f9cd6012a70c5616c08a1b98401c6df9ced2047c",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 5,
+      "n_claims_supported": 5,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "annual-meeting-grants-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures all the factual claims present in the reference text regarding eligibility, purpose, and amount.",
+          "claims": [
+            {
+              "text": "The grant supports researchers based in Global South countries.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is intended to support travel from the applicant's country of residence in the Global South to the UK and return travel to that country after the meeting.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The maximum grant award is \u00a31000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant can cover costs directly related to attending the meeting, such as registration costs, transport, food and accommodation.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant is for attending the BES Annual Meeting in the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 7,
+      "n_claims_supported": 7,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "annual-meeting-grants-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, including the grant amount, eligibility criteria for Global South researchers, the purpose of attending the BES Annual Meeting in the UK, the covered expenses, and the application opening and closing dates.",
+          "claims": [
+            {
+              "text": "Travel grants are available up to \u00a31,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for Global South researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are to attend the BES Annual Meeting 2026.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The BES Annual Meeting 2026 is in the UK.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grants cover travel, registration, food, and accommodation.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications open on July 17, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications close on September 8, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 8,
+      "n_claims_supported": 5,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.625,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.625,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "annual-meeting-grants-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits the claim that the applicant can be at any stage in their research career and the claims regarding travel originating from and returning to the Global South country of residence.",
+          "claims": [
+            {
+              "text": "Applicant must be a BES member.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicant can be at any stage in their research career.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicant must be a citizen of the Global South.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicant must be based in the Global South.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicant must be travelling from the country they are based in the Global South.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicant must be returning to the country they are based in the Global South.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicant must have applied to present at the Annual Meeting.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicant must be at least three years since they were last awarded a BES Training and Travel Grant.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 5,
+      "n_claims_supported": 5,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "annual-meeting-grants-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text regarding eligibility criteria are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants must be a BES member.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be a citizen of a Global South country.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be based in a Global South country.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have applied to present at the BES Annual Meeting.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "At least three years must have passed since the applicant was last awarded a BES Training and Travel Grant.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

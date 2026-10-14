@@ -1,0 +1,250 @@
+{
+  "funder": "Cara (Council for At-Risk Academics)",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "structured",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 2,
+  "config_hash": "55a8c8a19c6f0f0e96ede18a0b3384349062afcc1557eaf1d7ea0023e03d79d0",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 6,
+      "n_claims_supported": 5,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.8333333333333334,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.8333333333333334,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "caras-fellowship-programme",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the claims from the reference text, but omits the claim that the program is open to direct applications.",
+          "claims": [
+            {
+              "text": "The program places at-risk academics in temporary refuge at universities and research institutes.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The refuge placements are typically for 2 or 3 years.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The program is open to direct applications.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Applications are considered on a rolling basis.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The program is primarily for academics in the UK, but also accepts applications from elsewhere.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The program provides visa support and practical arrangements for fellows and their families.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 7,
+      "n_claims_supported": 6,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.8571428571428571,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.8571428571428571,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "caras-fellowship-programme",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately describes the purpose and nature of the fellowship program, including the types of placements and support offered. However, the claim about applications being considered on a rolling basis is not explicitly stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The program is a rescue mission for academics in immediate danger of imprisonment, injury, or death.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The program helps academics find temporary refuge.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The temporary refuge placements are typically for 2- or 3-year postdoctoral or PhD positions.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The placements are at universities and research institutions in the UK and elsewhere.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The program provides visa support.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The program provides practical arrangements for the Fellow and accompanying family members.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications are considered on a rolling basis.",
+              "claim_type": "deadline",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "caras-fellowship-programme",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support...visa/practical support.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 8,
+      "n_claims_supported": 8,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "caras-fellowship-programme",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is open to direct applications from individual academics.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to academics from any country.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to academics from any continent.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be at risk in their home country or have been recently displaced.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Nationality is not a barrier to eligibility.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity covers academics needing postgraduate qualifications, such as a PhD.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity covers academics needing postdoctoral placements.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to academics from all disciplines.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

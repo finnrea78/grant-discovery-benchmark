@@ -1,0 +1,1238 @@
+{
+  "funder": "Society of Authors",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "few_shot",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 3,
+  "config_hash": "3f35d3189bc2850f14fc128291b4a51852460d758d1b5729eade46bb70721733",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 38,
+      "n_claims_supported": 27,
+      "n_records_judged": 5,
+      "n_records_supported": 1,
+      "claim_rate": 0.7105263157894737,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6948412698412698,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.2,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "authors-contingency-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits the eligibility criterion of being an 'established professional author' and the details about the application process being 'open year-round on a rolling basis' and that 'grant values vary to meet immediate need'.",
+          "claims": [
+            {
+              "text": "The grants are for small, short-term hardship.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for established professional authors.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The grants are for authors experiencing financial crisis.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Examples of qualifying crises include lost income, project falling through, illness, and one-off emergency expenses.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The application process is open year-round on a rolling basis.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Grant values vary to meet immediate need.",
+              "claim_type": "amount",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "authors-foundation",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose and eligibility of the grant but omits details about the submission process and deadlines.",
+          "claims": [
+            {
+              "text": "The grant is for developing a work-in-progress project.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Eligible project types include fiction, non-fiction, poetry, and script projects.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant can be used for research, travel, or general expenditure.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant can be used in addition to a publisher's advance.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are no deadlines for submissions.",
+              "claim_type": "deadline",
+              "supported": false
+            },
+            {
+              "text": "Submissions are accepted year-round.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Submissions are made via an emailed form.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "k-blundell-trust",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures all the factual claims present in the reference text regarding the grant's purpose, eligibility criteria, and application deadlines.",
+          "claims": [
+            {
+              "text": "The grant is for work-in-progress projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant is for fiction, non-fiction, poetry, and script projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant is for British authors.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is for authors under 40 years old.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is for authors resident in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is for authors whose work increases social awareness.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant is currently closed.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The grant will re-open for applications in 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "soa-access-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the claims related to the purpose and deadline of the grant, but omits details about the typical grant amount and the rolling assessment process.",
+          "claims": [
+            {
+              "text": "Grants are available for travel expenses.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for subsistence expenses.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for childcare or carer support.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for access needs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are intended to enable authors to attend events, residencies, and retreats.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are currently closed.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The grants are expected to re-open for applications in 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The grants are usually \u00a3150 or less.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Applications are normally assessed on a rolling basis.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "strachey-trust-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the eligibility and purpose of the grant but omits details about the grant amount and the rolling assessment process.",
+          "claims": [
+            {
+              "text": "Grants are available for authors.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the grant is to enable authors to travel to a UK or Republic of Ireland archive or collection.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The travel is for researching manuscript material.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research must be for a specific full-length literary project.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The literary project must be likely to be published.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are up to \u00a3500.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Grants are assessed on a rolling basis.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Decisions are usually made within two weeks.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 86,
+      "n_claims_supported": 86,
+      "n_records_judged": 5,
+      "n_records_supported": 5,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "authors-contingency-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose and nature of the grants as described in the provided page text.",
+          "claims": [
+            {
+              "text": "The grants are small and short-term.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for authors experiencing financial difficulty.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are intended to help authors during moments of crisis.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Examples of crises include lost income, project shortfalls, illness, home changes, and one-off expenses.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "authors-foundation",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Grants are available for works-in-progress in fiction, non-fiction, poetry, and script projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants can be used for research, travel, or other expenditures.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are awarded in addition to any publisher's advance.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Authors\u2019 Foundation fund is open to writers who have been previously published or have a contract for their project with a commercial UK publisher or producer.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are usually between \u00a32,000-\u00a33,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "There are no deadlines for this fund as it accepts submissions on a rolling basis.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "For book projects, applicants must have been commissioned by a commercial UK or Irish publisher to write or translate a full-length work of fiction, poetry, or non-fiction and need funding for research, travel, or other expenditure.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Alternatively, for book projects, applicants without a contractual commitment with a publisher must have had at least one book published commercially by a UK or Irish publisher, of which they are the sole author or translator, and there is a strong likelihood that their next book will be published in the UK or Ireland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "In both book project cases, applicants must have a non-contributory contract where the author does not pay funds towards publication costs.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "For script projects, applicants must have previously had a work of which they are the sole author professionally performed on stage, screen, or radio in the UK or Ireland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Alternatively, for script projects, applicants must be currently under contract to write a script that will be professionally performed on stage, screen, or radio in the UK or Ireland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Hybrid and self-published books are not eligible for the funds.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants cannot be awarded to cover publication, promotion, or production costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants cannot fund student tuition fees.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are only awarded for one work-in-progress.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Editors are not eligible to apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications for AI generated works are not accepted.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "No author may apply to the same assessor panel twice.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants who have previously received a K Blundell Trust Award or Author\u2019s Foundation grant must wait four years before re-applying to the fund.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The Authors\u2019 Foundation accepts submissions for fiction, non-fiction, poetry, and script projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Authors\u2019 Foundation was set up from donations by authors in 1984.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The Authors\u2019 Foundation has received contributions from authors, charitable trusts, and the Royal Literary Fund.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The Society of Authors is one of the few organisations that awards grants to writers for works-in-progress.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The Authors\u2019 Foundation, K Blundell Trust, and Arthur Welton Foundation currently award over \u00a3360,000 each year.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applications are accepted on a rolling basis.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "To apply, download the form and submit it to grants@societyofauthors.org.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "There may be a wait of up to five months for a decision on an application to the Authors\u2019 Foundation.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "If a grant application is successful, payment will usually be made within 10 working days of the SoA receiving payment information.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Eric Ambler Awards are for a spy novel or thriller.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Taner Baybars Awards offer funding for original fiction in the fields of science fiction, fantasy, and magic realism.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The John Brooks Awards offer funding to writers based in the West Country or Wales.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The Antonia Fraser Grants are for a biography of a woman or women.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Arthur Welton Awards are generally awarded to poets.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Great Britain Sasakawa Grant of \u00a32,000 is awarded annually for works of fiction or non-fiction about any aspect of Japanese culture or society, or set in a Japanese context.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Authors\u2019 Foundation is a registered charity in England and Wales (charity number 326605).",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The Arthur Welton Foundation is a registered charity in England and Wales (charity number 282446).",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "k-blundell-trust",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, including details about the grant's purpose, eligibility criteria, and application timeline.",
+          "claims": [
+            {
+              "text": "The grants are for work-in-progress.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are for British authors.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be under 40 years old.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The work aims to increase social awareness.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are available for fiction projects.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are available for non-fiction projects.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are available for poetry projects.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are available for script projects.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The application period is currently closed.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The application period will re-open in 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "soa-access-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose of the grants and their current application status and expected reopening date as stated on the page.",
+          "claims": [
+            {
+              "text": "Grants are available for travel, subsistence, childcare, or access needs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "These grants enable authors to attend events, residencies, and retreats.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fund is currently closed for applications.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The fund is expected to re-open for applications in 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "strachey-trust-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, covering aspects like eligibility, purpose, amount, and application process.",
+          "claims": [
+            {
+              "text": "Grants are available to authors.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Authors must travel to a UK or Republic of Ireland archive or collection.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the travel is to research manuscript material.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research must be for a specific full-length literary project.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The project must have a strong likelihood of publication.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are up to \u00a3500.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Manuscripts include letters, diaries, or other unpublished matter pertaining to a person of note.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Manuscripts can include photographic or digitized copies.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grant fund is open to all authors as defined by the SoA criteria for Full Membership, though membership is not required.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be UK resident or British citizens.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must wish to access UK-based archives/collections.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grant funds can cover travel to archives/collections, including overnight accommodation and subsistence.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grant funds can cover childcare and carer support while the author is away researching.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grant funds can cover travel, accommodation, and subsistence for a companion if necessary.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grant funds can cover other access needs, such as materials translated into an accessible format.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grant funds can cover engaging a freelance to help clear copyright permissions.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grant funds can cover paying permission fees.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grant funds can cover retrospective access to archives/collections.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grant funds do not cover buying time or other travel/research costs (this is the remit of the Authors\u2019 Foundation).",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grant funds do not cover undergraduate, Masters, or PhD research.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grant funds do not cover projects that are self-published or where the author is contributing financially towards publication.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants are preferred to fund at least 25% of the cost themselves, but applications for up to 100% of costs can be made.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must be full-length books with a strong likelihood of publication.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "All travel and accommodation must be in line with the SoA Expenses Policy.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Successful applicants must provide electronic copies of all invoices/receipts upon completion of research.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Grants may be less than the amount requested.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Grants are discretionary and there is no process for appeal.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "One application may be made per calendar year.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Priority will be given to those who have not previously applied.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Successful applicants must wait four years before re-applying to the fund.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications can be submitted by email or post.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Claims are assessed on a rolling basis, usually within two weeks.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 33,
+      "n_claims_supported": 17,
+      "n_records_judged": 3,
+      "n_records_supported": 0,
+      "claim_rate": 0.5151515151515151,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.51010101010101,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 2,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "authors-contingency-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the eligibility criteria, but omits the requirement for authors to have been actively writing for over the past 3 years and the exclusion of early-career/non-professional authors and applications for specific writing projects.",
+          "claims": [
+            {
+              "text": "Applicants must be professional authors resident in the UK or British citizens.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible author types include fiction writers, illustrators, literary translators, scriptwriters, poets, journalists, and others.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Author-related activities must constitute a substantial portion of the applicant's annual income.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have been actively writing for over the past 3 years.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity is not open to editors.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is not open to copywriters.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is not open to salaried journalists.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity is not open to early-career/non-professional authors.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity is not for a specific writing project.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity is not open to those with salaried income for writing.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Membership of the Society of Authors is not required.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Previous recipients must wait four full calendar years before reapplying.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "authors-foundation",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text capture...ll grants specifically.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "k-blundell-trust",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support...ual award restrictions.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "soa-access-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately captures the eligibility criteria and the limit of one grant per calendar year, but omits several restrictions on how the grant can be used and the preference for previously unfunded applicants.",
+          "claims": [
+            {
+              "text": "The opportunity is open to all authors, defined as anyone who creates work for publication, broadcast or performance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must meet the SoA membership criteria, but membership is not required.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be UK and Irish residents or British/Irish citizens.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Only one grant can be awarded per calendar year.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Preference is given to applicants who have not been previously funded.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The grant cannot be used for events where the author is speaking.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The grant cannot be used for course fees.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The grant cannot be used for retrospective or already-attended events.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The grant cannot be used for publication or promotion costs.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The grant cannot be used for the London Book Fair.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The grant cannot be used for book launches.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "strachey-trust-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the eligibility criteria but omits the requirement to access UK/Republic of Ireland archives or collections and several exclusions.",
+          "claims": [
+            {
+              "text": "Applicants must be UK residents or British citizens.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be working on a specific full-length literary project with a strong likelihood of publication.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be authors as defined by SoA Full Membership criteria, but membership is not required.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be wishing to access UK/Republic of Ireland archives or collections.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Undergraduate, Masters, or PhD research is excluded.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Self-published or author-funded projects are excluded.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Permission fees are excluded.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Retrospective access is excluded.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Only one application is allowed per calendar year.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There is a four-year waiting period after a successful award before reapplying.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 33,
+      "n_claims_supported": 33,
+      "n_records_judged": 5,
+      "n_records_supported": 5,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "authors-contingency-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The fund is open to all professional authors who are resident in the UK or are British citizens.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fund is open to fiction writers, illustrators, literary translators, scriptwriters, poets, journalists, and others.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Author-related activities must make up a substantial amount of the applicant's annual income.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fund is not open to editors.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fund is not open to copywriters.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fund is not open to those with salaried income for writing.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Membership of the Society of Authors is not required.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Previous recipients must wait four full calendar years before reapplying.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "authors-foundation",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the eligibility criteria for the Authors' Foundation grant.",
+          "claims": [
+            {
+              "text": "The opportunity is open to writers who have been previously published.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to writers who have a contract for their project with a commercial UK publisher or producer.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "For book projects, applicants must have a non-contributory contract.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "For script projects, applicants must have had a sole-authored work professionally performed.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "For script projects, applicants must be under contract to write a script that will be professionally performed.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Hybrid and self-published books are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Previous recipients must wait four years before reapplying.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "k-blundell-trust",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the eligibility criteria for the K Blundell Trust.",
+          "claims": [
+            {
+              "text": "Applicants must be British authors under the age of 40.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be British by birth.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be currently resident in the United Kingdom.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have had a previous work, of which they are the sole author, published with a commercial UK publisher.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Hybrid/self-published books are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Previous recipients must wait four years before reapplying.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "soa-access-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria and the current status of the SoA Access Fund as described on the provided page, including its closure and expected reopening date.",
+          "claims": [
+            {
+              "text": "The fund is open to all authors, defined as anyone who creates work for publication, broadcast or performance.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants do not need to be a member of the SoA, but must meet their membership criteria.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fund is open to UK and Irish residents and British and Irish citizens.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants can only receive one grant per calendar year.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The SoA Access Fund is currently closed for applications.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The fund is expected to re-open for applications in 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "strachey-trust-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The grant is open to all authors who meet the Society of Authors' criteria for Full Membership, but membership itself is not required.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be UK residents or British citizens.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be working on a specific full-length literary project.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The literary project must have a strong likelihood of publication.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Only one application can be submitted per calendar year.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Successful applicants must wait four years before reapplying.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

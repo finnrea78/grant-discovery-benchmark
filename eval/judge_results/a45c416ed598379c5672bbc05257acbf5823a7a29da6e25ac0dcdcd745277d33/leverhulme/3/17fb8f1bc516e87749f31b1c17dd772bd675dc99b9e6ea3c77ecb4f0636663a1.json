@@ -1,0 +1,231 @@
+{
+  "funder": "The Leverhulme Trust",
+  "model": "openrouter/amazon/nova-lite-v1",
+  "prompt_strategy": "structured",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 3,
+  "config_hash": "a45c416ed598379c5672bbc05257acbf5823a7a29da6e25ac0dcdcd745277d33",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 5,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.6,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Art Scholarship Training Opportunities for Under 18s",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the age of beneficiaries and the timing of the arts training, but omits details about the funding channel (specialist institutions) and the funding frequency (triennial).",
+          "claims": [
+            {
+              "text": "Funds arts training for individuals under 18 years old.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Arts training is provided outside of regular school hours.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Arts training can occur on weekends, evenings, or during holiday periods.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding is provided via specialist arts institutions.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Funding is awarded on a triennial basis.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 3,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Art Scholarship Training Opportunities for Under 18s",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the information provided on the page regarding the types of arts sectors eligible, the criteria for support (excellence and need), and the specific age group and timing for the funded arts training.",
+          "claims": [
+            {
+              "text": "The Trust welcomes applications from all sectors of the fine and performing arts, including all types of music, drama, dance, film, and fine art.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The scheme supports excellence and need.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The scheme funds arts training for school-age children under 18 outside of regular school hours, such as for weekends, evenings, or during holiday periods.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 7,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.42857142857142855,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.42857142857142855,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Art Scholarship Training Opportunities for Under 18s",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text correctly identifies specialist arts training institutions and registered charities as eligible and that they must evidence outstanding teaching, but omits several key ineligibility criteria and the application limit per organisation.",
+          "claims": [
+            {
+              "text": "Eligible applicants are specialist arts training institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible applicants are registered charities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible applicants must evidence outstanding teaching in fine/performing arts.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Non-specialist arts schools are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Multi-faculty universities are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Individuals may not apply.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Only one application is allowed per organisation per round.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 2,
+      "n_claims_supported": 2,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "Art Scholarship Training Opportunities for Under 18s",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for organisations as stated in the page text.",
+          "claims": [
+            {
+              "text": "Eligible organisations are specialist arts training institutions or registered charities.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible organisations must be able to evidence the delivery of outstanding quality teaching within their field.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

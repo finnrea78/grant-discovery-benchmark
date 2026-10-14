@@ -1,0 +1,323 @@
+{
+  "funder": "Garfield Weston Foundation",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "minimal",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 1,
+  "config_hash": "6193098e749b172a7fa3120654fcb230dd99c9da9d666e75ad1ee266c5855472",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 6,
+      "n_claims_supported": 6,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "major-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures all the factual claims present in the reference text regarding the funding amount, process, and purpose.",
+          "claims": [
+            {
+              "text": "The funding route is for requests of \u00a3100,000 and above.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "An Expression of Interest form must be submitted.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Expression of Interest form is submitted through the Grants Management Portal.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Bespoke guidance is provided within 10 working days after submitting the Expression of Interest form.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A call may be arranged if the request is potentially suitable.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The grants are for large-scale capital, project, or core cost requests.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 15,
+      "n_claims_supported": 8,
+      "n_records_judged": 2,
+      "n_records_supported": 0,
+      "claim_rate": 0.5333333333333333,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.4444444444444444,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "regular-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text makes several claims about the purpose, eligibility, and process of the funding opportunity, but none of these claims are supported by the provided page text, which focuses solely on the application process and guidelines.",
+          "claims": [
+            {
+              "text": "Funding is available for UK charities.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Funding covers operating/core costs.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Funding covers specific projects/activities.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Funding covers capital projects, including building works, repairs, or necessary equipment.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Applications are reviewed in the order received.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Decisions are typically made within 4-6 months.",
+              "claim_type": "deadline",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "major-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text incorrectly states the minimum grant amount as \u00a3100,000, while the page specifies \u00a31 million. All other claims are supported by the page text.",
+          "claims": [
+            {
+              "text": "Major grants are available for requests of \u00a3100,000 or more.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Major grants are for large-scale capital, project, or core cost requests.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applicants must first complete an Expression of Interest form via the Grants Management Portal.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Foundation provides bespoke guidance within 10 working days after an Expression of Interest is submitted.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Foundation may arrange a call with applicants.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The minimum total cost for a major grant application is \u00a31 million.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "For core costs, the organization's annual income must be \u00a31 million or over to be eligible for a major grant.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "For capital or project costs, the organization's income does not need to be over \u00a31 million, but the total project cost must be at least \u00a31 million.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Local community capital projects (e.g., church or village hall) are advised to apply for a regular grant, typically up to a maximum of \u00a330,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 6,
+      "n_claims_supported": 4,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.6666666666666666,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6666666666666666,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "major-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits the claim that the total cost of what is being applied for must be at least \u00a31 million and the claim that eligibility is the same as the regular programme.",
+          "claims": [
+            {
+              "text": "The total cost of what is being applied for must be at least \u00a31 million.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "For core costs, the organisation's annual income must be \u00a31 million or over.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "For capital or project costs, the organisation's income need not exceed \u00a31 million but the total project cost must be at least \u00a31 million.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Local community capital projects (churches, village halls) are directed to the regular grants route instead.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "For local community capital projects, the typical maximum grant is \u00a330,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Same charity eligibility as the regular programme.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 5,
+      "n_claims_supported": 1,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.2,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.2,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "regular-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text makes several claims about eligibility criteria, but the provided page text only mentions the need for annual accounts and directs users to an eligibility quiz and application guidelines, without detailing specific organizational types or geographical restrictions for the work.",
+          "claims": [
+            {
+              "text": "Organizations must be UK registered charities, Charitable Incorporated Organisations (CIOs), or exempt/excepted organizations under Charity Commission guidelines.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Organizations must have at least one year's worth of annual accounts (independently audited or examined, or Charity Commission annual return).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Only one application at a time per organization is allowed.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Organizations must wait a year after a previous decision before reapplying.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Work must take place in the UK or UK Overseas Territories.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "major-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text accurat...nizations are eligible.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    }
+  }
+}

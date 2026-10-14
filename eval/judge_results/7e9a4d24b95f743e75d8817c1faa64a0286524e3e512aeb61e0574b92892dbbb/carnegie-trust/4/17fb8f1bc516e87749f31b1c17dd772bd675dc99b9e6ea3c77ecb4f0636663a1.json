@@ -1,0 +1,404 @@
+{
+  "funder": "Carnegie Trust for the Universities of Scotland",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "chain_of_thought",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 4,
+  "config_hash": "7e9a4d24b95f743e75d8817c1faa64a0286524e3e512aeb61e0574b92892dbbb",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 7,
+      "n_claims_supported": 6,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.8571428571428571,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.8571428571428571,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "undergraduate-tuition-fee-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most claims regarding the grant's purpose, eligibility, and application deadlines, but omits the historical context of the grant being offered since 1901.",
+          "claims": [
+            {
+              "text": "The grant covers undergraduate tuition fees.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant is for low-income students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is for students in Scotland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is for students who cannot get government fee support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant has been offered since 1901.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The application portal is open from June 1, 2026 to December 1, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The grant is for the academic year 2026-27.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 15,
+      "n_claims_supported": 13,
+      "n_records_judged": 2,
+      "n_records_supported": 1,
+      "claim_rate": 0.8666666666666667,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.875,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.5,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "undergraduate-tuition-fee-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the purpose, eligibility criteria, and application deadlines for the undergraduate tuition fee grants.",
+          "claims": [
+            {
+              "text": "The grants cover tuition fees for undergraduate degree study.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are for students from low-income households.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are for students who are ineligible for government tuition fee support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The application portal is open from June 1, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The application portal closes at 5pm on December 1, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The grants are for the academic year 2026-27.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grants are for undergraduate degree study at eligible Scottish Higher Education Institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "carnegie-morgan-scholarship",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims the scholarship supports Scotland's net-zero and biodiversity goals and is a rolling opportunity tied to admission, neither of which are mentioned in the provided page text.",
+          "claims": [
+            {
+              "text": "The scholarship is a partnership with the Royal Botanic Garden Edinburgh.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The scholarship is for the MSc in Biodiversity and Taxonomy of Plants.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The MSc is awarded by the University of Edinburgh.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The scholarship covers full tuition fees.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The scholarship provides a \u00a31,200 living-cost bursary.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the scholarship is to widen participation in postgraduate plant science.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the scholarship is to support Scotland's net-zero and biodiversity goals.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "This is a rolling opportunity tied to admission to the MSc course.",
+              "claim_type": "deadline",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 11,
+      "n_claims_supported": 4,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.36363636363636365,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.36363636363636365,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "undergraduate-tuition-fee-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures several key eligibility criteria but omits specific details regarding prior study, income banding, and the various immigration statuses that qualify an applicant.",
+          "claims": [
+            {
+              "text": "Applicants must be from low-income households.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not be eligible for government funding for tuition fees.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have an unconditional offer to study an undergraduate degree at an eligible Scottish institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have attended a secondary school or college in Scotland for at least two full years or have a substantial and recent connection to Scotland.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Household income thresholds apply, banded by number of dependants.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Most recipients previously withdrew from study.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Asylum seekers are also supported.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must be entitled to remain indefinitely in the UK.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must have Limited Leave to Remain under a visa that is valid for the entire duration of the course.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must be an asylum seeker.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must be ordinarily resident in Scotland.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 15,
+      "n_claims_supported": 12,
+      "n_records_judged": 2,
+      "n_records_supported": 1,
+      "claim_rate": 0.8,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.8333333333333333,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.5,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "undergraduate-tuition-fee-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the key eligibility criteria for the Undergraduate Tuition Fee Grants as presented in the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants must be from low-income households.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be ordinarily resident in Scotland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a Scottish connection.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not be eligible for government funding for tuition fees.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be enrolled on or hold an unconditional offer for an eligible undergraduate degree course.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be studying at a Scottish Higher Education Institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "carnegie-morgan-scholarship",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims that the scholarship is for students from low-income households, that applicants must be entitled to remain indefinitely in the UK, and that applicants must not have already obtained a postgraduate degree, none of which are mentioned in the provided page text.",
+          "claims": [
+            {
+              "text": "The scholarship is open to Scottish-domiciled students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The scholarship is open to students from low-income households.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The scholarship is for students accepted onto the MSc Biodiversity and Taxonomy of Plants program.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The MSc Biodiversity and Taxonomy of Plants program can be undertaken full-time or part-time.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be ordinarily resident in Scotland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be entitled to remain indefinitely in the UK.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must not have already obtained a postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The scholarship covers tuition fees.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The scholarship provides limited living costs support.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

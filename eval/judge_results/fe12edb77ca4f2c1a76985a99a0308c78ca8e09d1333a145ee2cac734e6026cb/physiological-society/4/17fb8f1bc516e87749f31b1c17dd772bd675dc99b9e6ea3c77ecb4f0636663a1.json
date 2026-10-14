@@ -1,0 +1,977 @@
+{
+  "funder": "The Physiological Society",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "structured",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 4,
+  "config_hash": "fe12edb77ca4f2c1a76985a99a0308c78ca8e09d1333a145ee2cac734e6026cb",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 29,
+      "n_claims_supported": 19,
+      "n_records_judged": 4,
+      "n_records_supported": 0,
+      "claim_rate": 0.6551724137931034,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6458333333333333,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 2,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "conference-attendance-award",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support...ary range of the award.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "education-and-teaching-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the purpose of the funding and the timeframe for fund usage, but omits details about the maximum funding amount and the possibility of part-funding larger projects.",
+          "claims": [
+            {
+              "text": "The funding supports members to develop new educational resources.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports members to conduct publishable educational research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research or resources must address a key question in physiology education.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The maximum funding amount is \u00a310,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The funding can part-fund larger projects.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Funds must be usable within 12 months of the grant award date.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-and-knowledge-exchange-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims related to the purpose of the funding, the timeframe for fund usage, and eligibility criteria, but omits details about the maximum funding amount and the possibility of part-funding larger projects.",
+          "claims": [
+            {
+              "text": "The funding supports members to conduct pilot studies.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports members to develop a new technique.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports members to finalise a project.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports members to promote knowledge exchange/impact.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is up to \u00a310,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The funding can part-fund larger projects.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Funds are usable within 12 months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Applications should be physiological in nature.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "institutional-engagement-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about who can receive funds, the types of events that can be funded, and what the funds cannot be used for, but omits details about the maximum funding amount and the exclusion of catering costs.",
+          "claims": [
+            {
+              "text": "Funds Society Representatives and members to host events at their organisation.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Events can include internal conferences, teaching symposia, seminars, and outreach.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the events is to promote the Society and physiology.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding is available up to \u00a31000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The final amount is set by reviewers.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Society will not fund catering.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Funding cannot be used for salary costs.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Funding cannot be used to attend conferences.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Funding cannot be used for membership payments.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "unlocking-futures-fund",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support...n of conference travel.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "equity-diversity-and-inclusion-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the purpose of the funding and the timeframe for fund usage, but omits details about the maximum amount and the assessment body, and does not specify the types of activities supported.",
+          "claims": [
+            {
+              "text": "The funding supports members to run activities promoting equity, diversity, and inclusion in physiological sciences.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for activities such as outreach, mentorship/networking, training, and visibility campaigns.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The maximum funding amount is \u00a31000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Funds must be used within 6 months of the award date.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The funding is assessed by the EDI Committee.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "The funding is intended for projects that directly investigate or address inclusion and diversity issues in the physiological sciences in either teaching or research.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 47,
+      "n_claims_supported": 47,
+      "n_records_judged": 6,
+      "n_records_supported": 6,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "conference-attendance-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the purpose, coverage, and application process of the Conference Attendance Award.",
+          "claims": [
+            {
+              "text": "Funding is available to support member engagement at the Society's own meetings.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding may also support attendance at Society-sponsored events, if funding allows.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award covers conference registration.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award covers attendance at meeting dinners.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award provides a contribution toward advanced standard travel and accommodation.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The contribution toward travel and accommodation is up to the total value of the award.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Reimbursement for travel and accommodation requires presentation of receipts.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Members can apply to attend up to three meetings with one application.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "education-and-teaching-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The award supports members who want to develop new educational resources.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award supports members who want to conduct publishable educational research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research or resources developed should address a key question in physiological education.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funds must be used within 12 months of the grant award date.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-and-knowledge-exchange-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The funding supports members who want to conduct pilot studies.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports members who want to develop a new technique.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports members who want to finalize a project.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports activities to promote knowledge transfer.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding supports activities to promote impact.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications should be physiological in nature.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funds must be used within 12 months of the grant award date.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "institutional-engagement-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, including the purpose of the funding, the types of events supported, the restrictions on fund usage, and the application deadline.",
+          "claims": [
+            {
+              "text": "Funding is provided to support Society Representatives and members in hosting events at their organization.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The events that can be funded include internal conferences, teaching symposia, seminars, or outreach events.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding cannot be used to support salary costs.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding cannot be used to attend conferences.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding cannot be used to fund membership payments.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The application round is currently open.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications will close on Monday 28 September 2026 at 23:59 BST.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "unlocking-futures-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, either explicitly stated or clearly implied.",
+          "claims": [
+            {
+              "text": "The fund provides additional support to help postdoctoral researchers achieve their full potential.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fund was started in memory of Professor Hisako Ikeda-Wolstencroft.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funds should be used within 12 months of receipt.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Funds cannot be used to pay staff salaries.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funds may be used for consumables.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funds may be used for registration for Higher Education Academy Fellowship.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funds may be used for other justifiable sundries.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "equity-diversity-and-inclusion-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The fund provides support for Members to run activities that address the principles of Equity, Diversity and Inclusion.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fund is intended for projects that directly investigate or address inclusion and diversity issues in the physiological sciences in either teaching or research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funds must be used within 6 months of the award date.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications have closed for 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications will reopen in 2027.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "To be eligible to apply for this award, applicants must be an Undergraduate & Masters, Postgraduate, Full member or Fellow of the Physiological Society in their second year of membership, or longer.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding cannot be used to support salary costs.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Funding cannot be used to attend conferences.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Activity outputs cannot be used for commercial gain.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Successful applicants will arrange for their institution to issue an invoice to The Society for the payment of funds.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The award cannot be paid direct to an individual/personal account.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Successful applicants will be asked to submit a report including a financial audit of spending no later than three months after the activity has been completed.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Any funds not used must be returned to The Society.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Successful applicants will also be asked to submit any material i.e., photographs, questionnaires collected from the project to demonstrate impact.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 31,
+      "n_claims_supported": 17,
+      "n_records_judged": 4,
+      "n_records_supported": 0,
+      "claim_rate": 0.5483870967741935,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5428571428571428,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 2,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "conference-attendance-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits several key eligibility criteria, including specific membership years, qualifying membership transitions, and the ineligibility of Associate members, while correctly capturing the general membership requirement and the abstract submission condition for certain member types.",
+          "claims": [
+            {
+              "text": "The opportunity is open to undergraduate and masters students.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity is open to postgraduate students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to Full members of The Physiological Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to Fellow members of The Physiological Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to members in their second year of membership.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity is open to members including those transitioning to qualifying membership.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Associate members are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Postgraduate applicants must be submitting or presenting an abstract at the meeting.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Full member applicants must be submitting or presenting an abstract at the meeting.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Fellow member applicants must be submitting or presenting an abstract at the meeting.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "education-and-teaching-award",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text omits s...rictions on fund usage.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "research-and-knowledge-exchange-award",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text omits m... in the reference text.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "institutional-engagement-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits several key eligibility criteria, including membership level, duration of membership, institutional membership count, and the ineligibility of associate members, while correctly capturing the requirement for support and a deadline-related condition.",
+          "claims": [
+            {
+              "text": "Applicants must be Undergraduate & Masters, Postgraduate, Full or Fellow members.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must have 2+ years' membership at the time of application.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applications must be supported by a Society Representative or a Fellow.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant's institution must have 3+ active Society members.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Associate members are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Only one award is permitted per institution per calendar year.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Events must take place after the application window closes.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "unlocking-futures-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures that applicants must be postdoctoral researchers and members of the Physiological Society, and that the funding is typically awarded only once per member, but omits details about institutional location, career track, membership duration, and associate member ineligibility.",
+          "claims": [
+            {
+              "text": "Applicants must be in a postdoctoral role.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be based at a UK or Republic of Ireland institution.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The research must advance physiology.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be on an academic research career track.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must have one or more years of paid Society membership.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Associate members are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The funding is typically awarded only once per member.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "equity-diversity-and-inclusion-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately captures most eligibility criteria and restrictions on fund usage, but omits the specific exclusion of associate members.",
+          "claims": [
+            {
+              "text": "The opportunity is open to undergraduate and master's students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to postgraduate students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to full members of the Physiological Society who have been members for at least two years.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to fellows of the Physiological Society who have been members for at least two years.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Associate members of the Physiological Society are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Funding cannot be used to support salary costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding cannot be used to attend conferences.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 24,
+      "n_claims_supported": 24,
+      "n_records_judged": 6,
+      "n_records_supported": 6,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "conference-attendance-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria, award value variation, and application frequency variation based on membership category as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is open to members of the Physiological Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Postgraduate, Full, and Fellow member applicants must be submitting or presenting an abstract at the meeting they wish to attend.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The award value varies by membership category.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The application frequency varies by membership category.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "education-and-teaching-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is open to members of the Physiological Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant's host institution must be willing to administer the award.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funds cannot be used to buy out teaching time.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funds cannot be used to support salary costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funds cannot be used to attend conferences.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-and-knowledge-exchange-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is open to members of the Physiological Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The applicant's host institution must be willing to administer the award.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding cannot be used to support salary costs.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding cannot be used to attend conferences.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "institutional-engagement-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The award is open to Society Representatives.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The award is open to members of the Physiological Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications must be supported by a Society Representative or a Fellow.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Events must take place after the application window closes.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "unlocking-futures-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria and the limitation on receiving the award more than once as stated in the page text.",
+          "claims": [
+            {
+              "text": "The funding is open to postdoctoral researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be members of the Physiological Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Members will normally only be awarded this funding once during their period of membership.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "equity-diversity-and-inclusion-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria and funding restrictions mentioned in the provided page text.",
+          "claims": [
+            {
+              "text": "The fund is open to Undergraduate & Masters, Postgraduate, Full members or Fellows of the Physiological Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible members must be in their second year of membership or longer.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding cannot be used to support salary costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding cannot be used to attend conferences.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

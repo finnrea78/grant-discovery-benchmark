@@ -1,0 +1,231 @@
+{
+  "funder": "Hakluyt Society",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "few_shot",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 3,
+  "config_hash": "3f35d3189bc2850f14fc128291b4a51852460d758d1b5729eade46bb70721733",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 4,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.75,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.75,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "hakluyt-research-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the purpose of the funding and the reimbursement process, but omits the detail that payments are made via series editors.",
+          "claims": [
+            {
+              "text": "The funding reimburses agreed research expenditure for preparing publication projects for submission to the Society.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding reimburses agreed research expenditure for research toward completion of publication projects already under contract.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Payments are made as reimbursement of previously-agreed expenditure.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Payments are made via the series editors.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 6,
+      "n_claims_supported": 6,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "hakluyt-research-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The Hakluyt Society supports research for preparing publication proposals to be submitted to the Society.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Hakluyt Society supports research on proposals already approved where volumes are under contract.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Payments are made as reimbursements of agreed expenditure.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The funding comes from the Harry & Grace Smith Fund.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The research supported is relevant to volumes for the main series (Series III).",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research supported is relevant to volumes for Hakluyt Society Studies in the History of Travel.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 4,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.75,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.75,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "hakluyt-research-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the eligibility criteria for researchers preparing or working on publication proposals and clarifies that membership is not required, but omits the specific fund source.",
+          "claims": [
+            {
+              "text": "Researchers preparing publication proposals for the Society are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Researchers working on proposals already approved and under contract to the Society are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Recipients need not be members of the Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is from the Society's Harry & Grace Smith Fund.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 3,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "hakluyt-research-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for both categories A and B, and explicitly states that Society membership is not a requirement.",
+          "claims": [
+            {
+              "text": "The opportunity is open to researchers preparing publication proposals for submission to the Society (category A).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to researchers working on proposals approved and under contract for publication (category B).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Recipients of support are not required to be members of the Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

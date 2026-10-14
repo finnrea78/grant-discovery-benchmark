@@ -1,0 +1,667 @@
+{
+  "funder": "Society of Antiquaries of London",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "chain_of_thought",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 3,
+  "config_hash": "d614ad63864422a328f6b9bf61280e416bc807801ef323005f561a79270aab1e",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 10,
+      "n_claims_supported": 8,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.8,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.8,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "morris-church-conservation",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose of the grants, the location of eligible features, the requirement to follow SPAB principles, the number of application rounds per year, and specific deadlines, but omits the grant amount range and the pre-1896 eligibility criterion.",
+          "claims": [
+            {
+              "text": "Grants are available from the Morris Fund.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Grants are for conservation of decorative or non-structural interior features.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Eligible features must be pre-1896.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Eligible features must be in UK places of worship.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Work must follow SPAB principles.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "There are two application rounds per year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The application deadline for one round is March 31.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The application deadline for another round is August 31.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The August 31, 2026 round is currently open.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Grant amounts range from \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 32,
+      "n_claims_supported": 30,
+      "n_records_judged": 10,
+      "n_records_supported": 8,
+      "claim_rate": 0.9375,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.9416666666666667,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.8,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the scope, purpose, and financial parameters of the grant program.",
+          "claims": [
+            {
+              "text": "The funding opportunity offers annual project grants.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grant amounts range from \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants support research into the human past through its material culture or material remains.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research areas include archaeology.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research areas include art history.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research areas include architectural and buildings history.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research areas include material culture items and assemblages.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research areas include the history of collecting.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research areas include intellectual enquiry into the human past.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hugh-phillips",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text correct...ictions for this grant.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "margaret-tom-jones",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that the opportunity is a research award within the Research and Travel Grants programme, which is directly supported by the page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity is a research award.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research award is part of the Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wainwright-wales",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose and program of the funding opportunity as described in the provided page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity is a research award.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award is part of the Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award is for research archaeology in Wales.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "open-research",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that the 'Open research award' is within the 'Research and Travel Grants programme', which is directly supported by the page text.",
+          "claims": [
+            {
+              "text": "The Open Research award is part of the Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "beatrice-de-cardi",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that the opportunity is a research award within the Research and Travel Grants programme, which is directly supported by the page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity is a research award.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research award is part of the Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "janet-arnold",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes that the funding opportunity is a research award within the Research and Travel Grants programme specifically for dress and textile history, which is directly supported by the page text describing the Janet Arnold Awards.",
+          "claims": [
+            {
+              "text": "The funding opportunity is a research award.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity is part of the Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity is for dress and textile history.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wheeler-travel",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that the funding opportunity is a 'Travel award within the Research and Travel Grants programme', which is directly supported by the page text describing the 'Research and Travel Grants' programme and its associated awards.",
+          "claims": [
+            {
+              "text": "The funding opportunity is a travel award.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The travel award is part of the Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "lambarde-travel",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes that the funding opportunity is a travel award within the Research and Travel Grants programme for research travel, which is directly supported by the page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity is a travel award.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The travel award is part of the Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the award is for research travel.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "morris-church-conservation",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The page text confirms that there are two application rounds for William and Jane Morris Church Conservation grants with deadlines of March 31 and August 31 annually. However, it does not state that the August 31, 2026 round is currently open.",
+          "claims": [
+            {
+              "text": "Grants are available for church conservation.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are two application rounds each year for church conservation grants.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The application deadlines for church conservation grants are March 31 and August 31.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The August 31, 2026 application round for church conservation grants is currently open.",
+              "claim_type": "deadline",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "linda-parry-textile",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims that no references are required, but the page text explicitly states that references are required for the William and Jane Morris Church Conservation Grants, with a deadline of January 21st.",
+          "claims": [
+            {
+              "text": "Grants are available for textile conservation and research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications are made via the William and Jane Morris Church Conservation Grants form.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "No references are required for applications.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 1,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "morris-church-conservation",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 27,
+      "n_claims_supported": 27,
+      "n_records_judged": 9,
+      "n_records_supported": 9,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 2,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the provided page text, specifically regarding the applicant's role, the exclusion of degree-related work, and the prohibition of retrospective applications.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be granted for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hugh-phillips",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the provided page text, specifically regarding the applicant's role, the exclusion of degree-related work, and the prohibition of retrospective applications.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be granted for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "margaret-tom-jones",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the provided page text, specifically regarding the applicant's role, the exclusion of degree-related work, and the prohibition of retrospective applications.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be granted for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wainwright-wales",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the provided page text, specifically regarding the applicant's role, the exclusion of degree-related work, and the prohibition of retrospective applications.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be granted for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "open-research",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the provided page text, specifically regarding the applicant's role, the exclusion of degree-related work, and the prohibition of retrospective applications.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be granted for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "beatrice-de-cardi",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the provided page text, specifically regarding the applicant's role, the exclusion of degree-related work, and the prohibition of retrospective applications.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be granted for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "janet-arnold",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the provided page text, specifically regarding the applicant's role, the exclusion of degree-related work, and the prohibition of retrospective applications.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be granted for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wheeler-travel",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the provided page text, specifically regarding the applicant's role, the exclusion of degree-related work, and the prohibition of retrospective applications.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be granted for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "lambarde-travel",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the provided page text, specifically regarding the applicant's role, the exclusion of degree-related work, and the prohibition of retrospective applications.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be granted for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "morris-church-conservation",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "linda-parry-textile",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        }
+      ]
+    }
+  }
+}

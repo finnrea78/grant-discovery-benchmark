@@ -1,0 +1,70 @@
+[project]
+name = "grant-eval"
+version = "0.1.0"
+description = "Evaluation harness for LLM agents that find open grant calls on funder websites"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    # Transport / model routing (thin vendor seam; agent loop is ours). LiteLLM routes
+    # Anthropic and OpenAI models behind one `completion()` and reports token usage/cost.
+    "litellm>=1.50",
+    # Schemas / validation
+    "pydantic>=2.7",
+    # Fetch + clean (mirror capture, page + PDF text)
+    "playwright>=1.47",
+    "trafilatura>=1.10",
+    "pymupdf>=1.24",
+    "pdfplumber>=0.11",
+    "tenacity>=9.0",
+    # Ground-truth review workbook (one sheet per funder; labelling happens in it)
+    "openpyxl>=3.1",
+    # Analysis
+    "pandas>=2.2",
+    "scipy>=1.13",
+    "statsmodels>=0.14",
+    "scikit-learn>=1.5",
+    "seqeval>=1.2",
+    "matplotlib>=3.9",
+    "seaborn>=0.13",
+    "jupyter>=1.1",
+    "python-dotenv>=1.2.2",
+]
+
+# Console scripts: `uv run <name>` from the repo root. uv syncs the venv first, so
+# these work on a fresh clone with no activate step. `python -m grant_eval.<module>`
+# still works and is what the shell scripts in ralph/ use.
+[project.scripts]
+snapshot = "grant_eval.dataset.snapshot:main"
+serve = "grant_eval.dataset.serve:main"
+serve_all = "grant_eval.dataset.serve_all:main"
+refine = "grant_eval.dataset.refine:main"
+gt_workbook = "grant_eval.dataset.gt_workbook:main"
+gt_export = "grant_eval.dataset.gt_export:main"
+skeleton = "grant_eval.scoring.skeleton:main"
+score = "grant_eval.scoring.score:main"
+aggregate = "grant_eval.scoring.aggregate:main"
+freeze_scores = "grant_eval.scoring.freeze_scores:main"
+judge = "grant_eval.scoring.judge:main"
+grid = "grant_eval.config:main"
+grid_run = "grant_eval.run:main"
+lock_config = "grant_eval.grid.lock_config:main"
+grid_status = "grant_eval.grid.status:main"
+figures = "grant_eval.analysis.figures:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/grant_eval"]
+
+[tool.uv]
+package = true
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

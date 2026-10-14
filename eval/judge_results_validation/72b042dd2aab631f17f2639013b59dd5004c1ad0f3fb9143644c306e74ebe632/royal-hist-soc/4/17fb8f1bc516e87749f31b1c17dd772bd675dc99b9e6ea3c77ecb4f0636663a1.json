@@ -1,0 +1,869 @@
+{
+  "funder": "Royal Historical Society",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "minimal",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 4,
+  "config_hash": "72b042dd2aab631f17f2639013b59dd5004c1ad0f3fb9143644c306e74ebe632",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 25,
+      "n_claims_supported": 19,
+      "n_records_judged": 5,
+      "n_records_supported": 2,
+      "claim_rate": 0.76,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.77,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.4,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "early-career-fellowship-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the amount, purpose, and duration of the funding, but omits the detail about flexibility in cost categories.",
+          "claims": [
+            {
+              "text": "The funding is up to \u00a32,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is for a discrete post-PhD research project or career-building activity.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The project or activity must last no more than six months.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "There is flexibility over what counts as reasonable maintenance and research costs.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "martin-lynn-scholarship",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures all factual claims present in the reference text regarding the scholarship's frequency, amount, eligibility criteria, and purpose.",
+          "claims": [
+            {
+              "text": "The scholarship is awarded annually.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The scholarship amount is \u00a31,500.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The scholarship assists a postgraduate researcher of African history.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The scholarship supports doctoral research.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "open-research-support-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures all the specific details about the grant amounts, eligibility, and purposes mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The funding offers grants of \u00a3500 or \u00a31,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is intended to support historians.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used to visit archives.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used to visit historical sites.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used to conduct interviews.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used to travel to academic conferences.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "postgraduate-research-support-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the funding amounts, eligibility, and purpose, but omits information about the award frequency and review timeline.",
+          "claims": [
+            {
+              "text": "The funding is available in amounts of \u00a3500 or \u00a31,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is for postgraduate historians.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the funding is to enable historical research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is awarded in two rounds per year.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Applications are reviewed approximately six weeks after each deadline.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "early-career-research-support-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the grant amounts, the target audience (early career historians), and the purpose of the funding, but omits details about the award frequency, the specific definition of an early career historian, and the membership requirement for the Royal Historical Society.",
+          "claims": [
+            {
+              "text": "The funding is available in grants of \u00a3500 or \u00a31,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is for early career historians.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the funding is to enable early career historians to undertake research activities essential to their projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is awarded in two rounds a year.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Early career historians are defined as those within 5 years of submitting their corrected PhD in a historical subject.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must be members of the Royal Historical Society.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 45,
+      "n_claims_supported": 44,
+      "n_records_judged": 5,
+      "n_records_supported": 4,
+      "claim_rate": 0.9777777777777777,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.9846153846153847,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.8,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "early-career-fellowship-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Grants are available for up to \u00a32,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Grants are for discrete research projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Research projects can last no more than six months.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Grants support career-building research or activities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants enable researchers to produce a discrete outcome, such as an article or book proposal.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "martin-lynn-scholarship",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, including the award amount, purpose, eligibility criteria, and application deadline.",
+          "claims": [
+            {
+              "text": "The award is an annual scholarship of \u00a31,500.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The scholarship is intended to assist a postgraduate researcher of African history.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The scholarship supports doctoral research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications for the 2026-27 scholarship are open.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The deadline for applications is September 4, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be members of the Royal Historical Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be currently studying for a PhD.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding is reserved for research projects that are clearly and predominantly historical in orientation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications from those previously awarded the Martin Lynn Scholarship are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications for research taking place within 4 weeks of the application deadline will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications for retroactive research visits/activities will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "open-research-support-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, including grant amounts, purposes, and deadlines for 2026.",
+          "claims": [
+            {
+              "text": "Grants of \u00a3500 or \u00a31,000 are available.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants support historians.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants support visiting archives.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants support visiting historical sites.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants support conducting interviews.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants support attending conferences.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The deadline for the first round of grants in 2026 was Friday 6 March 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline for the second round of grants in 2026 is Friday 4 September 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "postgraduate-research-support-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, including grant amounts, eligibility criteria, research purposes, and specific deadlines for 2026.",
+          "claims": [
+            {
+              "text": "Grants of \u00a3500 or \u00a31,000 are available.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for postgraduate historians.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants enable postgraduate historians to undertake historical research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Research activities include visiting archives or historic sites.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Research activities include conducting interviews.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants will be awarded in 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The closing date for applications in 2026 was Friday 5 June 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The closing date for applications in 2026 is Friday 4 December 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "early-career-research-support-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately reflects the grant amounts, purposes, and eligibility criteria mentioned in the page text. However, the claim that applications are welcome at any time is contradicted by the specific closing dates provided for 2026.",
+          "claims": [
+            {
+              "text": "Grants of \u00a3500 or \u00a31,000 are available.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for early career historians.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants enable research activities essential to projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Research activities include visiting archives.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Research activities include visiting historic sites.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Research activities include conducting research interviews.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications are welcome at any time.",
+              "claim_type": "deadline",
+              "supported": false
+            },
+            {
+              "text": "In 2026, grants of either \u00a3500 or \u00a31000 per grant will be awarded.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The closing date for applications in 2026 was Friday 5 June 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The closing date for applications in 2026 is Friday 4 December 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Calls for this programme are made twice a year.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be members of the Royal Historical Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be within five years of submitting their corrected PhD in a historical subject.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 25,
+      "n_claims_supported": 15,
+      "n_records_judged": 4,
+      "n_records_supported": 0,
+      "claim_rate": 0.6,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6083333333333333,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "early-career-fellowship-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the eligibility criteria but omits the exclusion for previous recipients of an 'Early Career Fellowship Grant'.",
+          "claims": [
+            {
+              "text": "Applicants must be early career historians within 5 years of submitting a corrected PhD in a historical subject.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be current members of the Royal Historical Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must normally be resident in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not be in full-time permanent academic employment.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Current doctoral students are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants who have previously been awarded an \u2018Early Career Fellowship Grant\u2019 will not be eligible for further funding under this scheme.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "martin-lynn-scholarship",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the eligibility criteria but omits the requirements regarding the timing of research relative to the deadline, the historical orientation of the project, and the exclusion of retroactive research.",
+          "claims": [
+            {
+              "text": "Applicants must be members of the Royal Historical Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be currently studying for a PhD.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The research must be in African history.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Previous recipients of the Martin Lynn Scholarship are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications for research taking place within 4 weeks of the deadline will not be considered.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Funding is reserved for research projects that are both clearly and predominantly historical in orientation, with a specific chronological remit.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applications for retroactive research visits/activities will not be considered.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "open-research-support-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the membership and career stage eligibility criteria, and the priority for those with limited funding access, but omits details about employment sectors, timing restrictions, and the requirement for a CV.",
+          "claims": [
+            {
+              "text": "Applicants must be current members of the Royal Historical Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be past early career stage, defined as more than 5 years from PhD completion.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants can be employed in higher education or other sectors aligned to history.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Priority is given to historians with no access to funding streams, or insufficient access.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications for research or conference attendance within 4 weeks of the deadline are not considered.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Retroactive applications are not considered.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "A current CV must be uploaded.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "postgraduate-research-support-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text correctly captures the eligibility criteria regarding membership status, student level, and completion of doctorate, but omits details about supported and unsupported activities.",
+          "claims": [
+            {
+              "text": "Applicants must be current Postgraduate Members of the Royal Historical Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be postgraduate research students studying for a Master\u2019s degree or PhD in History.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The scheme is not open to applicants who have completed their doctoral degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Supported activities are visiting archives or historic sites and conducting interviews.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The grant may not be used for attending or organising conferences.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "early-career-research-support-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text capture...e purpose of the grant.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 21,
+      "n_claims_supported": 20,
+      "n_records_judged": 5,
+      "n_records_supported": 4,
+      "claim_rate": 0.9523809523809523,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.95,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.8,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "early-career-fellowship-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text regarding eligibility criteria are directly supported by the 'Eligibility criteria' section of the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants must be early career historians within five years of submitting their corrected PhD in a historical subject to a UK institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must normally be resident in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not be in full-time permanent academic employment.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be current members of the Royal Historical Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Current doctoral students are not eligible for this scheme.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "martin-lynn-scholarship",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria for the Martin Lynn Scholarship as stated in the provided page text, including membership in the Royal Historical Society, current PhD study, focus on African history, and ineligibility for previous recipients.",
+          "claims": [
+            {
+              "text": "Applicants must be members of the Royal Historical Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be currently studying for a PhD.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be undertaking postgraduate research in African history.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Previous Martin Lynn Scholarship holders are not eligible to apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "open-research-support-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims that early career researchers (more than 5 years from completing a PhD) are not eligible, but the page text states that early career researchers (within 5 years of completing a PhD) are not eligible, implying those more than 5 years out are eligible.",
+          "claims": [
+            {
+              "text": "Historians who are members of the Royal Historical Society are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Postgraduate students are not eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Early career researchers (more than 5 years from completing a PhD) are not eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Priority is given to historians without access to research funding.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "postgraduate-research-support-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for the grant as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants must be current Postgraduate Members of the Royal Historical Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be postgraduate research students studying for a Master's degree or PhD in History.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The scheme is not open to those who have completed their doctorate.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "early-career-research-support-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for membership in the Royal Historical Society, the timeframe post-PhD submission (including exclusions), and the exclusion of postgraduate students and those beyond the five-year limit.",
+          "claims": [
+            {
+              "text": "Applicants must be current members of the Royal Historical Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be within five years of submitting their corrected doctoral thesis in a historical subject.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Periods of parental leave, illness, or caring responsibilities are excluded when calculating the five-year period post-PhD submission.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is not open to postgraduate students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is not open to those more than five years beyond PhD submission.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

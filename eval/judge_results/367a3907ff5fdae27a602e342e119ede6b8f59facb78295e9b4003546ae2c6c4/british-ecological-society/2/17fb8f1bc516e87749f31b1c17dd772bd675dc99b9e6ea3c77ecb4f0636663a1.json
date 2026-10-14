@@ -1,0 +1,618 @@
+{
+  "funder": "British Ecological Society",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "chain_of_thought",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 2,
+  "config_hash": "367a3907ff5fdae27a602e342e119ede6b8f59facb78295e9b4003546ae2c6c4",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 16,
+      "n_claims_supported": 11,
+      "n_records_judged": 3,
+      "n_records_supported": 1,
+      "claim_rate": 0.6875,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.7238095238095238,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.3333333333333333,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "annual-meeting-grants-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text correctly identifies the eligibility criteria and the purpose of the grant, but omits the maximum award amount and specific examples of covered costs.",
+          "claims": [
+            {
+              "text": "The grant supports researchers based in Global South countries.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant supports attendance at the BES Annual Meeting in the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding is intended to support travel from the applicant\u2019s country of residence in the Global South to the UK and return travel to that country after the meeting.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The maximum grant award is \u00a31000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The grant can cover costs such as registration, transport, food, and accommodation.",
+              "claim_type": "amount",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "training-travel-grants-2026-round2",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures all the eligibility and purpose claims present in the reference text.",
+          "claims": [
+            {
+              "text": "The grants are for PhD students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are for postgraduate researchers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants help cover costs of specialist field training courses.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants help cover costs of travel to present work at workshops and conferences.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "small-research-grants-2026-forthcoming",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports the claim that the grant is for new and innovative ecological research, provides up to \u00a35,000, and supports work with a clear ecological focus, but omits claims about education methods, international standards, and advancing ecological science.",
+          "claims": [
+            {
+              "text": "The funding is for research on education methods within ecology.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The grant aims to support work of the highest international standard.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Applicants will need to show how the work will advance ecological science.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "This grant can be used for new and innovative ecological research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for new and innovative ecological research projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding provides up to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding supports work with a clear ecological focus.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 19,
+      "n_claims_supported": 19,
+      "n_records_judged": 3,
+      "n_records_supported": 3,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "annual-meeting-grants-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, covering eligibility, purpose, deadlines, amounts, and application processes.",
+          "claims": [
+            {
+              "text": "Funding is available to support researchers from Global South countries.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is to support attendance at the BES Annual Meeting in the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding covers travel costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The application period opens on July 17, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The application period closes on September 8, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The maximum travel grant award is \u00a31,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funding can cover registration costs, transport, food, and accommodation.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are paid after the event has taken place and a report has been completed.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The BES will not book anything on behalf of the applicant.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants need to provide one reference as part of the application process.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications are made through an online grants management platform called Flexigrant.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A lottery-based system will be used for selection among eligible applications.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "training-travel-grants-2026-round2",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purposes of the grants as described in the page text, which states the grants help PhD students and postgraduate researchers meet costs of specialist field training courses and present their work at workshops and conferences.",
+          "claims": [
+            {
+              "text": "Grants are available to help PhD students cover costs of specialist field training courses.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available to help PhD students cover costs of travel to present their work at workshops and conferences.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available to help postgraduate researchers cover costs of specialist field training courses.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available to help postgraduate researchers cover costs of travel to present their work at workshops and conferences.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "small-research-grants-2026-forthcoming",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the purpose, amount, and focus of the funding opportunity as described in the provided page text.",
+          "claims": [
+            {
+              "text": "Funding is available for new and innovative ecological research projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding provides up to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is intended to support work with a clear ecological focus.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 32,
+      "n_claims_supported": 15,
+      "n_records_judged": 3,
+      "n_records_supported": 0,
+      "claim_rate": 0.46875,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5687830687830687,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "annual-meeting-grants-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most claims but omits the eligibility criterion regarding the applicant's research career stage and the process requirement for abstract submission evidence.",
+          "claims": [
+            {
+              "text": "Applicant must be a BES member.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicant can be at any stage in their research career.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicant must be a citizen of and based in a Global South country.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicant must be travelling from and returning to the country they are based in the Global South.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicant must have applied to present at the Annual Meeting.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Evidence of abstract submission must be provided as part of the application process.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Applicant must be at least three years since they were last awarded a BES Training and Travel Grant.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "training-travel-grants-2026-round2",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures some of the eligibility criteria but omits several key restrictions and details about the application process.",
+          "claims": [
+            {
+              "text": "Applicants must be a BES member.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be a PhD student or postgraduate researcher registered on a postgraduate research degree programme.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Research staff are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Research assistants are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Postdoctoral researchers are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Undergraduates are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Master's students are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Graduates who have completed their degree are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "A maximum of two places per training course may be funded.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "No more than two applicants from the same institution may attend the same meeting or conference.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Grants are paid in retrospect, so the applicant must pay the organiser at the time of booking.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Applicants must work in scientific areas within the remit of the science of ecology.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The work must be of relevance to the training course or meeting they are applying to attend.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must give a presentation if attending a meeting.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Evidence of abstract submission or acceptance must be uploaded as part of the application process.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Applicants must be working or studying at a university or research institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must attend a specialist field training course.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must present at a workshop/conference.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "small-research-grants-2026-forthcoming",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports most claims regarding project focus and funding restrictions, but omits the claim about applicants being responsible for obtaining permits and permissions.",
+          "claims": [
+            {
+              "text": "Applicants are responsible for obtaining all relevant permits and permissions required to undertake the proposed work.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects must have a clear ecological science focus.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Any other aspects, such as sociology or economics, must be clearly integrated into the ecology and scientific goals of the project.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding is not available for the salary of the principal researcher.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding is not available for bench fees.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding is not available for vehicle hire.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects are open to researchers from all countries globally.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 13,
+      "n_claims_supported": 13,
+      "n_records_judged": 3,
+      "n_records_supported": 3,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "annual-meeting-grants-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text under the 'Eligibility Criteria' section.",
+          "claims": [
+            {
+              "text": "Applicants must be a BES member.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be a citizen of and based in a Global South country.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have applied to present at the Annual Meeting.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not have received a BES Training and Travel Grant in the previous three years.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "training-travel-grants-2026-round2",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Applicants must be a BES member.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be a PhD student or postgraduate researcher.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be working or studying at a university or research institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must attend a specialist field training course or present at a workshop/conference.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "small-research-grants-2026-forthcoming",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria and funding restrictions mentioned in the provided page text.",
+          "claims": [
+            {
+              "text": "Researchers from all countries globally are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must have a clear ecological science focus.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding is not available for the salary of the principal researcher.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding is not available for bench fees.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Funding is not available for vehicle hire.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

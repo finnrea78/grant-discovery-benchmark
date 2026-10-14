@@ -1,0 +1,441 @@
+{
+  "funder": "Society of Antiquaries of London",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 4,
+  "config_hash": "eda49fce4cf39567f010dd2a87a4b186f94a3f2db5274aa8917eaa47608451e7",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 6,
+      "n_claims_supported": 2,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.3333333333333333,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.3333333333333333,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "SAL-ResearchAwards-2027-01-15",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the grant amount and the general purpose of the research but omits details about the grant's annual nature, renewal period, specific eligible research areas, and named awards.",
+          "claims": [
+            {
+              "text": "The funding is for annual project grants.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Grant amounts range from \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The research focus is on the human past through its material culture or material remains.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Eligible research areas include archaeology, art history, architectural/buildings history, material culture, and history of collecting.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants are renewable annually up to three years.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Named awards within the scheme include Marion Wilson, Joan Pye and Hugh Chapman Memorial Awards.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 2,
+      "n_claims_supported": 2,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 9,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "SAL-ResearchAwards-2027-01-15",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the purpose and amount of the 'Research Awards' as described in the provided page text.",
+          "claims": [
+            {
+              "text": "Grants are available for research into the human past through its material culture or material remains.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants range from \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-HughPhillips-2027-01-15",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ...rm this specific claim.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "SAL-MargaretTomJones-2027-01-15",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-Wainwright-2027-01-15",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-OpenResearch-2027-01-15",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-BeatriceDiCardi-2027-04-07",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-JanetArnold-2027-04-07",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-TessaMortimerWheeler-2027-04-07",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-WilliamLambarde-2027-04-07",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-WilliamChurchConservation-2027-03-31",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-JaneMorrisChurchConservation-2026-08-31",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 5,
+      "n_claims_supported": 2,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.4,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.4,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "SAL-ResearchAwards-2027-01-15",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the requirement for applications to be from the project director or principal investigator and welcomes early career researchers, but omits claims regarding work for degrees, retrospective applications, and residency requirements.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is not for work contributing to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Retrospective applications are not accepted.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Early career researchers are encouraged to apply.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There is no residency requirement for applicants.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 12,
+      "n_claims_supported": 12,
+      "n_records_judged": 11,
+      "n_records_supported": 11,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "SAL-ResearchAwards-2027-01-15",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the page text, specifically that applications must come from the project director or principal investigator and that early career researchers are encouraged to apply.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Early career researchers are welcomed.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-HughPhillips-2027-01-15",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-MargaretTomJones-2027-01-15",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-Wainwright-2027-01-15",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-OpenResearch-2027-01-15",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-BeatriceDiCardi-2027-04-07",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-JanetArnold-2027-04-07",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-TessaMortimerWheeler-2027-04-07",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-WilliamLambarde-2027-04-07",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-WilliamChurchConservation-2027-03-31",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "SAL-JaneMorrisChurchConservation-2026-08-31",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

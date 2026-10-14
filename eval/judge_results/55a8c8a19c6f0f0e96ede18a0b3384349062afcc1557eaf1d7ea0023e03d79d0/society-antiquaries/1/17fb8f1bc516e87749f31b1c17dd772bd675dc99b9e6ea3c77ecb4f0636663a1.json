@@ -1,0 +1,393 @@
+{
+  "funder": "Society of Antiquaries of London",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "structured",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 1,
+  "config_hash": "55a8c8a19c6f0f0e96ede18a0b3384349062afcc1557eaf1d7ea0023e03d79d0",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 7,
+      "n_claims_supported": 5,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.7142857142857143,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.7142857142857143,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose of the grants, the location, the adherence to SPAB principles, the frequency of application rounds, and specific deadlines, but omits the grant amount range and the pre-1896 eligibility criterion.",
+          "claims": [
+            {
+              "text": "Grants are available for the conservation of decorative or non-structural interior features.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are for features that are pre-1896.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Grants are for UK places of worship.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Work must follow SPAB principles.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grant amounts range from \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "There are two application rounds per year.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The application deadlines are March 31 and August 31.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 13,
+      "n_claims_supported": 13,
+      "n_records_judged": 3,
+      "n_records_supported": 3,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the grant amounts, purpose, included named awards, and their respective deadlines, as well as mentioning specific sub-awards, all of which are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Annual project grants are available for \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants support research into the human past through its material culture or material remains.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research areas include archaeology, art history, architectural and buildings history, material culture, and the history of collecting.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants include named awards such as Hugh Phillips, Margaret and Tom Jones, Wainwright Research Archaeology in Wales, and Open Research.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "These named awards have a deadline of 15 January.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Named sub-awards include Marion Wilson Awards, Joan Pye Awards, and Hugh Chapman Memorial Awards.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "named-research-awards-april",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately identifies the named awards as part of the Research and Travel Grants programme and correctly states their annual deadline of April 7. It also correctly identifies the Wheeler and Lambarde awards as travel awards for research.",
+          "claims": [
+            {
+              "text": "The Beatrice de Cardi, Janet Arnold, Tessa and Mortimer Wheeler, and William Lambarde awards are part of the Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The Beatrice de Cardi, Janet Arnold, Tessa and Mortimer Wheeler, and William Lambarde awards have an annual deadline of April 7.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The Wheeler and Lambarde awards are travel awards for research travel.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the information found in the 'William and Jane Morris Church Conservation Grants' section of the page, specifically regarding the purpose of the grants and the application deadlines.",
+          "claims": [
+            {
+              "text": "Grants are available for the conservation of church interiors/furnishings.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for related church conservation projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are two application rounds each year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The application deadlines are 31 March and 31 August each year.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "linda-parry-textile-conservation-research-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ...ing the same deadlines.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 8,
+      "n_claims_supported": 1,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.125,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.125,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only mentions that no references are required for 'Morris applications' and lists supporting documents, omitting all other eligibility and purpose criteria.",
+          "claims": [
+            {
+              "text": "Applications are accepted on behalf of churches, chapels, or other places of worship in the United Kingdom.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Funds are available for the conservation of decorative or non-structural interior features.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Eligible features include stained glass, sculpture, furniture, monuments/tombs, and wall paintings.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The object to be conserved must have been made no later than 1896.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "No references are required for applications.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Work must be directed by a professional architect or an established conservator.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Turret clocks and organs are generally not grant-aided.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applications for clock or organ cases of significant contribution or antiquarian interest may be exceptionally considered.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 11,
+      "n_claims_supported": 9,
+      "n_records_judged": 3,
+      "n_records_supported": 2,
+      "claim_rate": 0.8181818181818182,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6666666666666666,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.6666666666666666,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which explicitly states these conditions under the 'Eligibility' sections of various grant programs.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be made for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Early career researchers are welcomed.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "named-research-awards-april",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria and reference requirements for the Margaret and Tom Jones Memorial and Beatrice De Cardi awards as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be made for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Two references are required for the Margaret and Tom Jones Memorial award.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Two references are required for the Beatrice De Cardi award.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text makes c...ny specific grant type.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "linda-parry-textile-conservation-research-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims no references are required and that applications are submitted via the William and Jane Morris Church Conservation Grants form, neither of which are supported by the provided page text.",
+          "claims": [
+            {
+              "text": "No references are required for this grant.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applications are submitted via the William and Jane Morris Church Conservation Grants form.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

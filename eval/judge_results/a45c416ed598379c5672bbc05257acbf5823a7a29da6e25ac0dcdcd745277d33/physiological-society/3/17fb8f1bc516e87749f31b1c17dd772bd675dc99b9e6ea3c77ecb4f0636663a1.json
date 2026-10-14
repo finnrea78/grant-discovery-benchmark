@@ -1,0 +1,221 @@
+{
+  "funder": "The Physiological Society",
+  "model": "openrouter/amazon/nova-lite-v1",
+  "prompt_strategy": "structured",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 3,
+  "config_hash": "a45c416ed598379c5672bbc05257acbf5823a7a29da6e25ac0dcdcd745277d33",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 4,
+      "n_claims_supported": 1,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.25,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.25,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "conference-attendance-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only captures the general purpose of attending society meetings, omitting details about reimbursement specifics, award values, and application limits.",
+          "claims": [
+            {
+              "text": "The funding reimburses conference registration, meeting dinner, and standard-class travel/accommodation.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The funding is for members to attend and present at a Physiological Society or Society-sponsored research/teaching conference.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The award value varies by membership category, ranging from \u00a3100 to \u00a3375.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Members may apply for funding for up to three meetings per application.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 2,
+      "n_claims_supported": 2,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "conference-attendance-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects that the funding is for attending Society and Society-sponsored meetings, as stated in the page text.",
+          "claims": [
+            {
+              "text": "Funding is available to attend Society-sponsored meetings.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding is available to attend Society meetings.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 6,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.5,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "conference-attendance-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the eligibility criteria for Postgraduate, Full, and Fellow members related to abstract submission, but omits eligibility details for Undergraduate and Masters members, membership duration, and the ineligibility of Associate members.",
+          "claims": [
+            {
+              "text": "Postgraduate members are eligible if they are submitting/presenting an abstract at the meeting.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Full members are eligible if they are submitting/presenting an abstract at the meeting they wish to attend.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Fellow members are eligible if they are submitting/presenting an abstract at the meeting they wish to attend.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Undergraduate and Masters members are eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Members must be in their second year of membership (including qualifying membership transitions).",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Associate members are ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 3,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "conference-attendance-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for Postgraduate, Full, and Fellow members as stated in the page text.",
+          "claims": [
+            {
+              "text": "Postgraduate members must be submitting/presenting an abstract at the meeting they wish to attend.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Full members must be submitting/presenting an abstract at the meeting they wish to attend.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Fellow members must be submitting/presenting an abstract at the meeting they wish to attend.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

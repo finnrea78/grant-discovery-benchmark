@@ -1,0 +1,470 @@
+{
+  "funder": "Great Britain Sasakawa Foundation",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "chain_of_thought",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 5,
+  "config_hash": "367a3907ff5fdae27a602e342e119ede6b8f59facb78295e9b4003546ae2c6c4",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 9,
+      "n_claims_supported": 6,
+      "n_records_judged": 2,
+      "n_records_supported": 0,
+      "claim_rate": 0.6666666666666666,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.65,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "small-grants-uk-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the claims related to the purpose and eligibility of the funding, but omits the claim about the number of award rounds per year.",
+          "claims": [
+            {
+              "text": "The funding is for seed-funding small grants.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for projects that bring the UK and Japan together.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The projects should aim to deepen mutual understanding, exchange ideas/expertise, or build collaboration.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is open to any field, including arts and culture, humanities, Japanese language, medicine and health, science, youth and education, and sport.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The UK office runs three award rounds a year.",
+              "claim_type": "deadline",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "butterfield-awards-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purpose of the awards but omits the specific financial amounts mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "Awards support exchanges and collaborations between health and medical professionals in Japan and the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Awards cover scientific, clinical, social and economic issues in healthcare.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Annual awards of up to \u00a310,000 are available.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "Continuing projects can receive up to \u00a330,000 total over 3 years.",
+              "claim_type": "amount",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 20,
+      "n_claims_supported": 20,
+      "n_records_judged": 3,
+      "n_records_supported": 3,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "small-grants-uk-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which lists the same fields for eligible projects and describes the funding as 'seed funding' for collaborative UK-Japan initiatives.",
+          "claims": [
+            {
+              "text": "The funding opportunity provides seed funding.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for collaborative UK-Japan projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding covers projects in arts and culture.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding covers projects in humanities and social issues.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding covers projects in Japanese language.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding covers projects in medicine and health.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding covers projects in science.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding covers projects in youth and education.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding covers projects in sport.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "small-grants-japan-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which lists the same fields for eligible projects and describes the funding as 'seed funding' for collaborative UK-Japan initiatives.",
+          "claims": [
+            {
+              "text": "The funding opportunity provides seed funding.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for collaborative UK-Japan projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding covers projects in arts and culture.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding covers projects in humanities and social issues.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding covers projects in Japanese language.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding covers projects in medicine and health.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding covers projects in science.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding covers projects in youth and education.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding covers projects in sport.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "butterfield-awards-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose of the awards as described in the provided page text.",
+          "claims": [
+            {
+              "text": "Awards support exchanges and collaborations between health and medical professionals in Japan and the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Awards cover scientific, clinical, social and economic issues in healthcare.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 15,
+      "n_claims_supported": 7,
+      "n_records_judged": 2,
+      "n_records_supported": 1,
+      "claim_rate": 0.4666666666666667,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6363636363636364,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.5,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "small-grants-uk-2026",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures all eligibility criteria mentioned in the reference text but omits all purpose-related claims.",
+          "claims": [
+            {
+              "text": "Applicants must belong to, or provide evidence of support from, an organisation or institution willing to receive grant funds.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Individuals seeking support for personal projects are not accepted.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The UK office may consider individuals with organisational backing.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Undergraduate or master's students are not supported.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Grant payments cannot be made to personal bank accounts.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "UK-originating projects apply to the UK office.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Grant money can be used to support festivals, workshops, performances and other events that present aspects of Japan to the UK or the UK to Japan in cultural, scientific, social, sporting and other spheres.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grant money can be used to support exchanges between the UK and Japan that enable participation and interaction, for instance of schools and sporting groups, artists, artisans, performers, scientists and researchers.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grant money can be used to support collaborative projects involving UK and Japanese participants that result in new and innovative outputs for public, academic or professional presentation.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grant money can be used to support the teaching and development of Japanese language and cultural studies in schools, and higher education.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grant money can be used to support academic research, visits and exchange, where these push forward the boundaries of knowledge and understanding or involve collaboration and co-production.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "butterfield-awards-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text captures all eligibility criteria mentioned in the reference text, including the preference for new collaborators and early-career applicants.",
+          "claims": [
+            {
+              "text": "Applicants should normally show an existing research record.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Practitioners, managers, carers or others in health-related fields are also considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Preference is given to those new to UK-Japan collaboration.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Preference is given to early-career applicants.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 10,
+      "n_claims_supported": 10,
+      "n_records_judged": 3,
+      "n_records_supported": 3,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "small-grants-uk-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the page text regarding organizational affiliation and the conditions under which individuals can apply.",
+          "claims": [
+            {
+              "text": "Applicants must be affiliated with an organization or institution that can receive grant funds.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Individuals cannot apply for personal projects.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The UK office may consider applications from individuals if they can prove organizational support.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "small-grants-japan-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the page text regarding organizational affiliation and the conditions under which individuals can apply.",
+          "claims": [
+            {
+              "text": "Applicants must be affiliated with an organization or institution that can receive grant funds.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Individuals cannot apply for personal projects.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The UK office may consider applications from individuals if they can prove organizational support.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "butterfield-awards-2026",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the eligibility criteria mentioned in the page text, including the preference for those without prior collaboration and early-career applicants.",
+          "claims": [
+            {
+              "text": "Applicants should normally demonstrate an existing research record.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Practitioners, managers, carers, or others in health-related fields are also considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Preference is given to those without prior UK-Japan collaboration.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Preference is given to early-career applicants.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

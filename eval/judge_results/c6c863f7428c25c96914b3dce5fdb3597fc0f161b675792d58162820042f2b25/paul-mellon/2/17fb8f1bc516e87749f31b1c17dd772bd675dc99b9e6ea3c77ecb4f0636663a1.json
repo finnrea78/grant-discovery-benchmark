@@ -1,0 +1,502 @@
+{
+  "funder": "Paul Mellon Centre for Studies in British Art",
+  "model": "openrouter/amazon/nova-lite-v1",
+  "prompt_strategy": "few_shot",
+  "temperature": 0.0,
+  "agent_config": "standard",
+  "replicate": 2,
+  "config_hash": "c6c863f7428c25c96914b3dce5fdb3597fc0f161b675792d58162820042f2b25",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 9,
+      "n_claims_supported": 5,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.5555555555555556,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5555555555555556,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "erba-research-travel-bursaries",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the maximum amount and the types of expenses covered by the bursary, but omits details about eligibility, the purpose of the trip, and the application requirements.",
+          "claims": [
+            {
+              "text": "The funding is for small travel bursaries.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The maximum amount for a bursary is \u00a3250.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The bursaries cover transport costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The bursaries cover accommodation costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The bursaries cover reasonable expenses.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The bursaries are for emerging researchers.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The bursaries are for researchers making a research trip.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Applications require a 300-500 word statement.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Applications require an indicative budget.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 32,
+      "n_claims_supported": 32,
+      "n_records_judged": 10,
+      "n_records_supported": 10,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "individual-research-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the grant amount and purposes as stated in the 'Individual Research Grants' section of the provided page text.",
+          "claims": [
+            {
+              "text": "Grants are available for up to \u00a320,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for individuals undertaking research travel.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are for individuals taking time to address specific research questions.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "author-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the grant amount, purpose, and subject matter as described in the 'Author Grants' section of the provided page text.",
+          "claims": [
+            {
+              "text": "Grants of up to \u00a36,000 are available.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for authors looking to publish written works.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The written works should reflect advanced research in British art.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "study-support-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the details of the 'Study Support Grants' as described in the page text, including the amount, eligibility criteria, and purpose of the funding.",
+          "claims": [
+            {
+              "text": "Grants of \u00a35,000 are available.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for students seeking financial support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are for students beginning or continuing their studies.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The studies can be at Master's level.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The studies can be at Doctoral level.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "andrew-wyld-research-support-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the details of the 'Andrew Wyld Research Support Grants' as described in the page text, including the grant amount, the target audience and research area, and the funding source.",
+          "claims": [
+            {
+              "text": "Grants of \u00a32,000 are available.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for students undertaking research into historical works on paper.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are funded by the Andrew Wyld Fund.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "research-project-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the grant amount, eligibility criteria, and purpose as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "Grants are available for organisations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are for ambitious and sustained research in the field of British art.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The maximum grant amount is \u00a340,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "exhibition-publication-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the details provided in the page text regarding the grant amount, purpose, and the type of research it supports.",
+          "claims": [
+            {
+              "text": "Grants are available up to \u00a36,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants support costs of exhibition publications.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The publications showcase new and original research.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "event-support-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the details of the 'Event Support Grants' section of the provided page text, including the grant amount, purpose, and eligibility.",
+          "claims": [
+            {
+              "text": "Grants are available for organisations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the grants is to disseminate research through events and programming.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The maximum grant amount is \u00a33,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "conservation-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the details of the 'Conservation Grants' as described in the page text, including the grant amount, purpose, and eligibility criteria.",
+          "claims": [
+            {
+              "text": "Grants are available for organisations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are for undertaking vital conservation research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The research must be on items from the organisation's own collections.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant amount is \u00a325,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "digitisation-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The page explicitly mentions 'Digitisation Grants' with a maximum of \u00a35,000 to support organisations undertaking digitisation projects on material from their own collections.",
+          "claims": [
+            {
+              "text": "Grants of up to \u00a35,000 are available.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants support organisations undertaking digitisation projects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The digitisation projects must be on material from the organisations' own collections.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "erba-research-travel-bursaries",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately states the maximum amount of the bursary and the types of expenses it can cover, both of which are directly supported by the page text.",
+          "claims": [
+            {
+              "text": "The bursary provides up to \u00a3250.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The bursary helps cover transport, accommodation, and reasonable expenses.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 1,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "erba-research-travel-bursaries",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 10,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "individual-research-grants",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "author-grants",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "study-support-grants",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "andrew-wyld-research-support-grants",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "research-project-grants",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "exhibition-publication-grants",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "event-support-grants",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "conservation-grants",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "digitisation-grants",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "erba-research-travel-bursaries",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        }
+      ]
+    }
+  }
+}

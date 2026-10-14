@@ -1,0 +1,1700 @@
+{
+  "funder": "Society of Antiquaries of London",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "few_shot",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 4,
+  "config_hash": "3f35d3189bc2850f14fc128291b4a51852460d758d1b5729eade46bb70721733",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 14,
+      "n_claims_supported": 4,
+      "n_records_judged": 2,
+      "n_records_supported": 0,
+      "claim_rate": 0.2857142857142857,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.2857142857142857,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "tessa-mortimer-wheeler-travel-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only partially captures the claims from the reference text, omitting details about the amount, specific eligibility criteria, and the historical context of the award.",
+          "claims": [
+            {
+              "text": "The award is for travel grants of up to \u00a3500.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "The award is to help UK-university undergraduate and first-year postgraduate archaeology students.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The award is to gain fieldwork experience away from home base, ideally abroad.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The awards are in memory of Tessa Verney Wheeler and Sir Mortimer Wheeler.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The awards were established through an appeal by the British Academy, the Institute of Archaeology (University College London) and the Society of Antiquaries of London.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The award is part of the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The award supports research travel.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-lambarde-travel-awards",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text mention...ific endowment origins.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text mentions grants for conservation of church fabric and monuments and two application rounds per year, but omits details about the specific types of features, their age, location, adherence to SPAB principles, and the grant amounts.",
+          "claims": [
+            {
+              "text": "Grants are available for the conservation of decorative or non-structural interior features.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants are for features created before 1896.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Grants are for places of worship in the UK.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Work must follow SPAB principles.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grant amounts range from \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "There are two application rounds per year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Grants are for the conservation of church fabric and monuments.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 214,
+      "n_claims_supported": 212,
+      "n_records_judged": 8,
+      "n_records_supported": 6,
+      "claim_rate": 0.9906542056074766,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.9166666666666666,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.75,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 2,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "hugh-phillips-award",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text states ...1800' is not supported.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "margaret-tom-jones-memorial-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose and program of the funding opportunity as described in the provided page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity is an annual research grant.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grant is part of the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grant funds research into the material past.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wainwright-research-archaeology-in-wales",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text states the grant funds 'research archaeology in Wales', but the page text only mentions 'Wainwright Research Archaeology in Wales' as one of several grant programs with a deadline of January 15th, and does not specify that this particular grant is exclusively for research in Wales.",
+          "claims": [
+            {
+              "text": "The funding opportunity is an annual research grant.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grant is part of the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grant funds research archaeology in Wales.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "open-research-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose, program, and scope of the Research and Travel Grants, stating it's an annual grant for research into the material past with no restrictions on period, geography, or discipline.",
+          "claims": [
+            {
+              "text": "The funding opportunity is an annual research grant.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grant is part of the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grant funds research into the material past.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are no period restrictions for the research.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are no geographic restrictions for the research.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are no disciplinary restrictions for the research.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "beatrice-de-cardi-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text states the grant is annual and part of the Research and Travel Grants programme, but the page text does not specify that this particular grant funds research into the archaeology of Arabia and the Gulf region; it mentions other grants with different geographical focuses.",
+          "claims": [
+            {
+              "text": "This is an annual research grant.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grant is part of the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grant funds research into the archaeology of Arabia and the Gulf region.",
+              "claim_type": "purpose",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "janet-arnold-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by information present in the provided page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity is an annual research grant.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grant is part of the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The grant funds research into dress and textiles.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant funds research into the history of clothing and costume.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The deadline for applications is 15 January each year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline for references is 21 January.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The grant funds research into the material past.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant funds projects where the Society will be the main or a significant financial contributor.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant supports definable objectives with specific, measurable outcomes within larger projects funded from a range of sources.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant will not fund work contributing to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Travel to, or attendance at, conferences is not funded.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible project costs include travel & subsistence for members of the project team.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Eligible project costs include costs of specialist or scientific investigation, and of technical services such as imaging and illustration, where these have to be commissioned.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Eligible project costs include hire of plant and site accommodation.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Eligible project costs include materials and consumables.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Eligible project costs include hire of specialist equipment to which the applicant cannot reasonably be expected to have access.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Ineligible project costs include personal remuneration.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Ineligible project costs include salaries of staff holding current appointments.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Ineligible project costs include institutional overheads.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Ineligible project costs include internal hire charges within the applicant\u2019s institution or between project partners.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Ineligible project costs include publication subventions and publication grants (including costs of digital dissemination).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Ineligible project costs include contingency estimates.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards are made on an annual basis with possible renewal for up to two further years.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "A new application is required each year.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "No project will be funded for more than three years.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Projects should not start before 1 April in the year of application.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Grants should be taken up by 31 December of the year in which they are awarded.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Applications must be from the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The Janet Arnold Awards are for research on the history of dress and the materials of which it is made.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Janet Arnold Awards have an amount of \u00a3350 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The deadline for Janet Arnold Awards is 7 April annually.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline for references for Janet Arnold Awards is 14 April.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The Beatrice di Cardi Awards are for archaeological research on the United Arab Emirates, the Sultanate of Oman, Saudi Arabia, and the Pakistan province of Balochistan.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Beatrice di Cardi Awards have an amount of \u00a35,000 to \u00a315,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The deadline for Beatrice di Cardi Awards is 7 April annually.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline for references for Beatrice di Cardi Awards is 14 April.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The Margaret and Tom Jones Awards are for the archaeology of extensive sites or landscapes in the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Margaret and Tom Jones Awards have an amount of \u00a31,000 to \u00a310,500.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The deadline for Margaret and Tom Jones Awards is 15 January annually.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The Tessa and Mortimer Wheeler Travel Awards are for undergraduate and first-year postgraduate students studying archaeology at a university in the UK to gain fieldwork experience abroad.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Tessa and Mortimer Wheeler Travel Awards have an amount of up to \u00a3500.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The deadline for Tessa and Mortimer Wheeler Travel Awards is 7 April annually.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The William Lambarde Travel Awards are for antiquarian or archaeological research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The William Lambarde Travel Awards have an amount of up to \u00a3500.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The deadline for William Lambarde Travel Awards is 7 April annually.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The William and Jane Morris Church Conservation Grants are for work carried out under the principles of the Society for the Protection of Ancient Buildings (SPAB).",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The William and Jane Morris Church Conservation Grants fund smaller programmes of work concerned with the conservation of decorative or non-structural features inside a church, chapel or other place of worship in the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The object for William and Jane Morris Church Conservation Grants must have been made no later than 1896.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The William and Jane Morris Church Conservation Grants are between \u00a3500 and \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "There are two application rounds for William and Jane Morris Church Conservation grants: 31 March and 31 August every year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The Linda Parry Textile Research and Conservation Grants are for the research and conservation of textiles in churches, chapels and other places of worship in the UK and Crown Dependencies.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Linda Parry Textile Research and Conservation Grants are up to \u00a34000 per project.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "There are two application rounds for Linda Parry Textile Research and Conservation Grants: 31 March and 31 August every year.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "tessa-mortimer-wheeler-travel-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by information present in the provided page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity is part of the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding opportunity supports research travel.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The deadline for applications is January 15th each year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline for references is January 21st each year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline for applications is April 7th each year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline for references is April 14th each year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "There are two application rounds for William and Jane Morris Church Conservation grants: March 31st and August 31st annually.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The Research and Travel Awards fund research into the material past.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The Society will be the main or a significant financial contributor to funded projects.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications are accepted for support of definable objectives with specific, measurable outcomes within larger projects funded from a range of sources.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications for projects of archaeological synthesis will be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Early career researchers are welcomed.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects that are innovative in their approach, entail new initiatives, and/or create interdisciplinary interest are welcomed.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications must be from the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Work contributing to an undergraduate or postgraduate degree is not funded.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications are not funded.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Travel to, or attendance at, conferences is not funded.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible project costs include travel & subsistence for members of the project team.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible project costs include costs of specialist or scientific investigation, and of technical services such as imaging and illustration, where these have to be commissioned.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible project costs include hire of plant and site accommodation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible project costs include materials and consumables.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligible project costs include hire of specialist equipment to which the applicant cannot reasonably be expected to have access.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Personal remuneration is not an eligible project cost.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Salaries of staff holding current appointments are not eligible project costs.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Institutional overheads are not eligible project costs.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Internal hire charges within the applicant\u2019s institution or between project partners are not eligible project costs.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Publication subventions and publication grants are not eligible project costs.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Contingency estimates are not eligible project costs.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Most awards are made on an annual basis with possible renewal for up to two further years.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "A new application is required each year, and no project will be funded for more than three years.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Projects should not start before April 1st in the year of application.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Grants should be taken up by December 31st of the year in which they are awarded.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The Research and Travel Grants scheme is competitive.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Decisions are based on the quality of the research proposal and its viability, both financial and practical.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The project's alignment with the Society\u2019s own strategy and values is considered.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "All decisions made by the Committee are final.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Applications will be assessed solely on the basis of the information provided on the application form.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A clear and detailed articulation of research aims, how they will be achieved, costings, and proposed duration of research is required.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A clear statement of the contribution of the proposed research to scholarship is required.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A clear plan for the timely publication/dissemination of the results of the research is required.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A request for a specific sum with all applications to other funding bodies declared is required.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A statement of the minimum sum needed to make the project viable in the event of full funding not being obtained is required.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "For subsequent applications, a brief summary of results to date and a statement of expenditure covered by the previous grant are required.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Most awards require one or two references.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants are responsible for ensuring references are received by the deadline using the online system.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Members of the Research Committee cannot act as referees.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Award recipients must demonstrate they have received all relevant permissions to undertake their project before funds are released.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Any unspent award remainder must be returned to the Society for reinvestment.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "By February 28th of the year following the award, recipients must submit a report of up to 1,000 words on how research objectives were met.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "By February 28th of the year following the award, recipients must submit a financial statement detailing how the Society\u2019s money was spent.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "By February 28th of the year following the award, recipients must submit two or three digital images illustrating the project.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Reports are to be sent via the Grants Application Portal.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "No further grant will be made to any applicant who does not meet reporting requirements.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Society may request short reports suitable for inclusion in newsletters or website.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Acknowledgement of the Research Grant in any publication or practical use of the research is required.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Research Awards are grants of \u00a3500 to \u00a35,000 for research into the human past through its material culture or material remains.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The Society makes annual project grants of \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "There are no period, geographic or disciplinary restrictions for Research Awards.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications are encouraged across archaeology, art history, architectural and buildings history, studies of material culture items and assemblages, the history of collecting and collections, and the development of intellectual enquiry into the human past through its material remains.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applicants requiring funds primarily for their own research travel should consider applying for a Lambarde Travel Award.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The award amount for Research Awards is \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The deadline for applications for Research Awards is January 15th annually.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Janet Arnold Awards are annual grants of \u00a3350 to \u00a35,000 for research on the history of dress and the materials of which it is made.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are to further in-depth study of the history of dress and the materials from which it is made.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be able to demonstrate that they wish to pursue a particular piece of original research based on items of dress or their remains with a view to eventually disseminating the results.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are no geographical or chronological restrictions for Janet Arnold Awards.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The Society offers Annual Awards of up to \u00a35,000 for Janet Arnold Awards.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applications will be accepted for projects where the Society will be the main or a significant financial contributor (annual awards).",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The award amount for Janet Arnold Awards is \u00a3350 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The deadline for applications for Janet Arnold Awards is April 7th annually.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be able to demonstrate that they wish to pursue a particular piece of original research based on items of dress or their remains with a view to eventually disseminating the results through publication, digital resources, display, cataloguing, teaching or through practical use in conservation or realistic reproduction.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Beatrice de Cardi Awards are grants of up to \u00a315,000 for archaeological research on the United Arab Emirates, the Sultanate of Oman, Saudi Arabia, and the Pakistan province of Balochistan.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The awards are for the furtherance of archaeological research by field survey, excavation and the publication of the fieldwork in the United Arab Emirates, the Sultanate of Oman, Saudi Arabia, and the Pakistan province of Balochistan.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications will be accepted for the analysis and publication of post-excavation materials with specific conditions for Beatrice de Cardi awards.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The award amount for Beatrice de Cardi Awards is \u00a35,000 to \u00a315,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The deadline for applications for Beatrice de Cardi Awards is April 7th annually.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Beatrice de Cardi grants will be awarded from 2019 onwards.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Margaret and Tom Jones Awards are grants of up to \u00a310,500 for the archaeology of extensive sites or landscapes in the UK.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The awards are available to support archaeological investigation of large sites or landscapes in the UK of the Neolithic to post-Medieval periods.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The awards support the development or testing of methodologies and approaches for the field investigation, excavation or analysis of large sites or landscapes.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award amount for Margaret and Tom Jones Awards is \u00a31,000 to \u00a310,500.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The deadline for applications for Margaret and Tom Jones Awards is January 15th annually.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Awards are not open to those previously in receipt of funding for Mucking post-excavation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Tessa and Mortimer Wheeler Travel Awards are travel grants of up to \u00a3500 for undergraduate and first-year postgraduate students studying archaeology at a university in the UK to gain fieldwork experience abroad.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the award is to assist undergraduate or first-year postgraduate students studying archaeology at a UK university to gain archaeological fieldwork experience in addition to their degree studies, away from their home base and ideally abroad.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The award is open to undergraduates and first-year postgraduates studying archaeology at a UK university.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Travel for conference attendance is not eligible for Wheeler Travel Awards.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The award amount for Tessa and Mortimer Wheeler Travel Awards is up to \u00a3500.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The deadline for applications for Tessa and Mortimer Wheeler Travel Awards is April 7th annually.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "William Lambarde Travel Awards are travel grants of up to \u00a3500 to support antiquarian or archaeological research.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the awards is to support antiquarian or archaeological research by assisting with travel expenses.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications must be for travel to support the applicant\u2019s individual research.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications for travel to participate in an established project or as one of multiple funding applications for a larger project will not be considered for Lambarde Travel Awards.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Travel for conference attendance is not eligible for Lambarde Travel Awards.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The award amount for William Lambarde Travel Awards is up to \u00a3500.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The deadline for applications for William Lambarde Travel Awards is April 7th annually.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "William and Jane Morris Church Conservation Grants are made from the Morris Fund, formed in 1939.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Applications for William and Jane Morris Church Conservation Grants must be in line with modern conservation practice.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications for William and Jane Morris Church Conservation Grants can be made on behalf of a church, a chapel or any other place of worship in the United Kingdom.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "William and Jane Morris Church Conservation Grants fund smaller programmes of work concerned with the conservation of decorative or non-structural features inside the building.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Examples of funded work include stained glass windows, sculpture, furniture, internal monuments and tombs, and wall paintings.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The object must have been made no later than 1896 for William and Jane Morris Church Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Turret clocks and organs are not grant-aided by William and Jane Morris Church Conservation Grants, but clock or organ cases of significant antiquarian interest may exceptionally be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects outside the UK are not funded by William and Jane Morris Church Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Structural repairs and fabric maintenance are not funded by William and Jane Morris Church Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Alteration or decoration of buildings are not funded by William and Jane Morris Church Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Electrical rewiring, plumbing or central heating systems are not funded by William and Jane Morris Church Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Bells or organs are not funded by William and Jane Morris Church Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Works already completed are not funded by William and Jane Morris Church Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Anything created after 1896 is not funded by William and Jane Morris Church Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Items on the outside or in the grounds of the building are not funded by William and Jane Morris Church Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants for William and Jane Morris Church Conservation Grants are between \u00a3500 and \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "There are two application rounds for William and Jane Morris Church Conservation grants: March 31st (applicants notified by May 31st) and August 31st (applicants notified by November 30th) annually.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "A professional architect or established conservator must be engaged to direct the work for William and Jane Morris Church Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The work must be completed within one year of receipt of the grant for William and Jane Morris Church Conservation Grants.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Completion of the work must be certified by an appropriate professional for William and Jane Morris Church Conservation Grants.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The Linda Parry Textile Research and Conservation Grants make awards of up to \u00a31000 for the research and conservation of textiles.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applications for Linda Parry Textile Research and Conservation Grants can be made on behalf of a church, a chapel or any other place of worship in the United Kingdom and the Crown Dependencies.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Priority will be given to projects with greater historical significance and conservation need for Linda Parry Textile Research and Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications from well-funded cathedral projects take lower priority than those from parish churches and/or hard-pressed communities for Linda Parry Textile Research and Conservation Grants, with exceptions for outstanding and urgent projects.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "An organisation may submit only one application per round for Linda Parry Textile Research and Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Linda Parry Textile Research and Conservation Grants fund programmes of work concerned with the conservation of decorative or non-structural features inside the building.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The cost of a conservation report and other monitoring work is funded by Linda Parry Textile Research and Conservation Grants.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The object must have been made no later than 1896 for Linda Parry Textile Research and Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Priority will be given to applications where the grant will make a significant impact to the viability of the work or where the work is on features of national or international importance for Linda Parry Textile Research and Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Textile conservation can be funded through the Linda Parry grant.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects outside the UK or Crown Dependencies are not funded by Linda Parry Textile Research and Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Structural repairs and fabric maintenance are not funded by Linda Parry Textile Research and Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Alteration or decoration of buildings are not funded by Linda Parry Textile Research and Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Electrical rewiring, plumbing or central heating systems are not funded by Linda Parry Textile Research and Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Clocks, bells or organs are not funded by Linda Parry Textile Research and Conservation Grants, with exceptions for clock or organ cases of significant antiquarian interest.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Works already completed are not funded by Linda Parry Textile Research and Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Anything created after 1896 is not funded by Linda Parry Textile Research and Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Items on the outside or in the grounds of the building are not funded by Linda Parry Textile Research and Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants for Linda Parry Textile Research and Conservation Grants are up to \u00a34000 per project.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "There are two application rounds for Linda Parry Textile Research and Conservation Grants: March 31st (applicants notified by May 31st) and August 31st (applicants notified by November 30th) annually.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "An Icon-accredited conservator must be engaged to direct the work and certify its successful completion for Linda Parry Textile Research and Conservation Grants.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The work must be completed within one year of receipt of the grant for Linda Parry Textile Research and Conservation Grants.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Completion of the work must be certified by an appropriate professional for Linda Parry Textile Research and Conservation Grants.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "A report at the end of the project is required for Linda Parry Textile Research and Conservation Grants.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-lambarde-travel-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately summarizes the purpose and target audience of the Research and Travel Grants programme as described in the provided page text.",
+          "claims": [
+            {
+              "text": "The funding opportunity is part of the Society's Research and Travel Grants programme.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The programme supports research travel.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The programme is particularly for researchers requiring funds primarily for their own research travel.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ...nd Conservation Grants.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "linda-parry-textile-conservation-research-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects that the grants are for textile conservation and research and that the William and Jane Morris Church Conservation Grants application form is used for this purpose, as stated in the page text.",
+          "claims": [
+            {
+              "text": "Grants are available for textile conservation and research.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Applications for these grants are made using the William and Jane Morris Church Conservation Grants application form.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 23,
+      "n_claims_supported": 4,
+      "n_records_judged": 3,
+      "n_records_supported": 0,
+      "claim_rate": 0.17391304347826086,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.17857142857142858,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "tessa-mortimer-wheeler-travel-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only captures two claims related to eligibility and other requirements, omitting the majority of the eligibility criteria detailed in the reference text.",
+          "claims": [
+            {
+              "text": "Applicants must be undergraduates or first-year postgraduates studying archaeology at a UK university.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Travel for conference attendance is not eligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The award is not for work contributing to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "One reference from a supervisor is required.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Preference is given to applicants who have not previously received a Wheeler Award.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applications must be from the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Reduced reporting requirements apply to Wheeler and Lambarde Travel Awards.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-lambarde-travel-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only supports the claim that applications must be from the project director or principal investigator, omitting all other eligibility and purpose criteria.",
+          "claims": [
+            {
+              "text": "The travel must support the applicant's individual antiquarian or archaeological research.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Travel to participate in an established project is ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Travel as one of multiple funding applications for a larger project is ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Conference travel is ineligible.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The award is not for work contributing to a UG/PG degree.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "One reference is required.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Preference is given to applicants who have not previously received a Lambarde Award.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applications must be from the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text omits all eligibility criteria and purpose details, only confirming that no references are required.",
+          "claims": [
+            {
+              "text": "Applications are accepted on behalf of a church, chapel, or other place of worship in the United Kingdom.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Funds are available for the conservation of decorative or non-structural interior features.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Eligible features include stained glass, sculpture, furniture, monuments/tombs, and wall paintings.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The object to be conserved must have been made no later than 1896.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "No references are required for the application.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The work must be directed by a professional architect or an established conservator.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Turret clocks and organs are generally not grant-aided.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applications for clock or organ cases of significant contribution or antiquarian interest may be exceptionally considered.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 21,
+      "n_claims_supported": 19,
+      "n_records_judged": 9,
+      "n_records_supported": 7,
+      "claim_rate": 0.9047619047619048,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.925925925925926,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.7777777777777778,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "hugh-phillips-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the page text, specifically regarding the applicant's role, the exclusion of work contributing to degrees, and the rejection of retrospective applications.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be made for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be considered.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "margaret-tom-jones-memorial-award",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims that two references are required, but the page text indicates that one or two references may be needed depending on the specific grant scheme, and for some schemes, only one is required. The other claims are directly supported by the page text.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Two references are required for the application.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Awards will not be granted for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "wainwright-research-archaeology-in-wales",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the page text regarding the applicant's role and the exclusion of work contributing to degrees.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be made for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "open-research-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria stated in the page text regarding the applicant's role and the exclusion of work contributing to degrees.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Awards will not be made for work that contributes to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "beatrice-de-cardi-award",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ... universally supported.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "janet-arnold-award",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "tessa-mortimer-wheeler-travel-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility requirement that applications must be from the project director or principal investigator and the specific mention of reduced reporting requirements for Wheeler and Lambarde Travel Awards, both of which are explicitly stated in the page text.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Reduced reporting requirements apply to Wheeler and Lambarde Travel Awards.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-lambarde-travel-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility requirement that applications must be from the project director or principal investigator and the specific mention of reduced reporting requirements for Wheeler and Lambarde Travel Awards, both of which are explicitly stated in the page text.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Reduced reporting requirements apply to Wheeler and Lambarde Travel Awards.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "william-jane-morris-church-conservation-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims that no references are required, but the page text explicitly states that references are required for most awards and details how they should be submitted. The other claims about the application portal and uploading supporting documents are supported by the page text.",
+          "claims": [
+            {
+              "text": "Applications are made via the Grants Application Portal.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "No references are required for applications.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Supporting documents such as photographs, architect/conservation reports or budgets must be uploaded.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "linda-parry-textile-conservation-research-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately describes the application process and eligibility requirements as detailed in the provided page text.",
+          "claims": [
+            {
+              "text": "Applications are made via the Grants Application Portal.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants must select the William and Jane Morris Church Conservation Grants form.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "No references are required for this grant.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

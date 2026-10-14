@@ -1,0 +1,337 @@
+{
+  "funder": "Society of Antiquaries of London",
+  "model": "openrouter/openai/gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 4,
+  "config_hash": "08dbfd97cf4d22e963accfc9f9cd6012a70c5616c08a1b98401c6df9ced2047c",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 12,
+      "n_claims_supported": 6,
+      "n_records_judged": 2,
+      "n_records_supported": 0,
+      "claim_rate": 0.5,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.5,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the grant amount and the general purpose of the research but omits details about the grant's annual nature, renewal period, specific eligible research areas, and named awards.",
+          "claims": [
+            {
+              "text": "The funding is for annual project grants.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Grant amounts range from \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The research focus is on the human past through its material culture or material remains.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Eligible research areas include archaeology, art history, architectural/buildings history, material culture, and history of collecting.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants are renewable annually up to three years.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Named awards within the scheme include Marion Wilson, Joan Pye and Hugh Chapman Memorial Awards.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "church-conservation-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the purpose of the grants, the number of application rounds per year, and the specific deadlines for those rounds, but omits details about the age of features, the grant amount, and the requirement to follow SPAB principles.",
+          "claims": [
+            {
+              "text": "Grants are available for the conservation of decorative or non-structural interior features in UK places of worship.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The features to be conserved must predate 1896.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The conservation work must follow SPAB principles.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are between \u00a3500 and \u00a35,000.",
+              "claim_type": "amount",
+              "supported": false
+            },
+            {
+              "text": "There are two application rounds per year.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "The application deadlines are March 31 and August 31.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 10,
+      "n_claims_supported": 10,
+      "n_records_judged": 3,
+      "n_records_supported": 3,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the purpose and amount of the 'Research Awards' as described in the provided page text.",
+          "claims": [
+            {
+              "text": "Grants are available for research into the human past through its material culture or material remains.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants range from \u00a3500 to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "named-research-awards-april",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text correctly identifies the application deadline of April 7th for the Beatrice di Cardi, Janet Arnold, Tessa and Mortimer Wheeler, and William Lambarde research awards, which is explicitly stated in the page text.",
+          "claims": [
+            {
+              "text": "The Beatrice di Cardi research award has an application deadline of April 7th each year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The Janet Arnold research award has an application deadline of April 7th each year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The Tessa and Mortimer Wheeler research award has an application deadline of April 7th each year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The William Lambarde research award has an application deadline of April 7th each year.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "church-conservation-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the information found in the page text regarding the purpose and application deadlines for the William and Jane Morris Church Conservation Grants.",
+          "claims": [
+            {
+              "text": "Grants are available for church conservation.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There are two application rounds each year for church conservation grants.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The application deadline for the first round of church conservation grants is March 31st.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The application deadline for the second round of church conservation grants is August 31st.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 5,
+      "n_claims_supported": 1,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.2,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.2,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 1,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-awards",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text only captured one of the five distinct eligibility criteria mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is not for work contributing to an undergraduate or postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Retrospective applications are not permitted.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Early career researchers are welcomed.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The applicant base is open, with no UK-residency clause stated.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "church-conservation-grants",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 1,
+      "n_claims_supported": 1,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 2,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "research-awards",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text states that applications must be from the project director or principal investigator, which is directly supported by the page text under the 'Eligibility' section for multiple grant types.",
+          "claims": [
+            {
+              "text": "Applications must be submitted by the project director or principal investigator.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "named-research-awards-april",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        },
+        {
+          "opportunity_id": "church-conservation-grants",
+          "outcome": "field_empty",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": null
+        }
+      ]
+    }
+  }
+}

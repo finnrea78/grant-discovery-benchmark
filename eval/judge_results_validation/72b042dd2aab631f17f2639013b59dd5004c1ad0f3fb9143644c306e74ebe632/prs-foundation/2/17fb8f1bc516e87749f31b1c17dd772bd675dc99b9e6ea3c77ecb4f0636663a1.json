@@ -1,0 +1,1317 @@
+{
+  "funder": "PRS Foundation",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "minimal",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 2,
+  "config_hash": "72b042dd2aab631f17f2639013b59dd5004c1ad0f3fb9143644c306e74ebe632",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 56,
+      "n_claims_supported": 45,
+      "n_records_judged": 7,
+      "n_records_supported": 0,
+      "claim_rate": 0.8035714285714286,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.7976190476190476,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 2,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "open-fund-for-music-creators",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the claims from the reference text, but omits the specific purposes of creation, performance, and promotion of new music.",
+          "claims": [
+            {
+              "text": "The funding supports the development of music creators.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for creators of all genres and backgrounds.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for creators at different career stages.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for the creation, performance, and promotion of new music.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "Grants are up to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Round 2 opened on 17 August 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 closes on 7 September 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "ppl-momentum-music-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about grant amounts, eligibility, purpose (recording and touring), and the next deadline, but omits details about the frequency of deadlines, decision timelines, and the inclusion of 'related development activity' beyond recording and touring.",
+          "claims": [
+            {
+              "text": "Grants are available for amounts between \u00a35,000 and \u00a315,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding is for UK-based artists and bands.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the grant is to help artists and bands reach the next stage of their careers.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding can be used for recording activities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding can be used for touring activities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding can be used for related development activity.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "There are four deadlines a year.",
+              "claim_type": "deadline",
+              "supported": false
+            },
+            {
+              "text": "Decisions are made within 8 weeks.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "The next round opens on 28 September 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "ppl-momentum-accelerator-liverpool",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support...L Momentum Accelerator.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "ppl-momentum-accelerator-tees-valley",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about location eligibility, maximum funding amount, the next round opening date, and partnerships, but omits the specific purpose of reaching early career tipping points and the connection to the PPL Momentum Accelerator.",
+          "claims": [
+            {
+              "text": "The funding is for artists and bands located outside of London.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding aims to help artists and bands reach or move beyond early career tipping points.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The maximum financial support available is \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The scheme is a regional strand of the PPL Momentum Accelerator.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The next round of the scheme opens on September 28, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The scheme supports artists/bands who face additional barriers based on location.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The scheme is in partnership with PRS Foundation, PPL, Sonic Futures, Tees Valley Combined Authority and UK Government.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "women-make-music",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the eligibility criteria and the deadline for the second half of 2026, but omits the claim about the fund being under review in the first half of 2026.",
+          "claims": [
+            {
+              "text": "The fund supports women and gender diverse music creators.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fund supports creators of all genres and backgrounds.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fund supports creators at different career stages.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fund was under review in the first half of 2026.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The fund is being developed in 2026.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "There will be one enlarged round planned for the second half of 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The open date and deadline for the second half of 2026 are to be confirmed (TBC).",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "international-showcase-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the claims from the reference text, but omits the specific mention of 'showcase events' and instead broadens it to 'industry-facing events'.",
+          "claims": [
+            {
+              "text": "Grants are available for international export opportunities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The maximum grant amount is \u00a35,500.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for UK-based music creators.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are for UK-based music creators invited to perform at international showcase events.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The grants are for UK-based music creators invited to perform or create new music at international industry-facing events.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are rolling deadlines for applications.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The deadline for SXSW 2026 has passed.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "composers-fund",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support...communication timeline.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        },
+        {
+          "opportunity_id": "hitmaker-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the eligibility criteria, purpose, and grant amounts, as well as one specific deadline, but omits information about the frequency of deadlines and the decision-making timeline.",
+          "claims": [
+            {
+              "text": "The funding is for songwriters and producers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for those working in popular music genres.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the funding is to further develop careers and writing/production.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant amounts range from \u00a35,000 to \u00a310,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "There are two deadlines per year.",
+              "claim_type": "deadline",
+              "supported": false
+            },
+            {
+              "text": "Decisions are made within 12 weeks.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "The next funding round opens on September 1, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "early-career-promoter-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most claims from the reference text, but omits the claim about decision-making timelines.",
+          "claims": [
+            {
+              "text": "The funding supports early career music promoters.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the grant is to develop promoters' activity and professional development.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are available for up to \u00a33,500.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Decisions are made 6-8 weeks after each round's deadline.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "The funding is for booking, programming, and promotion of gigs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used for capacity building.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used for related costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Round 17 is open.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The deadline for Round 17 is 3 September 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The funding is managed by PRS Foundation.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding is supported by Arts Council England.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding is supported by DCMS.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 55,
+      "n_claims_supported": 49,
+      "n_records_judged": 9,
+      "n_records_supported": 4,
+      "claim_rate": 0.8909090909090909,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.9098765432098764,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.4444444444444444,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "open-fund-for-music-creators",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims regarding the purpose of the fund, the grant amount, and the opening and closing dates for Round 2 are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The fund supports the development of outstanding music creators of all genres and backgrounds at different career stages.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants of up to \u00a35,000 are available.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Round 2 opened on 17 August 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Round 2 is open until 7 September 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "ppl-momentum-music-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately describes the grant amount, eligibility, purpose, and partners, but the specific opening date for the next round is not mentioned in the provided page text.",
+          "claims": [
+            {
+              "text": "Grants of \u00a35k-\u00a315k are available.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for UK-based artists/bands.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the grants is to help artists/bands break through to the next level of their careers.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants support recording, touring, and marketing activities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fund is run by PRS Foundation in partnership with PPL, Creative Wales, and Arts Council of Northern Ireland.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The next round opens on 28 September 2026.",
+              "claim_type": "deadline",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "ppl-momentum-accelerator-liverpool",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately describes the target audience, financial support, and partners for the scheme, but the specific opening date for the next round is not mentioned in the provided page text.",
+          "claims": [
+            {
+              "text": "The scheme supports outstanding artists and bands outside London.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The scheme supports individuals facing additional barriers based on location.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The financial support offered is up to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The scheme is in partnership with PRS Foundation, PPL, MusicFutures, Liverpool City Region Music Board, Culture Liverpool and the Liverpool City Region Combined Authority for the Liverpool location.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The next round opens on 28 September 2026.",
+              "claim_type": "deadline",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "ppl-momentum-accelerator-tees-valley",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, including details about eligibility, financial support amount, partnerships, and the next application opening date.",
+          "claims": [
+            {
+              "text": "The scheme supports outstanding artists and bands outside London who face additional barriers based on location.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The scheme provides financial support of up to \u00a35,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The scheme is in partnership with PRS Foundation, PPL, Sonic Futures, Tees Valley Combined Authority and UK Government.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The next round opens on 28 September 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "women-make-music",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the eligibility criteria and the specific deadline structure for 2026.",
+          "claims": [
+            {
+              "text": "The program supports the development of outstanding women, trans, and non-binary songwriters and composers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The program supports individuals of all genres and backgrounds.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The program supports individuals at different career stages.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "In 2026, there will be one 'bumper deadline' in the second half of the year.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The open date and deadline for the program in 2026 are to be determined (TBC) while the program is being developed.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "international-showcase-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately reflects the grant amount, purpose, eligibility criteria, and the existence of rolling deadlines. However, the page text does not mention SXSW 2026 or any specific closed deadlines.",
+          "claims": [
+            {
+              "text": "Grants of up to \u00a35,500 are available.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grants are for international export opportunities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are for UK-based music creators.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Music creators must be invited to perform or create new music at international industry-facing events.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There are rolling deadlines.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The SXSW 2026 deadline has closed.",
+              "claim_type": "deadline",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "composers-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately reflects the eligibility criteria, funding amounts, purposes, and the number of composers supported per year. However, the specific opening date for the next round is not mentioned in the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for composers with a strong track record.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "It provides direct access to funding at pivotal career stages.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fund supports up to 15 composers per year.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The contribution is between \u00a38,000 and \u00a315,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used for activities such as recordings.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used for promotion/performance of existing works.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used for international co-commissions.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding can be used for residencies.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The next round opens on 14 September 2026.",
+              "claim_type": "deadline",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hitmaker-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for songwriters and producers working in popular music genres.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The purpose of the opportunity is to further develop careers and writing/production.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants are between \u00a35,000 and \u00a310,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The next round opens on 1 September 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "early-career-promoter-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text accurately reflects the purpose, amount, and management of the fund, but makes unsupported claims about specific round numbers and deadlines.",
+          "claims": [
+            {
+              "text": "The fund recognises the vital role independent promoters play in supporting the talent pipeline across England.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The fund offers grant funding and capacity building support.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The aim of the fund is to bolster local, regional, and national ecosystems.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Grants of up to \u00a33,500 are available.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funding can be used for booking, programming, and promotion of gigs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding can be used for capacity building.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Funding can be used for related costs.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Round 17 is open.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The deadline for Round 17 is 3 September 2026.",
+              "claim_type": "deadline",
+              "supported": false
+            },
+            {
+              "text": "The fund is managed by PRS Foundation.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The fund is supported by Arts Council England.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The fund is supported by DCMS.",
+              "claim_type": "other",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 38,
+      "n_claims_supported": 24,
+      "n_records_judged": 9,
+      "n_records_supported": 1,
+      "claim_rate": 0.631578947368421,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6296296296296297,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.1111111111111111,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "open-fund-for-music-creators",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the eligibility of music creators by genre, background, and career stage, as well as the UK-based requirement and the funding priorities. However, it omits the claim regarding PRS Foundation's limits on the number of applications per year.",
+          "claims": [
+            {
+              "text": "The fund is open to music creators of all genres and backgrounds.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fund is open to music creators at any career stage.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be UK-based music creators.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must observe PRS Foundation's limits on the maximum number of applications per calendar year.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Projects must fulfill three funding priorities: creation/performance/promotion of outstanding new music, developing UK music creators' potential, and reaching audiences.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "ppl-momentum-music-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the core eligibility criteria regarding location and career stage, but omits details about eligible activities and application limits.",
+          "claims": [
+            {
+              "text": "Applicants must be UK-based artists or bands.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for artists and bands seeking to advance their careers.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Eligible activities include recording and touring.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "There are limits on the number of applications per calendar year.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "ppl-momentum-accelerator-liverpool",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the location (Liverpool City Region) and the types of individuals (artists, bands, songwriters, performers, future industry professionals) but omits the requirement for being outside London and the 'early career tipping point' criterion.",
+          "claims": [
+            {
+              "text": "The opportunity is for talented artists and bands.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The artists and bands must be based outside London.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The artists and bands must be based in the Liverpool City Region.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The artists and bands must be at or approaching an early career tipping point.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity is for future industry professionals.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "ppl-momentum-accelerator-tees-valley",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about being artists/bands and being based in Tees Valley, but omits the requirement of being outside London and the 'early career tipping point' criterion, while adding 'future industry professionals'.",
+          "claims": [
+            {
+              "text": "Applicants must be artists and bands.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be based outside London.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must be based in the Tees Valley.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be at or approaching an early career tipping point.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Future industry professionals based in Tees Valley are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "women-make-music",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports the claims that the funding is for women and gender diverse music creators, but omits the claim that the fund no longer supports organizations seeking to commission such creators.",
+          "claims": [
+            {
+              "text": "The funding is for women music creators.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for gender diverse music creators.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The fund no longer supports organizations seeking to commission a woman, trans or non-binary music creator.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "international-showcase-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures all eligibility criteria mentioned in the reference text, including the location of the applicant, the requirement of an invitation, and the nature of the international opportunity.",
+          "claims": [
+            {
+              "text": "Applicants must be UK-based artists, bands, songwriters, or producers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have been formally invited to perform at an international showcase or export opportunity.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The international showcase or export opportunity can include industry-facing showcasing festivals, songwriting camps, or conferences.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The international opportunity can involve creating new music.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "composers-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about the applicant's current contribution and future potential, but omits the claim about limits on applications per calendar year.",
+          "claims": [
+            {
+              "text": "The opportunity is for composers already making a significant cultural contribution in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for composers who have the potential for greater impact in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for composers who have the potential for greater impact internationally.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Limits apply on maximum applications per calendar year.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hitmaker-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the core eligibility criterion regarding the profession and genre but omits the purpose and application limits mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The opportunity is for songwriters and producers working in popular music genres.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for individuals who want to further develop their careers.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The opportunity is for individuals who want to further develop their writing/production skills.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "There are limits on the maximum number of applications per calendar year.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "early-career-promoter-fund",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text correctly identifies the target audience as early career promoters and specifies their location as England, but omits details about previous application history and budget allocation for personal development.",
+          "claims": [
+            {
+              "text": "The opportunity is for early career promoters.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants who applied in the previous 15 rounds (May 2024 to February 2026) may still apply within the current advertised deadlines.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "At least 10% of the total project budget must be dedicated to the applicant's own development as a promoter.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The opportunity is for promoters across England.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 28,
+      "n_claims_supported": 28,
+      "n_records_judged": 9,
+      "n_records_supported": 9,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "open-fund-for-music-creators",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for UK-based music creators.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to music creators of all genres.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to music creators of all backgrounds.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to music creators at different stages of their career.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Projects must support the creation, performance, and promotion of outstanding new music.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects must develop the potential of UK music creators.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects must reach audiences.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "ppl-momentum-music-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria and purpose of the funding as described in the provided page text.",
+          "claims": [
+            {
+              "text": "The funding is for UK-based artists/bands.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is for artists/bands looking to break through to the next level of their careers.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "ppl-momentum-accelerator-liverpool",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria mentioned in the page text regarding the type of applicants and their geographical location.",
+          "claims": [
+            {
+              "text": "The opportunity is for songwriters, artists, bands, and performers who are writing their own music.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for future industry professionals.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be based in the Liverpool City Region.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "ppl-momentum-accelerator-tees-valley",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for songwriters, artists, bands, performers, and future industry professionals based in Tees Valley as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for songwriters, artists, bands, and performers who are writing their own music.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for future industry professionals.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be based in Tees Valley.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "women-make-music",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for the Women Make Music fund as described in the page text, specifically mentioning women, trans, and non-binary individuals who write their own music.",
+          "claims": [
+            {
+              "text": "The funding is for women, trans, and non-binary songwriters, composers, artists, bands, and performers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be writing their own music.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "international-showcase-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims regarding eligibility criteria are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for UK-based artists, bands, songwriters, and producers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Eligibility requires a formal invitation to perform or create new music at an international industry-facing showcasing festival, songwriting camp, or conference.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The event must be geared towards music industry professionals, not the general public.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The event can be an international songwriting camp geared towards international collaboration and creative/career progression.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "composers-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for composers as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for composers with a strong track record.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Composers must already be making a significant cultural contribution in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Composers must have the potential for greater impact in the UK and overseas.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hitmaker-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for songwriters and producers working in popular music genres as stated in the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for songwriters and producers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be working in popular music genres.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "early-career-promoter-fund",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria mentioned in the page text, specifying that the opportunity is for early career independent promoters across England.",
+          "claims": [
+            {
+              "text": "The funding is for early career independent promoters.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The promoters must be based in England.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

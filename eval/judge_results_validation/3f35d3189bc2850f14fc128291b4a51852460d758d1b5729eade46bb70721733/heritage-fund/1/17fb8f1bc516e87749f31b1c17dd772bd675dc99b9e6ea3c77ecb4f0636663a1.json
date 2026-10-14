@@ -1,0 +1,323 @@
+{
+  "funder": "National Lottery Heritage Fund",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "few_shot",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 1,
+  "config_hash": "3f35d3189bc2850f14fc128291b4a51852460d758d1b5729eade46bb70721733",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 0,
+      "n_claims_supported": 0,
+      "n_records_judged": 0,
+      "n_records_supported": 0,
+      "claim_rate": null,
+      "claim_rate_undefined": true,
+      "claim_rate_macro": null,
+      "claim_rate_macro_undefined": true,
+      "record_rate": null,
+      "record_rate_undefined": true,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "national-lottery-heritage-grants-250k-10m",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text support...rom the reference text.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 12,
+      "n_claims_supported": 12,
+      "n_records_judged": 2,
+      "n_records_supported": 2,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "national-lottery-heritage-grants-10k-250k",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The National Lottery Heritage Fund offers a funding programme for all types of heritage projects in the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding programme is for projects ranging from \u00a310,000 to \u00a3250,000.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Funds projects that value, care for and sustain heritage.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Projects are guided by four investment principles: saving heritage, protecting the environment, inclusion/access/participation, and organisational sustainability.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "There is no deadline for applications.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications are accepted all year round.",
+              "claim_type": "deadline",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "national-lottery-heritage-grants-250k-10m",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The National Lottery Heritage Grants are available for all types of heritage projects in the UK.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grant amounts range from \u00a3250,000 to \u00a310 million.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applicants must first submit an Expression of Interest.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants then go through development and delivery phases.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications have quarterly deadlines.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The grants are guided by four investment principles: saving heritage, protecting the environment, inclusion/access/participation, and organisational sustainability.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 9,
+      "n_claims_supported": 6,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.6666666666666666,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6666666666666666,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "national-lottery-heritage-grants-250k-10m",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures some eligibility criteria but omits all process-related claims from the reference text.",
+          "claims": [
+            {
+              "text": "The funding is open to not-for-profit organisations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is open to partnerships.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Partnerships must be led by a not-for-profit organisation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Organisations must have a bank account.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Organisations must have a governing document.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Organisations must have two or more members that are not related or living at the same address.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "An Expression of Interest must be submitted before applying.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Projects must not start before a decision is made.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "Decisions on grants above \u00a3250,000 are made quarterly by the committee of the applicant's nation or area or by the Board of Trustees.",
+              "claim_type": "process",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 11,
+      "n_claims_supported": 11,
+      "n_records_judged": 2,
+      "n_records_supported": 2,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "national-lottery-heritage-grants-10k-250k",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately lists the eligible applicant types and the required organizational attributes as stated in the page text.",
+          "claims": [
+            {
+              "text": "The opportunity is open to not-for-profit organisations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to private owners of a heritage asset.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to partnerships.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Organisations need to have a bank account.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Organisations need to have a governing document.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Organisations need to have two or more members that are not related or living at the same address.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "national-lottery-heritage-grants-250k-10m",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria for not-for-profit organisations and partnerships, including the requirements for a bank account, governing document, and unrelated/non-cohabiting members, as stated in the 'Who can apply?' section of the page text.",
+          "claims": [
+            {
+              "text": "The opportunity is for not-for-profit organisations.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is for partnerships led by a not-for-profit organisation.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Organisations need a bank account.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Organisations need a governing document.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Organisations need two or more members that are not related or living at the same address.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}

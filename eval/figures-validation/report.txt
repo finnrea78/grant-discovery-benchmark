@@ -1,0 +1,335 @@
+################################################################################
+LEADERBOARD
+################################################################################
+LEADERBOARD — macro F1 across all 2 configurations, best first
+    #  config                                                          macroF1   macroP   macroR  funders
+    1  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7      0.786    0.865    0.754        8
+    2  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7       0.767    0.841    0.739        8
+
+################################################################################
+STRUCTURED FIELD ACCURACY
+################################################################################
+STRUCTURED FIELD ACCURACY — exact match, pooled over opportunities; CONDITIONAL ON DETECTION (see 'n eval.')
+  group                            deadlines   n eval.    amount_max_gbp   n eval.    amount_min_gbp   n eval.            status   n eval.
+  deepseek-v4-flash-0731               0.563       485             0.939       426             0.927       436             0.932       502
+
+A field is only scorable on an opportunity the run actually found, so these accuracies sit over different populations and are NOT a like-for-like ranking: the weakest model's figures rest on the easiest opportunities it reached. END-TO-END below puts detection and extraction on one denominator, where that selection effect cannot hide. Opportunities whose field the labeller could not establish (uncertain_fields) are excluded from both numerator and denominator.
+
+################################################################################
+FIELD ACCURACY BY CONFIG
+################################################################################
+STRUCTURED FIELD ACCURACY BY CONFIG — exact match; ordered by deadline accuracy; CONDITIONAL ON DETECTION
+  config                                                                deadlines   amount_max_gbp   amount_min_gbp           status
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7               0.565            0.957            0.915            0.927
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7              0.561            0.922            0.937            0.938
+
+Denominators differ by config as well as by model — a config that found little is scored on the little it found — so read this beside the END-TO-END table, which puts detection and extraction on one denominator.
+
+################################################################################
+FIELD ACCURACY BY PROMPT
+################################################################################
+STRUCTURED FIELD ACCURACY BY PROMPT, WITHIN MODEL — EXPLORATORY: no field-level contrast is pre-registered
+  deepseek-v4-flash-0731
+    prompt            deadlines       n   amount_max_gbp       n   amount_min_gbp       n           status       n
+    few_shot              0.561     246            0.922     218            0.937     223            0.938     257
+    minimal               0.565     239            0.957     208            0.915     213            0.927     245
+
+The pre-registered contrasts (D-A) found no prompt effect on DETECTION F1. They say nothing about extraction, which is a different endpoint measured on a different population, and nothing here is a test — these are descriptive cells with unequal denominators, offered because the model-level table pools them away entirely.
+
+################################################################################
+FIELD ACCURACY BY TEMPERATURE
+################################################################################
+STRUCTURED FIELD ACCURACY BY TEMPERATURE, WITHIN MODEL — EXPLORATORY: no field-level contrast is pre-registered
+  deepseek-v4-flash-0731
+    temperature          deadlines       n   amount_max_gbp       n   amount_min_gbp       n           status       n
+    t0.7                     0.563     485            0.939     426            0.927     436            0.932     502
+
+The pre-registered contrasts (D-A) found no prompt effect on DETECTION F1. They say nothing about extraction, which is a different endpoint measured on a different population, and nothing here is a test — these are descriptive cells with unequal denominators, offered because the model-level table pools them away entirely.
+
+################################################################################
+FIELD ERROR DIRECTION
+################################################################################
+FIELD ERROR DIRECTION — 'asserted' = agent supplied a value the truth does not have; 'omitted' = agent left blank a value the truth has
+  group                          deadlines asrt/omit  amount_max_gbp asrt/omit  amount_min_gbp asrt/omit          status asrt/omit
+  deepseek-v4-flash-0731                       5 / 8                    0 / 26                   19 / 13                     0 / 0
+
+The two are different product failures and one accuracy figure pools them: an asserted value is an invention a user may act on, an omission is a gap they can see. A field whose errors are overwhelmingly omissions is failing conservatively; one whose errors are assertions is not.
+
+################################################################################
+END-TO-END (DEADLINES)
+################################################################################
+END-TO-END RESULT (field = deadlines) — share of ALL in-scope opportunities both found AND correctly extracted; 56 opportunities, 13 excluded as uncertain
+  config                                                          detected  end-to-end     gap   cost $   $/usable  frontier
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7        0.805       0.636  -0.168    0.175     0.0049       yes
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7       0.815       0.611  -0.204    0.202     0.0059        no
+
+An opportunity that was never found counts as a failure here, which is the point: you cannot extract a correct deadline from a grant you did not find. 'frontier' is the Pareto frontier over (realised cost, end-to-end rate), computed by the same domain-free `frontier.pareto_frontier` the F1 frontier uses — a config on the F1 frontier need not be on this one.
+
+################################################################################
+END-TO-END (ALL FIELDS)
+################################################################################
+END-TO-END RESULT (field = all) — share of ALL in-scope opportunities both found AND correctly extracted; 40 opportunities, 29 excluded as uncertain
+  config                                                          detected  end-to-end     gap   cost $   $/usable  frontier
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7        0.868       0.463  -0.405    0.175     0.0095       yes
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7       0.875       0.454  -0.421    0.202     0.0111        no
+
+An opportunity that was never found counts as a failure here, which is the point: you cannot extract a correct deadline from a grant you did not find. 'frontier' is the Pareto frontier over (realised cost, end-to-end rate), computed by the same domain-free `frontier.pareto_frontier` the F1 frontier uses — a config on the F1 frontier need not be on this one.
+
+################################################################################
+CONFIRMATORY CONTRASTS
+################################################################################
+CONFIRMATORY CONTRASTS (D-A) — pre-registered within-factor family, Holm-corrected together
+  factor  level_a   level_b     mean d  median d  rank-biserial        p   Holm p     95% CI (n=8 clusters)  reject
+  prompt  few_shot  minimal      0.019     0.013          0.524    0.312    0.312           [-0.039, 0.074]      no
+  not estimable on this split: factor 'model' has a single level (openrouter/deepseek/deepseek-v4-flash-0731), so it contributes no within-factor contrast
+  not estimable on this split: factor 'temperature' has a single level (0.7), so it contributes no within-factor contrast
+
+################################################################################
+INTERACTION
+################################################################################
+PRE-REGISTERED INTERACTION (D-B)
+  not estimable on this split: factor 'model' has no level 'openrouter/amazon/nova-lite-v1' (present: openrouter/deepseek/deepseek-v4-flash-0731)
+  not estimable on this split: factor 'prompt' has no level 'chain_of_thought' (present: few_shot, minimal)
+
+################################################################################
+TEMPERATURE
+################################################################################
+TEMPERATURE: MAIN EFFECT AND INTERACTION WITH MODEL
+  not estimable on this split: factor 'temperature' has a single level (0.7), so there is no temperature contrast to correct
+  not estimable on this split: factor 'model' has a single level (openrouter/deepseek/deepseek-v4-flash-0731), so there is no model pair to interact it with
+
+################################################################################
+STRATA
+################################################################################
+STRATA (D-C) — edge-case tags, validation-only row/cluster counts
+  tag                       rows  clusters        status  reason
+  rolling                      9         6   descriptive  9 rows (< 20) and 6 funder-clusters (< 8)
+  multi_deadline              25         4   descriptive  4 funder-clusters (< 8)
+  pdf_only                     2         2   descriptive  2 rows (< 20) and 2 funder-clusters (< 8)
+  js_portal                    1         1   descriptive  1 rows (< 20) and 1 funder-clusters (< 8)
+  ambiguous_eligibility        5         4   descriptive  5 rows (< 20) and 4 funder-clusters (< 8)
+  restricted                  28         6   descriptive  6 funder-clusters (< 8)
+
+################################################################################
+EDGE-CASE CONTRAST
+################################################################################
+EDGE-CASE CONTRAST (D-C, extended) — mean recall on tagged rows MINUS mean recall on UNTAGGED rows, paired within funder; negative means the tag costs recall
+  tag                           rows  tag clu.  paired clu.   tagged  untagged     diff              95% CI        status
+  restricted                      28         6            2    0.942     0.440    0.502                   —   descriptive
+  multi_deadline                  25         4            2    1.000     0.940    0.060                   —   descriptive
+  rolling                          9         6            2    0.933     0.940   -0.007                   —   descriptive
+  ambiguous_eligibility            5         4            1    0.900     0.880    0.020                   —   descriptive
+  pdf_only                         2         2            0        —         —        —                   —   descriptive
+  js_portal                        1         1            0        —         —        —                   —   descriptive
+
+  restricted: D-C policy: 6 funder-clusters (< 8); 2 paired funder-cluster(s) (< 8)
+  multi_deadline: D-C policy: 4 funder-clusters (< 8); 2 paired funder-cluster(s) (< 8)
+  rolling: D-C policy: 9 rows (< 20) and 6 funder-clusters (< 8); 2 paired funder-cluster(s) (< 8)
+  ambiguous_eligibility: D-C policy: 5 rows (< 20) and 4 funder-clusters (< 8); 1 paired funder-cluster(s) (< 8)
+  pdf_only: 2 in-scope row(s) carry this tag, but no funder has both tagged and untagged rows: the paired contrast cannot be formed
+  js_portal: 1 in-scope row(s) carry this tag, but no funder has both tagged and untagged rows: the paired contrast cannot be formed
+
+The baseline is rows carrying NO tag at all, not 'rows without this tag': the tags overlap heavily (see the overlap table), so 'not multi_deadline' would be substantially made of other edge cases and the contrast would compare one edge case against a mixture of others. A funder whose in-scope rows are ALL tagged has no baseline and drops out of the pairing entirely, which is why 'paired clu.' is well below 'tag clu.' for every tag.
+
+################################################################################
+EDGE-CASE CONTRAST (ALONE)
+################################################################################
+EDGE-CASE CONTRAST (D-C, extended) — mean recall on tagged rows MINUS mean recall on UNTAGGED rows, paired within funder; negative means the tag costs recall
+  ALONE reading: the tagged side is restricted to rows carrying ONLY this tag, removing the co-occurrence confound at the cost of a much smaller denominator.
+  tag                     rows alone  tag clu.  paired clu.   tagged  untagged     diff              95% CI        status
+  restricted                      18         6            2    0.942     0.440    0.502                   —   descriptive
+  multi_deadline                  18         4            2    1.000     0.940    0.060                   —   descriptive
+  rolling                          7         6            2    0.933     0.940   -0.007                   —   descriptive
+  ambiguous_eligibility            2         4            1    0.900     0.880    0.020                   —   descriptive
+  pdf_only                         0         2            0        —         —        —                   —   descriptive
+  js_portal                        0         1            0        —         —        —                   —   descriptive
+
+  restricted: D-C policy: 6 funder-clusters (< 8); 2 paired funder-cluster(s) (< 8)
+  multi_deadline: D-C policy: 4 funder-clusters (< 8); 2 paired funder-cluster(s) (< 8)
+  rolling: D-C policy: 9 rows (< 20) and 6 funder-clusters (< 8); 2 paired funder-cluster(s) (< 8)
+  ambiguous_eligibility: D-C policy: 5 rows (< 20) and 4 funder-clusters (< 8); 1 paired funder-cluster(s) (< 8)
+  pdf_only: 2 in-scope row(s) carry this tag, but no funder has both tagged and untagged rows: the paired contrast cannot be formed
+  js_portal: 1 in-scope row(s) carry this tag, but no funder has both tagged and untagged rows: the paired contrast cannot be formed
+
+The baseline is rows carrying NO tag at all, not 'rows without this tag': the tags overlap heavily (see the overlap table), so 'not multi_deadline' would be substantially made of other edge cases and the contrast would compare one edge case against a mixture of others. A funder whose in-scope rows are ALL tagged has no baseline and drops out of the pairing entirely, which is why 'paired clu.' is well below 'tag clu.' for every tag.
+
+################################################################################
+FIELD ACCURACY BY EDGE-CASE TAG
+################################################################################
+FIELD ACCURACY BY EDGE-CASE TAG — accuracy on tagged rows MINUS accuracy on UNTAGGED rows, paired within funder; negative means the tag costs accuracy
+  tag             field              rows  paired clu.   tagged  untagged     diff              95% CI
+  multi_deadline  deadlines            25            2    0.100     0.963   -0.863                   —
+  multi_deadline  amount_max_gbp       25            2    0.937     1.000   -0.063                   —
+  multi_deadline  amount_min_gbp       25            2    0.913     0.965   -0.052                   —
+  multi_deadline  status               25            2    1.000     1.000    0.000                   —
+  restricted      deadlines            28            1    0.900     0.925   -0.025                   —
+  restricted      amount_max_gbp       28            1    1.000     1.000    0.000                   —
+  restricted      amount_min_gbp       28            1    0.900     0.955   -0.055                   —
+  restricted      status               28            1    1.000     1.000    0.000                   —
+  rolling         deadlines             9            2    0.812     0.963   -0.151                   —
+  rolling         amount_max_gbp        9            2    0.962     1.000   -0.038                   —
+  rolling         amount_min_gbp        9            2    0.758     0.965   -0.207                   —
+  rolling         status                9            2    0.981     1.000   -0.019                   —
+
+Every row here is DESCRIPTIVE by the D-C threshold applied to paired clusters (edgecases.py): no tag has 8 funders carrying both tagged and untagged scorable rows. An interval far from zero on a large effect is still worth reporting as the strongest available signal, but it is not a pre-registered test and must not be written up as one.
+
+################################################################################
+EDGE-CASE COUNT
+################################################################################
+RECALL BY EDGE-CASE COUNT — does stacking edge cases compound? EXPLORATORY: the bands were defined after seeing the tag distribution
+  tags on row        rows  clusters  mean recall                95% CI
+  0                    13         3        0.627      [+0.000, +1.000]
+  1                    45         7        0.763      [+0.480, +0.980]
+  2                     8         4        0.637      [+0.275, +1.000]
+  3                     3         1        0.633                     —
+
+Intervals here are on each band's own mean, not on a difference between bands, and they overlap: this table shows the shape, it does not test it.
+
+################################################################################
+EDGE-CASE OVERLAP
+################################################################################
+EDGE-CASE TAG OVERLAP — in-scope validation rows carrying BOTH tags; the diagonal is the tag's own row count
+  tag                      ambiguous_el     js_portal  multi_deadli      pdf_only    restricted       rolling
+  ambiguous_eligibility               5             0             1             0             3             1
+  js_portal                           0             1             0             1             1             0
+  multi_deadline                      1             0            25             0             7             0
+  pdf_only                            0             1             0             2             1             1
+  restricted                          3             1             7             1            28             1
+  rolling                             1             0             0             1             1             9
+
+Where two tags share most of their rows, their marginal contrasts are substantially the same rows measured twice and cannot be read as independent effects.
+
+################################################################################
+FUNDER TYPE
+################################################################################
+FUNDER TYPE (D-F) — EXPLORATORY, defined after seeing the tune data; never statistically tested
+  type_group         n_funders   mean F1 (all runs)
+  not estimable on this split: no funder on this split carries a type group. `funders.TYPE_GROUPS` is validated to cover the tune split only (funders.load_profiles), deliberately: D-F was defined after seeing the tune data and bucketing a held-out funder into a post-hoc group would make an exploratory grouping look like a pre-registered one.
+
+################################################################################
+STRUCTURAL COMPLEXITY
+################################################################################
+STRUCTURAL COMPLEXITY (D-E) — rows_per_url; EXPLORATORY and partly a measurement artefact (see funders.py: the match key consults titles only on shared URLs, so a packed funder is exactly where paraphrase produces the largest false-positive class, ambiguous_title)
+  funder                                                  rows/url          band   mean F1 (all runs)
+  PRS Foundation                                              1.08  one_per_page                0.963
+  US-UK Fulbright Commission                                  1.00  one_per_page                0.487
+  Hakluyt Society                                             1.00  one_per_page                0.967
+  National Lottery Heritage Fund                              1.00  one_per_page                0.222
+  The Pathological Society of Great Britain and Ireland       1.00  one_per_page                0.981
+  The Pilgrim Trust                                           1.00  one_per_page                0.840
+  Royal Historical Society                                    1.00  one_per_page                0.750
+  Society of Authors                                          1.00  one_per_page                1.000
+
+################################################################################
+COST-EFFECTIVENESS
+################################################################################
+COST-EFFECTIVENESS FRONTIER — realised spend; P(frontier) is a funder-clustered bootstrap membership probability
+  config                                                           cost $  macroF1 frontier  P(frontier) cost excl.
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7      0.1754    0.767      yes         1.00          0
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7     0.2020    0.786      yes         0.74          0
+
+'cost excl.' is how many of a config's runs died before billing (D-D) and so contributed nothing to its cost total above: costs are realised totals over unequal denominators, not directly comparable run-for-run. On the frontier: openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7 excludes 0 run(s) from its total; openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7 excludes 0 run(s) from its total.
+
+################################################################################
+RELIABILITY
+################################################################################
+RELIABILITY (RQ3) — mean stable-rate and mean Fleiss' kappa across funders, per config
+  config                                                          stable-rate    kappa
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7          0.831    0.475
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7           0.812    0.488
+
+################################################################################
+COST PER TRUE POSITIVE
+################################################################################
+COST PER TRUE POSITIVE — realised spend per recovered opportunity; the unit cost that survives a change of denominator
+  config                                                            cost $    n TP    $ / TP  cost excl.
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7       0.1754     267    0.0007           0
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7      0.2020     277    0.0007           0
+
+A config that recovered nothing has an UNDEFINED unit cost ('—'), never 0 and never an infinity: inventing a number there would rank a config that found nothing as the cheapest on the page. 'cost excl.' carries frontier.py's caveat forward — runs that died before billing contribute nothing to the cost total, so these totals sit over unequal denominators.
+
+################################################################################
+LATENCY
+################################################################################
+LATENCY (seconds) — realised wall-clock per run
+  group                      n runs  n defined      mean       p50        p95        max
+  deepseek-v4-flash-0731         80         80     154.9     134.8      330.7      477.3
+
+A run that died of context overflow has no defined latency (there is no completion time for a run that never completed) and is excluded from every statistic here; a timed-out run's latency IS defined but is the cap, not a measurement of the work, so it should be read as censored. A mean far above the p50 means the group is usually fast and occasionally catastrophic — the shape a mean alone would hide. Percentiles use numpy's default linear interpolation.
+
+################################################################################
+ABSTENTION
+################################################################################
+ABSTENTION — runs that correctly reported nothing; never counted as failures (D-D), but recall is 0 for that funder either way
+  group                      n runs  n abstained     rate
+  deepseek-v4-flash-0731         80            0    0.000
+
+'Found nothing' and 'found the wrong thing' are different product failures with different fixes; F1 alone pools them. A group with a high abstention rate has part of its F1 deficit explained by refusal rather than by error.
+
+################################################################################
+FALSE-POSITIVE COMPOSITION
+################################################################################
+FALSE-POSITIVE COMPOSITION — counts, and each reason's share of that group's own false positives
+  group                      n FP      fabricated_url          distractor     unlabelled_page           duplicate
+  deepseek-v4-flash-0731       43            23 (53%)            13 (30%)             6 (14%)              1 (2%)
+
+`ambiguous_title` is charged when a candidate's URL is shared by more than one ground-truth row and its title does not match — which is exactly the 'packed' funders of D-E (funders.py). Its size here is therefore the measure of how much of the structural-complexity result is scoring strictness rather than page difficulty; this table reports the composition and does not resolve that question.
+
+################################################################################
+FABRICATION
+################################################################################
+FABRICATION — invented items; a fabricated funding URL is the worst output class for this product, worse than a miss
+  group                      n runs  n fabricated  runs fabricating  mean halluc.  n rate def.
+  deepseek-v4-flash-0731         80            23                16        0.1096           80
+
+'mean halluc.' averages only over runs with a DEFINED hallucination rate: a run that extracted nothing has no rate, and coercing that to 0 would read as scrupulous rather than silent. '—' means no run in the group had a defined rate.
+
+################################################################################
+SENSITIVITY
+################################################################################
+80 runs total: 0 failed, 0 abstained (abstention is model behaviour, not a failure, and is not counted among the 0).
+  0 context overflows, 0 timeouts (0 + 0 = 0).
+context_overflow is genuinely ambiguous — inefficient search burning the context window (model behaviour) versus a site too large for a 128k window regardless of search quality (infrastructure); a sample of one model per failure type cannot separate the two readings, and this report does not resolve it.
+
+SENSITIVITY (D-D) — macro F1 with vs without failed (timed-out / context-overflow) runs
+  config                                                          primary survivors    delta  n excl.
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7      0.786     0.786    0.000        0
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7       0.767     0.767    0.000        0
+
+################################################################################
+RUNTIME HEALTH
+################################################################################
+RUNTIME HEALTH — conformance, retries and token totals
+  runs                       80
+  schema-invalid output      0 (0.0% of runs)
+  runs retried               5 (max attempts 2)
+  step budget exhausted      0
+  submit failed              0
+  input tokens               9,707,754
+  output tokens              1,116,960
+  unattributable false pos.  29
+
+Token totals are what make cost transferable: dollars are a function of this grid's prices on the day, tokens are not. 'unattributable false positives' are extractions matching no ground-truth row at all; score.py already fixes how precision treats them, and that decision is not restated here — the count is surfaced so the size of the affected population is visible.
+
+################################################################################
+GENERALISATION
+################################################################################
+GENERALISATION (RQ6) — locked configs, tune versus held-out validation
+  config                                                           tuneF1    valF1      gap  tuneRank  valRank  tuneN  valN
+  openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7     0.7928   0.7857  -0.0071         1        1     16     8
+  openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7      0.7863   0.7669  -0.0193         2        2     16     8
+
+gap = validation macro F1 - tune macro F1; negative means the config did worse out of sample. The two means are over disjoint funder sets, so this is a difference of two independent macro means, NOT a paired difference: no Wilcoxon, no sign test and no bootstrap interval is reported here, because there is no funder present on both sides to pair on.
+H4 — RANKING PRESERVED: every locked config holds the same rank on the held-out split as it held on tune. The configuration chosen on tune is still the better of the two out of sample, which is the claim the single-shot run was spent to test.
+Provenance: lock eval/locked-config.json written 2026-09-19T21:37:24.143292+00:00; tune artefact eval/scored/grid; validation artefact eval/scored/validation; one scorer source_hash 67c1b6e752f6 across both.
+
+################################################################################
+SCOPE
+################################################################################
+SCOPE
+This report covers the 8 validation funders and their 69 in-scope ground-truth rows only.
+This is the HELD-OUT split, run single-shot on the configurations locked in eval/locked-config.json before any validation page was fetched (preregistration §5). No configuration was chosen, tuned or discarded after seeing anything in this report, and none may be: the out-of-sample claim in the GENERALISATION section above is the whole return on that restraint and iterating here would spend it. The comparison against Pivot-RP remains OUT OF SCOPE — no Pivot-RP data exists in the repo to compare against.
+Model, temperature and every prompt but the two locked ones are absent by construction, not by accident: the lock fixed them. Sections that need a second level of a fixed factor are marked 'not estimable on this split:' rather than omitted, so this report stays section-for-section comparable with the tune report at eval/figures/.
+Funder type (D-F) and structural complexity (D-E) were both defined after seeing the tune data and are exploratory, not confirmatory: neither is ever statistically tested. Structural complexity is additionally partly a measurement artefact: the match key (identity.match_key) consults a candidate's title only when its normalised URL is shared by more than one of a funder's ground-truth rows, so a 'packed' funder is exactly where an agent's paraphrase of a title is most likely to be scored ambiguous_title, the grid's largest false-positive class — not necessarily where the page is genuinely harder to parse.
+Every bootstrap interval in this report is clustered on 8 funders; at that cluster count the interval is likely optimistic (Davison & Hinkley 1997; Field & Welsh 2007), which is why the cluster count is printed beside every interval rather than a bare confidence level.
+Provenance: scorer source_hash 67c1b6e752f6 over 80 scored runs (eval/scored/validation/manifest.json).

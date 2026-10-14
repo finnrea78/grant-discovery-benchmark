@@ -1,0 +1,832 @@
+[
+  {
+    "abstentions": [],
+    "config": {
+      "agent_config": "standard",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | few_shot | t0.7 | standard",
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "prompt_strategy": "few_shot",
+      "temperature": 0.7
+    },
+    "conformance": {
+      "n_abstained": 0,
+      "n_budget_exhausted": 0,
+      "n_invalid": 0,
+      "n_runs": 40,
+      "n_submit_failed": 0,
+      "n_unknown": 0,
+      "n_valid": 40,
+      "rate": 1.0,
+      "rate_undefined": false
+    },
+    "consistency": {
+      "Hakluyt Society": {
+        "fleiss_kappa": null,
+        "fleiss_kappa_undefined": true,
+        "n_replicates": 5,
+        "n_stable": 1,
+        "n_surfaced_any": 1,
+        "stable_rate": 1.0,
+        "stable_rate_undefined": false,
+        "threshold": 4
+      },
+      "National Lottery Heritage Fund": {
+        "fleiss_kappa": 1.0,
+        "fleiss_kappa_undefined": false,
+        "n_replicates": 5,
+        "n_stable": 1,
+        "n_surfaced_any": 1,
+        "stable_rate": 1.0,
+        "stable_rate_undefined": false,
+        "threshold": 4
+      },
+      "PRS Foundation": {
+        "fleiss_kappa": 0.11347517730496483,
+        "fleiss_kappa_undefined": false,
+        "n_replicates": 5,
+        "n_stable": 9,
+        "n_surfaced_any": 10,
+        "stable_rate": 0.9,
+        "stable_rate_undefined": false,
+        "threshold": 4
+      },
+      "Royal Historical Society": {
+        "fleiss_kappa": 0.761904761904762,
+        "fleiss_kappa_undefined": false,
+        "n_replicates": 5,
+        "n_stable": 6,
+        "n_surfaced_any": 6,
+        "stable_rate": 1.0,
+        "stable_rate_undefined": false,
+        "threshold": 4
+      },
+      "Society of Authors": {
+        "fleiss_kappa": null,
+        "fleiss_kappa_undefined": true,
+        "n_replicates": 5,
+        "n_stable": 5,
+        "n_surfaced_any": 5,
+        "stable_rate": 1.0,
+        "stable_rate_undefined": false,
+        "threshold": 4
+      },
+      "The Pathological Society of Great Britain and Ireland": {
+        "fleiss_kappa": null,
+        "fleiss_kappa_undefined": true,
+        "n_replicates": 5,
+        "n_stable": 26,
+        "n_surfaced_any": 26,
+        "stable_rate": 1.0,
+        "stable_rate_undefined": false,
+        "threshold": 4
+      },
+      "The Pilgrim Trust": {
+        "fleiss_kappa": 0.7242647058823531,
+        "fleiss_kappa_undefined": false,
+        "n_replicates": 5,
+        "n_stable": 3,
+        "n_surfaced_any": 4,
+        "stable_rate": 0.75,
+        "stable_rate_undefined": false,
+        "threshold": 4
+      },
+      "US-UK Fulbright Commission": {
+        "fleiss_kappa": -0.2249999999999998,
+        "fleiss_kappa_undefined": false,
+        "n_replicates": 5,
+        "n_stable": 0,
+        "n_surfaced_any": 7,
+        "stable_rate": 0.0,
+        "stable_rate_undefined": false,
+        "threshold": 4
+      }
+    },
+    "cost": {
+      "cost_per_tp": 0.0007291888231046932,
+      "cost_per_tp_undefined": false,
+      "mean_latency_s": 151.9614207300794,
+      "n_missing_cost": 0,
+      "n_missing_latency": 0,
+      "n_runs": 40,
+      "total_cost_undefined": false,
+      "total_cost_usd": 0.201985304,
+      "total_input_tokens": 5406603,
+      "total_output_tokens": 550160
+    },
+    "excluded_funders": [],
+    "funders": [
+      {
+        "f1": 1.0,
+        "fn": 0.0,
+        "fp": 0.0,
+        "funder": "Hakluyt Society",
+        "n_in_scope": 1,
+        "n_precision_undefined": 0,
+        "n_replicates": 5,
+        "precision": 1.0,
+        "precision_undefined": false,
+        "recall": 1.0,
+        "replicate_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "replicate_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "replicate_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "tp": 1.0,
+        "zero_positive": false
+      },
+      {
+        "f1": 0.22222222222222224,
+        "fn": 6.0,
+        "fp": 1.0,
+        "funder": "National Lottery Heritage Fund",
+        "n_in_scope": 7,
+        "n_precision_undefined": 0,
+        "n_replicates": 5,
+        "precision": 0.5,
+        "precision_undefined": false,
+        "recall": 0.14285714285714285,
+        "replicate_f1": [
+          0.22222222222222224,
+          0.22222222222222224,
+          0.22222222222222224,
+          0.22222222222222224,
+          0.22222222222222224
+        ],
+        "replicate_precision": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "replicate_recall": [
+          0.14285714285714285,
+          0.14285714285714285,
+          0.14285714285714285,
+          0.14285714285714285,
+          0.14285714285714285
+        ],
+        "tp": 1.0,
+        "zero_positive": false
+      },
+      {
+        "f1": 0.968421052631579,
+        "fn": 0.6,
+        "fp": 0.0,
+        "funder": "PRS Foundation",
+        "n_in_scope": 10,
+        "n_precision_undefined": 0,
+        "n_replicates": 5,
+        "precision": 1.0,
+        "precision_undefined": false,
+        "recall": 0.9400000000000001,
+        "replicate_f1": [
+          0.9473684210526316,
+          0.9473684210526316,
+          1.0,
+          1.0,
+          0.9473684210526316
+        ],
+        "replicate_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "replicate_recall": [
+          0.9,
+          0.9,
+          1.0,
+          1.0,
+          0.9
+        ],
+        "tp": 9.4,
+        "zero_positive": false
+      },
+      {
+        "f1": 0.763076923076923,
+        "fn": 2.4,
+        "fp": 1.0,
+        "funder": "Royal Historical Society",
+        "n_in_scope": 8,
+        "n_precision_undefined": 0,
+        "n_replicates": 5,
+        "precision": 0.8457142857142858,
+        "precision_undefined": false,
+        "recall": 0.7,
+        "replicate_f1": [
+          0.7999999999999999,
+          0.7999999999999999,
+          0.7999999999999999,
+          0.7999999999999999,
+          0.6153846153846154
+        ],
+        "replicate_precision": [
+          0.8571428571428571,
+          0.8571428571428571,
+          0.8571428571428571,
+          0.8571428571428571,
+          0.8
+        ],
+        "replicate_recall": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.5
+        ],
+        "tp": 5.6,
+        "zero_positive": false
+      },
+      {
+        "f1": 1.0,
+        "fn": 0.0,
+        "fp": 0.0,
+        "funder": "Society of Authors",
+        "n_in_scope": 5,
+        "n_precision_undefined": 0,
+        "n_replicates": 5,
+        "precision": 1.0,
+        "precision_undefined": false,
+        "recall": 1.0,
+        "replicate_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "replicate_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "replicate_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "tp": 5.0,
+        "zero_positive": false
+      },
+      {
+        "f1": 0.9886792452830189,
+        "fn": 0.0,
+        "fp": 0.6,
+        "funder": "The Pathological Society of Great Britain and Ireland",
+        "n_in_scope": 26,
+        "n_precision_undefined": 0,
+        "n_replicates": 5,
+        "precision": 0.9777777777777776,
+        "precision_undefined": false,
+        "recall": 1.0,
+        "replicate_f1": [
+          0.9811320754716981,
+          1.0,
+          0.9811320754716981,
+          0.9811320754716981,
+          1.0
+        ],
+        "replicate_precision": [
+          0.9629629629629629,
+          1.0,
+          0.9629629629629629,
+          0.9629629629629629,
+          1.0
+        ],
+        "replicate_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "tp": 26.0,
+        "zero_positive": false
+      },
+      {
+        "f1": 0.7711111111111111,
+        "fn": 1.6,
+        "fp": 0.4,
+        "funder": "The Pilgrim Trust",
+        "n_in_scope": 5,
+        "n_precision_undefined": 0,
+        "n_replicates": 5,
+        "precision": 0.9099999999999999,
+        "precision_undefined": false,
+        "recall": 0.6799999999999999,
+        "replicate_f1": [
+          0.8000000000000002,
+          0.888888888888889,
+          0.7499999999999999,
+          0.6666666666666665,
+          0.7499999999999999
+        ],
+        "replicate_precision": [
+          0.8,
+          1.0,
+          1.0,
+          0.75,
+          1.0
+        ],
+        "replicate_recall": [
+          0.8,
+          0.8,
+          0.6,
+          0.6,
+          0.6
+        ],
+        "tp": 3.4,
+        "zero_positive": false
+      },
+      {
+        "f1": 0.5724053724053724,
+        "fn": 3.0,
+        "fp": 2.0,
+        "funder": "US-UK Fulbright Commission",
+        "n_in_scope": 7,
+        "n_precision_undefined": 0,
+        "n_replicates": 5,
+        "precision": 0.6857142857142857,
+        "precision_undefined": false,
+        "recall": 0.5714285714285714,
+        "replicate_f1": [
+          0.5714285714285714,
+          0.923076923076923,
+          0.22222222222222224,
+          0.923076923076923,
+          0.22222222222222224
+        ],
+        "replicate_precision": [
+          0.42857142857142855,
+          1.0,
+          0.5,
+          1.0,
+          0.5
+        ],
+        "replicate_recall": [
+          0.8571428571428571,
+          0.8571428571428571,
+          0.14285714285714285,
+          0.8571428571428571,
+          0.14285714285714285
+        ],
+        "tp": 4.0,
+        "zero_positive": false
+      }
+    ],
+    "macro_f1": 0.7857394908412784,
+    "macro_f1_undefined": false,
+    "macro_precision": 0.8649007936507936,
+    "macro_precision_undefined": false,
+    "macro_recall": 0.7542857142857142,
+    "mean_fleiss_kappa": 0.47492892901841605,
+    "mean_fleiss_kappa_undefined": false,
+    "mean_stable_rate": 0.83125,
+    "mean_stable_rate_undefined": false,
+    "micro_f1": 0.8562596599690881,
+    "micro_f1_undefined": false,
+    "micro_precision": 0.9172185430463576,
+    "micro_precision_undefined": false,
+    "micro_recall": 0.8028985507246377,
+    "micro_recall_undefined": false,
+    "n_funders": 8,
+    "n_runs": 40
+  },
+  {
+    "abstentions": [],
+    "config": {
+      "agent_config": "standard",
+      "label": "openrouter/deepseek/deepseek-v4-flash-0731 | minimal | t0.7 | standard",
+      "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+      "prompt_strategy": "minimal",
+      "temperature": 0.7
+    },
+    "conformance": {
+      "n_abstained": 0,
+      "n_budget_exhausted": 0,
+      "n_invalid": 0,
+      "n_runs": 40,
+      "n_submit_failed": 0,
+      "n_unknown": 0,
+      "n_valid": 40,
+      "rate": 1.0,
+      "rate_undefined": false
+    },
+    "consistency": {
+      "Hakluyt Society": {
+        "fleiss_kappa": null,
+        "fleiss_kappa_undefined": true,
+        "n_replicates": 5,
+        "n_stable": 1,
+        "n_surfaced_any": 1,
+        "stable_rate": 1.0,
+        "stable_rate_undefined": false,
+        "threshold": 4
+      },
+      "National Lottery Heritage Fund": {
+        "fleiss_kappa": 1.0,
+        "fleiss_kappa_undefined": false,
+        "n_replicates": 5,
+        "n_stable": 1,
+        "n_surfaced_any": 1,
+        "stable_rate": 1.0,
+        "stable_rate_undefined": false,
+        "threshold": 4
+      },
+      "PRS Foundation": {
+        "fleiss_kappa": 0.7282608695652172,
+        "fleiss_kappa_undefined": false,
+        "n_replicates": 5,
+        "n_stable": 9,
+        "n_surfaced_any": 10,
+        "stable_rate": 0.9,
+        "stable_rate_undefined": false,
+        "threshold": 4
+      },
+      "Royal Historical Society": {
+        "fleiss_kappa": 0.6266666666666666,
+        "fleiss_kappa_undefined": false,
+        "n_replicates": 5,
+        "n_stable": 5,
+        "n_surfaced_any": 6,
+        "stable_rate": 0.8333333333333334,
+        "stable_rate_undefined": false,
+        "threshold": 4
+      },
+      "Society of Authors": {
+        "fleiss_kappa": null,
+        "fleiss_kappa_undefined": true,
+        "n_replicates": 5,
+        "n_stable": 5,
+        "n_surfaced_any": 5,
+        "stable_rate": 1.0,
+        "stable_rate_undefined": false,
+        "threshold": 4
+      },
+      "The Pathological Society of Great Britain and Ireland": {
+        "fleiss_kappa": 0.7420634920634933,
+        "fleiss_kappa_undefined": false,
+        "n_replicates": 5,
+        "n_stable": 25,
+        "n_surfaced_any": 26,
+        "stable_rate": 0.9615384615384616,
+        "stable_rate_undefined": false,
+        "threshold": 4
+      },
+      "The Pilgrim Trust": {
+        "fleiss_kappa": 0.05303030303030348,
+        "fleiss_kappa_undefined": false,
+        "n_replicates": 5,
+        "n_stable": 4,
+        "n_surfaced_any": 5,
+        "stable_rate": 0.8,
+        "stable_rate_undefined": false,
+        "threshold": 4
+      },
+      "US-UK Fulbright Commission": {
+        "fleiss_kappa": -0.2237762237762237,
+        "fleiss_kappa_undefined": false,
+        "n_replicates": 5,
+        "n_stable": 0,
+        "n_surfaced_any": 7,
+        "stable_rate": 0.0,
+        "stable_rate_undefined": false,
+        "threshold": 4
+      }
+    },
+    "cost": {
+      "cost_per_tp": 0.00065677534082397,
+      "cost_per_tp_undefined": false,
+      "mean_latency_s": 157.81836507197585,
+      "n_missing_cost": 0,
+      "n_missing_latency": 0,
+      "n_runs": 40,
+      "total_cost_undefined": false,
+      "total_cost_usd": 0.175359016,
+      "total_input_tokens": 4301151,
+      "total_output_tokens": 566800
+    },
+    "excluded_funders": [],
+    "funders": [
+      {
+        "f1": 0.9333333333333333,
+        "fn": 0.0,
+        "fp": 0.2,
+        "funder": "Hakluyt Society",
+        "n_in_scope": 1,
+        "n_precision_undefined": 0,
+        "n_replicates": 5,
+        "precision": 0.9,
+        "precision_undefined": false,
+        "recall": 1.0,
+        "replicate_f1": [
+          1.0,
+          1.0,
+          0.6666666666666666,
+          1.0,
+          1.0
+        ],
+        "replicate_precision": [
+          1.0,
+          1.0,
+          0.5,
+          1.0,
+          1.0
+        ],
+        "replicate_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "tp": 1.0,
+        "zero_positive": false
+      },
+      {
+        "f1": 0.22222222222222224,
+        "fn": 6.0,
+        "fp": 1.0,
+        "funder": "National Lottery Heritage Fund",
+        "n_in_scope": 7,
+        "n_precision_undefined": 0,
+        "n_replicates": 5,
+        "precision": 0.5,
+        "precision_undefined": false,
+        "recall": 0.14285714285714285,
+        "replicate_f1": [
+          0.22222222222222224,
+          0.22222222222222224,
+          0.22222222222222224,
+          0.22222222222222224,
+          0.22222222222222224
+        ],
+        "replicate_precision": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "replicate_recall": [
+          0.14285714285714285,
+          0.14285714285714285,
+          0.14285714285714285,
+          0.14285714285714285,
+          0.14285714285714285
+        ],
+        "tp": 1.0,
+        "zero_positive": false
+      },
+      {
+        "f1": 0.9578947368421054,
+        "fn": 0.8,
+        "fp": 0.0,
+        "funder": "PRS Foundation",
+        "n_in_scope": 10,
+        "n_precision_undefined": 0,
+        "n_replicates": 5,
+        "precision": 1.0,
+        "precision_undefined": false,
+        "recall": 0.9199999999999999,
+        "replicate_f1": [
+          0.9473684210526316,
+          0.9473684210526316,
+          0.9473684210526316,
+          0.9473684210526316,
+          1.0
+        ],
+        "replicate_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "replicate_recall": [
+          0.9,
+          0.9,
+          0.9,
+          0.9,
+          1.0
+        ],
+        "tp": 9.2,
+        "zero_positive": false
+      },
+      {
+        "f1": 0.7367832167832168,
+        "fn": 3.0,
+        "fp": 0.4,
+        "funder": "Royal Historical Society",
+        "n_in_scope": 8,
+        "n_precision_undefined": 0,
+        "n_replicates": 5,
+        "precision": 0.9428571428571428,
+        "precision_undefined": false,
+        "recall": 0.625,
+        "replicate_f1": [
+          0.7692307692307693,
+          0.7999999999999999,
+          0.5454545454545454,
+          0.7692307692307693,
+          0.7999999999999999
+        ],
+        "replicate_precision": [
+          1.0,
+          0.8571428571428571,
+          1.0,
+          1.0,
+          0.8571428571428571
+        ],
+        "replicate_recall": [
+          0.625,
+          0.75,
+          0.375,
+          0.625,
+          0.75
+        ],
+        "tp": 5.0,
+        "zero_positive": false
+      },
+      {
+        "f1": 1.0,
+        "fn": 0.0,
+        "fp": 0.0,
+        "funder": "Society of Authors",
+        "n_in_scope": 5,
+        "n_precision_undefined": 0,
+        "n_replicates": 5,
+        "precision": 1.0,
+        "precision_undefined": false,
+        "recall": 1.0,
+        "replicate_f1": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "replicate_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "replicate_recall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "tp": 5.0,
+        "zero_positive": false
+      },
+      {
+        "f1": 0.9729986624548224,
+        "fn": 0.8,
+        "fp": 0.6,
+        "funder": "The Pathological Society of Great Britain and Ireland",
+        "n_in_scope": 26,
+        "n_precision_undefined": 0,
+        "n_replicates": 5,
+        "precision": 0.9772079772079773,
+        "precision_undefined": false,
+        "recall": 0.9692307692307693,
+        "replicate_f1": [
+          0.9803921568627451,
+          0.9615384615384616,
+          0.9803921568627451,
+          0.9811320754716981,
+          0.9615384615384616
+        ],
+        "replicate_precision": [
+          1.0,
+          0.9615384615384616,
+          1.0,
+          0.9629629629629629,
+          0.9615384615384616
+        ],
+        "replicate_recall": [
+          0.9615384615384616,
+          0.9615384615384616,
+          0.9615384615384616,
+          1.0,
+          0.9615384615384616
+        ],
+        "tp": 25.2,
+        "zero_positive": false
+      },
+      {
+        "f1": 0.9095959595959595,
+        "fn": 0.6,
+        "fp": 0.2,
+        "funder": "The Pilgrim Trust",
+        "n_in_scope": 5,
+        "n_precision_undefined": 0,
+        "n_replicates": 5,
+        "precision": 0.9666666666666666,
+        "precision_undefined": false,
+        "recall": 0.8800000000000001,
+        "replicate_f1": [
+          0.7499999999999999,
+          1.0,
+          1.0,
+          0.888888888888889,
+          0.9090909090909091
+        ],
+        "replicate_precision": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.8333333333333334
+        ],
+        "replicate_recall": [
+          0.6,
+          1.0,
+          1.0,
+          0.8,
+          1.0
+        ],
+        "tp": 4.4,
+        "zero_positive": false
+      },
+      {
+        "f1": 0.4025641025641026,
+        "fn": 4.4,
+        "fp": 1.2,
+        "funder": "US-UK Fulbright Commission",
+        "n_in_scope": 7,
+        "n_precision_undefined": 0,
+        "n_replicates": 5,
+        "precision": 0.44000000000000006,
+        "precision_undefined": false,
+        "recall": 0.3714285714285714,
+        "replicate_f1": [
+          0.0,
+          0.923076923076923,
+          0.0,
+          0.16666666666666666,
+          0.923076923076923
+        ],
+        "replicate_precision": [
+          0.0,
+          1.0,
+          0.0,
+          0.2,
+          1.0
+        ],
+        "replicate_recall": [
+          0.0,
+          0.8571428571428571,
+          0.0,
+          0.14285714285714285,
+          0.8571428571428571
+        ],
+        "tp": 2.6,
+        "zero_positive": false
+      }
+    ],
+    "macro_f1": 0.7669240292244702,
+    "macro_f1_undefined": false,
+    "macro_precision": 0.8408414733414733,
+    "macro_precision_undefined": false,
+    "macro_recall": 0.7385645604395604,
+    "mean_fleiss_kappa": 0.4877075179249095,
+    "mean_fleiss_kappa_undefined": false,
+    "mean_stable_rate": 0.8118589743589744,
+    "mean_stable_rate_undefined": false,
+    "micro_f1": 0.8476190476190476,
+    "micro_f1_undefined": false,
+    "micro_precision": 0.9368421052631579,
+    "micro_precision_undefined": false,
+    "micro_recall": 0.7739130434782608,
+    "micro_recall_undefined": false,
+    "n_funders": 8,
+    "n_runs": 40
+  }
+]

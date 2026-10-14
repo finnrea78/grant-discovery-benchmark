@@ -1,0 +1,586 @@
+{
+  "funder": "Carnegie Trust for the Universities of Scotland",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "chain_of_thought",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 2,
+  "config_hash": "7e9a4d24b95f743e75d8817c1faa64a0286524e3e512aeb61e0574b92892dbbb",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 5,
+      "n_claims_supported": 5,
+      "n_records_judged": 1,
+      "n_records_supported": 1,
+      "claim_rate": 1.0,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 1.0,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 1.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "undergraduate-tuition-fee-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately captures all the eligibility criteria and the scope of the grant mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "The grant covers undergraduate tuition fees.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The grant is for low-income students.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is for students in Scotland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is for students who cannot get government fee support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grant is for students studying at eligible Scottish higher education institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 50,
+      "n_claims_supported": 46,
+      "n_records_judged": 3,
+      "n_records_supported": 2,
+      "claim_rate": 0.92,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.8095238095238094,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.6666666666666666,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "undergraduate-tuition-fee-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by information present in the provided page text.",
+          "claims": [
+            {
+              "text": "The grants cover tuition fees for undergraduate students.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants are for students from low-income households.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are for students ineligible for tuition fee support from the Scottish Government.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are for students studying at eligible Scottish higher education institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants cover up to \u00a31,820 per year for a full-time degree course.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Applications are open from June 1, 2026, to December 1, 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The application portal will be open for grants covering the academic year 2026-27.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Retrospective applications will not be accepted.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applications will be processed on a first-come, first-served basis.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have an unconditional offer for, or be a continuing student on, an undergraduate degree course at specific Scottish institutions or a course validated by these institutions.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "HNC and HND diploma courses are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Access courses are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Accelerated degree courses with a graduate entry are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Courses delivered by, or at, a university outside Scotland are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Courses at a Scottish Higher Education Institute delivered and validated by a university outside Scotland are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Open University courses are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Continuing Professional Development (CPD) courses are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "University courses below degree level, e.g. Diploma or Certificate courses, are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Postgraduate degrees are not eligible for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The Carnegie Education Fund has a budget to fund students who completed an undergraduate degree in the past and wish to start an undergraduate degree in a different field of study in academic year 2026-27.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Students seeking a second undergraduate degree must have completed their first degree at least two years before the start of their new course.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students seeking a second undergraduate degree must enter the first year of their course in academic year 2026-27.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students seeking a second undergraduate degree must have been unable to gain employment in the subject area of their previous degree, be unemployed, have been made redundant or are facing redundancy.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Students seeking a second undergraduate degree must wish to reskill in a different field of study, unrelated to their previous qualifications and recognised as being in a skills shortage area for the Scottish economy.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are for students who do not have the financial resources to attend university.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The median household income of award-holders in 2025-26 was \u00a310,000 per year.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "All applications are made online.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants must complete an eligibility checker before applying.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "An automatic reply confirms receipt of a submitted complete application.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Late applications after the closing date will not be accepted unless the student was first informed that SAAS would not be covering their fees after the online portal closed.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "Applicants will be notified of the outcome within two to three weeks, provided all requested information and a timely referee response are submitted.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants must provide evidence of their eligibility.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants must provide a letter of acceptance for their university course or evidence of enrollment if a returning student.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants must provide their SAAS Award Notice letter showing ineligibility for tuition fee support and the amount of maintenance loan awarded.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applicants must provide a P60 for the tax year ending April 2026, or pay slips or Universal Credit statements covering the last 3 months for the applicant (if 25 or over) and their spouse/partner, or for the applicant and their parent(s)/guardian(s) (if under 25).",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Students receiving a SAAS bursary must also provide a copy of their SAAS award letter.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Supporting evidence can be submitted as scanned copies or mobile images.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "There is a 5MB size limit on each file submitted online.",
+              "claim_type": "process",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "carnegie-morgan-scholarship",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the scholarship's coverage of tuition fees and a living-cost bursary, its purpose for the MSc in Biodiversity and Taxonomy of Plants at the specified institutions, and its eligibility criteria for students from low-income Scottish households.",
+          "claims": [
+            {
+              "text": "The scholarship covers full tuition fees.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The scholarship provides a \u00a31,200 living-cost bursary.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "The scholarship is for postgraduate study (MSc Biodiversity and Taxonomy of Plants).",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The study is at the Royal Botanic Garden Edinburgh/University of Edinburgh.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The scholarship is for students from low-income Scottish households.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "carnegie-masters-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims that the grants cover tuition fee top-ups and study-cost stipends, but the page text does not mention these specific uses of the grant. The page text also does not mention the specific opening and closing dates of May 1st and July 31st, respectively.",
+          "claims": [
+            {
+              "text": "Grants are available to help graduates from low-income Scottish households.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The grants are intended to help meet the costs of postgraduate (Masters) study at Scottish universities.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The grants cover tuition fee top-ups.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The grants may cover study-cost stipends in some cases.",
+              "claim_type": "purpose",
+              "supported": false
+            },
+            {
+              "text": "The scheme opens annually on May 1st.",
+              "claim_type": "deadline",
+              "supported": false
+            },
+            {
+              "text": "The scheme closes annually on July 31st.",
+              "claim_type": "deadline",
+              "supported": false
+            },
+            {
+              "text": "Funding is capped at a maximum of \u00a35,000 per year for students undertaking a two-year full-time Master\u2019s programme.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 12,
+      "n_claims_supported": 8,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.6666666666666666,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6666666666666666,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "undergraduate-tuition-fee-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures most of the eligibility criteria, but omits details about income thresholds, previous study withdrawal, and specific visa requirements for indefinite leave to remain and limited leave to remain.",
+          "claims": [
+            {
+              "text": "Applicants must be from low-income households.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be ineligible for Scottish Government tuition fee support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have an unconditional offer to study an undergraduate degree.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be studying at an eligible Scottish institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have attended a secondary school or college in Scotland for at least two full years or have a substantial and recent connection to Scotland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Household income thresholds apply, banded by number of dependants.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Most recipients previously withdrew from study.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Asylum seekers are supported.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be entitled to remain indefinitely in the UK.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must have Limited Leave to Remain under a visa that is valid for the entire duration of the course.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Applicants must be an asylum seeker.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Second-degree applicants are permitted only in specified subject areas.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 14,
+      "n_claims_supported": 10,
+      "n_records_judged": 2,
+      "n_records_supported": 1,
+      "claim_rate": 0.7142857142857143,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.6,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.5,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 1,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "undergraduate-tuition-fee-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text, which details the eligibility criteria for the Undergraduate Tuition Fee Grants.",
+          "claims": [
+            {
+              "text": "Applicants must be from low-income households.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must ordinarily reside in Scotland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have at least two years of Scottish secondary or college schooling.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must have a substantial connection to Scotland.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be enrolled on an undergraduate degree at an eligible Scottish institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must not be eligible for government tuition fee funding.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants must be entitled to remain in the UK.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applicants can be recognised asylum seekers.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Second-degree applicants are permitted only in specified subject areas.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "carnegie-morgan-scholarship",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The page text mentions the scholarship is for those looking to undertake the MSc in Biodiversity and Taxonomy of Plants with RBGE and that it helps Scottish graduates, but it does not specify income level, residency, indefinite UK stay, or prior postgraduate degree status as eligibility criteria.",
+          "claims": [
+            {
+              "text": "The scholarship is for Scottish-domiciled students from low-income households.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The scholarship is for students accepted onto the MSc Biodiversity and Taxonomy of Plants (full-time or part-time) delivered by the Royal Botanic Garden Edinburgh and the University of Edinburgh.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The scholarship is for students ordinarily resident in Scotland with a Scottish connection.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The scholarship is for students entitled to remain indefinitely in the UK.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "The scholarship is for students who have not previously obtained a postgraduate degree.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "carnegie-masters-grants",
+          "outcome": "judge_parse_failure",
+          "record_supported": null,
+          "justification": null,
+          "claims": null,
+          "error": "1 validation error for _RawJudgeResponse\njustification\n  String should have at most 300 characters [type=string_too_long, input_value=\"The agent's text claims ...guide for full details.\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long"
+        }
+      ]
+    }
+  }
+}

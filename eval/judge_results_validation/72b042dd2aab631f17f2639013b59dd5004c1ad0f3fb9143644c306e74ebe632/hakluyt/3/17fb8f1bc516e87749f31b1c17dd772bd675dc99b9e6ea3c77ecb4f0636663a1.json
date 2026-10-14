@@ -1,0 +1,364 @@
+{
+  "funder": "Hakluyt Society",
+  "model": "openrouter/deepseek/deepseek-v4-flash-0731",
+  "prompt_strategy": "minimal",
+  "temperature": 0.7,
+  "agent_config": "standard",
+  "replicate": 3,
+  "config_hash": "72b042dd2aab631f17f2639013b59dd5004c1ad0f3fb9143644c306e74ebe632",
+  "schema_valid": true,
+  "abstained": false,
+  "judge_config_hash": "17fb8f1bc516e87749f31b1c17dd772bd675dc99b9e6ea3c77ecb4f0636663a1",
+  "fields": {
+    "summary:completeness": {
+      "field": "summary",
+      "dimension": "completeness",
+      "n_claims": 6,
+      "n_claims_supported": 5,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.8333333333333334,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.8333333333333334,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "hakluyt-society-research-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text captures the purposes of the funding and the series it applies to, but omits the detail about payments being made via series editors.",
+          "claims": [
+            {
+              "text": "Reimburses agreed research expenditure for preparing publication proposals for submission to the Hakluyt Society.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Reimburses agreed research expenditure for research towards completion of approved publication projects under contract.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Payments are made as reimbursement of previously-agreed expenditure via the series editors.",
+              "claim_type": "process",
+              "supported": false
+            },
+            {
+              "text": "The funding is for volumes in the main Series III.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The funding is for volumes in the Hakluyt Society Studies in the History of Travel series.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The purpose is to support the Society's objects of advancing education through publication of records of voyages, travels, naval expeditions and other geographical material.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "summary:groundedness": {
+      "field": "summary",
+      "dimension": "groundedness",
+      "n_claims": 21,
+      "n_claims_supported": 16,
+      "n_records_judged": 2,
+      "n_records_supported": 1,
+      "claim_rate": 0.7619047619047619,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.84375,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.5,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "hakluyt-society-research-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "All claims made in the agent's text are directly supported by the provided page text.",
+          "claims": [
+            {
+              "text": "Financial support is provided as reimbursement of agreed expenditure.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Support is available for research undertaken in preparing publication proposals for submission to the Hakluyt Society.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Support is available for research towards the completion of approved publication projects under contract.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The funding is for volumes in the main Series III or in the Hakluyt Society Studies in the History of Travel series.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The support advances education through the publication of records of voyages, travels, naval expeditions, and other geographical material.",
+              "claim_type": "purpose",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hakluyt-society-essay-prize",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text makes several claims about essay length, prizes for winners beyond the monetary amount, and the status of the 2027 competition that are not supported by the provided page text.",
+          "claims": [
+            {
+              "text": "The prize is an annual essay competition.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "The competition is for original research essays.",
+              "claim_type": "other",
+              "supported": true
+            },
+            {
+              "text": "Essays should be between 6,000 and 8,000 words.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The essays should be on any aspect of the history of travel, exploration and cultural encounter or their effects.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "The essays should be in the tradition of the Hakluyt Society's work.",
+              "claim_type": "purpose",
+              "supported": true
+            },
+            {
+              "text": "Essays can be from any humanities or social sciences discipline.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Winners receive a certificate.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Winners receive one-year Hakluyt Society membership.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "Winners receive a copy of a Society volume.",
+              "claim_type": "other",
+              "supported": false
+            },
+            {
+              "text": "The 2026 competition closed on 1 March 2026.",
+              "claim_type": "deadline",
+              "supported": true
+            },
+            {
+              "text": "The 2027 competition details are forthcoming.",
+              "claim_type": "deadline",
+              "supported": false
+            },
+            {
+              "text": "The competition is open to any registered graduate student at a higher education institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The competition is open to anyone who has been awarded a graduate degree in the past three years.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The winning essay receives \u00a31250.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "A second prize of \u00a3250 is awarded to the runner-up.",
+              "claim_type": "amount",
+              "supported": true
+            },
+            {
+              "text": "Prizes may be shared between entries.",
+              "claim_type": "amount",
+              "supported": true
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:completeness": {
+      "field": "eligibility_summary",
+      "dimension": "completeness",
+      "n_claims": 4,
+      "n_claims_supported": 3,
+      "n_records_judged": 1,
+      "n_records_supported": 0,
+      "claim_rate": 0.75,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.75,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.0,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "hakluyt-society-research-grants",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text supports claims about researcher eligibility and membership requirements but omits the specific fund source mentioned in the reference text.",
+          "claims": [
+            {
+              "text": "Researchers preparing publication proposals for the Society are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Researchers working on proposals already approved and under contract to the Society are eligible.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Recipients need not be members of the Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The funding is from the Society's Harry & Grace Smith Fund.",
+              "claim_type": "other",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    "eligibility_summary:groundedness": {
+      "field": "eligibility_summary",
+      "dimension": "groundedness",
+      "n_claims": 9,
+      "n_claims_supported": 7,
+      "n_records_judged": 2,
+      "n_records_supported": 1,
+      "claim_rate": 0.7777777777777778,
+      "claim_rate_undefined": false,
+      "claim_rate_macro": 0.75,
+      "claim_rate_macro_undefined": false,
+      "record_rate": 0.5,
+      "record_rate_undefined": false,
+      "n_raw_html_fallback": 0,
+      "exclusions": {
+        "field_empty": 0,
+        "unresolvable_source": 0,
+        "no_claims_found": 0,
+        "judge_parse_failure": 0,
+        "judge_call_failure": 0
+      },
+      "records": [
+        {
+          "opportunity_id": "hakluyt-society-research-grants",
+          "outcome": "ok",
+          "record_supported": true,
+          "justification": "The agent's text accurately reflects the eligibility criteria and application processes described in the provided page text.",
+          "claims": [
+            {
+              "text": "Researchers preparing publication proposals for submission to the Society can apply for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Researchers working on proposals already approved and under contract can apply for support.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "Applications for research in preparation of publication proposals should be submitted to the Administrator.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Applications for research on approved proposals under contract should be discussed with the relevant Series Editor.",
+              "claim_type": "process",
+              "supported": true
+            },
+            {
+              "text": "Recipients of support need not be members of the Society.",
+              "claim_type": "eligibility",
+              "supported": true
+            }
+          ],
+          "error": null
+        },
+        {
+          "opportunity_id": "hakluyt-society-essay-prize",
+          "outcome": "ok",
+          "record_supported": false,
+          "justification": "The agent's text claims an allowance for career breaks and a requirement for evidence of student status, neither of which are mentioned in the provided page text.",
+          "claims": [
+            {
+              "text": "The opportunity is open to any registered graduate student at a higher education institution.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "The opportunity is open to anyone who has been awarded a graduate degree within the past three years.",
+              "claim_type": "eligibility",
+              "supported": true
+            },
+            {
+              "text": "There is an allowance for career breaks for those who have been awarded a graduate degree within the past three years.",
+              "claim_type": "eligibility",
+              "supported": false
+            },
+            {
+              "text": "Evidence of student status is required.",
+              "claim_type": "eligibility",
+              "supported": false
+            }
+          ],
+          "error": null
+        }
+      ]
+    }
+  }
+}
